@@ -1,12 +1,13 @@
 ---
 layout: post
 permalink: /cv/index.html
-title: CV
+title: Curriculum Vitae
 description: I am a postdoctoral fellow at University of Texas at Austin.
 tags: [cv]
 ---
 
-<a href="/assets/resume_ccastro.pdf" </a>
+pdf version
+# <a href="/assets/resume_ccastro.pdf" </a>
 
 
 
