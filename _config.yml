@@ -1,6 +1,6 @@
 title:            Claudia Castro-Castro
 tagline:          A beautiful theme.
-description:      Describe your website.
+description:      My personal website.
 canonical: https://ckcastro.github.io/
 
 # Owner/author information
@@ -30,6 +30,8 @@ opengraph:
 links:
   - title: About
     url: /about
+  - title: Research
+    url: /research
   - title: Github
     url: https://github.com/ckcastro
     external: true
