@@ -31,7 +31,8 @@ links:
   - title: Research
     url: /research
   - title: CV
-    href="/assets/resume_ccastro.pdf"
+    url: /cv
+
     #url: https://github.com/ckcastro
     #external: true
 
