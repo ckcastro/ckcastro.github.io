@@ -2,13 +2,13 @@
 layout: post
 permalink: /about/index.html
 title: About me
-description: I am a postdoctoral fellow at University of Texas at Austin.
+description: I am a postdoctoral research fellow in the [Metamaterials and Plasmonics Research Group](http://users.ece.utexas.edu/~aalu/group.htm), Department of Electrical and Computer Engineering, The University of Texas at Austin.
 tags: [about]
 image:
   feature: soft-trees.jpg
 ---
 
-I am a postdoctoral research fellow in the [Metamaterials and Plasmonics Research Group](http://users.ece.utexas.edu/~aalu/group.htm), Department of Electrical and Computer Engineering, The University of Texas at Austin.
+
 
 
 ### Acknowledgements
