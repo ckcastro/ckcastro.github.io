@@ -1,4 +1,4 @@
-title:            Balzac
+title:            Claudia Castro-Castro
 tagline:          A beautiful theme.
 description:      Describe your website.
 canonical: https://ckcastro.github.io/
@@ -9,7 +9,7 @@ owner:
   avatar:         avatar.png
   bio:            "Aesthete & Athlete"
   email:          clauca88@gmail.com
-  twitter:        claurinacastro
+  #twitter:        claurinacastro
   github:         ckcastro
   # instagram:      ctrunsthis
   # dribbble:       coletownsend
@@ -31,10 +31,7 @@ links:
   - title: About
     url: /about
   - title: Github
-    url: https://github.com/ColeTownsend/Balzac-for-Jekyll
-    external: true
-  - title: Cole Who?
-    url: http://coletownsend.com
+    url: https://ckcastro.github.io/
     external: true
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones

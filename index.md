@@ -1,6 +1,6 @@
 ---
 layout: home
-title: "Claudia Castro-Castro"
+title: "Recent posts"
 tags: [Jekyll, theme, responsive, blog, template]
 image:
   feature: typewriter.jpg
