@@ -1,10 +1,8 @@
 ---
-layout: post
+layout: post-no-feature
 permalink: /about/index.html
 title: About me
 tags: [about]
-image:
-  feature: soft-trees.jpg
 ---
 
 I am a postdoctoral research fellow in the [Metamaterials and Plasmonics Research Group](http://users.ece.utexas.edu/~aalu/group.htm), Department of Electrical and Computer Engineering, The University of Texas at Austin.
