@@ -14,7 +14,7 @@ The University of Texas at Austin
 EER 3.824 (office)
 Austin, TX 78712, USA
 
-Email: ccastrocastr at utexas dot edu
+Email: ccastrocastr (at) utexas (dot) edu
 
 
 
