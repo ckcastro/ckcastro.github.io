@@ -2,13 +2,12 @@
 layout: post
 permalink: /research/index.html
 title: Research
-description: I am a postdoctoral fellow at University of Texas at Austin.
+description: 
 tags: [research]
 image:
   feature: soft-trees.jpg
 ---
 
-I am a postdoctoral fellow at University of Texas at Austin.
 
 ### Research Interests
 * Nonlinear optics
@@ -17,14 +16,18 @@ I am a postdoctoral fellow at University of Texas at Austin.
 
 ### Publications
 
+C. Castro-Castro and A. B. Aceves, "Optical mode stability and dynamics in nonlinear twisted PT-symmetric structures”, to appear American Institute of Physics, Conference Proceedings, 2017.
+
+C. Castro-Castro, Y. Shen, G. Srinivasan, P.G. Kevrekidis, and A.B. Aceves, "Light dynamics in nonlinear trimers and twisted multicore fibers", Journal of Nonlinear Optical Physics & Materials, Volume No.25, Issue No. 04. 2017 [arXiv](https://arxiv.org/abs/1611.00021)
+
+A. B. Aceves, C. Castro-Castro, C. Shtyrina, A. Rubenchik, M. P. Fedoruk, and S. K. Turitsyn, "Optical bullets in 2-dimensional fiber arrays",  Photonics and Fiber Technology 2016 (ACOFT, BGPP, NP), OSA Technical Digest (online) Optical Society of America, 2016 [OSA](https://www.osapublishing.org/abstract.cfm?uri=NP-2016-NW5A.3)
 
 
 ### Funding support
-
-
 <img src="/images/utaustin.png" alt="UT Austin logo" style="width:250px;height:105px;"> 
+<img src="/images/conacyt.jpeg" alt="CONACYT logo" style="width:200px;height:150px;">
 <img src="/images/contex.jpeg" alt="ConTex logo" style="width:396px;height:90px;">
-<img src="/images/conacyt.jpeg" alt="CONACYT logo" style="width:400px;height:300px;">
+
 
 
 
