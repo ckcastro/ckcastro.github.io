@@ -7,13 +7,13 @@ tags: [cv,bio]
 ---
 
 
-## Education
+### Education
 
 * Ph. D. 2017, Applied and Computational Mathematics, Southern Methodist University
 
 * M. S. 2013, Applied Mathematics, Center for Research in Mathematics
 
-## Positions
+### Positions
 
 * September 2017-present: Postdoctoral Research Fellow, University of Texas at Austin
 

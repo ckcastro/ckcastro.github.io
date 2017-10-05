@@ -32,6 +32,8 @@ links:
     url: /research
   - title: Bio
     url: /bio
+  - title: Contact me
+    url: /contact
 
     #url: https://github.com/ckcastro
     #external: true
