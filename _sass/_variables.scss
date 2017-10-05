@@ -9,7 +9,8 @@
 
 $black:  #3b3b3b;
 $white: #f9f9f9;
-$utorange: #bf5700
+/*$utorange: #bf5700
+  $utgray: #333F48*/
 
 /* Gray scale */
 
@@ -18,13 +19,14 @@ $grey-medium: #999;
 $grey-light:  #d9d9d9;
 
 /* Hilight */
-/*$hilite: #fffbd7;*/
+$hilite: #fffbd7;
 $hilite: utorange;
 
 /* Accent Colors */
-$link: #8AB9D1;
-$accent: #24536B;
-
+/*$link: #8AB9D1;
+$accent: #24536B;*/
+$link: #bf5700;
+$accent: #bf5700;
 
 /* Typography
    ========================================================================== */
