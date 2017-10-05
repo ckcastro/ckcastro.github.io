@@ -1,6 +1,6 @@
 ---
 layout: post
-permalink: /cv/index.html
+permalink: /bio/index.html
 title: Bio
 description: 
 tags: [cv,bio]
