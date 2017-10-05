@@ -9,9 +9,9 @@ tags: [cv,bio]
 
 ### Education
 
-* Ph. D. 2017, Applied and Computational Mathematics, Southern Methodist University
+* Ph. D. 2017, Applied and Computational Mathematics, Southern Methodist University [SMU](http://www.smu.edu/Dedman/academics/departments/math)
 
-* M. S. 2013, Applied Mathematics, Center for Research in Mathematics
+* M. S. 2013, Applied Mathematics, Center for Research in Mathematics [CIMAT](http://www.cimat.mx/)
 
 ### Positions
 

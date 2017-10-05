@@ -10,9 +10,10 @@ image:
 
 
 ### Research Interests
-* Nonlinear optics
-* Schrodinger Equation
-
+* Nonlinear wave phenomena
+* Nonlinearity and disorder in fiber arrays
+* Perturbation theory and asymptotics
+* Numerical methods applied to nonlinear optics and photonics
 
 ### Publications
 
@@ -24,9 +25,10 @@ A. B. Aceves, C. Castro-Castro, C. Shtyrina, A. Rubenchik, M. P. Fedoruk, and S.
 
 
 ### Funding support
+ConTex 2017 Postdoctoral Fellowship
 <img src="/images/utaustin.png" alt="UT Austin logo" style="width:250px;height:105px;"> 
 <img src="/images/conacyt.jpeg" alt="CONACYT logo" style="width:200px;height:150px;">
-<img src="/images/contex.jpeg" alt="ConTex logo" style="width:396px;height:90px;">
+<img src="/images/contex.jpeg" alt="ConTex logo" style="width:300px;height:75px;">
 
 
 
