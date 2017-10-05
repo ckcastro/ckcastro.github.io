@@ -1,11 +1,9 @@
 ---
-layout: post
+layout: post-no-feature
 permalink: /research/index.html
 title: Research
 description: 
 tags: [research]
-image:
-  feature: soft-trees.jpg
 ---
 
 
