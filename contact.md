@@ -8,7 +8,6 @@ tags: [cv,bio]
 
 Claudia Castro-Castro
 
-Postdoctoral Fellow
 Department of Electrical and Computer Engineering
 The University of Texas at Austin
 2501 Speedway
