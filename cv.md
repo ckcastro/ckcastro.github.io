@@ -7,7 +7,9 @@ tags: [cv]
 ---
 
 pdf version
-<a href="/assets/resume_ccastro.pdf" </a>
+<a href="/assets/resume_ccastro.pdf">PDF version</a>
+
+
 
 
 
