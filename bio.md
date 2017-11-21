@@ -22,7 +22,7 @@ tags: [cv,bio]
 * June 2015-Aug 2015: Summer Research Intern, Los Alamos National Laboratory
 
 
-<a href="/assets/cv-ccc.pdf"> CV PDF version</a>
+<a href="/assets/cv.pdf"> CV PDF version</a>
 
 
 
