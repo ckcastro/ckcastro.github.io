@@ -44,8 +44,7 @@ links:
 collections:
   teaching:
     output: true
-    permalink: /teaching/:name ############################
-
+    
 defaults:
   - scope:
       path: ""
