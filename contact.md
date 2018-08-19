@@ -8,9 +8,9 @@ tags: [cv,bio]
 
 Claudia Castro-Castro
 
-Southern Methodist University
-Hyer Hall, Room G21A
-Dallas, TX 75205, USA
+Southern Methodist University  <br />
+Hyer Hall, Room G21A  <br />
+Dallas, TX 75205, USA <br />
 
 Phone: 214-768-1131
 
