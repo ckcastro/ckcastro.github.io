@@ -28,6 +28,8 @@ opengraph:
 links:
   - title: About
     url: /about
+  - title: Teaching
+    url: /teaching
   - title: Research
     url: /research
   - title: Bio
