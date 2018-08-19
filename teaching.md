@@ -16,7 +16,7 @@ M/W/F 126 Clements Hall
 
 * <a href="/assets/math3302_syll.pdf">Syllabus</a>
 
-* <a href="/_teaching/reading.md">Reading</a>
+* <a href="/reading.md">Reading</a>
 
 ### Important dates:
 
