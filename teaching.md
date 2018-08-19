@@ -12,7 +12,11 @@ tags: [teaching]
 M/W/F 126 Clements Hall
 
 
-### Reading:
+### Course pages:
+
+* Syllabus
+
+* Reading [Reading](https://www.)
 
 
 ### Important dates:
