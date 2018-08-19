@@ -44,7 +44,7 @@ links:
 collections:
   teaching:
     output: true
-    permalink: /teaching/:path/ ############################
+    permalink: /teaching/:path ############################
 
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
