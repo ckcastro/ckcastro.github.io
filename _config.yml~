@@ -30,15 +30,18 @@ links:
     url: /about
   - title: Research
     url: /research
-  - title: CV
-    href="/assets/resume_ccastro.pdf"
+  - title: Bio
+    url: /bio
+  - title: Contact me
+    url: /contact
+
     #url: https://github.com/ckcastro
     #external: true
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    America/New_York
 future:      true
-highlighter: pygments
+highlighter: rouge
 markdown:    kramdown
 
 kramdown:

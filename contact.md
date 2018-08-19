@@ -8,13 +8,13 @@ tags: [cv,bio]
 
 Claudia Castro-Castro
 
-Department of Electrical and Computer Engineering
-The University of Texas at Austin
-2501 Speedway
-EER 3.824 (office)
-Austin, TX 78712, USA
+Southern Methodist University
+Hyer Hall, Room G21A
+Dallas, TX 75205, USA
 
-Email: ccastrocastr (at) utexas (dot) edu
+214-768-1131
+
+Email: ccastrocastr (at) smu (dot) edu
 
 
 
