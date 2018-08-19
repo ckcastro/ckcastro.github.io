@@ -41,10 +41,11 @@ links:
     #url: https://github.com/ckcastro
     #external: true
 
-# Collections
 collections:
   teaching:
     output: true
+    permalink: /teaching/:path/ ############################
+
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    America/New_York
