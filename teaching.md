@@ -1,24 +1,21 @@
 ---
 layout: post-no-feature
 permalink: /teaching/index.html
-title: Teaching
+title: Math 3302 Fall 2018
 description: 
 tags: [teaching]
 ---
 
 
-### Math 3302 Fall 2018
-
-Coming soon
-
-#### Lectures: 
+### Lectures: 
 
 M/W/F 126 Clements Hall
 
 
 
-#### Lectures:
+### News:
 
+Coming soon
 
 
 
