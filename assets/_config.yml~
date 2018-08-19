@@ -8,7 +8,7 @@ owner:
   name:           Claudia Castro-Castro
   avatar:         avatar.png
   bio:            "Aesthete & Athlete"
-  email:          ccastrocastr@smu.edu
+  email:          ccastrocastr@utexas.edu
   github:         ckcastro
   linkedin:       ccastrocastr
   disqus:         Claudia Castro
@@ -23,33 +23,22 @@ tools:
 opengraph:
   locale:           en_US
 
-
 # Links to include in top navigation
 # For external links add external: true
 links:
   - title: About
     url: /about
-  - title: Teaching
-    url: /teaching
   - title: Research
     url: /research
-  - title: Bio
-    url: /bio
-  - title: Contact 
-    url: /contact
-
+  - title: CV
+    href="/assets/resume_ccastro.pdf"
     #url: https://github.com/ckcastro
     #external: true
-
-# Collections
-collections:
-  teaching:
-    output: true
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    America/New_York
 future:      true
-highlighter: rouge
+highlighter: pygments
 markdown:    kramdown
 
 kramdown:
