@@ -18,11 +18,11 @@ M/W/F 126 Clements Hall
 
 * <a href="/teaching/reading.md">Reading</a>
 
-* {% for item in site._teaching %}
-  <h2>{{ item.title }}</h2>
-  <p>{{ item.description }}</p>
-  <p><a href="{{reading.md}}">{{Reading page}}</a></p>
-  {% endfor %}
+#* {% for item in site._teaching %}
+#  <h2>{{ item.title }}</h2>
+#  <p>{{ item.description }}</p>
+#  <p><a href="{{reading.md}}">{{Reading page}}</a></p>
+#  {% endfor %}
 
 ### Important dates:
 
