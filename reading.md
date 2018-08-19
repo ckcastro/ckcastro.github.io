@@ -1,5 +1,5 @@
 ---
-layout: post-no-feature
+layout: page
 permalink: /reading/index.html
 title: Reading
 description: 

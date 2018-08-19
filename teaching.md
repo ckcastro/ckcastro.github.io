@@ -1,5 +1,5 @@
 ---
-layout: post-no-feature
+layout: page
 permalink: /teaching/index.html
 title: Math 3302 Fall 2018
 description: 

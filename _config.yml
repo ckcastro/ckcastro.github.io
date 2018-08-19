@@ -23,6 +23,15 @@ tools:
 opengraph:
   locale:           en_US
 
+defaults:
+  -
+    scope:
+      path: "teaching"
+      type: "pages"
+    values:
+      layout: "post-no-feature"
+
+
 # Links to include in top navigation
 # For external links add external: true
 links:
