@@ -20,7 +20,7 @@ M/W/F 126 Clements Hall
   {% for reading in site.teaching %}
     <li>
       <a href="{{ reading.url }}">{{ reading.title }}</a>
-       {{ reading.headline }}
+      - {{ reading.headline }}
     </li>
   {% endfor %}
 </ul>

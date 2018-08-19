@@ -24,11 +24,13 @@ For warm-up problems:
 
 ### Chapter 10 – Vectors and the Geometry of Space
 
-#### Section 10.1: 
-
+<b> Section 10.1:  </b>
 read pp. 537-541 
-
 warm-up 1a, do problem 6 [due 8/xx] 
+
+<b> Section 10.2:  </b>
+read pp. 542-549 
+warm-up 1b, do problem 2 [due 8/xx] 
 
 
 
