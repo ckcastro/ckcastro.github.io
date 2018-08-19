@@ -16,7 +16,7 @@ M/W/F 126 Clements Hall
 
 * Syllabus
 
-* <a href="reading.md">Reading</a>
+* <a href="reading.html">Reading</a>
 
 
 ### Important dates:
