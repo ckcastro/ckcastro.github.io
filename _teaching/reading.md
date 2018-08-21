@@ -30,7 +30,7 @@ warm-up 1a, do problem 6 [due 8/22]
 
 <b> Section 10.2:</b>
 read pp. 542-549 
-warm-up 1b, do problem 2 [due 8/xx] 
+warm-up 1b, do problem 2 [due 8/24] 
 
 <b>Section 10.3:</b>
 read pp. 551-555 
