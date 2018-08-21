@@ -26,7 +26,7 @@ For warm-up problems:
 
 <b> Section 10.1:</b>
 read pp. 537-541 
-warm-up 1a, do problem 6 [due 8/xx] 
+warm-up 1a, do problem 6 [due 8/22] 
 
 <b> Section 10.2:</b>
 read pp. 542-549 
