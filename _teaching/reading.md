@@ -34,7 +34,7 @@ warm-up 1b, do problem 2 [due 8/24]
 
 <b>Section 10.3:</b>
 read pp. 551-555 
-warm-up 2, do problem 1 [due 8/xx]
+warm-up 2, do problem 1 [due 8/27]
 
 <b>Section 10.4: </b>
 read pp. 558-564 
