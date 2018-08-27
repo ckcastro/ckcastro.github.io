@@ -38,23 +38,23 @@ warm-up 2, do problem 1 [due 8/27]
 
 <b>Section 10.4: </b>
 read pp. 558-564 
-warm-up 3, do problem 8 [due 8/xx] 
+warm-up 3, do problem 8 [due 8/29] 
 
 <b>Section 10.5: </b>
 read pp. 566-572 
-warm-up 4, do problem 2 [due 8/xx]
+warm-up 4, do problem 2 [due 8/31]
  
 <b>Section 10.6:</b>
 read pp. 574-579 
-warm-up 5, do problem 1 [due 9/xx] 
+warm-up 5, do problem 1 [due 9/05] 
 
 <b>Section 10.7:</b>
 read pp. 580-588 
-warm-up 6, do problem 3 [due 9/xx] 
+warm-up 6, do problem 3 [due 9/07] 
 
 <b>Section 10.8: </b>
 read pp. 591-593 
-warm-up 7, do problem 1 [due 9/xx] 
+warm-up 7, do problem 1 [due 9/10] 
 
 ### Chapter 11 – Partial Derivatives
 
