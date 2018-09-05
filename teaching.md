@@ -30,6 +30,10 @@ M/W/F 126 Clements Hall
 
 * Aug 20 – First day of class
 
+* Sep 28 - Exam 1 
+
+* Oct 26 - Exam 2 
+
 * (9am section) Dec 8 – Final Exam (8am)
 
 * (1pm section) Dec 7 – Final Exam (11:30am)
