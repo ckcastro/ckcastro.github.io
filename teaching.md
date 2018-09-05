@@ -34,13 +34,13 @@ M/W/F 126 Clements Hall
 
 * Oct 26 - Exam 2 
 
-* (9am section) Dec 8 – Final Exam (8am)
+* (9 am section) Dec 8 – Final Exam (8 am)
 
-* (1pm section) Dec 7 – Final Exam (11:30am)
+* (1 pm section) Dec 7 – Final Exam (11:30 am)
 
 ### News:
 
-Coming soon
+Tuesday office hours moved to Clements Hall Room 225 4:30 pm - 6:30 pm
 
 
 
