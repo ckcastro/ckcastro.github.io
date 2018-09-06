@@ -22,9 +22,10 @@ on the following schedule:
 
 
 #### Homework 1 (due 8/31)
-* <a href="/assets/homework1.pdf">Homework 1</a>
+<a href="/assets/homework1.pdf">Homework 1</a>
 
 #### Homework 2 (due 9/12)
+<a href="/assets/homework2.pdf">Homework 2</a>
 
 
 
