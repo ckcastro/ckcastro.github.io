@@ -21,11 +21,10 @@ on the following schedule:
 * over 72 hours – no credit
 
 
-#### Homework 1 (due 8/31)
-<a href="/assets/homework1.pdf">Homework 1</a>
 
-#### Homework 2 (due 9/12)
-<a href="/assets/homework2.pdf">Homework 2</a>
+<a href="/assets/homework1.pdf">Homework 1</a> (due 8/31)
+
+<a href="/assets/homework2.pdf">Homework 2</a> (due 9/12)
 
 
 
