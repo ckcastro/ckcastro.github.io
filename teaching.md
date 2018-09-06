@@ -17,10 +17,10 @@ M/W/F 126 Clements Hall
 * <a href="/assets/math3302_syll.pdf">Syllabus</a>
 
 <ul>
-  {% for reading in site.teaching %}
+  {% for page in site.teaching %}
     <li>
-      <a href="{{ reading.url }}">{{ reading.title }}</a>
-       {{ reading.headline }}
+      <a href="{{ page.url }}">{{ page.title }}</a>
+       {{ page.headline }}
     </li>
   {% endfor %}
 </ul>

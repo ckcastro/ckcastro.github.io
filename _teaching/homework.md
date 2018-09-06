@@ -7,7 +7,7 @@ tags: [homework]
 ---
 
 
-As described in the syllabus,  These assignments will be due by 5:00 pm on the specified due date. These may be
+These assignments will be due by 5:00 pm on the specified due date. These may be
 turned in during class or brought to my office. All homework problems must be done on your own. Late homework
 must be scanned to a single PDF file and turned in by email to the professor. Late homework will lose points based
 on the following schedule:
