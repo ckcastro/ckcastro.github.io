@@ -7,10 +7,11 @@ tags: [resources]
 ---
 
 
+Visualizations for Section 10.6 Cylinders and Quadric Surfaces
 
-http://demonstrations.wolfram.com/CrossSectionsOfQuadraticSurface
+* [Wolfrma demonstrations](http://demonstrations.wolfram.com/CrossSectionsOfQuadraticSurfaces)
 
-<a href="/assets/quadric_surfaces_chart.pdf">Quadric surfaces chart </a> 
+* <a href="/assets/quadric_surfaces_chart.pdf">Quadric surfaces chart </a> 
 
 
 
