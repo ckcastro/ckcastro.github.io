@@ -7,9 +7,9 @@ tags: [resources]
 ---
 
 
-Textbook and Web pages:
+### Textbook and Web pages:
 
-James Stewart, Essential Calculus: Early Transcendentals, Brooks Cole, 2nd edition, 2012. (ISBN: 9781133112280).
+James Stewart, Essential Calculus: Early Transcendentals, Brooks Cole, 2nd edition, 2012. [(ISBN: 9781133112280)](https://isbnsearch.org/isbn/9781133112280).
 
 * [Textbook page of student resources](https://www.stewartcalculus.com/media/13_home.php)
 * [MIT OpenCourseWare page](https://ocw.mit.edu/courses/mathematics/18-02-multivariable-calculus-fall-2007/) (free online Calculus 3 video lectures – uses a different book)
@@ -17,7 +17,7 @@ James Stewart, Essential Calculus: Early Transcendentals, Brooks Cole, 2nd editi
 * [Calculus.org](http://www.calculus.org/) (general resources and links to lots of helpful sites)
 
 
-Visualizations for Section 10.6 Cylinders and Quadric Surfaces:
+### Visualizations for Section 10.6 Cylinders and Quadric Surfaces:
 
 * [Wolfram demonstrations](http://demonstrations.wolfram.com/CrossSectionsOfQuadraticSurfaces)
 
