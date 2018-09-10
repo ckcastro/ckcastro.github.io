@@ -60,31 +60,31 @@ warm-up 7, do problem 1 [due 9/10]
 
 <b>Section 11.1:</b>
 read pp. 615-622 
-warm-up 8, do problem 1 [due 9/xx] 
+warm-up 8, do problem 1 [due 9/12] 
 
 <b>Section 11.3:</b> 
 read pp. 633-638 
-warm-up 9, do problem 1 [due 9/xx] 
+warm-up 9, do problem 1 [due 9/14] 
 
 <b>Section 11.4:</b>
 read pp. 641-645 
-warm-up 10, do problem 1 [due 9/xx] 
+warm-up 10, do problem 1 [due 9/17] 
 
 <b>Section 11.5:</b>
 read pp. 649-655 
-warm-up 11, do problem 1 [due 9/xx] 
+warm-up 11, do problem 1 [due 9/19] 
 
 <b>Section 11.6:</b>
 read pp. 658-666 
-warm-up 12, do problem 3 [due 9/xx] 
+warm-up 12, do problem 3 [due 9/21] 
 
 <b>Section 11.7:</b>
 read pp. 669-675 
-warm-up 13, do problem 3 (omit graphs) [due 9/xx] 
+warm-up 13, do problem 3 (omit graphs) [due 9/24] 
 
 <b>Section 11.8:</b> 
 read pp. 677-682 
-warm-up 14, do problem 1 [due 9/xx]
+warm-up 14, do problem 1 [due 9/26]
 
 ### Chapter 12 – Multiple Integrals
 
