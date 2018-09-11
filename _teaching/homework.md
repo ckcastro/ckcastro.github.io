@@ -28,6 +28,8 @@ on the following schedule:
 
 <a href="/assets/homework2.pdf">Homework 2</a> (due 9/12)
 
+<a href="/assets/homework3.pdf">Homework 3</a> (due 9/19)
+
 
 
 
