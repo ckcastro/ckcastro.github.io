@@ -25,11 +25,11 @@ James Stewart, Essential Calculus: Early Transcendentals, Brooks Cole, 2nd editi
 
 ### Summary of polar, cylindrical and spherical coordinates:
 
-* <a href="/assets/polar_cylindrical_spherical_cheat_sheet.pdf">Polar, cylindrical, and spherical cheat sheet</a> 
+* <a href="/assets/polar_cylindrical_spherical_cheat_sheet.pdf">Polar, cylindrical and spherical cheat sheet</a> 
 
 ### Trigonometric identities:
 
-* <a href="/assets/trig_cheat_sheet.pdf">Trig cheat sheet</a
+* <a href="/assets/trig_cheat_sheet.pdf">Trig cheat sheet</a>
 
 
 
