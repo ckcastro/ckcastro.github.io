@@ -17,7 +17,7 @@ During the regularly-scheduled exam period (Sat. Dec. 8th 2018, 8:00 AM-11:00 AM
 Make up for tests will be given only under extreme circumstances. You must notify me immediately if you are not able to take a test at the scheduled time.
 
  
-#### Practice Exam 1:
+#### Practice Exams:
 
 * <a href="/assets/practice_exam1.pdf">Practice Exam 1</a>
 
