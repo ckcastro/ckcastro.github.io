@@ -80,11 +80,11 @@ warm-up 12, do problem 3 [due 9/21]
 
 <b>Section 11.7:</b>
 read pp. 669-675 
-warm-up 13, do problem 3 (omit graphs) [due 9/24] 
+warm-up 13, do problem 3 (omit graphs) [due 10/1] 
 
 <b>Section 11.8:</b> 
 read pp. 677-682 
-warm-up 14, do problem 1 [due 9/26]
+warm-up 14, do problem 1 [due 10/3]
 
 ### Chapter 12 – Multiple Integrals
 
