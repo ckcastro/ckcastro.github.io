@@ -90,23 +90,23 @@ warm-up 14, do problem 1 [due 10/3]
 
 <b>Section 12.1:</b>
 read pp. 689-698 warm-up 15, 
-do problem 1 [due 10/xx] 
+do problem 1 [due 10/10] 
 
 <b>Section 12.2:</b> 
 read pp. 700-707 warm-up 16, 
-do problem 1 [due 10/xx] 
+do problem 1 [due 10/12] 
 
 <b>Section 12.3:</b> 
 read pp. 709-713 warm-up 17, 
-do problems 1-4 [due 10/xx] 
+do problems 1-4 [due 10/15] 
 
 <b>Section 12.4:</b> 
 read pp. 715-719 warm-up 18, 
-do problem 3 [due 10/xx] 
+do problem 3 [due 10/17] 
 
 <b>Section 12.5:</b> 
 read pp. 720-728 warm-up 19, 
-do problem 1 [due 10/xx] 
+do problem 1 [due 10/19] 
 
 <b>Section 12.6:</b> 
 read pp. 731-734 warm-up 20, 
