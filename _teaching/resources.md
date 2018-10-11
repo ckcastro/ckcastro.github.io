@@ -31,6 +31,15 @@ James Stewart, Essential Calculus: Early Transcendentals, Brooks Cole, 2nd editi
 
 * <a href="/assets/trig_cheat_sheet.pdf">Trig cheat sheet</a>
 
+### Section 11.7 More notes on max and mins
+
+* <a href="/assets/11_7_appendix.pdf">Appendix</a> 
+
+### Mathematica examples
+
+* [Mathematica notebook on Wolfram Cloud](https://www.wolframcloud.com/objects/a33f0437-2a6d-4774-b926-0e19a5e4088f)
+
+* [Install Mathematica on your device for free at SMU](https://www.smu.edu/OIT/Services/Info/Mathematica)
 
 
 
