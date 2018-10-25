@@ -120,39 +120,39 @@ do problems 5-6 [due 11/02]
 
 <b>Section 13.1:</b> 
 read pp. 755-759 warm-up 22,
-do problem 1 [due 11/XX] 
+do problem 1 [due 11/07] 
 
 <b>Section 13.2:</b>
 read pp. 761-770 warm-up 23, 
-do problem 1 [due 11/xx] 
+do problem 1 [due 11/09] 
 
 <b>Section 13.3:</b>
 read pp. 773-780 warm-up 24, 
-do problem 3 [due 11/xx] 
+do problem 3 [due 11/12] 
 
 <b>Section 13.4:</b> 
 read pp. 782-787 warm-up 25, 
-do problem 1 [due 11/xx] 
+do problem 1 [due 11/14] 
 
 <b>Section 13.5:</b> 
 read pp. 789-795 warm-up 26, 
-do problem 1 [due 11/xx] 
+do problem 1 [due 11/16] 
 
 <b>Section 13.6:</b> 
 read pp. 797-804 warm-up 27, 
-do problems 11-14 [due 11/xx] 
+do problems 11-14 [due 11/19] 
 
 <b>Section 13.7:</b> 
 read pp. 807-816 warm-up 28, 
-do problem 1 [due 11/xx] 
+do problem 1 [due 11/26] 
 
 <b>Section 13.8:</b>
 read pp. 818-822 warm-up 29, 
-do problem 1 [due 11/xx] 
+do problem 1 [due 11/28] 
 
 <b>Section 13.9:</b> 
 read pp. 823-828 warm-up 30,
-do problem 1 [due 11/xx]
+do problem 1 [due 11/30]
 
 
 
