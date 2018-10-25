@@ -110,29 +110,29 @@ do problem 1 [due 10/19]
 
 <b>Section 12.6:</b> 
 read pp. 731-734 warm-up 20, 
-do problems 5-6 [due 10/29] 
+do problems 5-6 [due 10/31] 
 
 <b>Section 12.7:</b> 
 read pp. 735-739 warm-up 21, 
-do problems 5-6 [due 10/31]
+do problems 5-6 [due 11/02]
 
 ### Chapter 13 – Vector Calculus
 
 <b>Section 13.1:</b> 
 read pp. 755-759 warm-up 22,
-do problem 1 [due 11/2] 
+do problem 1 [due 11/XX] 
 
 <b>Section 13.2:</b>
 read pp. 761-770 warm-up 23, 
-do problem 1 [due 10/xx] 
+do problem 1 [due 11/xx] 
 
 <b>Section 13.3:</b>
 read pp. 773-780 warm-up 24, 
-do problem 3 [due 10/xx] 
+do problem 3 [due 11/xx] 
 
 <b>Section 13.4:</b> 
 read pp. 782-787 warm-up 25, 
-do problem 1 [due 10/xx] 
+do problem 1 [due 11/xx] 
 
 <b>Section 13.5:</b> 
 read pp. 789-795 warm-up 26, 
