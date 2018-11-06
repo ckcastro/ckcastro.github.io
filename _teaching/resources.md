@@ -37,9 +37,14 @@ James Stewart, Essential Calculus: Early Transcendentals, Brooks Cole, 2nd editi
 
 ### Mathematica examples
 
-* [Mathematica notebook on Wolfram Cloud](https://www.wolframcloud.com/objects/42fe9eba-b822-4a12-934a-9784eb83b39a)
+* [Mathematica notebook on Wolfram Cloud](https://www.wolframcloud.com/objects/820facdf-7cb0-4c84-9850-447684a9471d)
 
 * [Install Mathematica on your device for free at SMU](https://www.smu.edu/OIT/Services/Info/Mathematica)
+
+### Section 13.1 Visualization of global weather conditions
+
+* [An animated map of global weather conditions](https://earth.nullschool.net/about.html)
+
 
 
 
