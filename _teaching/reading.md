@@ -140,19 +140,19 @@ do problem 1 [due 11/16]
 
 <b>Section 13.6:</b> 
 read pp. 797-804 warm-up 27, 
-do problems 11-14 [due 11/19] 
+do problems 11-14 [due 11/26] 
 
 <b>Section 13.7:</b> 
 read pp. 807-816 warm-up 28, 
-do problem 1 [due 11/26] 
+do problem 1 [due 11/28] 
 
 <b>Section 13.8:</b>
 read pp. 818-822 warm-up 29, 
-do problem 1 [due 11/28] 
+do problem 1 [due 11/30] 
 
 <b>Section 13.9:</b> 
 read pp. 823-828 warm-up 30,
-do problem 1 [due 11/30]
+do problem 1 [due 12/03]
 
 
 
