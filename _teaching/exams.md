@@ -23,6 +23,8 @@ Make up for tests will be given only under extreme circumstances. You must notif
 
 * <a href="/assets/practice_exam2.pdf">Practice Exam 2</a>
 
+* <a href="/assets/practice_exam3.pdf">Practice Exam 3</a>
+
 
 
 
