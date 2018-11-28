@@ -37,7 +37,7 @@ James Stewart, Essential Calculus: Early Transcendentals, Brooks Cole, 2nd editi
 
 ### Mathematica examples
 
-* [Mathematica notebook on Wolfram Cloud](https://www.wolframcloud.com/objects/820facdf-7cb0-4c84-9850-447684a9471d)
+* [Mathematica notebook on Wolfram Cloud](https://www.wolframcloud.com/objects/5b5c7e40-5f11-4f98-8952-4a5dc6b2d5bb)
 
 * [Install Mathematica on your device for free at SMU](https://www.smu.edu/OIT/Services/Info/Mathematica)
 
