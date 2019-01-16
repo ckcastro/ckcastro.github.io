@@ -15,7 +15,7 @@ M/W   2:30-3:45 PM DMSC 104
 
 * <a href="/assets/math3302_syll.pdf">Syllabus</a>
 
-* Online Homework Software: [WebAssign](www.webassign.net)
+* Online Homework Software: [WebAssign](https://www.webassign.net/)
 
 
 ### Important dates:
