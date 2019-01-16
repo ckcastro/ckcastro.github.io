@@ -3,7 +3,7 @@ layout: post-no-feature
 permalink: /math3302/index.html
 title: Math 3302 Fall 2018 SMU
 description: 
-tags: [exams]
+tags: [math3302s19]
 ---
 
 

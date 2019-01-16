@@ -10,14 +10,6 @@ tags: [teaching]
 ### Course pages:
 
 * <a href="/assets/math3302_syll.pdf">Syllabus</a>
-<ul>
-  {% for page in site.teaching %}
-    <li>
-      <a href="{{ page.url }}">{{ page.title }}</a>
-       {{ page.headline }}
-    </li>
-  {% endfor %}
-</ul>
 
 
 ### Important dates:
@@ -35,7 +27,14 @@ tags: [teaching]
 Office hours 
 
 ### Past teaching
-
+<ul>
+  {% for page in site.teaching %}
+    <li>
+      <a href="{{ page.url }}">{{ page.title }}</a>
+       {{ page.headline }}
+    </li>
+  {% endfor %}
+</ul>
 
 
 
