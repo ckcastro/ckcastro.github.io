@@ -15,7 +15,9 @@ tags: [cv,bio]
 
 ### Positions
 
-* August 2018-present: Adjunct Lecturer, Southern Methodist University
+* Jan 2019-present: Teaching Postdoc, University of Nevada, Reno
+
+* August 2018-December 2018: Adjunct Lecturer, Southern Methodist University
 
 * September 2017-August 2018: Postdoctoral Research Fellow, University of Texas at Austin
 
