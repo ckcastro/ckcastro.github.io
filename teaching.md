@@ -28,7 +28,7 @@ Office hours
 
 ### Past teaching
 
-<a href="/math3302f18_smu.md">Math 3302 at SMU</a>
+<a href="/math3302f18.md">Math 3302 at SMU</a>
 
 
 
