@@ -8,7 +8,7 @@ tags: [teaching]
 
 ### Lectures: 
 
-M/W/F 10-10:50 AM DMSC 103
+M/W/F 10-10:50 AM DMSC 103 <br />
 M/W   2:30-3:45 PM DMSC 104
 
 ### Course pages:
