@@ -1,15 +1,10 @@
 ---
 layout: page
 permalink: /teaching/index.html
-title: Math 3302 Fall 2018
+title: Math 182 Spring 2019
 description: 
 tags: [teaching]
 ---
-
-
-### Lectures: 
-
-M/W/F 126 Clements Hall
 
 
 ### Course pages:
@@ -27,19 +22,20 @@ M/W/F 126 Clements Hall
 
 ### Important dates:
 
-* Aug 20 – First day of class
+* Jan 22 – First day of class
 
-* Sep 28 - Exam 1 
+* Feb - Exam 1 
 
-* Oct 26 - Exam 2 
+* Mar - Exam 2 
 
-* (9 am section) Dec 8 – Final Exam (8 am)
-
-* (1 pm section) Dec 7 – Final Exam (11:30 am)
+* Apr - Exam 3
 
 ### News:
 
-Tuesday office hours moved to Clements Hall Room 225 4:30 pm - 6:30 pm
+Office hours 
+
+### Past teaching
+
 
 
 
