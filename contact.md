@@ -13,7 +13,6 @@ Univeristy of Nevada, Reno <br />
 MM 306 <br />
 Reno, NV 89557 <br />
 
-#Phone:
 
 Email: ccastrocastro (at) unr (dot) edu
 
