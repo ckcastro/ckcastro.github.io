@@ -27,14 +27,8 @@ tags: [teaching]
 Office hours 
 
 ### Past teaching
-<ul>
-  {% for page in site.teaching %}
-    <li>
-      <a href="{{ page.url }}">{{ page.title }}</a>
-       {{ page.headline }}
-    </li>
-  {% endfor %}
-</ul>
+
+* <a href="/_teaching/math3302f18_smu.md">Math 3302 at SMU</a>
 
 
 
