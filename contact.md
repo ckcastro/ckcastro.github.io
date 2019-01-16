@@ -8,13 +8,14 @@ tags: [cv,bio]
 
 Claudia Castro-Castro
 
-Southern Methodist University  <br />
-Hyer Hall, Room G21A  <br />
-Dallas, TX 75205, USA <br />
+Univeristy of Nevada, Reno <br />
+1664 N. Virginia Street <br />
+MM 306 <br />
+Reno, NV 89557 <br />
 
-Phone: 214-768-1131
+#Phone:
 
-Email: ccastrocastr (at) smu (dot) edu
+Email: ccastrocastro (at) unr (dot) edu
 
 
 
