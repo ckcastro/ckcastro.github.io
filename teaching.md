@@ -6,10 +6,16 @@ description:
 tags: [teaching]
 ---
 
+### Lectures: 
+
+M/W/F 10-10:50 AM DMSC 103
+M/W   2:30-3:45 PM DMSC 104
 
 ### Course pages:
 
 * <a href="/assets/math3302_syll.pdf">Syllabus</a>
+
+Course announcements, official assignments, work due dates, work submissions, grades, discussion: [www.webassign.net](www.webassign.net)
 
 
 ### Important dates:
