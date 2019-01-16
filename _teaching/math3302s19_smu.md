@@ -1,7 +1,7 @@
 ---
 layout: post-no-feature
 permalink: /math3302/index.html
-title: Math 3302 Fall 2018 SMU
+title: Math 3302 Fall 2018 at SMU
 description: 
 tags: [math3302s19]
 ---
@@ -16,7 +16,7 @@ M/W/F 126 Clements Hall
 
 * <a href="/assets/math3302_syll.pdf">Syllabus</a>
 <ul>
-  {% for page in site.teaching %}
+  {% for page in site.teaching.math3302f18 %}
     <li>
       <a href="{{ page.url }}">{{ page.title }}</a>
        {{ page.headline }}
