@@ -13,7 +13,7 @@ M/W   2:30-3:45 PM DMSC 104
 
 ### Course pages:
 
-* <a href="/assets/math3302_syll.pdf">Syllabus</a>
+* <a href="/assets/M182-1004-S19 Syllabus And Course Schedule.pdf">Syllabus</a>
 
 * Online Homework Software: [WebAssign](https://www.webassign.net/)
 
@@ -34,7 +34,7 @@ Office hours
 
 ### Past teaching
 
-<a href="/math3302f18.md">Math 3302 at SMU</a>
+<a href="/math3302f18.md">Math 3302 at SMU (temporary unavailable)</a>
 
 
 
