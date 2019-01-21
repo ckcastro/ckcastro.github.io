@@ -15,6 +15,8 @@ M/W   2:30-3:45 PM DMSC 104
 
 * <a href="/assets/math182_1004_S19_syll.pdf">Syllabus (1004)</a>
 
+* <a href="/assets/math182_1006_S19_syll.pdf">Syllabus (1006)</a>
+
 * Online Homework Software: [WebAssign](https://www.webassign.net/)
 
 
@@ -22,11 +24,6 @@ M/W   2:30-3:45 PM DMSC 104
 
 * Jan 22 – First day of class
 
-* Feb - Exam 1 
-
-* Mar - Exam 2 
-
-* Apr - Exam 3
 
 ### News:
 
