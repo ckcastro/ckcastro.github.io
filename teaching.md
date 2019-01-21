@@ -13,7 +13,7 @@ M/W   2:30-3:45 PM DMSC 104
 
 ### Course pages:
 
-* <a href="/assets/M182-1004-S19 Syllabus And Course Schedule.pdf">Syllabus</a>
+* <a href="/assets/math182_1004_S19_syll.pdf">Syllabus (1004)</a>
 
 * Online Homework Software: [WebAssign](https://www.webassign.net/)
 
