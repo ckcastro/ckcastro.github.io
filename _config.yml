@@ -44,6 +44,10 @@ links:
 collections:
   teaching:
     output: true
+    
+collections:
+  math3302f18:
+    output: true    
 
 defaults:
   - scope:
