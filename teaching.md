@@ -36,7 +36,7 @@ M/W   2:30-3:45 PM DMSC 104
  
 * Final (1006) - May 15, 2019
 
-
+ <a href="{{ site.teaching[1].url }}">{{ site.teaching[1].title }}</a> {{ site.teaching[1].headline }}
 
 ### News:
 
