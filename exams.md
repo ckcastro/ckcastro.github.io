@@ -8,10 +8,6 @@ tags: [exams]
 
 There will be three midterm in class exams plus a comprehensive final exam on the last day in the lecture room. These will be given on the dates indicated on the class schedule. All exams will include multiple choice questions. You must bring a picture ID and a Scantron form 882-E for all of your exams.
 
-
- 
-
-
 * <a href="/assets/math182/math182_studyguide1.pdf"> Study Guide for Exam #1</a>
 
 
