@@ -24,6 +24,10 @@ M/W   2:30-3:45 PM DMSC 104
 
 * Jan 22 – First day of class
 
+* Final (1004) - May 10, 2019
+ 
+* Final (1006) - May 15, 2019
+
 
 ### News:
 
