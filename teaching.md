@@ -18,6 +18,14 @@ M/W   2:30-3:45 PM DMSC 104
 * <a href="/assets/math182_1006_S19_syll.pdf">Syllabus (1006)</a>
 
 * Online Homework Software: [WebAssign](https://www.webassign.net/)
+<ul>
+  {% for page in site.teaching %}
+    <li>
+      <a href="{{ page.url }}">{{ page.title }}</a>
+       {{ page.headline }}
+    </li>
+  {% endfor %}
+</ul>
 
 
 ### Important dates:
@@ -27,14 +35,7 @@ M/W   2:30-3:45 PM DMSC 104
 * Final (1004) - May 10, 2019
  
 * Final (1006) - May 15, 2019
-<ul>
-  {% for page in site.teaching %}
-    <li>
-      <a href="{{ page.url }}">{{ page.title }}</a>
-       {{ page.headline }}
-    </li>
-  {% endfor %}
-</ul>
+
 
 
 ### News:
