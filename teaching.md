@@ -18,15 +18,10 @@ M/W   2:30-3:45 PM DMSC 104
 * <a href="/assets/math182_1006_S19_syll.pdf">Syllabus (1006)</a>
 
 * Online Homework Software: [WebAssign](https://www.webassign.net/)
-<ul>
-  {% for page in site.teaching %}
-    <li>
-      <a href="{{ page.url }}">{{ page.title }}</a>
-       {{ page.headline }}
-    </li>
-  {% endfor %}
-</ul>
 
+* <a href="/math182/exams/index.html">Exams</a>
+
+* <a href="/math182/resources/index.html">Resources</a>
 
 ### Important dates:
 
@@ -36,15 +31,14 @@ M/W   2:30-3:45 PM DMSC 104
  
 * Final (1006) - May 15, 2019
 
- <a href="{{ site.teaching[1].url }}">{{ site.teaching[1].title }}</a> {{ site.teaching[1].headline }}
-
 ### News:
 
 Office hours: MW 4-5:30 PM. F 1-3 PM
 
 ### Past teaching
 
-<a href="/math3302f18.md">Math 3302 at SMU (temporary unavailable)</a>
+<a href="/math3302/index.html">Math 3302 at SMU</a>
+
 
 
 

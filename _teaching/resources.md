@@ -1,5 +1,5 @@
 ---
-layout: post-no-feature
+layout: page
 permalink: /math182/resources/index.html
 title: Resources
 description: 
