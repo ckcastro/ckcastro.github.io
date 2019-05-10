@@ -14,5 +14,9 @@ There will be three midterm in class exams plus a comprehensive final exam on th
 
 * <a href="/assets/math182/math182_studyguide3.pdf"> Study Guide for Exam #3</a>
 
+* <a href="/assets/math182/Math 182 - Study Guide for the Final Exam.pdf"> Study Guide for the  Final Exam </a>
+
+
+
 
 
