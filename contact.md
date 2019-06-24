@@ -10,10 +10,8 @@ Claudia Castro-Castro
 
 Univeristy of Nevada, Reno <br />
 1664 N. Virginia Street <br />
-MM 306 <br />
+DMSC 326 <br />
 Reno, NV 89557 <br />
-<br />
-Phone: (W) 775 682 8934 <br />
 <br />
 Email: ccastrocastro (at) unr (dot) edu
 

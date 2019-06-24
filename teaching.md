@@ -33,7 +33,7 @@ M/W   2:30-3:45 PM DMSC 104
 
 ### News:
 
-Office hours: MW 4-5:30 PM. F 1-3 PM
+Moved to DMSC 326
 
 ### Past teaching
 
