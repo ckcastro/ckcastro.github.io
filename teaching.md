@@ -20,7 +20,7 @@ Ansari Business Building Room 634
 
 * Online Homework Software: [WebAssign](https://www.webassign.net/)
 
-* Exams
+* <a href="/teaching/math283f19/exams/index.html">Exams</a>
 
 * Resources
 
