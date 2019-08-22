@@ -1,6 +1,6 @@
 ---
 layout: post-no-feature
-permalink: /math3302/resources/index.html
+permalink: teaching/math3302f18/resources/index.html
 title: Resources
 description: 
 tags: [resources]

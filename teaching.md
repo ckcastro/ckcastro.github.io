@@ -1,43 +1,42 @@
 ---
 layout: page
-permalink: /teaching/index.html
-title: Math 182 Spring 2019
+permalink: /teaching/math283f2019/index.html
+title: Math 283 Fall 2019
 description: 
 tags: [teaching]
 ---
 
 ### Lectures: 
 
-M/W/F 10-10:50 AM DMSC 103 <br />
-M/W   2:30-3:45 PM DMSC 104
+M/W 10-10:50 AM AB 634 <br />
+Tu/Th   9:30-10:20 AM AB 634
 
 ### Course pages:
 
-* <a href="/assets/math182_1004_S19_syll.pdf">Syllabus (1004)</a>
+* Syllabus (1002)
 
-* <a href="/assets/math182_1006_S19_syll.pdf">Syllabus (1006)</a>
+* Syllabus (1003)
 
 * Online Homework Software: [WebAssign](https://www.webassign.net/)
 
-* <a href="/math182/exams/index.html">Exams</a>
+* Exams
 
-* <a href="/math182/resources/index.html">Resources</a>
+* Resources
 
 ### Important dates:
 
-* Jan 22 – First day of class
+* Aug 26 – First day of class
 
-* Final (1004) - May 10, 2019
+* Final (1002) 
  
-* Final (1006) - May 15, 2019
+* Final (1003) 
 
 ### News:
 
-Moved to DMSC 326
 
 ### Past teaching
 
-<a href="/math3302/index.html">Math 3302 at SMU</a>
+<a href="/math3302/index.html">Math 3302 Fall 2018 at SMU</a>
 
 
 

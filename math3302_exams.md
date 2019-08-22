@@ -1,6 +1,6 @@
 ---
 layout: post-no-feature
-permalink: /math3302/exams/index.html
+permalink: /teaching/math3302f18/exams/index.html
 title: Exams
 description: 
 tags: [exams]

@@ -1,6 +1,6 @@
 ---
 layout: post-no-feature
-permalink: /math3302/reading/index.html
+permalink: /teaching/math3302f18/reading/index.html
 title: Reading
 description: 
 tags: [reading]
