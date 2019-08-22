@@ -1,6 +1,6 @@
 ---
 layout: post-no-feature
-permalink: /teaching/math3302f18/homework/index.html
+permalink: /math3302f18/homework/index.html
 title: Homework
 description: 
 tags: [homework]
