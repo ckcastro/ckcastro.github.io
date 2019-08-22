@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /math283f2019/index.html
+permalink: /teaching/index.html
 title: Math 283 Fall 2019
 description: 
 tags: [teaching]
