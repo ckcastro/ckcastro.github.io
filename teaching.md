@@ -37,7 +37,7 @@ Ansari Business Building Room 634
 
 ### Past teaching
 
-<a href="/math182s19/index.html">Math 182 Spring 2019 at UNR</a>
+<a href="/_teaching/_math182s19/math182s19/index.html">Math 182 Spring 2019 at UNR</a>
 
 <a href="/math3302f18/index.html">Math 3302 Fall 2018 at SMU</a>
 
