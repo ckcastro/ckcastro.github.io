@@ -28,14 +28,16 @@ Ansari Business Building Room 634
 
 * Aug 26 – First day of class
 
-* Final (1002) 
+* Final (Section 1002) 
  
-* Final (1003) 
+* Final (Section 1003) 
 
 ### News:
 
 
 ### Past teaching
+
+<a href="/math182s19/index.html">Math 182 Spring 2019 at UNR</a>
 
 <a href="/math3302f18/index.html">Math 3302 Fall 2018 at SMU</a>
 
