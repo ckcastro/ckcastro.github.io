@@ -8,14 +8,15 @@ tags: [teaching]
 
 ### Lectures: 
 
-M/W 10-10:50 AM AB 634 <br />
-Tu/Th   9:30-10:20 AM AB 634
+M/W 10-10:50 AM, Tu/Th    9:30-10:20 AM <br /> 
+M/W 11-11:50 AM, Tu/Th   10:30-11:20 AM <br />
+Ansari Business Building Room 634
 
 ### Course pages:
 
-* Syllabus (1002)
+* Syllabus (Section 1002)
 
-* Syllabus (1003)
+* Syllabus (Section 1003)
 
 * Online Homework Software: [WebAssign](https://www.webassign.net/)
 
