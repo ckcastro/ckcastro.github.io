@@ -36,7 +36,7 @@ Tu/Th   9:30-10:20 AM AB 634
 
 ### Past teaching
 
-<a href="/math3302/index.html">Math 3302 Fall 2018 at SMU</a>
+<a href="/teaching/math3302f18/index.html">Math 3302 Fall 2018 at SMU</a>
 
 
 
