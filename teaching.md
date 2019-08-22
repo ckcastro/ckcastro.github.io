@@ -40,7 +40,7 @@ New office at DMSC 326
 
 <a href="/teaching/math182s19/index.html">Math 182 Spring 2019 at UNR</a>
 
-<a href="/math3302f18/index.html">Math 3302 Fall 2018 at SMU</a>
+<a href="/teaching/math3302f18/index.html">Math 3302 Fall 2018 at SMU</a>
 
 
 
