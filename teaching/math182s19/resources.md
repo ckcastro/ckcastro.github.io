@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /math182/resources/index.html
+permalink: /teaching/math182s19/resources/index.html
 title: Resources
 description: 
 tags: [resources]

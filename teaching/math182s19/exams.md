@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /_teaching/math_182/exams/index.html
+permalink: /teaching/math182s19/exams/index.html
 title: Exams
 description: 
 tags: [exams]
