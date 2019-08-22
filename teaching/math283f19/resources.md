@@ -9,7 +9,7 @@ tags: [resources]
 
 ### Textbook and Web pages:
 
-James Stewart, Essential Calculus: Early Transcendentals, Brooks Cole, 8th
+James Stewart, Essential Calculus: Early Transcendentals, Brooks Cole, 8th edition
 
 * [Textbook page of student resources](https://www.stewartcalculus.com/media/13_home.php)
 * [MIT OpenCourseWare page](https://ocw.mit.edu/courses/mathematics/18-02-multivariable-calculus-fall-2007/) (free online Calculus 3 video lectures – uses a different book)

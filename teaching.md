@@ -22,7 +22,7 @@ Ansari Business Building Room 634
 
 * <a href="/teaching/math283f19/exams/index.html">Exams</a>
 
-* Resources
+* <a href="/teaching/math283f19/resources/index.html">Resources</a>
 
 ### Important dates:
 

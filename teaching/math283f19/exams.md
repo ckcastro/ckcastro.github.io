@@ -7,7 +7,6 @@ tags: [exams]
 ---
 
 
-#### Exams:
 There will be three midterm in class exams plus a comprehensive final exam on the last day in the lecture room. These will be given on the dates indicated on the class schedule. 
  
 
