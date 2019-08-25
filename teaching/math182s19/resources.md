@@ -7,7 +7,7 @@ tags: [resources]
 ---
 
 
-### Textbook and Web pages:
+## Textbook and Web pages:
 
 James Stewart, Essential Calculus: Early Transcendentals, Brooks Cole, 2nd edition, 2012. [(ISBN: 9781133112280)](https://isbnsearch.org/isbn/9781133112280).
 
@@ -17,7 +17,7 @@ James Stewart, Essential Calculus: Early Transcendentals, Brooks Cole, 2nd editi
 * [Calculus.org](http://www.calculus.org/) (general resources and links to lots of helpful sites)
 
 
-### Trigonometric identities:
+## Trigonometric identities:
 
 * <a href="/assets/trig_cheat_sheet.pdf">Trig cheat sheet</a>
 

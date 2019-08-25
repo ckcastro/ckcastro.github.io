@@ -22,7 +22,7 @@ For warm-up problems:
 * You must turn these in yourself, on paper, at the beginning of class, on the assigned date.
 
 
-### Chapter 10 – Vectors and the Geometry of Space
+## Chapter 10 – Vectors and the Geometry of Space
 
 <b> Section 10.1:</b>
 read pp. 537-541 
@@ -56,7 +56,7 @@ warm-up 6, do problem 3 [due 9/07]
 read pp. 591-593 
 warm-up 7, do problem 1 [due 9/10] 
 
-### Chapter 11 – Partial Derivatives
+## Chapter 11 – Partial Derivatives
 
 <b>Section 11.1:</b>
 read pp. 615-622 
@@ -86,7 +86,7 @@ warm-up 13, do problem 3 (omit graphs) [due 10/1]
 read pp. 677-682 
 warm-up 14, do problem 1 [due 10/3]
 
-### Chapter 12 – Multiple Integrals
+## Chapter 12 – Multiple Integrals
 
 <b>Section 12.1:</b>
 read pp. 689-698 warm-up 15, 
@@ -116,7 +116,7 @@ do problems 5-6 [due 10/31]
 read pp. 735-739 warm-up 21, 
 do problems 5-6 [due 11/02]
 
-### Chapter 13 – Vector Calculus
+## Chapter 13 – Vector Calculus
 
 <b>Section 13.1:</b> 
 read pp. 755-759 warm-up 22,
