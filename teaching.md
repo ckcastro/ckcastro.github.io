@@ -6,13 +6,13 @@ description:
 tags: [teaching]
 ---
 
-### Lectures: 
+## Lectures: 
 
-M/W 10-10:50 AM, Tu/Th    9:30-10:20 AM <br /> 
-M/W 11-11:50 AM, Tu/Th   10:30-11:20 AM <br />
+Monday/Wednesday 10-10:50 AM, Tuesday/Thursday    9:30-10:20 AM <br /> 
+Monday/Wednesday 11-11:50 AM, Tuesday/Thursday   10:30-11:20 AM <br />
 Ansari Business Building Room 634
 
-### Course pages:
+## Course pages:
 
 * Syllabus (Section 1002)
 
@@ -24,7 +24,7 @@ Ansari Business Building Room 634
 
 * <a href="/teaching/math283f19/resources/index.html">Resources</a>
 
-### Important dates:
+## Important dates:
 
 * Aug 26 – First day of class
 
@@ -32,11 +32,11 @@ Ansari Business Building Room 634
  
 * Final (Section 1003) 
 
-### News:
+## News:
 
 New office at DMSC 326
 
-### Past teaching
+## Past teaching
 
 <a href="/teaching/math182s19/index.html">Math 182 Spring 2019 at UNR</a>
 

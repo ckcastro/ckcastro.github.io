@@ -7,13 +7,13 @@ tags: [research]
 ---
 
 
-### Research Interests
+## Research Interests
 * Nonlinear wave phenomena
 * Nonlinearity and disorder in fiber arrays
 * Perturbation theory and asymptotics
 * Numerical methods applied to nonlinear optics and photonics
 
-### Publications
+## Publications
 
 C. Castro-Castro and A. B. Aceves, "Optical mode stability and dynamics in nonlinear twisted PT-symmetric structures”, American Institute of Physics, Conference Proceedings, 2017 [link](https://aip.scitation.org/doi/abs/10.1063/1.5007355).
 

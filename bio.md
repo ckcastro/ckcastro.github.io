@@ -7,13 +7,13 @@ tags: [cv,bio]
 ---
 
 
-### Education
+## Education
 
 * Ph. D. 2017, Applied and Computational Mathematics, Southern Methodist University [SMU](http://www.smu.edu/Dedman/academics/departments/math)
 
 * B. S. 2010, Applied Mathematics, Universidad Autonoma de Baja California [UABC](http://www.uabc.mx/)
 
-### Positions
+## Positions
 
 * Jan 2019-present: Teaching Postdoc, University of Nevada, Reno
 
