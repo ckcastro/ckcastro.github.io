@@ -7,7 +7,7 @@ tags: [resources]
 ---
 
 
-### Textbook and Web pages:
+## Textbook and Web pages:
 
 James Stewart, Essential Calculus: Early Transcendentals, Brooks Cole, 8th edition
 
@@ -17,10 +17,16 @@ James Stewart, Essential Calculus: Early Transcendentals, Brooks Cole, 8th editi
 * [Calculus.org](http://www.calculus.org/) (general resources and links to lots of helpful sites)
 
 
-### Trigonometric identities:
+## Trigonometric identities:
 
 * <a href="/assets/trig_cheat_sheet.pdf">Trig cheat sheet</a>
 
+
+
+
+## Wolfram Demonstrations
+
+* [Mathematica notebook on Wolfram Cloud](https://www.wolframcloud.com/obj/ccastrocastro/Published/math283.nb)
 
 
 
