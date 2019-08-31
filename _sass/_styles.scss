@@ -613,7 +613,8 @@ header.site-header nav {
 
 footer {
     width: 100%;
-    background: $black;
+    /*background: $black;*/
+    background: $grayada;
     height: $footerHeight;
     font-size: $fsp;
     color: $white;
