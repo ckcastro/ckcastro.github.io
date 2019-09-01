@@ -670,7 +670,7 @@ footer {
             }
             span.date {
                 float: none;
-                color: transparentize($grey-light, .4);
+                color: #003366; /* transparentize($grey-light, .4); */
                 @include column(4,12);
                 position: relative;
                 font-size: $fs5;
