@@ -23,28 +23,29 @@ on the following schedule:
 * over 72 hours – no credit
 
 
+Homework 1 (due 8/31)
 
-<a href="/teaching/math3302f18/homework1.pdf">Homework 1</a> (due 8/31)
+Homework 2 (due 9/12)
 
-<a href="/teaching/math3302f18/homework2.pdf">Homework 2</a> (due 9/12)
+Homework 3 (due 9/19)
 
-<a href="/teaching/math3302f18/homework3.pdf">Homework 3</a> (due 9/19)
+Homework 4 (due 9/26)
 
-<a href="/teaching/math3302f18/homework4.pdf">Homework 4</a> (due 9/26)
+Homework 5 (due 10/10)
 
-<a href="/teaching/math3302f18/homework5.pdf">Homework 5</a> (due 10/10)
+Homework 6 (due 10/17)
 
-<a href="/teaching/math3302f18/homework6.pdf">Homework 6</a> (due 10/17)
+Homework 7 (due 10/29)
 
-<a href="/teaching/math3302f18/homework7.pdf">Homework 7</a> (due 10/29)
+Homework 8 (due 11/7)
 
-<a href="/teaching/math3302f18/homework8.pdf">Homework 8</a> (due 11/7)
+Homework 9 (due 11/14)
 
-<a href="/teaching/math3302f18/homework9.pdf">Homework 9</a> (due 11/14)
+Homework 10 (due 11/19)
 
-<a href="/teaching/math3302f18/homework10.pdf">Homework 10</a> (due 11/19)
+Homework 11 (due 11/30) 
 
-<a href="/teaching/math3302f18/homework11.pdf">Homework 11</a> (due 11/30)
+
 
 
 

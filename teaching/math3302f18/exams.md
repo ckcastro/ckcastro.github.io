@@ -17,13 +17,7 @@ During the [regularly-scheduled exam period](https://www.smu.edu/EnrollmentServi
 Make up for tests will be given only under extreme circumstances. You must notify me immediately if you are not able to take a test at the scheduled time.
 
  
-## Practice Exams:
 
-* <a href="/assets/practice_exam1.pdf">Practice Exam 1</a>
-
-* <a href="/assets/practice_exam2.pdf">Practice Exam 2</a>
-
-* <a href="/assets/practice_exam3.pdf">Practice Exam 3</a>
 
 
 
