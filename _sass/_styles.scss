@@ -595,8 +595,8 @@ header.site-header nav {
         font-weight: bold;
         letter-spacing: 1px;
         padding: 4px 6px 4px 6px;
-        color: #63acbe; /* light blue*/
-        border: #63acbe;
+        color: #2a385b; /* light blue*/
+        border: 2px solid #2a385b;
         @include br(4px);
         &:hover {
             color: $link;
