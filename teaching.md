@@ -14,9 +14,9 @@ Ansari Business Building Room 634
 
 ## Course pages
 
-* Syllabus (Section 1002)
+* <a href="https://unr.canvaslms.com/courses/43992"> Syllabus (Section 1002)</a>
 
-* Syllabus (Section 1003)
+* <a href="https://unr.canvaslms.com/courses/43996"> Syllabus (Section 1003)</a>
 
 * Online Homework Software: [WebAssign](https://www.webassign.net/)
 
@@ -28,9 +28,9 @@ Ansari Business Building Room 634
 
 * Aug 26 – First day of class
 
-* Final (Section 1002) 
+* Final Friday Dec 13 (Section 1002) 
  
-* Final (Section 1003) 
+* Final Wednesday Dec 18 (Section 1003) 
 
 ## News
 
