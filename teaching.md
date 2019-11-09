@@ -27,16 +27,16 @@ Ansari Business Building Room 634
 
 ## Office hours 
 
-Mondays 1-3pm
+Mondays 1-3 pm
 Wednesdays 3-5 pm 
 
 ## Important dates
 
 * Aug 26 – First day of class
 
-* Final Friday Dec 13 (Section 1002) 
+* Final Exam: Friday Dec 13 (Section 1002) 
  
-* Final Wednesday Dec 18 (Section 1003) 
+* Final Exam: Wednesday Dec 18 (Section 1003) 
 
 
 ## News
