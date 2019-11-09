@@ -1,7 +1,7 @@
 ---
 layout: post-light-feature
 title: New Office
-description: DMSC 326 
+description: Davidson Math and Science Center 326
 date: 2019-11-08
 
 ---

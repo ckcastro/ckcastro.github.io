@@ -24,6 +24,12 @@ Ansari Business Building Room 634
 
 * <a href="/teaching/math283f19/resources/index.html">Resources</a>
 
+
+## Office hours 
+
+Mondays 1-3pm
+Wednesdays 3-5 pm 
+
 ## Important dates
 
 * Aug 26 – First day of class
@@ -31,6 +37,7 @@ Ansari Business Building Room 634
 * Final Friday Dec 13 (Section 1002) 
  
 * Final Wednesday Dec 18 (Section 1003) 
+
 
 ## News
 
