@@ -27,7 +27,8 @@ Ansari Business Building Room 634
 
 ## Office hours 
 
-Mondays 1-3 pm
+Mondays 1-3 pm <br /> 
+
 Wednesdays 3-5 pm 
 
 ## Important dates
