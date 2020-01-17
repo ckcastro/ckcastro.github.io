@@ -1,50 +1,46 @@
 ---
 layout: page
 permalink: /teaching/index.html
-title: Math 283 Fall 2019
+title: Math 283 Spring 2020
 description: 
 tags: [teaching]
 ---
 
 ## Lectures 
 
-Monday/Wednesday 10-10:50 AM, Tuesday/Thursday    9:30-10:20 AM <br /> 
-Monday/Wednesday 11-11:50 AM, Tuesday/Thursday   10:30-11:20 AM <br />
+Monday/Wednesday 1-1:50 PM, Tuesday/Thursday   1:30-2:20 PM <br /> 
+Monday/Wednesday 4-4:50 PM, Tuesday/Thursday   4:30-5:20 PM <br />
 Ansari Business Building Room 634
 
 ## Course pages
 
-* <a href="https://unr.canvaslms.com/courses/43992"> Syllabus (Section 1002)</a>
+* <a href="https://unr.canvaslms.com/courses/52144"> Syllabus (Section 1006)</a>
 
-* <a href="https://unr.canvaslms.com/courses/43996"> Syllabus (Section 1003)</a>
+* <a href="https://unr.canvaslms.com/courses/52149"> Syllabus (Section 1008)</a>
 
 * Online Homework Software: [WebAssign](https://www.webassign.net/)
 
-* <a href="/teaching/math283f19/exams/index.html">Exams</a>
+* <a href="/teaching/math283s20/exams/index.html">Exams</a>
 
-* <a href="/teaching/math283f19/resources/index.html">Resources</a>
+* <a href="/teaching/math283s20/resources/index.html">Resources</a>
 
 
 ## Office hours 
 
-Mondays 1-3 pm <br /> 
+Wednesdays 2:30-3:30 PM <br /> 
 
-Wednesdays 3-5 pm 
+Thursdays 2-3 PM 
 
 ## Important dates
 
-* Aug 26 – First day of class
+* First day of class: Jan 21 
 
-* Final Exam: Friday Dec 13 (Section 1002) 
- 
-* Final Exam: Wednesday Dec 18 (Section 1003) 
+* Final Exam: Monday May 11 
 
-
-## News
-
-New office at DMSC 326
 
 ## Past teaching
+
+<a href="/teaching/math283f19/index.html">Math 283 Fall 2019 at UNR</a>
 
 <a href="/teaching/math182s19/index.html">Math 182 Spring 2019 at UNR</a>
 
