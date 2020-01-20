@@ -40,7 +40,7 @@ Thursdays 2-3 PM
 
 ## Past teaching
 
-<a href="/teaching/math283f19/index.html">Math 283 Fall 2019 at UNR</a>
+<a href="/teaching/math283f19/math283f19/index.html">Math 283 Fall 2019 at UNR</a>
 
 <a href="/teaching/math182s19/index.html">Math 182 Spring 2019 at UNR</a>
 
