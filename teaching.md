@@ -29,7 +29,7 @@ Ansari Business Building Room 634
 
 Wednesdays 2:30-3:30 PM <br /> 
 
-Thursdays 2-3 PM 
+Thursdays 2:30-3:30 PM PM 
 
 ## Important dates
 
