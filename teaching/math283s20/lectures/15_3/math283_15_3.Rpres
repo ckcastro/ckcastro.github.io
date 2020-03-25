@@ -1,0 +1,791 @@
+<style>
+.section .reveal .state-background {
+   background: #ffffff;
+}
+
+.section .reveal h1,
+.section .reveal h2,
+.section .reveal p {
+   color: black;
+   margin-top: 50px;
+   text-align: center;
+}
+
+.footer {
+    color: black;
+    background: #E8E8E8;
+    position: fixed;
+    top: 90%;
+    text-align:center;
+    width:100%;
+} 
+
+</style>
+
+<!-- foo 
+Highlighting
+bold
+strong
+orange <b style="color:#d95f02"> text </b>
+green  <b style="color:#1b9e77"> text </b>
+purple <b style="color:#d24693"> text </b>
+red    <b style="color:#FF0000"> text </b>
+blue   <b style="color:#0000FF"> text </b>
+-->
+
+15.3 Double Integrals in Polar Coordinates
+========================================================
+title: "Math 283 Calculus 3"
+date: Math 283 Spring 2020
+author: Claudia Castro-Castro
+autosize: true
+incremental: true
+width: 1920
+height: 1080
+
+<h2 style="text-align:left"> Instructions:</h2>
+<p style='text-align:left'>Use the left and right arrow keys to navigate the presentation forward and backward respectively.  You can also use the arrows at the bottom right of the screen to navigate with a mouse.<br></p>
+
+<div class='footer'>
+    Copyright Disclaimer: material is for educational purposes only under fair use.
+</div>
+
+========================================================
+
+## Outline
+
+<div style="float:left; width:100%">
+<ul>
+<li>
+The following topics will be covered in this lecture:
+    <ul>
+      <li>Review of polar coordinates</li>
+      <li>Polar curves and polar coordinates</li>
+      <li>Area of a polar rectangle </li>
+      <li>Definition of a double integral over polar rectangles</li>
+      <li> Examples </li>
+    </ul>
+</li>
+</ul>
+</div>
+
+========================================================
+
+## Double Integrals in Polar coordinates
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li>
+What if we want to interate over a region which description in terms of rectangular coordinates is rather complicated 
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:40%" class="fragment">
+<img src="15_3_image1.png" style="width:100%" alt="Disk of radius 1"><div style="float:left; width:100%">
+</div>
+<p style="text-align:center"><small>
+Courtesy of James Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
+</small></p>
+</div>
+
+<div style="float:left; width:50%" class="fragment">
+<img src="15_3_image2.png" style="width:100%" alt="diagram of half ring"><div style="float:left; width:100%">
+</div>
+<p style="text-align:center"><small>
+Courtesy of James Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
+</small></p>
+</div>
+
+<div style="float:left; width:100%">
+<ul>
+<li>
+Some regions are easier to describe using other coordinate systems
+</li>
+</ul>
+</div>
+
+========================================================
+
+## Review of polar coordinates
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li>
+We have known that the polar coordinates $(r,\theta)$ of a point are related to the rectangular coordinates $(x, y)$ by the equations
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:40%" class="fragment">
+<img src="15_3_image3.png" style="width:100%" alt="Diagram of polar coordinates"><div style="float:left; width:100%">
+</div>
+<p style="text-align:center"><small>
+Courtesy of James Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
+</small></p>
+</div>
+
+<div style="float:left; width:60%">
+<ul style="list-style-type:none;">
+<li> The relashionship between  polar and rectangular coordinates is given by
+$$\cos \theta = \frac{x}{r}$$
+</li>
+<li>
+$$\sin \theta = \frac{y}{r}$$
+</li>
+<li>
+$$\tan \theta = \frac{y}{x}$$
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:60%">
+<ul style="list-style-type:none;">
+<li>
+<p style="border:3px; border-style:solid; border-color:#287EC7; padding: 1em;" class="fragment"> 
+Polar to rectangular $(r,\theta)\rightarrow (x,y)$ <br>
+$$x=r\cos \theta \\y=r\sin \theta$$ </p>
+</li>
+<li>
+<p style="border:3px; border-style:solid; border-color:#287EC7; padding: 1em;" class="fragment"> 
+Rectangular to polar $(x,y)\rightarrow (r,\theta)$ <br>
+$$r^2=x^2+y^2 \\
+\tan \theta = \frac{y}{x},\;\cos \theta = \frac{x}{r},\;\sin \theta = \frac{y}{r}$$ </p>
+</li>
+</ul>
+</div>
+
+
+========================================================
+
+## Polar plane
+
+
+<div style="float:left; width:45%" class="fragment">
+<img src="15_3_polarplane.png" style="width:100%" alt="Diagram of polar coordinates"><div style="float:left; width:100%">
+</div>
+</div>
+
+<div style="float:left; width:55%">
+<ul>
+<li>
+The origin correspondes to a point in the plane called <b>pole</b>
+</li>
+<li>
+The <b>polar axis</b>  is usually drawn horizontaly to the right and corresponds to the positive $x$ axis
+</li>
+<li>
+Angles $\theta$ are <em>positve</em> if measured in the counterclockwise direction from the polar axis and <em>negative</em> in the clockwise direction
+</li>
+<li>
+If $r$ is negative, the point $(-r,\theta)$ lies on the same line through the pole and $(r,\theta)$
+</li>
+</ul>
+</div>
+
+
+
+
+
+========================================================
+
+## Polar curves 
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li>
+Graphs of function that relate to $r$ and $\theta$
+</li>
+<li>
+<b>Example:</b> $r=3$
+</li>
+<li>
+Describes all points 3 units from the <b>pole</b> (or origin). <br>$\theta$ is free
+</li>
+<li>
+The curve $r=3$ describes a circle with center at the origin and radius 3.
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:40%; padding-left:30%" class="fragment">
+<img src="15_3_image4.png" style="width:100%" alt="Diagram of circle of radius 3"><div style="float:left; width:100%">
+</div>
+</div>
+
+
+========================================================
+
+## Polar curves cont'd
+
+<div style="float:left; width:90%">
+<ul style="list-style-type:none;">
+<li>
+<b>Example:</b> $\theta=\frac{\pi}{4}$
+</li>
+<li>
+Describes all points such that the line through them and the pole form an angle of $\frac{\pi}{4}$. <br>$r$ is free
+</li>
+<li>
+If $r<0$, it lies in the quadrant on the opposite side of the pole
+</li>
+<li>
+The curve $\theta=\frac{\pi}{4}$ describes a the straight line that makes an angle of $\frac{\pi}{4}$ with the polar axis.
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:30%; padding-left:30%" class="fragment">
+<img src="15_3_image5.png" style="width:100%" alt="Diagram of line in the polar plane"><div style="float:left; width:100%">
+</div>
+</div>
+
+
+<div style="float:left; width:90%">
+<ul style="list-style-type:none;">
+<li>
+More examples on the Wolfram Cloud Notebook
+</li>
+</ul>
+</div>
+
+========================================================
+
+## Polar regions 
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li>
+<b>Example:</b>
+$$D=\{(r,\theta)|\;1\leq r \leq 2,0 \leq \theta \leq 2\pi \}$$
+</li>
+<li>
+
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:40%; padding-left:30%" class="fragment">
+<img src="15_3_image6.png" style="width:100%" alt="Diagram of a ring-like region"><div style="float:left; width:100%">
+</div>
+</div>
+
+
+
+========================================================
+
+## Polar regions cont'd
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li>
+<b>Example:</b> $D=\{(r,\theta)|\;0\leq r \leq 2,\frac{\pi}{4} \leq \theta \leq \frac{7\pi}{4} \}$
+</li>
+<li>
+
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:40%; padding-left:30%" class="fragment">
+<img src="15_3_image8.png" style="width:100%" alt="Diagram of a ring-like region"><div style="float:left; width:100%">
+</div>
+</div>
+
+========================================================
+
+## Polar regions cont'd
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li>
+<b>Example:</b> 
+$$D=\{(r,\theta)|\;1\leq r \leq 2,0 \leq \theta \leq \frac{\pi}{3} \}$$
+</li>
+<li>
+
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:40%; padding-left:30%" class="fragment">
+<img src="15_3_image7.png" style="width:100%" alt="Diagram of wedge region"><div style="float:left; width:100%">
+</div>
+</div>
+
+========================================================
+
+## Polar Rectangles
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li>
+The region in the figure below is a polar rectangle
+</li>
+<li>
+$$R=\{ (r,\theta)|\: a\leq r \leq b, \; \alpha \leq \theta \leq \beta\}$$
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:30%; padding-left:20%" class="fragment">
+<img src="15_3_image9.png" style="width:100%" alt="Diagram of a ring-like region"><div style="float:left; width:100%">
+</div>
+<p style="text-align:center"><small>
+Courtesy of James Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
+</small></p>
+</div>
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li>
+How can we use polar representation to take advantage?
+</li>
+</ul>
+</div>
+
+========================================================
+
+## Double Integrals in Polar Coordinates
+
+<div style="float:left; width:60%">
+<ul>
+<li>
+Goal: compute the a double integral over a polar rectangle
+$$\iint_R f(x,y)dA=\iint_R f(r, \theta)dA_{polar}$$
+</li>
+<li>
+Back to basis: <b>Riemann sums</b>
+</li>
+<li>
+Divide the interval $[a, b]$ into $m$ subintervals $[r_{i–1}, r_i]$ with lengths $\Delta r_i  = r_i – r_{i –1}$
+</li>
+<li>
+Divide the interval $[\alpha, \beta]$ into $n$ subintervals $[\theta_{j–1}, \theta_j ]$ with lengths $\Delta_j  = \theta_j – \theta_{j–1}$.
+</li>
+<li>
+The polar rectangle is divided into  smaller polar rectangles
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:30%" class="fragment">
+<img src="15_3_image10.png" style="width:100%" alt="Diagram of wedge region"><div style="float:left; width:100%">
+</div>
+<p style="text-align:center"><small>
+Courtesy of James Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
+</small></p>
+</div>
+
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+
+<li>
+<p style="border:3px; border-style:solid; border-color:#287EC7; padding: 1em;" class="fragment"> 
+$$\iint_R f(r,\theta)dA_{polar}=\lim_{\Delta \theta \to 0 } \lim_{\Delta r \to 0 } \sum^m_{j=1} \sum_{i=1}^n  f(r_i,\theta_j)\Delta A_{ij}$$
+</p>
+</li>
+<li>
+What is $\Delta A_{ij}$?
+</li>
+<li>
+What is $d A_{polar}$?
+</li>
+</ul>
+</div>
+
+
+========================================================
+
+## Area of a polar rectangle
+
+<div style="float:left; width:30%" class="fragment">
+<img src="15_3_image11.png" style="width:100%" alt="Diagram of wedge region"><div style="float:left; width:100%">
+</div>
+<p style="text-align:center"><small>
+Courtesy of James Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
+</small></p>
+</div>
+
+<div style="float:left; width:60%">
+<ul style="list-style-type:none;">
+<li>
+Area of a circular wedge: $A=\frac{1}{2} \Delta \theta R^2$
+</li>
+<li>
+$$\Delta A_{ij}=\frac{1}{2}\Delta \theta \left[ \left(r_i+\Delta r\right)^2-\left(r_i\right)^2 \right]$$
+</li>
+<li>
+$$\begin{align}
+\Delta A_{ij}&=\frac{1}{2}\Delta \theta\left(2r_i+\Delta r\right)\left(\Delta r \right)\\
+&=r_i \Delta r \Delta \theta + \frac{1}{2}\Delta r^2 \Delta \theta\\
+&\approx r_i \Delta r \Delta \theta
+\end{align}$$
+</li>
+</ul>
+</div>
+
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li> In the limit $\Delta \theta \rightarrow 0$ and $\Delta r \rightarrow 0$,
+$$\Delta A_{ij}\approx r_i \Delta r \Delta \theta$$
+tends to 
+<p style="border:3px; border-style:solid; border-color:#287EC7; padding: 1em;" class="fragment"> 
+$$dA=rdrd\theta$$
+</p>
+
+</li>
+</ul>
+</div>
+
+========================================================
+
+## Example 1 
+
+<div style="float:left; width:100%">
+<ul>
+<li>
+Find the volume of the solid bounded by the plane $z=0$ and the paraboloid $z=1-x^2-y^2$
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li>
+The Cartesian plane intersects the paraboloid in
+the circle $x^2 + y^2 = 1$, so the solid lies under the
+paraboloid and above the circular disk $D$ given by $x^2+y^2\leq 1$
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:35%; padding-right:10%;; padding-left:10%" class="fragment">
+<img src="15_3_image1.png" style="width:100%" alt="Diagram of disk of radius 1"><div style="float:left; width:100%">
+</div>
+</div>
+
+<div style="float:left; width:30%" class="fragment">
+<img src="15_3_image12.png" style="width:100%" alt="Diagram of the solid under the paraboloid and above the circular disk "><div style="float:left; width:100%">
+</div>
+</div>
+
+<div class='footer'>
+Figures Courtesy of James Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
+</div>
+
+========================================================
+
+## Example 1 cont'd
+
+<div style="float:left; width:100%">
+<ul>
+<li>
+In polar coordinates de region $R$ is described by 
+$$R=\{(r,\theta)|\; 0 \leq r \leq 1, 0\leq \theta\leq 2\pi \}$$
+</li>
+<li>
+Replace $f(x,y)$ with $f(r\cos \theta, r\sin \theta)$
+$$\begin{align}
+1-x^2-y^2&=1-\left(r\cos \theta \right)^2-\left(r\sin \theta \right)^2\\
+&=1-r^2\left( \cos^2\theta + \sin^2 \theta\right)\\
+&=1-r^2
+\end{align}$$
+</li>
+<li> Set up the integral 
+$$\iint_R f(x,y)dA=\iint_R \left(1-r^2\right)dA$$
+</li>
+<li> Replace $dA$ with $rdrd\theta$
+$$\iint_R f(x,y)dA=\int_0^{2\pi} \int_0^1\left( 1-r^2\right)\;r\;drd\theta$$
+</li>
+<li> Evaluate the double integral over the polar rectangle
+$$\begin{align}
+\int_0^{2\pi} \int_0^1\left( r-r^3\right)\;drd\theta&=
+\int_0^{2\pi}\left( \frac{r^2}{2} - \frac{r^4}{4}\right) \bigg\vert_{r=0}^{r=1}d\theta\\
+&=\int_0^{2\pi} \frac{1}{4} d\theta=\frac{2\pi}{4}=\frac{\pi}{2}
+\end{align}$$
+</li>
+</ul>
+</div>
+
+
+========================================================
+
+## Example 2
+
+<div style="float:left; width:100%">
+<ul>
+<li>
+Find the volume of the solid that lies under the surface $f(x,y) = \frac{1}{x^2+y^2+1}$,  over the sector of the disk of radius 2 centered at the origin in the 1st quadrant.
+</li>
+
+<li>
+In rectangular coordinates the quarter of disk $D$ is described by 
+$$D=\{(x,y)|\; x\geq 0, y\geq 0, x^2+y^2 \leq 1 \}$$
+</li>
+
+<li>
+In polar coordinates the quarter of disk $D$ is described as a <strong>polar rectangle</strong>
+$$D=\{(r,\theta)|\; 0 \leq r \leq 2, 0\leq \theta \leq \frac{\pi}{2} \}$$
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:30%; padding-left:30%" class="fragment">
+<img src="15_3_image16.png" style="width:100%" alt="Diagram of a quarter of a disk of radius $1$"><div style="float:left; width:100%">
+</div>
+
+</div>
+
+
+========================================================
+
+## Example 2 cont'd
+
+<div style="float:left; width:70%">
+<ul>
+<li> Transform the integrand by replacing $x=r\cos \theta$ and $y=r\sin \theta$
+$$\frac{1}{x^2+y^2+1}=\frac{1}{r^2+1}$$
+</li>
+<li> Replace $dA$ with $rdrd\theta$
+$$\iint_R \left(\frac{1}{r^2+1}\right)dA= \int_{0}^{ \frac{\pi}{2}} \int_0^{2}\left(\frac{1}{r^2+1}\right)\;r\;drd\theta$$
+</li>
+<li> Split into two integrals because we are integrating over a <strong>polar rectangle</strong>
+$$\left( \int_0^{2}\left(\frac{r}{r^2+1}\right)\;dr \right) \left(\int_{0}^{ \frac{\pi}{2}} d\theta \right)$$
+</li>
+<li>
+Use substitution $U=r^2+1$ on the left integral
+$$\left(\frac{1}{2}\ln{|r^2+1|}  \right)\bigg\vert_{r=0}^{r=2} \left( \theta\right)\bigg\vert_{\theta=0}^{\theta=\frac{\pi}{2}}$$
+</li>
+<li> Evaluating we get the <em>exact</em> value of the integral
+$$\frac{1}{2}\left( \ln{|5|-\ln{|1|}}  \right)\left(\frac{\pi}{2}-0\right)=\frac{\pi}{4}\ln{5}$$
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:30%" class="fragment">
+<img src="15_3_image17.png" style="width:100%" alt="Diagram of solid above a quarter of a disk and under the surface"><div style="float:left; width:100%">
+</div>
+
+========================================================
+
+## Other types of polar regions
+
+<div style="float:left; width:100%">
+<ul>
+<li>
+Just as in Cartesian coordinates, the domain of integration need not be part or a polar rectangle
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:30%" class="fragment">
+<img src="15_3_image13.png" style="width:100%" alt="Diagram of wedge region"><div style="float:left; width:100%">
+</div>
+<p style="text-align:center"><small>
+Courtesy of James Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
+</small></p>
+</div>
+
+<div style="float:left; width:70%">
+<ul style="list-style-type:none;">
+<li>
+Combining the concept of type I/II regions from previous section, we can set up an integral in polar coordinates
+</li>
+<li> If $f$ is continuous on a polar region of the form 
+$$D=\{ (r,\theta)|\; \alpha \leq \theta \leq \beta,\; h_1(\theta) \leq r\leq h_2(\theta)\}$$
+</li>
+<li>then
+$$\iint_D f(x,y) dA= \int_\alpha^\beta \int_{h_1(\theta)}^{h_2(\theta)} f(r\cos\theta,r\sin\theta)\:r\:drd\theta$$
+</li>
+</ul>
+</div>
+
+
+========================================================
+
+## Example 3
+
+<div style="float:left; width:100%">
+<ul>
+<li>
+Find the volume of the solid that lies under the paraboloid $z = x^2 + y^2$, above the xy-plane, and inside the cylinder $x^2 + y^2 = 2x$
+</li>
+</ul>
+</div>
+
+
+<div style="float:left; width:70%">
+<ul>
+<li>
+The equation if the cylinder can be rewritten as 
+$$x^2-2x  +y^2 = 0$$
+</li>
+<li>
+Completing the square we get 
+$$x^2-2x+1+y^2=1$$
+</li>
+<li>
+$$\left(x-1\right)^2+y^2=1$$
+</li>
+<li>
+Which in the Cartesian plane is the circle of radius 1 and center at $(1,0)$
+</li>
+<li>
+Tranforming to polar coordinates 
+$$\left(x-1\right)^2+y^2=1 \\
+\Leftrightarrow \left(r\cos \theta-1\right)^2+\left(r\sin \theta\right)^2=1\\
+\Leftrightarrow r^2\cos^2 \theta-2r\cos\theta+1+r^2\sin^2\theta=1\\
+\Leftrightarrow r^2=2r\cos\theta\\
+\Leftrightarrow r=2\cos\theta$$
+</li>
+<li>
+This circle is traced out on the interval $-\frac{\pi}{2}\leq \theta \leq \frac{\pi}{2}$
+</li>
+<li>
+Thus the disk $D$ is described by
+$$D=\{ (r,\theta)|\;-\frac{\pi}{2}\leq \theta \leq \frac{\pi}{2}, 0\leq r \leq 2\cos \theta\}$$
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:30%" class="fragment">
+<img src="15_3_image14.png" style="width:100%" alt="Diagram of disk of radius $1$ center at (1,0)"><div style="float:left; width:100%">
+</div>
+<p style="text-align:center"><small>
+Courtesy of James Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
+</small></p>
+</div>
+
+
+========================================================
+
+## Example 3 cont'd
+
+<div style="float:left; width:30%" class="fragment">
+<img src="15_3_image15.png" style="width:100%" alt="Diagram of disk of radius $1$ center at (1,0)"><div style="float:left; width:100%">
+</div>
+<p style="text-align:center"><small>
+Courtesy of James Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
+</small></p>
+</div>
+
+<div style="float:left; width:70%">
+<ul>
+<li>We want the volume under the paraboloid and inside the cylinder
+$$V=\iint_D \left(x^2+y^2\right)dA $$
+</li>
+<li> Transform the integrand by replacing $x=r\cos \theta$ and $y=r\sin \theta$
+$$\iint_D \left(x^2+y^2\right)dA=\iint_R \left(r^2\right)dA$$
+</li>
+<li> Replace $dA$ with $rdrd\theta$
+$$\iint_R \left(r^2\right)dA= \int_{-\frac{\pi}{2}}^{\frac{\pi}{2}} \int_0^{2\cos\theta}\left(r^2\right)\;r\;drd\theta$$
+</li>
+<li>Evaluate double integral
+$$\begin{align}
+\int_{-\frac{\pi}{2}}^{\frac{\pi}{2}} \int_0^{2\cos\theta}r^3\;drd\theta&=
+\int_{-\frac{\pi}{2}}^{\frac{\pi}{2}} \frac{r^4}{4}\bigg\vert_0^{2\cos\theta}d\theta=\int_{-\frac{\pi}{2}}^{\frac{\pi}{2}} \frac{2^4\cos^4\theta}{4}d\theta
+\end{align}$$
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:100%">
+<ul>
+<li> Use trig identity $\cos^2 u = \frac{1+\cos2u}{2}$
+$$\begin{align}
+&=8\int_{-\frac{\pi}{2}}^{\frac{\pi}{2}} \left(\frac{1+\cos2\theta}{2}\right)^2 d\theta
+=2\int_{-\frac{\pi}{2}}^{\frac{\pi}{2}} \left[ 1+2\cos2\theta +\frac{1}{2}(1+\cos4\theta)\right] d\theta\\
+&= 2\left(\frac{3}{2}\theta+\sin2\theta+\frac{1}{8}\sin4\theta \right)\bigg\vert_{\theta=-\frac{\pi}{2}}^{\theta=\frac{\pi}{2}}=\frac{3\pi}{2}
+\end{align}$$
+</li>
+</ul>
+</div>
+
+
+
+========================================================
+
+## Example 4
+
+<div style="float:left; width:100%">
+<ul>
+<li>
+Recall example from last section where we <em> estimated </em> the integral 
+$$\iint_D e^{-x^2-y^2}dA \in \left[\frac{\pi}{4}e^{-\frac{1}{4}},\frac{\pi}{4}\right]$$
+where $D=\{ (x,y)| x^2+y^2\leq \frac{1}{4}  \}$
+</li>
+<li>
+Because there is <b>no simple anti-derivative</b> in rectangular coordinates
+</li>
+<li>
+We can take advantage of the circular geometry of the domain and use polar coordinates
+</li>
+<li>
+In polar coordinates the disk $D$ is described by 
+$$D=\{(r,\theta)|\; 0 \leq r \leq \frac{1}{2}, 0\leq \theta\leq 2\pi \}$$
+</li>
+<li> Transform the integrand by replacing $x=r\cos \theta$ and $y=r\sin \theta$
+$$e^{-x^2-y^2}=e^{-\left( r\cos \theta\right)^2-\left( r\sin \theta\right)^2}=e^{-r^2}$$
+</li>
+<li> Replace $dA$ with $rdrd\theta$
+$$\iint_R \left(e^{-r^2}\right)dA= \int_{0}^{2\pi} \int_0^{\frac{1}{2}}\left(e^{-r^2}\right)\;r\;drd\theta$$
+</li>
+</ul>
+</div>
+
+
+========================================================
+
+## Example 4 cont'd
+
+<div style="float:left; width:100%">
+<ul>
+<li> Evaluate integral now that we have anti-derivative
+$$\int_{0}^{2\pi}\int_0^{\frac{1}{2}} r e^{-r^2}\;drd\theta$$
+</li>
+<li> Split into two integrals because we are integrating over a polar rectangle
+$$\left( \int_0^{\frac{1}{2}}r e^{-r^2} dr \right) \left(\int_{0}^{2\pi} d\theta \right)$$
+</li>
+<li>
+Use substitution $U=r^2$ on the left integral
+$$\left( -\frac{1}{2}e^{-r^2}  \right)\bigg\vert_{r=0}^{r=\frac{1}{2}} \left( \theta\right)\bigg\vert_{\theta=0}^{\theta=2\pi}$$
+</li>
+<li> Evaluating we get the <em>exact</em> value of the integral
+$$-\frac{1}{2}\left( e^{-\frac{1}{4}}-e^{0}  \right)\left(2\pi-0\right)=-\pi\left( e^{-\frac{1}{4}}-1  \right)\approx .6949$$
+</li>
+<li>
+Compare to  $I\in\left[\frac{\pi}{4}e^{-\frac{1}{4}},\frac{\pi}{4}\right]\approx \left[ .6116,.778 \right]$
+</li>
+</ul>
+</div>
+
+========================================================
+
+## Final remarks
+
+<div style="float:left; width:100%">
+<ul>
+<li>
+We can set up double integrals over a polar rectangular region or a general polar region, using an iterated integral similar to those used with rectangular double integrals.
+</li>
+<li>
+Apply a double integral when the domain of integration has a circular-like geometry.
+</li>
+<li>
+The area differential in polar coordinates becomes $dA=rdrd\theta$
+</li>
+<li>
+You can export this presentation to pdf with any web browser using the menu Print to PDF from (for instance) Google Chrome. 
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:50%; padding-left:25%"> 
+<ul style="list-style-type:none;">
+<li> Questions </li>
+</ul>
+</div>
+  

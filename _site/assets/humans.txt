@@ -1,0 +1,14 @@
+/* TEAM */
+Creator: Claudia Castro-Castro
+Contact: ccastrocastro@unr.edu
+Twitter: 
+Location: Reno,NV
+                           
+/* THANKS */                           
+Creator of Balzac theme: Cole Townsend
+Twitter: @twnsndco
+
+/* SITE */                         
+Last update: 2019-03-08
+Standards: HTML, SCSS, Jekyll                        
+Software: git
