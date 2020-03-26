@@ -258,7 +258,7 @@ $$\iint_D f(x,y)dA= \int_c^d \int_{{\color{blue} {h_1(y)}}}^{{\color{blue} {h_2(
 <div style="float:left; width:100%">
 <ul style="list-style-type:none;">
 <li>
-Evaluate $\iint_D \left( x+2y \right)dA$ where $D$ is the region between $y=x$ and $y=x^2$
+Evaluate $\iint_D \left( x+2y \right)dA$ where $D$ is the region between $y=1+x^2$ and $y=2x^2$
 </li>
 </ul>
 </div>
