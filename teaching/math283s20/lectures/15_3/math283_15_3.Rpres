@@ -697,10 +697,46 @@ $$\begin{align}
 </div>
 
 
+========================================================
+
+## Area of polar region
+
+<div style="float:left; width:100%">
+<ul>
+<li>From properties of double integrals
+$$A(R)=\iint_R 1 dA$$
+</li>
+<li> Then to find the area of a polar region described by the polar curve $r=f(\theta)$, $\alpha\leq\theta\leq\beta$ we can use the following formula
+$$A(R)=\int_{\alpha}^{\beta} \int_{g_1(\theta) }^{g_2(\theta)} 1 \,r\,dr\,d\theta=
+\int_{\alpha}^{\beta} \frac{r^2}{2} \bigg\vert_{r=g_1(\theta) }^{r=g_2(\theta)} \,d\theta=
+\int_0^{\pi}\left\{ \frac{1}{2}[g_2(\theta)]^2 - \frac{1}{2}[g_1(\theta)]^2 \right\}d\theta$$
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li> <b>Example </b> Find the area inside the cardiod $r=1+\sin\theta, 0\leq\theta\leq\pi$, and outside the unit circle $r=1$.
+</li>
+
+<div style="float:left; width:30%" class="fragment">
+<img src="15_3_image18.png" style="width:100%" alt="Area in between cardiod and circle"><div style="float:left; width:100%">
+</div>
+</div>
+
+<div style="float:left; width:70%">
+<ul style="list-style-type:none;">
+<li>$$\begin{align}
+A(R)&=\int_{0}^{\pi}\left[\frac{1}{2}\left(1+\sin\theta\right)^{2}-\frac{1}{2}\left(1\right)^{2}\right] d\theta\\
+&=2+\frac{\pi}{4}
+\end{align}$$
+</li>
+</ul>
+</div>
 
 ========================================================
 
-## Example 4
+## Example 5
 
 <div style="float:left; width:100%">
 <ul>
@@ -731,7 +767,7 @@ $$\iint_R \left(e^{-r^2}\right)dA= \int_{0}^{2\pi} \int_0^{\frac{1}{2}}\left(e^{
 
 ========================================================
 
-## Example 4 cont'd
+## Example 5 cont'd
 
 <div style="float:left; width:100%">
 <ul>
@@ -764,7 +800,7 @@ Compare to  $I\in\left[\frac{\pi}{4}e^{-\frac{1}{4}},\frac{\pi}{4}\right]\approx
 We can set up double integrals over a polar rectangular region or a general polar region, using an iterated integral similar to those used with rectangular double integrals.
 </li>
 <li>
-Apply a double integral when the domain of integration has a circular-like geometry.
+Use polar coordinates when the domain of integration has a circular-like geometry.
 </li>
 <li>
 The area differential in polar coordinates becomes $dA=rdrd\theta$
