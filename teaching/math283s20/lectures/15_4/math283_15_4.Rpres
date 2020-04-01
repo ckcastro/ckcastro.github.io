@@ -1,0 +1,658 @@
+<style>
+.section .reveal .state-background {
+   background: #ffffff;
+}
+
+.section .reveal h1,
+.section .reveal h2,
+.section .reveal p {
+   color: black;
+   margin-top: 50px;
+   text-align: center;
+}
+
+.footer {
+    color: black;
+    background: #E8E8E8;
+    position: fixed;
+    top: 90%;
+    text-align:center;
+    width:100%;
+} 
+
+</style>
+
+<!-- foo 
+Highlighting
+bold
+strong
+orange <b style="color:#d95f02"> text </b>
+green  <b style="color:#1b9e77"> text </b>
+purple <b style="color:#d24693"> text </b>
+red    <b style="color:#FF0000"> text </b>
+blue   <b style="color:#0000FF"> text </b>
+-->
+
+15.4 Applications of Double Integrals
+========================================================
+title: "Math 283 Calculus 3"
+date: Math 283 Spring 2020
+author: Claudia Castro-Castro
+autosize: true
+incremental: true
+width: 1920
+height: 1080
+
+<h2 style="text-align:left"> Instructions:</h2>
+<p style='text-align:left'>Use the left and right arrow keys to navigate the presentation forward and backward respectively.  You can also use the arrows at the bottom right of the screen to navigate with a mouse.<br></p>
+
+<div class='footer'>
+    Copyright Disclaimer: material is for educational purposes only under fair use.
+</div>
+
+========================================================
+
+## Outline
+
+<div style="float:left; width:100%">
+<ul>
+<li>
+The following topics will be covered in this lecture:
+    <ul>
+      <li>Density functions and mass</li>
+      <li>Moments and centers of mass</li>
+      <li>Probability density function </li>
+    </ul>
+</li>
+</ul>
+</div>
+
+========================================================
+
+## Density and Mass
+
+<div style="float:left; width:100%">
+<ul>
+<li>
+We have computed in earlier sections, the moments and the center of mass of a thin plate or lamina with constant density using <em>single integrals</em>
+</li>
+<li>
+If the thin plate or lamina has <strong>uniform density</strong>, the center of mass is the geometric center of the object, called the <strong>centroid</strong>
+</li>
+<li>
+The lamina is perfectly balanced about its center of mass
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:40%; padding-left:30%" class="fragment">
+<img src="15_4_image4.png" style="width:100%" alt="shape of a lamina"><div style="float:left; width:100%">
+</div>
+<p style="text-align:center"><small>
+Courtesy of James Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
+</small></p>
+</div>
+
+<div style="float:left; width:100%">
+<ul>
+<li>
+In order to find the center of mass $\left(\bar{x},\bar{y} \right)$, we need to find the mass $m$ and also the moments about the axes $M_x$ and $M_y$
+$$\bar{x}=\frac{M_y}{m},\;\; \bar{y}=\frac{M_x}{m}$$
+</li>
+</ul>
+</div>
+
+========================================================
+
+## Density function
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li>
+But now, equipped with the double integral, we can consider a lamina with <strong>variable density</strong>
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:30%">
+<img src="15_4_image1.png" style="width:100%" alt="shape of a lamina"><div style="float:left; width:100%">
+</div>
+</div>
+
+<div style="float:left; width:70%">
+<ul>
+<li>
+Suppose the lamina occupies a region $D$ of the $xy$-plane and its density (in units of mass per unit area) at a point 
+$(x, y) \in D$ is given by $\rho(x, y)$, where $\rho$ is a continuous function on $D$. 
+$$\rho(x,y)=\frac{\Delta mass}{\Delta Area}$$
+</li>
+<li>
+where $\Delta mass$ and $\Delta Area$ are the mass and area of a small rectangle that contains $(x, y)$
+</li>
+<li>
+$$\Delta mass=\rho(x,y)\Delta Area$$
+</li>
+</ul>
+</div>
+
+========================================================
+
+## Density and Mass
+
+<div style="float:left; width:30%" class="fragment">
+<img src="15_4_image2.png" style="width:100%" alt="Partitioned lamina"><div style="float:left; width:100%">
+</div>
+<p style="text-align:center"><small>
+Courtesy of James Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
+</small></p>
+</div>
+
+<div style="float:left; width:70%">
+<ul>
+<li>
+To find the total mass $m$ of the lamina we divide a rectangle $R$ containing $D$ into subrectangles $R_{ij}$ and consider $\rho(x,y)$ to be $0$ outside $D$
+</li>
+<li>
+Then the mass of the part of the lamina that occupies $R_{ij}$ is approximately 
+$$m_{ij}=\rho(x_{ij}^*,y_{ij}^*)\Delta A_{ij}$$
+where $\Delta A_{ij}$ is the area of $R_{ij}$.
+</li>
+<li>The <b>total mass</b> of the lamina is the limiting value of the approximations
+$$m=\lim_{\Delta x_i\rightarrow 0} \lim_{\Delta y_j\rightarrow 0}\sum_{i=1}^N\sum_{j=1}^M \rho (x_{ij}^*,y_{ij}^*) \Delta A_{ij}$$
+</li>
+<li>
+$$m=\iint_D \rho (x,y) dA$$
+</li>
+</ul>
+</div>
+
+========================================================
+
+## Other kinds of density
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li> Note that density does not have to mean mass density. Anything with units $\frac{\square}{length^2}$ can be integrated over a 2D surface to obtain the total amount of $\square$
+    <ul>
+      <li>Mass density $\left[\frac{kg}{m^2} \right]$</li>
+      <li>Charge density $\left[\frac{Coulombs}{m^2} \right]$</li>
+      <li>Rain density $\left[\frac{Rain}{ft^2} \right]$</li>
+      <li>Probability density</li>
+    </ul>
+</li>
+</ul>
+</div>
+
+========================================================
+
+## Example 1
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li>
+Supose that the <b>electric charge</b> is distributed  according to $\rho(x,y) = 1+x^2+y^2$ (measured in Coulombs per square meter $\frac{C}{m^2}$) over a lamina shaped like the unit disk $R=\{(x,y)|\: x^2+y^2\leq 1\}$. Find the total charge.
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:30%" class="fragment">
+<img src="15_4_image5.png" style="width:100%" alt="circular disk radius 1 and center at the origin"><div style="float:left; width:100%">
+</div>
+<p style="text-align:center"><small>
+Courtesy of James Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
+</small></p>
+</div>
+
+<div style="float:left; width:70%">
+<ul>
+<li>
+The <b>total charge</b> $Q$ is given by
+$$Q=\iint_R \rho (x,y) dA=\iint_R \left( 1+x^2+y^2 \right)dA$$
+</li>
+<li> We can use polar coordinates to evaluate the double integral
+$$Q=\int_0^{2\pi}\int_0^1 \left(1+r^2\cos^2\theta+r^2\sin^2\theta \right)\, r\, dr d\theta$$
+</li>
+<li>Simplifying
+$$\begin{align}
+Q&=\int_0^{2\pi}\int_0^1 \left(1+r^2\right)\, r\, dr d\theta=\int_0^{2\pi}\int_0^1 \left(r+r^3\right)\, dr d\theta\\
+\end{align}$$
+</li>
+<li>Splitting into two single integrals because we are integrating over a polar rectangle
+$$\begin{align}
+Q&=\int_0^{2\pi}d\theta \int_0^1 \left(r+r^3\right) dr\\
+&=\theta \bigg\vert_{\theta=0}^{\theta=2\pi} \left( \frac{r^2}{2}+\frac{r^4}{4}\right)\bigg\vert_{r=0}^{r=1}=2\pi\frac{3}{4}=\frac{3\pi}{2} Coulombs
+\end{align}$$
+</li>
+</ul>
+</div>
+
+
+========================================================
+
+## Example 2
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li>
+Suppose the soil yield $\frac{kg}{m^2}$ of a farm is a known function of position $\rho(x,y)$. How many kg of produce can the farmer expect if 
+$$\rho(x,y)=100+2x+\frac{1}{10}y^2$$
+where $x\in [0,10]$, $y\in [0,10]$
+</li>
+</ul>
+</div>
+
+
+<div style="float:left; width:70%">
+<ul>
+<li>
+The <b>total mass</b> of produce is given by
+$$\iint_R \rho (x,y) dA$$
+$\rho(x,y)$ is the produce density function
+</li>
+<li> Set up the mass integral
+$$\iint_R \rho (x,y) dA=\int_0^{10} \int_0^{10} \left(100+2x +\frac{1}{10}y^2\right)dxdy$$
+</li>
+<li>Evaluating
+$$\begin{align}
+\int_0^{10}\int_0^{10} \left(100+2x +\frac{1}{10}y^2\right)dxdy&=\int_0^{10}\left(100x+x^2+\frac{1}{10}y^2x\right)\bigg\vert_{x=0}^{x=10} dy\\
+&=\int_0^{10}\left(1000+100+y^2 \right)dy\\
+&=\left(1100y+\frac{y^3}{3} \right) \bigg\vert_{y=0}^{y=10}=11333\;kg
+\end{align}$$
+</li>
+</ul>
+</div>
+
+
+========================================================
+
+## Moments and Centers of Mass
+
+<div style="float:left; width:30%" class="fragment">
+<img src="15_4_image2.png" style="width:100%" alt="Partitioned lamina"><div style="float:left; width:100%">
+</div>
+<p style="text-align:center"><small>
+Courtesy of James Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
+</small></p>
+</div>
+
+<div style="float:left; width:70%">
+<ul style="list-style-type:none;">
+<li> <strong>Moment about the $x$-axis</strong>
+$$(mass)(distance\; x-axis)$$
+</li>
+<li>
+Then the mass of $R_{ij}$ is approximately  $\rho(x_{ij}^*,y_{ij}^*)\Delta A_{ij}$, so we can approximate the moment of $R_{ij}$ with respect to the $x$-axis by
+$$\left(\rho(x_{ij}^*,y_{ij}^*)\Delta A_{ij} \right) \left({\color{blue} { y_{ij}^*}}\right)$$
+</li>
+<li>
+Add all these quantities and take the limit as the subrectangles become smaller, we obtain the moment of the entire lamina about the x-axis
+$$M_x=\lim_{\Delta x_i\rightarrow 0} \lim_{\Delta y_j\rightarrow 0}\sum_{i=1}^N\sum_{j=1}^M \rho (x_{ij}^*,y_{ij}^*){\color{blue} {y_{ij}^*}}\Delta A_{ij}$$
+</li>
+<li>
+<p style="border:3px; border-style:solid; border-color:#287EC7; padding: 1em;" class="fragment"> 
+$$M_x=\iint_D y \,\rho(x,y) dA$$ </p>
+</li>
+</ul>
+</div>
+
+========================================================
+
+## Moments and Centers of Mass
+
+<div style="float:left; width:30%" class="fragment">
+<img src="15_4_image2.png" style="width:100%" alt="Partitioned lamina"><div style="float:left; width:100%">
+</div>
+<p style="text-align:center"><small>
+Courtesy of James Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
+</small></p>
+</div>
+
+<div style="float:left; width:70%">
+<ul style="list-style-type:none;">
+<li> <strong>Moment about the $y$-axis</strong>
+$$(mass)(distance\; y-axis)$$
+</li>
+<li>
+Then the mass of $R_{ij}$ is approximately  $\rho(x_{ij}^*,y_{ij}^*)\Delta A_{ij}$, so we can approximate the moment of $R_{ij}$ with respect to the $x$-axis by
+$$\left(\rho(x_{ij}^*,y_{ij}^*)\Delta A_{ij} \right) \left({\color{blue} {x_{ij}^*} } \right)$$
+</li>
+<li>
+Similarly we obtain the moment of the entire lamina about the y-axis
+$$M_y=\lim_{\Delta x_i\rightarrow 0} \lim_{\Delta y_j\rightarrow 0}\sum_{i=1}^N\sum_{j=1}^M \rho (x_{ij}^*,y_{ij}^*){\color{blue} {x_{ij}^*}}\Delta A_{ij}$$
+</li>
+<li>
+<p style="border:3px; border-style:solid; border-color:#287EC7; padding: 1em;" class="fragment"> 
+$$M_y=\iint_D x \,\rho(x,y) dA$$ </p>
+</li>
+</ul>
+</div>
+
+
+========================================================
+
+## Moments and Centers of Mass
+
+<div style="float:left; width:50%">
+<ul style="list-style-type:none;">
+<li> <strong>Center of mass</strong>
+<p style="border:3px; border-style:solid; border-color:#287EC7; padding: 1em;" class="fragment"> 
+$$\left(\bar{x},\bar{y} \right)=\left( \frac{M_y}{m},\;\frac{M_x}{m} \right)$$ </p>
+</li>
+<li><strong>Total mass</strong>
+<p style="border:3px; border-style:solid; border-color:#287EC7; padding: 1em;" class="fragment"> 
+$$m=\iint_D \,\rho(x,y) dA$$ </p>
+</li>
+<li><strong>Moment about the x-axis</strong>
+<p style="border:3px; border-style:solid; border-color:#287EC7; padding: 1em;" class="fragment"> 
+$$M_x=\iint_D y \rho(x,y) dA$$ </p>
+</li>
+<li><strong>Moment about the y-axis</strong>
+<p style="border:3px; border-style:solid; border-color:#287EC7; padding: 1em;" class="fragment"> 
+$$M_y=\iint_D x \rho(x,y) dA$$ </p>
+</li>
+
+</ul>
+</div>
+
+
+========================================================
+
+## Example 3
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li>The density at any point on a semicircular lamina is proportional to the distance from the center of the circle. Find the center of mass of the lamina
+</li>
+</ul>
+</div>
+
+
+<div style="float:left; width:100%">
+<ul>
+<li> Place the lamina as the upper half of the circle   $x^2+y^2\leq a^2$
+$$D=\{(x,y)| y\geq0, x^2+y^2\leq a^2  \}$$
+</li>
+<li> The distance from a point $(x, y)$ to the center of the circle (the origin) is $$\rho(x,y)=K\sqrt{x^2+y^2}$$
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:30%" class="fragment">
+<img src="15_4_image6.png" style="width:100%" alt="Semicircle of radius a"><div style="float:left; width:100%">
+</div>
+<p style="text-align:center"><small>
+Courtesy of James Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
+</small></p>
+</div>
+
+<div style="float:left; width:70%">
+<ul>
+<li> Both the density function and the shape of the lamina suggest that we convert to <b>polar coordinates</b>
+$$D=\{(r,\theta)|\; 0\leq r \leq a, 0 \leq \theta\leq \pi\}$$
+</li>
+<li> $$\rho(x,y)=\rho(r\cos \theta, r\sin\theta)=Kr$$
+</li>
+<li>The <strong>total mass</strong> of the lamina is
+$$m=\iint_D \rho (x,y)dA=\int_0^{\pi}\int_0^a K r \;r drd\theta$$
+</li>
+<li>
+$$\begin{align}
+m&=K\int_0^a r^2 dr \int_0^{\pi}d\theta\\
+&=\frac{K\pi a^3}{3}
+\end{align}$$
+</li>
+</ul>
+</div>
+
+
+========================================================
+
+## Example 3 cont'd
+
+<div style="float:left; width:60%">
+<ul style="list-style-type:none;">
+<li><strong>$M_x$: moment about the x-axis </strong><br>
+$M_x=\iint_D y \rho(x,y) dA$
+</li>
+<li>
+$M_x=\int_0^{\pi} \int_0^a (r\sin\theta)(Kr) \; r\;drd\theta$
+</li>
+<li> $M_x=K\int_0^{\pi} \int_0^a r^3\sin\theta drd\theta=K\int_0^a r^3 dr\int_0^{\pi}\sin\theta d\theta$
+</li>
+<li> $M_x=K\left(\frac{r^4}{4}\right)\big\vert_{r=0}^{r=a} \left(-\cos\theta\right)\big\vert_{\theta=0}^{\theta=\pi}=K\left(\frac{a^4}{4}\right)(2)$
+</li>
+<li>$M_x=\frac{Ka^4}{2}$
+</li>
+<li> <strong>$M_y$: moment about the y-axis </strong><br>
+$M_y=\iint_D x \rho(x,y) dA$
+</li>
+<li>
+$M_y=\int_0^{\pi} \int_0^a (r\cos\theta)(Kr) \; r\;drd\theta$
+</li>
+<li>
+$M_y=K\int_0^{\pi} \int_0^a r^3\cos\theta drd\theta$
+</li>
+<li>
+$M_y=K\int_0^a r^3 dr\int_0^{\pi}\cos\theta d\theta$
+</li>
+<li>$M_y=K\left(\frac{r^4}{4}\right)\big\vert_{r=0}^{r=a}\left(\sin\theta\right)\big\vert_{\theta=0}^{\theta=\pi}$
+</li>
+<li>
+$M_y=K\left(\frac{a^4}{4}\right)(0)=0$
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:40%">
+<ul style="list-style-type:none;">
+<li><strong>$\left( \bar{x},\bar{y}\right)$: center of mass</strong> <br>
+</li>
+<li>
+$$\begin{align}
+\left(\bar{x},\bar{y} \right)&=\left( \frac{M_y}{m},\;\frac{M_x}{m} \right)\\
+&=\left( \frac{0}{\frac{K\pi a^3}{3}},\;\frac{\frac{Ka^4}{2}}{\frac{K\pi a^3}{3}} \right)\\
+&=\left(0,\;\frac{Ka^4}{2}\frac{3}{K\pi a^3} \right)\\
+&=\left(0,\;\frac{3a}{2\pi}\right)
+\end{align}$$
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:30%" class="fragment">
+<img src="15_4_image6.png" style="width:100%" alt="Semicircle of radius a"><div style="float:left; width:100%">
+</div>
+<p style="text-align:center"><small>
+Courtesy of James Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
+</small></p>
+</div>
+
+========================================================
+
+## Probability density function
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li>
+(1D) If $X$ is a random variable with probability density function $f_1(X)$, the probability the $X$ lies between $a$ and $b$ is given by
+$$P\left(a \leq X \leq b\right)=\int_a^b f_1(x)dx$$
+</li>
+<li> $f_1$ as a probability density function satisfies two assumptions
+<ol>
+<li>$f_1\geq 0$
+</li>
+<li>$\int_{-\infty}^{\infty} f_1(X)dX=1$
+</li>
+</ol>
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:50%;" class="fragment">
+<img src="15_4_image8.png" style="width:100%" alt="Graph of Gaussian probability function distribution"><div style="float:left; width:100%">
+</div>
+</div>
+
+<div style="float:left; width:50%">
+<ul style="list-style-type:none;">
+<li> $a=$ mean
+<li> $\sigma=$ standard deviation
+</li>
+</ol>
+
+========================================================
+
+## Joint density function
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li>
+(2D)  In addition to the random variable $X$, $Y$ is another random variable with probability density function $f_2(Y)$.  Then $X$ and $Y$ are <b>independent</b> random variables is their joint density function is the product
+$$f(X,Y)=f_1(X)f_2(Y)$$
+
+<li>Their <b> joint density function</b> of $X$ and $Y$ is a function of two variables
+$$P\left( \left(X,Y \right)\in D \right)=\iint_D f(X,Y)dA$$
+</li>
+<li> $f$ as a probability density function satisfies two assumptions
+<ol>
+<li>$f\geq 0$
+</li>
+<li>$\int_{-\infty}^{\infty}\int_{-\infty}^{\infty} f(X,Y)dA=1$
+</li>
+</ol>
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:60%">
+<ul style="list-style-type:none;">
+<li>
+</li>
+<li> The probability that $X$ lies between $a$ and $b$ and $Y$ lies between $c$ and $d$ is the double integral over the rectangle $D=[a,b]\times[c,d]$ and below the graph of the joint density funtion
+$$P\left(a \leq X\leq b, c \leq Y\leq d\right) = \int_a^b \int_c^d f(X,Y)dYdX$$
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:40%" class="fragment">
+<img src="15_4_image9.png" style="width:100%" alt="Probability density function of two variables"><div style="float:left; width:100%">
+</div>
+</div>
+
+
+========================================================
+
+## Example 4
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li>
+<em>At a certain restaurant, customers must wait an average of 10 minutes for a table. From the time they are seated until they have finished their meal requires an additional 30 minutes, on average. What is the probability that a customer will spend less than an hour at the restaurant, assuming that waiting for a table and completing the meal are independent events?</em>
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li>
+Waiting times are often modeled by <strong>exponential probability densities</strong>. Indeed, if $X$ and $Y$ are the random variables for waiting for a table and completing the meal, respectively, then their probability density functions are respectively
+
+$$\begin{array}{cc}
+f_{1}(X)=\begin{cases}
+0 & if\:X<0\\
+\frac{1}{10}e^{-X/10} & if\,X\geq0
+\end{cases} & \qquad f_{2}(Y)=\begin{cases}
+0 & if\:Y<0\\
+\frac{1}{30}e^{-Y/30} & if\,Y\geq0
+\end{cases}\\
+\end{array}$$
+</li>
+<li>
+Since the events are independent, the joint probability for the two events is $$f(X,Y)=f_{1}(X)f_{2}(Y)=\begin{cases}
+0 & if\:X<0\;or\:Y<0\\
+\frac{1}{300}e^{-X/10}e^{-Y/30} & if\,X,Y\geq0
+\end{cases}$$
+</li>
+</li>
+</ul>
+</div>
+
+
+<div style="float:left; width:70%">
+<ul style="list-style-type:none;">
+<li>
+The goal is to determine the probability that the combined time X + Y is under 60,  minutes, i.e.
+$$X+Y \leq 60$$
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:25%" class="fragment">
+<img src="15_4_image7.png" style="width:100%" alt="Semicircle of radius a"><div style="float:left; width:100%">
+</div>
+</div>
+
+========================================================
+
+## Example 4 cont'd
+
+<div style="float:left; width:30%" class="fragment">
+<img src="15_4_image7.png" style="width:100%" alt="Semicircle of radius a"><div style="float:left; width:100%">
+</div>
+</div>
+
+<div style="float:left; width:70%">
+<ul style="list-style-type:none;">
+<li> Set up the integral that gives the joint probability
+$$\iint_D f(X,Y)dA=\frac{1}{300}\int_{0}^{60}\int_{0}^{60-Y}e^{-\frac{X}{10}-\frac{Y}{30}}dXdY$$
+</li>
+<li>Evaluate the integral
+$$\begin{align}
+\frac{1}{300}\int_{0}^{60}\int_{0}^{60-Y}e^{-\frac{X}{10}}e^{-\frac{Y}{30}}dXdY&=\frac{1}{300}\int_{0}^{60}e^{-\frac{Y}{30}}\left(-10e^{-\frac{X}{10}}\right)\bigg\vert_{X=0}^{X=60-Y}dY\\
+&=\frac{1}{300}\int_{0}^{60}e^{-\frac{Y}{30}}\left[-10\left(e^{-\frac{\left(60-Y\right)}{10}}-e^{0}\right)\right]dY\\
+&=-\frac{1}{30}\int_{0}^{60}\left(e^{-6}e^{\frac{2Y}{30}}-e^{-\frac{Y}{30}}\right)dY\\
+&=1-\frac{3}{2}e^{-2}+\frac{1}{2}e^{-6}\approx0.79
+\end{align}$$
+</li>
+<li>
+The probability that a customer will spend less than an hour at the restaurant is $79\%$.
+</li>
+
+</ul>
+</div>
+
+========================================================
+
+## Final remarks
+
+<div style="float:left; width:100%">
+<ul>
+<li> In addition to volumes, areas and averages, double integrals apply to problems that involve computing net masses, moments, centers of mass, and probability
+</li>
+<li>
+For a lamina $D$ with variable density $\rho(x,y)$, the mass is 
+$$m=\iint_D \rho (x,y)dA$$
+</li>
+<li>
+The moments about the $x$-axis and $y$-axis are
+$$M_x=\iint_D y\rho(x,y)dA\;\;\;M_y=\iint_D x\rho(x,y)dA$$
+</li>
+<li>
+The center of mass is given by $\bar{x}=\frac{M_y}{m}$, $\bar{y}=\frac{M_x}{m}$
+</li>
+
+<li>
+The double integral of a probability density funtion $f(X,Y)$, gives the probability of the random variable falling within a particular range of values.
+</li>
+
+<li>
+You can export this presentation to pdf with any web browser using the menu Print to PDF from (for instance) Google Chrome. 
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:50%; padding-left:25%"> 
+<ul style="list-style-type:none;">
+<li> Questions </li>
+</ul>
+</div>
+  
