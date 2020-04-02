@@ -115,12 +115,12 @@ But now, equipped with the double integral, we can consider a lamina with <stron
 </ul>
 </div>
 
-<div style="float:left; width:30%">
+<div style="float:left; width:50%">
 <img src="15_4_image1.png" style="width:100%" alt="shape of a lamina"><div style="float:left; width:100%">
 </div>
 </div>
 
-<div style="float:left; width:70%">
+<div style="float:left; width:50%">
 <ul>
 <li>
 Suppose the lamina occupies a region $D$ of the $xy$-plane and its density (in units of mass per unit area) at a point 
@@ -140,7 +140,7 @@ $$\Delta mass=\rho(x,y)\Delta Area$$
 
 ## Density and Mass
 
-<div style="float:left; width:30%" class="fragment">
+<div style="float:left; width:40%" class="fragment">
 <img src="15_4_image2.png" style="width:100%" alt="Partitioned lamina"><div style="float:left; width:100%">
 </div>
 <p style="text-align:center"><small>
@@ -148,7 +148,7 @@ Courtesy of James Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
 </small></p>
 </div>
 
-<div style="float:left; width:70%">
+<div style="float:left; width:60%">
 <ul>
 <li>
 To find the total mass $m$ of the lamina we divide a rectangle $R$ containing $D$ into subrectangles $R_{ij}$ and consider $\rho(x,y)$ to be $0$ outside $D$
@@ -226,9 +226,12 @@ $$P\left(a \leq X \leq b\right)=\int_a^b f_1(x)dx$$
 <div style="float:left; width:100%">
 <ul style="list-style-type:none;">
 <li>
-(2D)  In addition to the random variable $X$, $Y$ is another random variable with probability density function $f_2(Y)$.  Then $X$ and $Y$ are <b>independent</b> random variables is their joint density function is the product
+(2D)  In addition to the random variable $X$, $Y$ is another random variable with probability density function $f_2(Y)$.  
+</li>
+<li>
+$X$ and $Y$ are <b>independent</b> random variables if their joint density function is the product
 $$f(X,Y)=f_1(X)f_2(Y)$$
-
+</li>
 <li>Their <b> joint density function</b> of $X$ and $Y$ is a function of two variables
 $$P\left( \left(X,Y \right)\in D \right)=\iint_D f(X,Y)dA$$
 </li>
@@ -331,84 +334,7 @@ The probability that a customer will spend less than an hour at the restaurant i
 </ul>
 </div>
 
-========================================================
 
-## Example 2
-
-<div style="float:left; width:100%">
-<ul style="list-style-type:none;">
-<li>
-Supose that the <b>electric charge</b> is distributed  according to $\rho(x,y) = 1+x^2+y^2$ (measured in Coulombs per square meter $\frac{C}{m^2}$) over a lamina shaped like the unit disk $R=\{(x,y)|\: x^2+y^2\leq 1\}$. Find the total charge.
-</li>
-</ul>
-</div>
-
-<div style="float:left; width:30%" class="fragment">
-<img src="15_4_image5.png" style="width:100%" alt="circular disk radius 1 and center at the origin"><div style="float:left; width:100%">
-</div>
-<p style="text-align:center"><small>
-Courtesy of James Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
-</small></p>
-</div>
-
-<div style="float:left; width:70%">
-<ul>
-<li>
-The <b>total charge</b> $Q$ is given by
-$$Q=\iint_R \rho (x,y) dA=\iint_R \left( 1+x^2+y^2 \right)dA$$
-</li>
-<li> We can use polar coordinates to evaluate the double integral
-$$Q=\int_0^{2\pi}\int_0^1 \left(1+r^2\cos^2\theta+r^2\sin^2\theta \right)\, r\, dr d\theta$$
-</li>
-<li>Simplifying
-$$\begin{align}
-Q&=\int_0^{2\pi}\int_0^1 \left(1+r^2\right)\, r\, dr d\theta=\int_0^{2\pi}\int_0^1 \left(r+r^3\right)\, dr d\theta\\
-\end{align}$$
-</li>
-<li>Splitting into two single integrals because we are integrating over a polar rectangle
-$$\begin{align}
-Q&=\int_0^{2\pi}d\theta \int_0^1 \left(r+r^3\right) dr\\
-&=\theta \bigg\vert_{\theta=0}^{\theta=2\pi} \left( \frac{r^2}{2}+\frac{r^4}{4}\right)\bigg\vert_{r=0}^{r=1}=2\pi\frac{3}{4}=\frac{3\pi}{2} Coulombs
-\end{align}$$
-</li>
-</ul>
-</div>
-
-
-========================================================
-
-## Example 3
-
-<div style="float:left; width:100%">
-<ul style="list-style-type:none;">
-<li>
-Suppose the soil yield $\frac{kg}{m^2}$ of a farm is a known function of position $\rho(x,y)$. How many kg of produce can the farmer expect if 
-$$\rho(x,y)=100+2x+\frac{1}{10}y^2$$
-where $x\in [0,10]$, $y\in [0,10]$
-</li>
-</ul>
-</div>
-
-
-<div style="float:left; width:70%">
-<ul>
-<li>
-The <b>total mass</b> of produce is given by
-$$\iint_R \rho (x,y) dA$$
-$\rho(x,y)$ is the produce density function
-</li>
-<li> Set up the mass integral
-$$\iint_R \rho (x,y) dA=\int_0^{10} \int_0^{10} \left(100+2x +\frac{1}{10}y^2\right)dxdy$$
-</li>
-<li>Evaluating
-$$\begin{align}
-\int_0^{10}\int_0^{10} \left(100+2x +\frac{1}{10}y^2\right)dxdy&=\int_0^{10}\left(100x+x^2+\frac{1}{10}y^2x\right)\bigg\vert_{x=0}^{x=10} dy\\
-&=\int_0^{10}\left(1000+100+y^2 \right)dy\\
-&=\left(1100y+\frac{y^3}{3} \right) \bigg\vert_{y=0}^{y=10}=11333\;kg
-\end{align}$$
-</li>
-</ul>
-</div>
 
 
 ========================================================
@@ -505,7 +431,7 @@ $$M_y=\iint_D x \rho(x,y) dA$$ </p>
 
 ========================================================
 
-## Example 4
+## Example 2
 
 <div style="float:left; width:100%">
 <ul style="list-style-type:none;">
@@ -555,7 +481,7 @@ m&=K\int_0^a r^2 dr \int_0^{\pi}d\theta\\
 
 ========================================================
 
-## Example 4 cont'd
+## Example 2 cont'd
 
 <div style="float:left; width:60%">
 <ul style="list-style-type:none;">
@@ -609,7 +535,84 @@ Courtesy of James Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
 </small></p>
 </div>
 
+========================================================
 
+## Example 3
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li>
+Supose that the <b>electric charge</b> is distributed  according to $\rho(x,y) = 1+x^2+y^2$ (measured in Coulombs per square meter $\frac{C}{m^2}$) over a lamina shaped like the unit disk $R=\{(x,y)|\: x^2+y^2\leq 1\}$. Find the total charge.
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:30%" class="fragment">
+<img src="15_4_image5.png" style="width:100%" alt="circular disk radius 1 and center at the origin"><div style="float:left; width:100%">
+</div>
+<p style="text-align:center"><small>
+Courtesy of James Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
+</small></p>
+</div>
+
+<div style="float:left; width:70%">
+<ul>
+<li>
+The <b>total charge</b> $Q$ is given by
+$$Q=\iint_R \rho (x,y) dA=\iint_R \left( 1+x^2+y^2 \right)dA$$
+</li>
+<li> We can use polar coordinates to evaluate the double integral
+$$Q=\int_0^{2\pi}\int_0^1 \left(1+r^2\cos^2\theta+r^2\sin^2\theta \right)\, r\, dr d\theta$$
+</li>
+<li>Simplifying
+$$\begin{align}
+Q&=\int_0^{2\pi}\int_0^1 \left(1+r^2\right)\, r\, dr d\theta=\int_0^{2\pi}\int_0^1 \left(r+r^3\right)\, dr d\theta\\
+\end{align}$$
+</li>
+<li>Splitting into two single integrals because we are integrating over a polar rectangle
+$$\begin{align}
+Q&=\int_0^{2\pi}d\theta \int_0^1 \left(r+r^3\right) dr\\
+&=\theta \bigg\vert_{\theta=0}^{\theta=2\pi} \left( \frac{r^2}{2}+\frac{r^4}{4}\right)\bigg\vert_{r=0}^{r=1}=2\pi\frac{3}{4}=\frac{3\pi}{2} Coulombs
+\end{align}$$
+</li>
+</ul>
+</div>
+
+
+========================================================
+
+## Example 4
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li>
+Suppose the soil yield $\frac{kg}{m^2}$ of a farm is a known function of position $\rho(x,y)$. How many kg of produce can the farmer expect if 
+$$\rho(x,y)=100+2x+\frac{1}{10}y^2$$
+where $x\in [0,10]$, $y\in [0,10]$
+</li>
+</ul>
+</div>
+
+
+<div style="float:left; width:70%">
+<ul>
+<li>
+The <b>total mass</b> of produce is given by
+$$\iint_R \rho (x,y) dA$$
+$\rho(x,y)$ is the produce density function
+</li>
+<li> Set up the mass integral
+$$\iint_R \rho (x,y) dA=\int_0^{10} \int_0^{10} \left(100+2x +\frac{1}{10}y^2\right)dxdy$$
+</li>
+<li>Evaluating
+$$\begin{align}
+\int_0^{10}\int_0^{10} \left(100+2x +\frac{1}{10}y^2\right)dxdy&=\int_0^{10}\left(100x+x^2+\frac{1}{10}y^2x\right)\bigg\vert_{x=0}^{x=10} dy\\
+&=\int_0^{10}\left(1000+100+y^2 \right)dy\\
+&=\left(1100y+\frac{y^3}{3} \right) \bigg\vert_{y=0}^{y=10}=11333\;kg
+\end{align}$$
+</li>
+</ul>
+</div>
 
 ========================================================
 
