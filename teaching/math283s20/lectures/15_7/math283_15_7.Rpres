@@ -241,15 +241,10 @@ We can re-define certain solids in Cylindrical coordinates.
 
 <h3 style="text-align:left"; class="fragment"> Example: Cylinder </h3>
  
-<div style="float:left; width:50%">
+<div style="float:left; width:100%">
 <ul>
 <li>
-The cyircular cylinder with Cartesian equation $$x^2+y^2=c^2$$<br><br>
-</li>
-<li>In cylindrical coordinates the surface of this cylinder has the equation $$r=c$$ <br>
-</li>
-<li> and the solid cylinder as the set<br>
-$$E=\left\{(r,\theta,z)|\; 0 \leq r\leq c,\; 0 \leq \theta \leq 2\pi,\;  a\leq z\leq b \right\}$$
+The cyircular cylinder with Cartesian equation $$x^2+y^2=c^2$$
 </li>
 </ul>
 </div>
@@ -262,6 +257,18 @@ Courtesy of James Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
 </small></p>
 </div>
 
+<div style="float:left; width:50%">
+<ul>
+<li>In cylindrical coordinates the surface of this cylinder has the equation $$r=c$$ <br>
+</li>
+<li> and the solid cylinder as the set<br>
+$$E=\left\{(r,\theta,z)|\; 0 \leq r\leq c,\; 0 \leq \theta \leq 2\pi,\;  a\leq z\leq b \right\}$$
+</li>
+</ul>
+</div>
+
+
+
 
 ========================================================
 
@@ -269,10 +276,25 @@ Courtesy of James Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
 
 <h3 style="text-align:left"; class="fragment"> Example: Cone </h3>
  
-<div style="float:left; width:60%">
+<div style="float:left; width:100%">
 <ul>
-<li> The cyircular cone with Cartesian equation $$z^2=x^2+y^2$$<br><br>
+<li> The cyircular cone with Cartesian equation $$z^2=x^2+y^2$$
 </li>
+</li>
+</ul>
+</div>
+
+
+<div style="float:left; width:40%"; class="fragment">
+<img src="15_7_image8.png" style="width:100%" alt="Circular cone of radius c"><div style="float:left; width:100%">
+</div>
+<p style="text-align:center"><small>
+Courtesy of James Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
+</small></p>
+</div>
+
+<div style="float:left; width:50%">
+<ul>
 <li> Cone has radial symmetry
 </li>
 <li>
@@ -284,13 +306,7 @@ $$E=\{(r,\theta,z)|\; 0 \leq r\leq c,\; 0 \leq \theta \leq 2\pi,\;  r \leq z\leq
 </ul>
 </div>
 
-<div style="float:left; width:40%"; class="fragment">
-<img src="15_7_image8.png" style="width:100%" alt="Circular cone of radius c"><div style="float:left; width:100%">
-</div>
-<p style="text-align:center"><small>
-Courtesy of James Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
-</small></p>
-</div>
+
 
 ========================================================
 
