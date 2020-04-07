@@ -212,8 +212,7 @@ Find cylindrical coordinates of the point with rectangular coordinates $(x, y, z
 <li> Use parametric equations
 $$r=\sqrt{x^2+y^2}$$
 </li>
-<li>$$r=\sqrt{(-1)^2+(1)^2}\\
-= \sqrt{2}$$
+<li>$$r=\sqrt{(-1)^2+(1)^2} = \sqrt{2}$$
 </li>
 <li>
 $$\tan\theta = \frac{y}{x}= \frac{1}{-1}= -1$$
@@ -255,7 +254,7 @@ $$E=\left\{(r,\theta,z)|\; 0 \leq r\leq c,\; 0 \leq \theta \leq 2\pi,\;  a\leq z
 </ul>
 </div>
 
-<div style="float:left; width:40%" class="fragment">
+<div style="float:left; width:40%;padding-left:10%" class="fragment">
 <img src="15_7_image4.png" style="width:100%" alt="Circular cylinder of radius c"><div style="float:left; width:100%">
 </div>
 <p style="text-align:center"><small>
@@ -270,7 +269,7 @@ Courtesy of James Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
 
 <h3 style="text-align:left"; class="fragment"> Example: Cone </h3>
  
-<div style="float:left; width:50%">
+<div style="float:left; width:60%">
 <ul>
 <li> The cyircular cone with Cartesian equation $$z^2=x^2+y^2$$<br><br>
 </li>
@@ -285,7 +284,7 @@ $$E=\{(r,\theta,z)|\; 0 \leq r\leq c,\; 0 \leq \theta \leq 2\pi,\;  0\leq z\leq 
 </ul>
 </div>
 
-<div style="float:left; width:50%"; class="fragment">
+<div style="float:left; width:40%"; class="fragment">
 <img src="15_7_image8.png" style="width:100%" alt="Circular cone of radius c"><div style="float:left; width:100%">
 </div>
 <p style="text-align:center"><small>
@@ -384,7 +383,7 @@ the axis of the cylinder. Find the <b>total mass</b> of $E$.
 <ul>
 
 <li>The total mass as a triple integral is 
-$$mass=\iiint \limits_E \rho (x,y,z) dV $$
+$$mass=\iiint \limits_E f (x,y,z) dV $$
 </li>
 
 <li>Density at any point in $E$ is proportional to the distance from $z$ axis
