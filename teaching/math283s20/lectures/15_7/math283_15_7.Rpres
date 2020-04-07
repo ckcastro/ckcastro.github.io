@@ -217,7 +217,7 @@ $$r=\sqrt{x^2+y^2}$$
 <li>
 $$\tan\theta = \frac{y}{x}= \frac{1}{-1}= -1$$
 </li> <li>or 
-$$\cos\theta = \frac{x}{r}=\sqrt{2}= \frac{\sqrt{2}}{2}$$
+$$\cos\theta = \frac{x}{r}=-\frac{1}{\sqrt{2}}= \frac{\sqrt{2}}{2}$$
 </li>
 <li>$$ \Leftrightarrow \theta = \frac{3}{4}\pi$$
 </li>
@@ -279,7 +279,7 @@ Courtesy of James Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
 In cylindrical coordinates the surface of this cone has the equation $$z=r$$ <br>
 </li>
 <li> and the solid cone as the set<br>
-$$E=\{(r,\theta,z)|\; 0 \leq r\leq c,\; 0 \leq \theta \leq 2\pi,\;  0\leq z\leq r \}$$
+$$E=\{(r,\theta,z)|\; 0 \leq r\leq c,\; 0 \leq \theta \leq 2\pi,\;  r \leq z\leq s \}$$
 </li>
 </ul>
 </div>
