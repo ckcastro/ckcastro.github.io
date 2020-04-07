@@ -1,0 +1,583 @@
+<style>
+.section .reveal .state-background {
+   background: #ffffff;
+}
+
+.section .reveal h1,
+.section .reveal h2,
+.section .reveal p {
+   color: black;
+   margin-top: 50px;
+   text-align: center;
+}
+
+.footer {
+    color: black;
+    background: #E8E8E8;
+    position: fixed;
+    top: 90%;
+    text-align:center;
+    width:100%;
+} 
+
+</style>
+
+<!-- foo 
+Highlighting
+bold
+strong
+orange <b style="color:#d95f02"> text </b>
+green  <b style="color:#1b9e77"> text </b>
+purple <b style="color:#d24693"> text </b>
+red    <b style="color:#FF0000"> text </b>
+blue   <b style="color:#0000FF"> text </b>
+-->
+
+15.7 Triple integrals in Cylindrical Coordinates
+========================================================
+title: "Math 283 Calculus 3"
+date: Math 283 Spring 2020
+author: Claudia Castro-Castro
+autosize: true
+incremental: true
+width: 1920
+height: 1080
+
+<h2 style="text-align:left"> Instructions:</h2>
+<p style='text-align:left'>Use the left and right arrow keys to navigate the presentation forward and backward respectively.  You can also use the arrows at the bottom right of the screen to navigate with a mouse.<br></p>
+
+<div class='footer'>
+    Copyright Disclaimer: material is for educational purposes only under fair use.
+</div>
+
+========================================================
+
+## Outline
+
+<div style="float:left; width:100%">
+<ul>
+<li>
+The following topics will be covered in this lecture:
+    <ul>
+      <li>Cylindrical coordinates</li>
+      <li>Volume element in cylindrical coordinates</li>
+      <li>Evaluation of triple integrals using cylindrical coordinates</li>
+
+    </ul>
+</li>
+</ul>
+</div>
+
+
+========================================================
+
+## Triple Integrals in Cylindrical Coordinates
+
+<div style="float:left; width:100%">
+<ul>
+<li>
+In 3D dimensions there is a coordinate system, called <b>cylindrical coordinates</b>, that is similar to polar coordinates and gives convenient descriptions of some commonly
+occurring surfaces and solids
+</li>
+<li>
+Suppose you want to find the <b>total mass</b> of the half cylinder with density function $f(x,y,z)$
+</li> 
+</ul>
+</div>
+
+<div style="float:left; width:50%;" class="fragment">
+<img src="15_7_image0.png" style="width:100%" alt="Diagram of polar coordinates"><div style="float:left; width:100%">
+</div>
+<p style="text-align:center"><small>
+Courtesy of James Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
+</small></p>
+</div>
+
+<div style="float:left; width:50%">
+<ul>
+<li>
+Suppose you want to find the total mass of the half cylinder with density function $\rho(x,y,z)$
+$$mass=\iiint \limits_{\frac{1}{2} Cylinder} \rho(x,y,z)dV$$
+</li> 
+<li>
+Projections
+</li>
+</ul>
+</div>
+
+
+========================================================
+
+## Recall:  polar coordinates
+
+<div style="float:left; width:100%">
+<ul>
+<li>
+Cartesian coordinates $(x, y)$ and polar coordinates $(r,\theta)$
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:40%" class="fragment">
+<img src="15_7_image1.png" style="width:100%" alt="Diagram of polar coordinates"><div style="float:left; width:100%">
+</div>
+<p style="text-align:center"><small>
+Courtesy of James Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
+</small></p>
+</div>
+
+<div style="float:left; width:60%">
+<ul style="list-style-type:none;">
+<li>
+<p style="border:3px; border-style:solid; border-color:#287EC7; padding: 1em;" class="fragment"> 
+Polar to rectangular $(r,\theta)\rightarrow (x,y)$ <br>
+$$x=r\cos \theta \\y=r\sin \theta$$ </p>
+</li>
+<li>
+<p style="border:3px; border-style:solid; border-color:#287EC7; padding: 1em;" class="fragment"> 
+Rectangular to polar $(x,y)\rightarrow (r,\theta)$ <br>
+$$r^2=x^2+y^2 \\
+\tan \theta = \frac{y}{x},\;\cos \theta = \frac{x}{r},\;\sin \theta = \frac{y}{r}$$ </p>
+</li>
+</ul>
+</div>
+
+
+
+
+========================================================
+
+## Cylindrical coordinates
+
+
+<div style="float:left; width:40%" class="fragment">
+<img src="15_7_image2.png" style="width:100%" alt="Diagram of polar coordinates"><div style="float:left; width:100%">
+</div>
+<p style="text-align:center"><small>
+Courtesy of James Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
+</small></p>
+</div>
+
+<div style="float:left; width:60%">
+<ul>
+<li>
+A point $P$ in 3-D space is represented by the ordered triple 
+$$(r, \theta , z)$$ 
+</li>
+<li> where $r$ and $\theta$ are <b>polar coordinates</b> of the projection of $P$ onto the $xy$-plane 
+</li>
+<li> and $z$ is the directed distance from the $xy$ -plane to $P$
+</li>
+</ul>
+</div>
+
+
+<div style="float:left; width:60%">
+<ul style="list-style-type:none;">
+<li>
+<p style="border:3px; border-style:solid; border-color:#287EC7; padding: 1em;" class="fragment"> 
+Cylindrical to rectangular $(r,\theta,z)\rightarrow (x,y,z)$ <br>
+$$\begin{align}
+x=&r\cos \theta \\y=&r\sin \theta\\z=&z
+\end{align}$$ </p>
+</li>
+<li>
+<p style="border:3px; border-style:solid; border-color:#287EC7; padding: 1em;" class="fragment"> 
+Rectangular to cylindrical $(x,y,z)\rightarrow (r,\theta,z)$ <br>
+$$r=\sqrt{x^2+y^2} \\
+\tan \theta = \frac{y}{x},\;\cos \theta = \frac{x}{r},\;\sin \theta = \frac{y}{r}\\z=z$$ </p>
+</li>
+</ul>
+</div>
+
+========================================================
+
+## Points in Cylindrical coordinates
+
+<h3 style="text-align:left"; class="fragment"> Example: </h3>
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li>
+Find cylindrical coordinates of the point with rectangular coordinates $(x, y, z) = (-1, 1, 3)$
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:100%">
+<ul>
+<li> Want $(r,\theta, z)$
+</li>
+<li> $z$ is the same as in Rectangular coords $z=3$</li>
+<li> Use parametric equations
+$$r=\sqrt{x^2+y^2}$$
+</li>
+<li>$$r=\sqrt{(-1)^2+(1)^2}\\
+= \sqrt{2}$$
+</li>
+<li>
+$$\tan\theta = \frac{y}{x}= \frac{1}{-1}= -1$$
+</li> <li>or 
+$$\cos\theta = \frac{x}{r}=\sqrt{2}= \frac{\sqrt{2}}{2}$$
+</li>
+<li>$$ \Leftrightarrow \theta = \frac{3}{4}\pi$$
+</li>
+<li> <br> Therefore $(r,\theta, z) = \left(\sqrt{2}, \frac{3}{4}\pi, 3\right)$
+</li>
+</ul>
+</div>
+
+
+========================================================
+
+## Solids in Cylindrical coordinates
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li>
+We can re-define certain solids in Cylindrical coordinates.
+</li>
+</ul>
+</div>
+
+<h3 style="text-align:left"; class="fragment"> Example: Cylinder </h3>
+ 
+<div style="float:left; width:50%">
+<ul>
+<li>
+The cyircular cylinder with Cartesian equation $$x^2+y^2=c^2$$<br><br>
+</li>
+<li>In cylindrical coordinates the surface of this cylinder has the equation $$r=c$$ <br>
+</li>
+<li> and the solid cylinder as the set<br>
+$$E=\left\{(r,\theta,z)|\; 0 \leq r\leq c,\; 0 \leq \theta \leq 2\pi,\;  a\leq z\leq b \right\}$$
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:40%" class="fragment">
+<img src="15_7_image4.png" style="width:100%" alt="Circular cylinder of radius c"><div style="float:left; width:100%">
+</div>
+<p style="text-align:center"><small>
+Courtesy of James Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
+</small></p>
+</div>
+
+
+========================================================
+
+## Solids in Cylindrical coordinates
+
+<h3 style="text-align:left"; class="fragment"> Example: Cone </h3>
+ 
+<div style="float:left; width:50%">
+<ul>
+<li> The cyircular cone with Cartesian equation $$z^2=x^2+y^2$$<br><br>
+</li>
+<li> Cone has radial symmetry
+</li>
+<li>
+In cylindrical coordinates the surface of this cone has the equation $$z=r$$ <br>
+</li>
+<li> and the solid cone as the set<br>
+$$E=\{(r,\theta,z)|\; 0 \leq r\leq c,\; 0 \leq \theta \leq 2\pi,\;  0\leq z\leq r \}$$
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:50%"; class="fragment">
+<img src="15_7_image8.png" style="width:100%" alt="Circular cone of radius c"><div style="float:left; width:100%">
+</div>
+<p style="text-align:center"><small>
+Courtesy of James Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
+</small></p>
+</div>
+
+========================================================
+
+## Evaluating Triple integrals in Cylindrical Coordinates
+
+<div style="float:left; width:40%;" class="fragment">
+<img src="15_7_image5.png" style="width:100%" alt="Generic solid in cylindrical coordinates"><div style="float:left; width:100%">
+</div>
+<p style="text-align:center"><small>
+Courtesy of James Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
+</small></p>
+</div>
+
+<div style="float:left; width:60%">
+<ul>
+<li>Suppose that $E$ is a <b>type 1 solid</b> with <b>projection</b> $D$ onto, say, the $xy$-plane is conveniently described in <b>polar coordinates</b>
+</li>
+<li> We know that
+$$\iiint_\limits{E} f(x,y,z)dV=\iint_\limits{D}\left[ \int_{\color{purple} {u_1(x,y)}}^{\color{purple} {u_2(x,y)}} f(x,y,z) {\color{purple} {dz}} \right] dA$$
+</li>
+<li>
+$D$ is given in polar coordinates
+</li>
+<li>
+Convert a triple integral from rectangular to cylindrical coordinates using
+$$\begin{align}
+x&=r\cos\theta\\
+y&=r\sin\theta\\
+z&=z\end{align}$$
+</li>
+<li>
+<p style="border:3px; border-style:solid; border-color:#287EC7; padding: 1em;" class="fragment"> 
+
+$$\iiint_\limits{E} f(r,\theta,z)dV_{cyl} = \iint_\limits{D}\left[ \int_{{\color{purple} {u_1(r,\theta)}}}^{{\color{purple} {u_2(r,\theta)}}} f(r,\theta,z) dz \right] dA_{polar} $$
+</p>
+</li>
+<li> What is $dV_{cyl}$?
+</li>
+</ul>
+</div>
+
+========================================================
+
+## Volume element in Cylindrical Coordinates
+
+<div style="float:left; width:40%;" class="fragment">
+<img src="15_7_image6a.png" style="width:100%" alt="Volume element in cylindrical coords"><div style="float:left; width:100%">
+</div>
+<p style="text-align:center"><small>
+Courtesy of James Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
+</small></p>
+</div>
+
+<div style="float:left; width:60%">
+<ul>
+<li> Volume element in cylindrical coordinates has volume<br>
+<br>
+$$dV_{cyl} =(Area\; of\; polar\;rectangle)(height)$$
+</li>
+<li>$$dV_{cyl} =(dA_{polar})(dz)$$
+</li>
+<li>
+$$dV_{cyl} =(rdrd\theta)(dz)$$
+</li>
+<li>
+<p style="border:3px; border-style:solid; border-color:#287EC7; padding: 1em;" class="fragment"> 
+
+$$dV_{cyl} = r\: dz\: dr\:d\theta$$
+</p>
+</li>
+</ul>
+</div>
+
+========================================================
+
+##  Example 
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li>
+A solid $E$ lies within the cylinder $x^2 + y^2 = 1$, below the plane $z = 4$, and above the paraboloid $z = 1 – x^2 – y^2$. 
+The density at any point is <b>proportional</b> to its distance from 
+the axis of the cylinder. Find the <b>total mass</b> of $E$.
+</li>
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:70%">
+<ul>
+
+<li>The total mass as a triple integral is 
+$$mass=\iiint \limits_E \rho (x,y,z) dV $$
+</li>
+
+<li>Density at any point in $E$ is proportional to the distance from $z$ axis
+$$f(x,y,z)= K \sqrt{x^2+y^2} $$
+where $K$ is the proportionality constant
+</li>
+<li>which in Cylindrican can be re-written as <br><br>
+$$f(r,\theta,z)= K r$$<br>
+</li>
+
+<li>The total mass as a triple integral is 
+$$mass=\iiint \limits_E Kr\;\; dV_{cyl} $$
+</li>
+
+</ul>
+</div>
+
+
+========================================================
+
+##  Example cont'd
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li>
+A solid $E$ lies within the cylinder $x^2 + y^2 = 1$, below the plane $z = 4$, and above the paraboloid $z = 1 – x^2 – y^2$. 
+The density at any point is <b>proportional</b> to its distance from 
+the axis of the cylinder. Find the <b>total mass</b> of $E$.
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:70%">
+<ul>
+<li>
+Sketch $E$.
+</li>
+<li>Re-define the boundary surfaces in Cylindrical coordinates
+$$r=\sqrt{x^2+y^2}\:\: or \:\: r^2=x^2+y^2$$
+</li> 
+<li> Cylinder $x^2 + y^2 = 1$ becomes
+$$r = 1$$
+$\theta \in [0,2\pi]$
+</li>
+<li> Paraboloid $z= 1-x^2-y^2$ becomes
+$z = 1 – r^2$
+</li>
+<li> Plane $$z= 4$$
+</li>
+<li> Set $E$ in cylindrical coordinates 
+$$E = \{(r,\theta,z)|\; 0\leq r \leq 1,\; 0 \leq  \theta \leq 2\pi,\; 1-r^2  \leq z\leq 4  \}$$
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:30%;" class="fragment">
+<img src="15_7_image6b.png" style="width:100%" alt="Volume element in cylindrical coords"><div style="float:left; width:100%">
+</div>
+<p style="text-align:center"><small>
+Courtesy of James Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
+</small></p>
+</div>
+
+========================================================
+
+##  Example  cont'd
+
+<div style="float:left; width:30%;" class="fragment">
+<img src="15_7_image6b.png" style="width:100%" alt="Volume element in cylindrical coords"><div style="float:left; width:100%">
+</div>
+<p style="text-align:center"><small>
+Courtesy of James Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
+</small></p>
+</div>
+
+
+<div style="float:left; width:60%">
+<ul>
+<li>
+Set up the total mass as a triple integral 
+$$mass=\int_{0}^{2\pi} \int_0^1 \int_{{\color{purple} {z=1-r^2}} }^{{\color{purple} {z=4}}} ( Kr )\; r\; {\color{purple} {dz}}  \;dr\: d\theta $$
+</li>
+<li> Integrate with respect to $z$ first
+$$\begin{align}
+mass&=K \int_{0}^{2\pi} \int_0^1 \int_{{\color{purple} {z=1-r^2}} }^{{\color{purple} {z=4}}}  r^2\; {\color{purple} {dz}}  \;dr\: d\theta \\
+&=K \int_{0}^{2\pi} \int_0^1 \left[r^2\: z\:  \right]\bigg\vert_{{\color{purple} {z=1-r^2}} }^{{\color{purple} {z=4}}} \;dr\: d\theta\\
+&=K \int_{0}^{2\pi} \int_0^1 r^2 \left[4-(1-r^2) \right] \;dr\: d\theta
+\end{align}$$
+</li>
+<li> Evaluate the double integral in <b>polar coordinates</b>
+$$\begin{align}
+mass& = K \int_{0}^{2\pi} \int_0^1 \left(3r^2+r^4 \right) \;dr\: d\theta 
+\end{align}$$
+</li>
+<li> Over a polar rectangle
+$$\begin{align}
+mass&=K \int_{0}^{2\pi} d\theta \int_0^1 \left(3r^2+r^4 \right) \;dr\\
+&= K\theta\bigg\vert_{\theta=0}^{\theta=2\pi} \left({r^3+\frac{r^5}{5}} \right)\bigg\vert_{r=0}^{r=1} = K(2\pi)\left( \frac{6}{5}\right) = \frac{12\pi K}{5} 
+\end{align}$$
+</li>
+</ul>
+</div>
+
+
+========================================================
+
+##  Example 
+
+<div style="float:left; width:100%">
+<ul>
+Find the volume of a cone of base radius $R$ and height $H$ using cylindrical coordinates
+</ul>
+</div>
+
+
+<div style="float:left; width:30%;" class="fragment">
+<img src="15_7_image7b.png" style="width:100%" alt="Volume element in cylindrical coords"><div style="float:left; width:100%">
+</div>
+<p style="text-align:center"><small>
+Courtesy of James Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
+</small></p>
+</div>
+
+<div style="float:left; width:70%">
+<ul>
+<li> Volume triple integral
+$$V(E)= \iiint \limits_E  1\;dV_{cyl}$$
+</li>
+<li>
+The cone $E$ has a much simpler description in cylindrical coordinates:
+$$E=\left\{(r,\theta,z)|\; 0\leq r \leq R,\; 0 \leq \theta \leq 2\pi,\; \frac{H}{R}r \leq z\leq H \right\}$$
+</li>
+<li>
+used radial symmetry to project to $rz$-plane
+</li>
+<li> Integrate with respect to $z$
+$$V(E)= \int_0^{2\pi}\int_0^R \int_{z=\frac{H}{R}r}^{z=H}  1\;r\;dz\;dr\;d\theta$$
+</li>
+</ul>
+</div>
+
+
+========================================================
+
+##  Example cont'd 
+
+<div style="float:left; width:30%;" class="fragment">
+<img src="15_7_image7b.png" style="width:100%" alt="Volume element in cylindrical coords"><div style="float:left; width:100%">
+</div>
+<p style="text-align:center"><small>
+</small></p>
+</div>
+
+<div style="float:left; width:70%">
+<ul>
+<li> Integrate with respect to $z$
+$$V(E)= \int_0^{2\pi}\int_0^R  \left[\;r\;z \bigg\vert_{z=\frac{H}{R}r}^{z=H}\right] \;dr\;d\theta$$
+</li>
+<li>
+$$V(E)= \int_0^{2\pi}\int_0^R  \left(H r - \frac{H}{R} r^2 \right) \;dr\;d\theta$$
+</li>
+<li> Integrate over the polar rectangle
+$$\begin{align}
+V(E)&= \int_0^{2\pi} d\theta \int_0^R  \left(H r - \frac{H}{R} r^2 \right)\\
+&=(2\pi) \left( H\frac{R^2}{2}-\frac{H}{R}\frac{R^3}{3}\right) \\
+&=(2\pi)H\left( \frac{R^2}{2}-\frac{R^2}{3}\right)\\
+&=(2\pi)HR^2\left( \frac{1}{2}-\frac{1}{3}\right)\\
+&=(2\pi)HR^2\left(\frac{1}{6}\right)=\frac{\pi}{3} HR^2\end{align}$$
+</li>
+</ul>
+</div>
+
+
+========================================================
+
+## Final remarks
+
+<div style="float:left; width:100%">
+<ul>
+<li>To change to cylindrical equation use the parametric equations 
+$$x=r\cos\theta \;\;\; y = r\sin\theta \;\;\;z=z$$
+</li>
+<li>Use the volum element in cylindrical coordinates $$dV_{cyl}= r\;dz\;dr\;d\theta$$
+</li>
+<li>
+You can export this presentation to pdf with any web browser using the menu Print to PDF from (for instance) Google Chrome. 
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:50%; padding-left:25%"> 
+<ul style="list-style-type:none;">
+<li> Questions </li>
+</ul>
+</div>
+  
