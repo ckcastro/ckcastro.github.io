@@ -1,0 +1,568 @@
+<style>
+.section .reveal .state-background {
+   background: #ffffff;
+}
+
+.section .reveal h1,
+.section .reveal h2,
+.section .reveal p {
+   color: black;
+   margin-top: 50px;
+   text-align: center;
+}
+
+.footer {
+    color: black;
+    background: #E8E8E8;
+    position: fixed;
+    top: 90%;
+    text-align:center;
+    width:100%;
+} 
+
+</style>
+
+<!-- foo 
+Highlighting
+bold
+strong
+orange <b style="color:#d95f02"> text </b>
+green  <b style="color:#1b9e77"> text </b>
+purple <b style="color:#d24693"> text </b>
+red    <b style="color:#FF0000"> text </b>
+blue   <b style="color:#0000FF"> text </b>
+-->
+
+15.8 Triple integrals in Spherical Coordinates (Part 1)
+========================================================
+title: "Math 283 Calculus 3"
+date: Math 283 Spring 2020
+author: Claudia Castro-Castro
+autosize: true
+incremental: true
+width: 1920
+height: 1080
+
+<h2 style="text-align:left"> Instructions:</h2>
+<p style='text-align:left'>Use the left and right arrow keys to navigate the presentation forward and backward respectively.  You can also use the arrows at the bottom right of the screen to navigate with a mouse.<br></p>
+
+<div class='footer'>
+    Copyright Disclaimer: material is for educational purposes only under fair use.
+</div>
+
+========================================================
+
+## Outline
+
+<div style="float:left; width:100%">
+<ul>
+<li>
+The following topics will be covered in this lecture:
+    <ul>
+      <li>Description of spherical coordinates</li>
+      <li>Example of solid in spherical coordinates</li>
+      <li>Volume element in spherical coordinates</li>
+      <li>Evaluation of triple integral using spherical coordinates</li>
+    </ul>
+</li>
+</ul>
+</div>
+
+========================================================
+
+## Spherical coordinates
+
+<div style="float:left; width:40%" class="fragment">
+<img src="15_8_image0.png" style="width:100%" alt="text"><div style="float:left; width:100%">
+</div>
+<p style="text-align:center"><small>
+Courtesy of James Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
+</small></p>
+</div>
+
+<div style="float:left; width:60%">
+<ul>
+<li>
+A point $P$ in 3-D space is represented by the ordered triple 
+$$(\rho, \theta , \phi)$$ 
+where
+</li>
+<li>$\rho$ is the directed <b>distance from the origin</b> to $P$<br>
+
+</li>
+<li>$\theta$ <b>azimuthal angle</b><br>
+same angle as in cylindrical coordinates (and polar)<br>
+</li>
+<li>$\phi$ <b>polar angle</b><br>angle between the <b>positive</b> $z$-axis and the line segment $OP$<br>
+
+</li>
+<li> <u>Convention:</u> $$ 0 \leq \rho  $$
+$$ 0 \leq \theta \leq 2\pi $$
+$$ 0 \leq \phi \leq \pi $$
+</li>
+<li> Relationship between Spherical and Rectangular?
+</li>
+</ul>
+</div>
+
+
+========================================================
+
+## Spherical coordinates
+
+<div style="float:left; width:45%" class="fragment">
+<img src="15_8_image1.png" style="width:100%" alt="text"><div style="float:left; width:100%">
+</div>
+<p style="text-align:center"><small>
+Courtesy of James Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
+</small></p>
+</div>
+
+<div style="float:left; width:50%">
+<ul>
+<li> $\rho = \sqrt{x^2+y^2+z^2}$
+</li>
+<li> $\theta$ same angle as in cylindrical coordinates (and polar)
+</li>
+<li> From the right triangle on the $rz$-plane
+$$ \sin\phi = \frac{r}{\rho}$$
+$$ \cos \phi = \frac{z}{\rho}$$
+$$\tan \phi = \frac{r}{z}$$
+</li>
+<li>Re-write 
+$$\begin{align}
+x&= r \cos \theta \\
+ &= (\rho \sin\phi)\cos\theta
+\end{align}$$
+</li>
+<li>
+$$\begin{align}
+y&= r \sin \theta \\
+ &= (\rho \sin\phi)\sin\theta
+\end{align}$$
+</li>
+<li> $$z= \rho \cos \phi$$
+</li>
+</ul>
+</div>
+
+
+========================================================
+
+## Spherical coordinates summary
+
+<div style="float:left; width:35%" class="fragment">
+<img src="15_8_image2b.png" style="width:100%" alt="text"><div style="float:left; width:100%">
+</div>
+</div>
+
+<div style="float:left; width:50%">
+<ul style="list-style-type:none;">
+<li> <p style="border:3px; border-style:solid; border-color:#287EC7; padding: 1em;" class="fragment"> 
+<b>Spherical to Rectangular</b>   
+$$\begin{align}
+x	&=\rho\cos{\theta}\sin\phi\\	
+y	&=\rho\sin{\theta}\sin\phi\\	
+z	&=\rho\cos\phi	
+\end{align}$$
+</p>
+</li>
+<li> <p style="border:3px; border-style:solid; border-color:#287EC7; padding: 1em;" class="fragment"> 
+<b>  Rectangular to Spherical </b>  
+$$\begin{align}
+	r&=\sqrt{x^{2}+y^{2}}	\\
+	\rho=&	\sqrt{x^{2}+y^{2}+z^{2}}\\	
+	\tan{\theta}=&\frac{y}{x}, \;\cos{\theta}=\frac{x}{r},\;\sin{\theta}=\frac{y}{r}\\
+	\tan{\phi}=&\frac{r}{z},\;	\cos{\phi}	=\frac{z}{\rho},\;	\sin{\phi}=\frac{r}{\rho}
+\end{align}$$
+</p>
+</li>
+</ul>
+</div>
+
+========================================================
+
+## Solids in Spherical coordinates
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li>
+We can re-define certain solids in Spherical coordinates.
+</li>
+</ul>
+</div>
+
+<h3 style="text-align:left"; class="fragment"> Example: Sphere </h3>
+ 
+<div style="float:left; width:100%">
+<ul>
+<li>The sphere with Cartesian equation $$x^2+y^2+z^2=9$$
+</li>
+</ul>
+</div>
+
+
+<div style="float:left; width:30%;padding-left:10%" class="fragment">
+<img src="15_8_image3.png" style="width:100%" alt="Sphere of radius 3"><div style="float:left; width:100%">
+</div>
+<p style="text-align:center"><small>
+Courtesy of James Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
+</small></p>
+</div>
+
+<div style="float:left; width:50%">
+<ul>
+</li>
+<li> In spherical coordinates is $$\rho^2=9$$ or $$\rho = 3$$
+</li>
+<li> $$\theta\in [0,2\pi]$$
+$$\phi\in [0,\pi]$$
+</li>
+<li>
+$$E= \left\{ (\rho,\theta, \phi)|\:0\leq \rho \leq 3,\; 0\leq \theta \leq 2\pi,\; 0\leq \phi \leq \pi \right\}$$
+</li>
+</ul>
+</div>
+
+========================================================
+
+## Solids in Spherical coordinates
+
+<h3 style="text-align:left"; class="fragment"> Examples:  </h3>
+
+<div style="float:left; width:60%">
+<ul>
+<li> Plane:   $\theta = \frac{\pi}{4}\;\;\;$ Cone:  $\phi = \frac{\pi}{4}$ or $\phi = \frac{3\pi}{4}$
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:100%" class="fragment">
+<img src="15_8_image3b.png" style="width:100%" alt="Circular cylinder of radius c"><div style="float:left; width:100%">
+</div>
+<p style="text-align:center"><small>
+Courtesy of James Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
+</small></p>
+</div>
+ 
+
+
+
+========================================================
+
+## Evaluating Triple integrals in Spherical Coordinates
+
+<div style="float:left; width:40%;" class="fragment">
+<img src="15_8_image4.png" style="width:100%" alt="Generic volume element in spherical coordinates"><div style="float:left; width:100%">
+</div>
+<p style="text-align:center"><small>
+Courtesy of James Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
+</small></p>
+</div>
+
+<div style="float:left; width:60%">
+<ul>
+<li> Convert a triple integral from rectangular to spherical coordinates using
+$$\begin{align}
+x	&=\rho\cos{\theta}\sin\phi\\	
+y	&=\rho\sin{\theta}\sin\phi\\	
+z	&=\rho\cos\phi	
+\end{align}$$
+<br><br>
+</li>
+<li>Define the triple integral as the limit of the triple Riemman sum
+<p style="border:3px; border-style:solid; border-color:#287EC7; padding: 1em;" class="fragment"> 
+
+$$\begin{align}
+\iiint_\limits{E} f(x,y,z)dV &=  \lim_{\Delta \rho_i  \to 0}\lim_{\Delta \theta_j  \to 0} \lim_{\Delta \phi_k \to 0} \sum_{i=1}^l \sum_{j=1}^m \sum_{k=1}^n f(\rho_i,\theta_j,\phi_k) \Delta V_{spherical} \\
+&=\iiint_\limits{E} f(\rho,\theta,\phi) dV_{spherical}
+\end{align}$$
+</p>
+</li>
+<li>
+where $\Delta V_{spherical}$ is the volume of the <b>spherical box</b> with sides <br>
+$\Delta \rho, \Delta \theta$ and $\Delta \phi$
+</li>
+<li>
+What is $dV_{spherical}?$
+</li>
+</ul>
+</div>
+
+
+
+
+========================================================
+
+## Volume element in Spherical Coordinates
+
+<div style="float:left; width:100%">
+<ul>
+<li> In order to derive the volume element with need to rely on a main argument
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li> <strong>$\star\star\star$</strong > In the <b>limit sense</b> when $\Delta \rho \rightarrow 0$, $\Delta \theta \rightarrow 0$, and $\Delta \phi \rightarrow  0$, <br><br>
+Spherical Box $\approx$ Rectangular Box<br>
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:45%;" class="fragment">
+<img src="15_8_image4b.png" style="width:100%" alt="Generic volume element in spherical coordinates"><div style="float:left; width:100%">
+</div>
+</div>
+
+
+
+
+========================================================
+
+## Volume element in Spherical Coordinates
+
+<div style="float:left; width:40%;" class="fragment">
+<img src="15_8_image4bb.png" style="width:100%" alt="Generic volume element in spherical coordinates"><div style="float:left; width:100%">
+</div>
+</div>
+
+<div style="float:left; width:60%">
+<ul style="list-style-type:none;">
+<li> The volume of the spherical box can be approximated by<br><br>
+$V_{spherical\;box}$ = (Area base) (height)
+</li>
+<li><br>
+Area of the base is 
+$$ ||\vec{a}\times \vec{b}||$$
+</li>
+<li> Height is 
+$$h = ||\vec{c}|| \cos \beta$$
+where $\beta$ is the angle between $\vec{c}$ and $\vec{a}\times\vec{b}$
+</li>
+<li> Therefore
+$$V_{spherical\:box} =  ||\vec{a}\times \vec{b}|| ||\vec{c}|| \cos \beta$$
+</li>
+
+<li> Dot product
+$$V_{spherical\:box} =|(\vec{a}\times \vec{b})\cdot \vec{c} |$$
+<li>
+</ul>
+</div>
+
+========================================================
+
+## Volume element in Spherical Coordinates cont'd
+
+<div style="float:left; width:35%;" class="fragment">
+<img src="15_8_image4d.png" style="width:100%" alt="Generic volume element in spherical coordinates"><div style="float:left; width:100%">
+</div>
+</div>
+<div style="float:left; width:65%">
+<ul style="list-style-type:none;">
+<li>Define $\vec{P}$ as the position vector
+$$\vec{P} = \vec{r}(\rho,\theta,\phi)$$
+</li>
+<li>Then 
+$$\vec{a} = \vec{r}(\rho+\Delta\rho,\theta,\phi)-\vec{r}(\rho,\theta,\phi)$$
+</li>
+<li> Multiply by 1
+$$\vec{a} =\left[ \vec{r}(\rho+\Delta\rho,\theta,\phi)-\vec{r}(\rho,\theta,\phi)\right] {\color{blue} {\frac{\Delta\rho}{\Delta\rho}}}$$
+</li>
+<li> Re-arrange
+$$\vec{a} =\left[ \frac{\vec{r}(\rho+\Delta\rho,\theta,\phi)-\vec{r}(\rho,\theta,\phi)}{\Delta\rho} \right] \Delta\rho $$
+</li>
+<li> 
+<li> <strong>$\star$</strong> In the <b>limit</b> $\Delta \rho \rightarrow 0$, the expression inside the brackets is a <b>derivative</b> with respect to $\rho$!
+$$\vec{a} =\vec{r}_{\rho} \Delta\rho $$
+</li>
+<li> Similarly 
+$$\vec{b} =\left[ \vec{r}(\rho,\theta+\Delta\theta,\phi)-\vec{r}(\rho,\theta,\phi)\right] {\color{blue} {\frac{\Delta\theta}{\Delta\theta}}}$$
+$$\vec{c} =\left[ \vec{r}(\rho,\theta,\phi+\Delta\phi)-\vec{r}(\rho,\theta,\phi)\right] {\color{blue} {\frac{\Delta\phi}{\Delta\phi}}}$$
+</li>
+<li>
+<strong>$\star\star$</strong> In the <b>limit</b> $\Delta \theta \rightarrow 0$ and $\Delta \phi \rightarrow 0$
+$$\vec{b} =\vec{r}_{\theta} \Delta\theta \quad\quad \vec{c} =\vec{r}_{\phi} \Delta\phi $$
+</li>
+</ul>
+</div>
+
+========================================================
+
+## Volume element in Spherical Coordinates cont'd
+<div style="float:left; width:100%">
+<ul>
+<li> So far we have 
+$$\vec{a} =\vec{r}_{\rho} \Delta\rho \quad\quad\vec{b} =\vec{r}_{\theta} \Delta\theta \quad\quad \vec{c} =\vec{r}_{\phi} \Delta\phi $$
+</li> 
+<li>and the volume of the box 
+$$\begin{align}
+V_{spherical\:box} &=|(\vec{a}\times \vec{b})\cdot \vec{c} |\\
+&=|[(\vec{r}_{\rho} \Delta\rho) \times (\vec{r}_{\theta} \Delta\theta) ]\cdot (\vec{r}_{\phi} \Delta\phi) |
+\end{align}$$
+</li>
+<li>Simplify
+$$V_{spherical\:box} =|(\vec{r}_{\rho}  \times \vec{r}_{\theta})\cdot \vec{r}_{\phi} | \Delta\rho\Delta\theta\Delta\phi$$
+</li>
+<li> What are $\vec{r}_{\rho}$, $\vec{r}_{\theta}$ and $\vec{r}_{\phi}$?
+</li>
+<li> Since the vector function $\vec{r}$ is defined as <br><br>
+$$\begin{align}\vec{r}(\rho,\theta,\phi) &=\langle x(\rho,\theta,\phi),y(\rho,\theta,\phi), z(\rho,\theta,\phi) \rangle\\
+&= \langle\rho\cos{\theta}\sin\phi, \rho\sin{\theta}\sin\phi, \rho\cos\phi \rangle\\
+\end{align}$$
+</li>
+<li> Derivative explicitely
+$$\begin{align}
+\vec{r}_{\rho} & = \langle \frac{\partial}{\partial \rho} (\rho\cos{\theta}\sin\phi),\; \frac{\partial}{\partial \rho} (\rho\sin\theta \sin\phi),\;\frac{\partial}{\partial \rho} ( \rho\cos\phi) \rangle \\
+&= \langle \cos{\theta}\sin\phi,\; \sin\theta \sin\phi,\;\cos\phi \rangle 
+\end{align}$$
+</li>
+</ul>
+</div>
+
+
+========================================================
+
+## Volume element in Spherical Coordinates cont'd
+<div style="float:left; width:100%">
+<ul>
+<li> Similarly $$\begin{align}
+\vec{r}_{\theta} & = \langle \frac{\partial}{\partial \theta} (\rho\cos{\theta}\sin\phi),\; \frac{\partial}{\partial \theta} (\rho\sin\theta \sin\phi),\;\frac{\partial}{\partial \theta} ( \rho\cos\phi) \rangle \\
+&= \langle -\rho\sin{\theta}\sin\phi,\; \rho\cos\theta \sin\phi,\;0 \rangle 
+\end{align}$$
+</li>
+<li>$$\begin{align}
+\vec{r}_{\phi} & = \langle \frac{\partial}{\partial \phi} (\rho\cos{\theta}\sin\phi),\; \frac{\partial}{\partial \phi} (\rho\sin\theta \sin\phi),\;\frac{\partial}{\partial \phi} ( \rho\cos\phi) \rangle \\
+&= \langle \rho\cos{\theta}\cos\phi,\; \rho\sin\theta \cos\phi,\;\rho 
+\sin\theta \rangle 
+\end{align}$$
+</li>
+</ul>
+</div>
+
+
+
+========================================================
+## Volume element in Spherical Coordinates cont'd
+
+<div style="float:left; width:100%">
+<ul>
+
+<li> Then the volume of the spherical box is 
+$$dV_{spherical\:box} =|(\vec{r}_{\rho}  \times \vec{r}_{\theta})\cdot \vec{r}_{\phi} | d\rho d\theta d\phi$$
+</li> 
+<li> where
+$$\begin{align}
+\vec{r}_{\rho}  \times \vec{r}_{\theta}&= 
+\bigg\vert\left(\begin{array}{cll}
+\hat{i}&\hat{j}&\hat{k}\\
+\cos{\theta}\sin\phi&\sin\theta \sin\phi&\cos\phi\\
+-\rho\sin{\theta}\sin\phi& \rho\cos\theta \sin\phi&0 
+\end{array}\right)\bigg\vert \end{align}$$
+</li>
+<li>$\vdots$
+</li>
+<li>After some algebra and using trig identities on the double vector product, we get
+$$(\vec{r}_{\rho}  \times \vec{r}_{\theta})\cdot \vec{r}_{\phi} = -\rho^2 \sin \phi$$
+</li>
+<li> Therefore
+<p style="border:3px; border-style:solid; border-color:#287EC7; padding: 1em;" class="fragment"> 
+$$dV_{spherical\:box} =\rho^2 \sin\phi \:d\rho\: d\theta\: d\phi$$
+</p>
+</li>
+</ul>
+</div>
+
+
+========================================================
+
+##  Example 
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li>
+Find the volume of sphere of radius $R$.
+</li>
+</ul>
+</div>
+
+
+<div style="float:left; width:40%;" class="fragment">
+<img src="15_8_image3.png" style="width:100%" alt="Generic volume element in spherical coordinates"><div style="float:left; width:100%">
+</div>
+</div>
+
+<div style="float:left; width:60%">
+<ul>
+<li>Volume integral
+$$V(E)=\iiint\limits_{E} 1\; dV $$ 
+</li>
+<li>The equation of the sphere in rectangular coordinates
+$$x^2+y^2+z^2=R^2$$
+</li>
+<li>
+In Spherical coordinates is 
+$$\rho = R $$
+</li>
+<li>Solid sphere
+$$E= \left\{(\rho, \theta,\phi)|\; 0\leq \rho \leq R,\; 0\leq\theta\leq2\pi,\;0\leq\phi \leq \pi  \right\}$$
+</li>
+<li>
+$$V(E)=\int_{\phi=0}^{\phi=\pi}\int_{\theta=0}^{\theta=2\pi}\int_{\rho=0}^{\rho=R} 1\; \rho^2 \sin\phi\; d\rho \;d\theta\;d\phi $$ 
+</li>
+</ul>
+</div>
+
+
+========================================================
+
+##  Example 
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li> Evaluate the triple integral
+$$V(E)=\int_{\phi=0}^{\phi=\pi}\int_{\theta=0}^{\theta=2\pi}\int_{\rho=0}^{\rho=R} \; \rho^2 \sin\phi\; d\rho \;d\theta\;d\phi $$ 
+</li>
+<li> Integrate with respect to $\rho$ 
+$$\begin{align}
+V(E)&= \int_{\phi=0}^{\phi=\pi}\int_{\theta=0}^{\theta=2\pi}\left[\frac{\rho^3}{3} \sin\phi\right] \bigg\vert_{\rho=0}^{\rho=R}  \;d\theta\;d\phi\\
+&=\int_{\phi=0}^{\phi=\pi}\int_{\theta=0}^{\theta=2\pi}\left[\frac{R^3}{3} \sin\phi\right]   \;d\theta\;d\phi \end{align}$$ 
+</li>
+<li> Integrate with respect to $\theta$ 
+$$\begin{align}
+V(E)&=\frac{R^3}{3} \int_{\phi=0}^{\phi=\pi}\left[\theta\sin\phi\right]\bigg\vert_{\theta=0}^{\theta=2\pi}\;d\phi=\frac{R^3}{3} (2\pi)\int_{\phi=0}^{\phi=\pi} \sin\phi\;d\phi \end{align}$$ 
+</li>
+<li> Integrate with respect to $\phi$
+$$\begin{align}
+V(E)&=\frac{2\pi R^3}{3} \left[-\cos\phi\right]\bigg\vert_{\phi=0}^{\phi=\pi}=\frac{2\pi R^3}{3}(-(-1)-1)=\frac{4\pi R^3}{3} \end{align}$$ 
+</li>
+</ul>
+</div>
+
+
+
+========================================================
+
+## Final remarks
+
+<div style="float:left; width:100%">
+<ul>
+<li>To change to spherical coordinates use the parametric equations 
+$$x=\rho \cos\theta \sin \phi  \;\;\; y = \rho \sin\theta \sin \phi \;\;\;z = \rho \cos \phi$$
+</li>
+<li>Use the volume element in spherical coordinates 
+$$dV_{spherical}= \rho^2\sin\phi \;\;d\rho\;d\theta\;d\phi$$
+</li>
+<li>
+You can export this presentation to pdf with any web browser using the menu Print to PDF from (for instance) Google Chrome. 
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:50%; padding-left:25%"> 
+<ul style="list-style-type:none;">
+<li> Questions </li>
+</ul>
+</div>
+  
