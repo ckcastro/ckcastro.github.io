@@ -373,7 +373,6 @@ $$dV_{cyl} =(rdrd\theta)(dz)$$
 </li>
 <li>
 <p style="border:3px; border-style:solid; border-color:#287EC7; padding: 1em;" class="fragment"> 
-
 $$dV_{cyl} = r\: dz\: dr\:d\theta$$
 </p>
 </li>
@@ -445,7 +444,7 @@ $$r = 1$$
 $\theta \in [0,2\pi]$
 </li>
 <li> Paraboloid $z= 1-x^2-y^2$ becomes
-$z = 1 – r^2$
+$$z = 1 – r^2$$
 </li>
 <li> Plane $$z= 4$$
 </li>
@@ -456,7 +455,7 @@ $$E = \{(r,\theta,z)|\; 0\leq r \leq 1,\; 0 \leq  \theta \leq 2\pi,\; 1-r^2  \le
 </div>
 
 <div style="float:left; width:30%;" class="fragment">
-<img src="15_7_image6b.png" style="width:100%" alt="Volume element in cylindrical coords"><div style="float:left; width:100%">
+<img src="15_7_image6b.png" style="width:100%" alt="Solid bounded between paraboloid and plane"><div style="float:left; width:100%">
 </div>
 <p style="text-align:center"><small>
 Courtesy of James Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
@@ -468,7 +467,7 @@ Courtesy of James Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
 ##  Example  cont'd
 
 <div style="float:left; width:30%;" class="fragment">
-<img src="15_7_image6b.png" style="width:100%" alt="Volume element in cylindrical coords"><div style="float:left; width:100%">
+<img src="15_7_image6b.png" style="width:100%" alt="Solid bounded between paraboloid and plane"><div style="float:left; width:100%">
 </div>
 <p style="text-align:center"><small>
 Courtesy of James Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
@@ -510,20 +509,17 @@ mass&=K \int_{0}^{2\pi} d\theta \int_0^1 \left(3r^2+r^4 \right) \;dr\\
 
 <div style="float:left; width:100%">
 <ul>
-Find the volume of a cone of base radius $R$ and height $H$ using cylindrical coordinates
+Find the volume of a circular cone of base radius $R$ and height $H$ using cylindrical coordinates
 </ul>
 </div>
 
 
-<div style="float:left; width:30%;" class="fragment">
-<img src="15_7_image7b.png" style="width:100%" alt="Volume element in cylindrical coords"><div style="float:left; width:100%">
+<div style="float:left; width:50%;" class="fragment">
+<img src="15_7_image7.png" style="width:100%" alt="Circular cone"><div style="float:left; width:100%">
 </div>
-<p style="text-align:center"><small>
-Courtesy of James Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
-</small></p>
 </div>
 
-<div style="float:left; width:70%">
+<div style="float:left; width:50%">
 <ul>
 <li> Volume triple integral
 $$V(E)= \iiint \limits_E  1\;dV_{cyl}$$
@@ -547,10 +543,8 @@ $$V(E)= \int_0^{2\pi}\int_0^R \int_{z=\frac{H}{R}r}^{z=H}  1\;r\;dz\;dr\;d\theta
 ##  Example cont'd 
 
 <div style="float:left; width:30%;" class="fragment">
-<img src="15_7_image7b.png" style="width:100%" alt="Volume element in cylindrical coords"><div style="float:left; width:100%">
+<img src="15_7_image7.png" style="width:100%" alt="Circular cone"><div style="float:left; width:100%">
 </div>
-<p style="text-align:center"><small>
-</small></p>
 </div>
 
 <div style="float:left; width:70%">
