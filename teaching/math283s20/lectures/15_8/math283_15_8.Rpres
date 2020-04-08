@@ -33,7 +33,7 @@ red    <b style="color:#FF0000"> text </b>
 blue   <b style="color:#0000FF"> text </b>
 -->
 
-15.8 Triple integrals in Spherical Coordinates (Part 1)
+15.8 Triple integrals in Spherical Coordinates (Part 2)
 ========================================================
 title: "Math 283 Calculus 3"
 date: Math 283 Spring 2020
@@ -280,7 +280,7 @@ $$\begin{align}
 </p>
 </li>
 <li>
-where $\Delta V_{spherical}$ is the volume of the <b>spherical box</b>(see figure) with sides <br>
+where $\Delta V_{spherical}$ is the volume of the <b>spherical box</b> (see figure) with sides <br>
 $\Delta \rho, \Delta \theta$ and $\Delta \phi$
 </li>
 <li>
@@ -375,7 +375,7 @@ $$\vec{a} =\left[ \frac{\vec{r}(\rho+\Delta\rho,\theta,\phi)-\vec{r}(\rho,\theta
 </li>
 <li> 
 <li> <strong>$\star$</strong> In the <b>limit</b> $\Delta \rho \rightarrow 0$, the expression inside the brackets is a <b>derivative</b> with respect to $\rho$!
-$$\vec{a} =\vec{r}_{\rho} \Delta\rho $$
+$$\vec{a} =\vec{r}_{\rho} d\rho $$
 </li>
 <li> Similarly 
 $$\vec{b} =\left[ \vec{r}(\rho,\theta+\Delta\theta,\phi)-\vec{r}(\rho,\theta,\phi)\right] {\color{blue} {\frac{\Delta\theta}{\Delta\theta}}}$$
@@ -383,7 +383,7 @@ $$\vec{c} =\left[ \vec{r}(\rho,\theta,\phi+\Delta\phi)-\vec{r}(\rho,\theta,\phi)
 </li>
 <li>
 <strong>$\star\star$</strong> In the <b>limit</b> $\Delta \theta \rightarrow 0$ and $\Delta \phi \rightarrow 0$
-$$\vec{b} =\vec{r}_{\theta} \Delta\theta \quad\quad \vec{c} =\vec{r}_{\phi} \Delta\phi $$
+$$\vec{b} =\vec{r}_{\theta} d\theta \quad\quad \vec{c} =\vec{r}_{\phi} d\phi $$
 </li>
 </ul>
 </div>
@@ -394,16 +394,16 @@ $$\vec{b} =\vec{r}_{\theta} \Delta\theta \quad\quad \vec{c} =\vec{r}_{\phi} \Del
 <div style="float:left; width:100%">
 <ul>
 <li> So far we have 
-$$\vec{a} =\vec{r}_{\rho} \Delta\rho \quad\quad\vec{b} =\vec{r}_{\theta} \Delta\theta \quad\quad \vec{c} =\vec{r}_{\phi} \Delta\phi $$
+$$\vec{a} =\vec{r}_{\rho} d\rho \quad\quad\vec{b} =\vec{r}_{\theta} d\theta \quad\quad \vec{c} =\vec{r}_{\phi} d\phi $$
 </li> 
 <li>and the volume of the box 
 $$\begin{align}
 V_{spherical\:box} &=|(\vec{a}\times \vec{b})\cdot \vec{c} |\\
-&=|[(\vec{r}_{\rho} \Delta\rho) \times (\vec{r}_{\theta} \Delta\theta) ]\cdot (\vec{r}_{\phi} \Delta\phi) |
+&=|[(\vec{r}_{\rho} d\rho) \times (\vec{r}_{\theta} d\theta) ]\cdot (\vec{r}_{\phi} d\phi) |
 \end{align}$$
 </li>
 <li>Simplify
-$$V_{spherical\:box} =|(\vec{r}_{\rho}  \times \vec{r}_{\theta})\cdot \vec{r}_{\phi} | \Delta\rho\Delta\theta\Delta\phi$$
+$$V_{spherical\:box} =|(\vec{r}_{\rho}  \times \vec{r}_{\theta})\cdot \vec{r}_{\phi} | d\rho\;d\theta\;d\phi$$
 </li>
 <li> What are $\vec{r}_{\rho}$, $\vec{r}_{\theta}$ and $\vec{r}_{\phi}$?
 </li>
@@ -475,6 +475,53 @@ $$dV_{spherical\:box} =\rho^2 \sin\phi \:d\rho\: d\theta\: d\phi$$
 </div>
 
 
+
+========================================================
+
+##  Example 
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li>
+Set up the given integral in spherical coordinates (do not evaluate).
+$$\iiint\limits_E e^{(x^2+y^2+z^2)^{\frac{3}{2}}}dV$$
+$E$ is the section of solid  that lies in the second, third, and fourth octants, the solid is bounded by the spheres $x^2+y^2+z^2=1$ and $x^2+y^2+z^2=4$,and the plane $z=0$.  See figure below.
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:30%;" class="fragment">
+<img src="15_8_image5.png" style="width:100%" alt="Chopped solid in between two spheres"><div style="float:left; width:100%">
+</div>
+<p style="text-align:center"><small>
+Courtesy of James Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
+</small></p>
+</div>
+
+<div style="float:left; width:70%">
+<ul style="list-style-type:none;">
+<li> <u>Limits</u>
+$$\rho \in \left[1,2\right]$$
+</li>
+<li>
+$$\theta \in \left[0,\frac{3\pi}{2}\right]$$
+</li>
+<li>
+$$\phi \in \left[0,\frac{\pi}{2}\right]$$
+</li>
+<li> <u>Integrand in spherical</u>
+$$ e^{(x^2+y^2+z^2)^{\frac{3}{2}}} = e^{(\rho^2)^{\frac{3}{2}}} = e^{\rho^3}$$
+</li>
+<li> <u>Volume differential in spherical</u>
+$$ dV_{spherical}= \rho^2 \sin\phi \; d\rho\; d\theta \; d\phi$$
+</li>
+<li><u>Putting it together</u>
+$$\int_{0}^{\frac{\pi}{2}}\int_{0}^{\frac{3\pi}{2}}\int_{1}^{2}     e^{\rho^3} \rho^2 \sin\phi \; d\rho\; d\theta \; d\phi  $$
+</li>
+</ul>
+</div>
+
+
 ========================================================
 
 ##  Example 
@@ -540,50 +587,8 @@ V(E)&=\frac{2\pi R^3}{3} \left[-\cos\phi\right]\bigg\vert_{\phi=0}^{\phi=\pi}=\f
 </ul>
 </div>
 
-========================================================
 
-##  Example 
 
-<div style="float:left; width:100%">
-<ul style="list-style-type:none;">
-<li>
-Set up the given integral in spherical coordinates (do not evaluate).
-$$\iiint\limits_E e^{(x^2+y^2+z^2)^{\frac{3}{2}}}dV$$
-$E$ is the section of solid bounded between the spheres $x^2+y^2+z^2=1$ and $x^2+y^2+z^2=4$, the plane $z=0$, that lies in the second, third, and fouth octants.  (see figure below)
-</li>
-</ul>
-</div>
-
-<div style="float:left; width:30%;" class="fragment">
-<img src="15_8_image5.png" style="width:100%" alt="Chopped solid in between two spheres"><div style="float:left; width:100%">
-</div>
-<p style="text-align:center"><small>
-Courtesy of James Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
-</small></p>
-</div>
-
-<div style="float:left; width:70%">
-<ul style="list-style-type:none;">
-<li> <u>Limits</u>
-$$\rho \in \left[1,2\right]$$
-</li>
-<li>
-$$\theta \in \left[0,\frac{3\pi}{2}\right]$$
-</li>
-<li>
-$$\phi \in \left[0,\frac{\pi}{2}\right]$$
-</li>
-<li> <u>Integrand in spherical</u>
-$$ e^{(x^2+y^2+z^2)^{\frac{3}{2}}} = e^{(\rho^2)^{\frac{3}{2}}} = e^{\rho^3}$$
-</li>
-<li> <u>Volume differential in spherical</u>
-$$ dV_{spherical}= \rho^2 \sin\phi \; d\rho\; d\theta \; d\phi$$
-</li>
-<li><u>Putting it together</u>
-$$\int_{0}^{\frac{\pi}{2}}\int_{0}^{\frac{3\pi}{2}}\int_{1}^{2}     e^{\rho^3} \rho^2 \sin\phi \; d\rho\; d\theta \; d\phi  $$
-</li>
-</ul>
-</div>
 ========================================================
 
 ## Final remarks
