@@ -202,12 +202,9 @@ We can re-define certain solids in Spherical coordinates.
 </div>
 
 
-<div style="float:left; width:30%;padding-left:10%" class="fragment">
+<div style="float:left; width:40%;padding-left:10%" class="fragment">
 <img src="15_8_image3.png" style="width:100%" alt="Sphere of radius 3"><div style="float:left; width:100%">
 </div>
-<p style="text-align:center"><small>
-Courtesy of James Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
-</small></p>
 </div>
 
 <div style="float:left; width:50%">
@@ -490,7 +487,7 @@ $E$ is the section of solid  that lies in the second, third, and fourth octants,
 </ul>
 </div>
 
-<div style="float:left; width:30%;" class="fragment">
+<div style="float:left; width:35%;" class="fragment">
 <img src="15_8_image5.png" style="width:100%" alt="Chopped solid in between two spheres"><div style="float:left; width:100%">
 </div>
 <p style="text-align:center"><small>
@@ -498,7 +495,7 @@ Courtesy of James Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
 </small></p>
 </div>
 
-<div style="float:left; width:70%">
+<div style="float:left; width:65%">
 <ul style="list-style-type:none;">
 <li> <u>Limits</u>
 $$\rho \in \left[1,2\right]$$
