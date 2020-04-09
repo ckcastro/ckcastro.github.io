@@ -431,8 +431,8 @@ $$\begin{align}
 </li>
 <li>$$\begin{align}
 \vec{r}_{\phi} & = \langle \frac{\partial}{\partial \phi} (\rho\cos{\theta}\sin\phi),\; \frac{\partial}{\partial \phi} (\rho\sin\theta \sin\phi),\;\frac{\partial}{\partial \phi} ( \rho\cos\phi) \rangle \\
-&= \langle \rho\cos{\theta}\cos\phi,\; \rho\sin\theta \cos\phi,\;\rho 
-\sin\theta \rangle 
+&= \langle \rho\cos{\theta}\cos\phi,\; \rho\sin\theta \cos\phi,\;-\rho 
+\sin\phi \rangle 
 \end{align}$$
 </li>
 </ul>
