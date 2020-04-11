@@ -475,7 +475,7 @@ $$dV_{spherical\:box} =\rho^2 \sin\phi \:d\rho\: d\theta\: d\phi$$
 
 ========================================================
 
-##  Example 
+##  Example 1
 
 <div style="float:left; width:100%">
 <ul style="list-style-type:none;">
@@ -501,7 +501,7 @@ Courtesy of James Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
 $$\rho \in \left[1,2\right]$$
 </li>
 <li>
-$$\theta \in \left[0,\frac{3\pi}{2}\right]$$
+$$\theta \in \left[\frac{\pi}{2}, 2\pi\right]$$
 </li>
 <li>
 $$\phi \in \left[0,\frac{\pi}{2}\right]$$
@@ -513,7 +513,54 @@ $$ e^{(x^2+y^2+z^2)^{\frac{3}{2}}} = e^{(\rho^2)^{\frac{3}{2}}} = e^{\rho^3}$$
 $$ dV_{spherical}= \rho^2 \sin\phi \; d\rho\; d\theta \; d\phi$$
 </li>
 <li><u>Putting it together</u>
-$$\int_{0}^{\frac{\pi}{2}}\int_{0}^{\frac{3\pi}{2}}\int_{1}^{2}     e^{\rho^3} \rho^2 \sin\phi \; d\rho\; d\theta \; d\phi  $$
+$$\int_{0}^{\frac{\pi}{2}}\int_{\frac{\pi}{2}}^{2\pi}\int_{1}^{2}     e^{\rho^3} \rho^2 \sin\phi \; d\rho\; d\theta \; d\phi  $$
+</li>
+</ul>
+</div>
+
+
+
+
+
+========================================================
+
+##  Example 2
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li>
+Find the amount (total mass) of ice-cream in the ice-cream cone formed by a sphere of radius 1 cm centered at $(0,0,1)$ and a cone opening upwards from the origin with top radius of 1 cm if the density of ice-cream is given by $f(x,y,z)=\sqrt{x^2+y^2+z^2}\;\mathrm{\left[g/cm^{3}\right]}$
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:35%;" class="fragment">
+<img src="15_8_snowcone.png" style="width:100%" alt="Diagram of solid between spher and cone"><div style="float:left; width:100%">
+</div>
+</div>
+
+<div style="float:left; width:65%">
+<ul style="list-style-type:none;">
+<li> <u>Limits</u>
+<li> Sphere: $x^2+y^2+(z-1)^2 = 1$
+</li>
+<li>
+$$or\: x^2 + y^2 +z^2 = 2z$$
+$$or\:      \rho^2    = 2\rho\cos \phi$$
+</li>
+<li>$$or\:      \rho    = 2\cos \phi$$
+</li>
+<li> Cone : $z=\sqrt{x^2+y^2}$ or in spherical
+$$\rho\cos\phi = \sqrt{\rho^2 (\cos^2\theta+\sin^2\theta)\sin^2\phi}$$
+$$or$$
+$$\rho\cos\phi =\rho\sin\phi $$
+</li>
+<li>
+$$or$$
+$$\frac{\sin\phi} {\cos\phi} = \tan\phi = 1\\\Leftrightarrow \phi = \frac{\pi}{4}$$
+</li>
+<li> Therefore
+$$\quad \rho\in \left[ 0, 2\cos\phi \right], \quad\theta \in \left[0, 2\pi\right], \quad \phi\in \left[0, \frac{\pi}{4}\right]$$
 </li>
 </ul>
 </div>
@@ -521,7 +568,38 @@ $$\int_{0}^{\frac{\pi}{2}}\int_{0}^{\frac{3\pi}{2}}\int_{1}^{2}     e^{\rho^3} \
 
 ========================================================
 
-##  Example 
+##  Example  2 cont'd
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li> <u>Integrand in spherical</u>
+$$f(\rho,\theta, \phi)= \rho$$
+</li>
+<li> <u>Volume differential in spherical</u>
+$$\rho^2 \sin\phi\;d\rho\;d\theta\; d\phi$$
+</li>
+<li><u>Putting it together</u>
+$$mass=\int_0^{\frac{\pi}{4}}\int_{0}^{2\pi} \int_0^{2\cos\phi} (\rho )\: \rho^2\sin\phi\: d\rho\:d\theta\:d\phi$$
+</li>
+<li>Integrating with respect to $\rho$
+$$mass=\int_0^{\frac{\pi}{4}}\int_{0}^{2\pi}\left[ \frac{\rho^4}{4}\sin\phi\: \right ]\bigg\vert_0^{2\cos\phi} \:d\theta\:d\phi=\int_0^{\frac{\pi}{4}}\int_{0}^{2\pi} \frac{2^4\cos^4\phi}{4}\sin\phi\:d\theta\:d\phi$$
+</li>
+<li>Integrating with respect to $\theta$
+$$mass= 4 \int_0^{\frac{\pi}{4}}\left[\theta \cos^4\phi\sin\phi \right]\bigg \vert_0^{2\pi}\:d\phi=4\int_0^{\frac{\pi}{4}}(2\pi)\cos^4\phi\sin\phi\:d\phi$$
+</li>
+<li>Integrating with respect to $\phi$
+$$\begin{align}
+mass&= 8\pi\left[ -\frac{\cos^5\phi}{5}\right] \bigg \vert_0^{\frac{\pi}{4}}=\frac{8\pi}{5}\left[-\cos^5\left(\frac{\pi}{4}\right)+\cos^5(0)\right]\\
+&= \frac{8\pi}{5}\left[1-\left( \frac{\sqrt{2}}{2} \right)^5\right]
+\approx 4.13 \;\;[g]
+\end{align}$$
+</li>
+</ul>
+</div>
+
+========================================================
+
+##  Example 3 
 
 <div style="float:left; width:100%">
 <ul style="list-style-type:none;">
@@ -561,7 +639,7 @@ $$V(E)=\int_{\phi=0}^{\phi=\pi}\int_{\theta=0}^{\theta=2\pi}\int_{\rho=0}^{\rho=
 
 ========================================================
 
-##  Example 
+##  Example 3 cont'd
 
 <div style="float:left; width:100%">
 <ul style="list-style-type:none;">
