@@ -778,7 +778,7 @@ hljs.initHighlightingOnLoad();
   });
 </script>
 
-<script type="text/javascript" src="../mathjax-26/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+<script type="text/javascript" src="math283_15_8_files/mathjax-26/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
 
   
@@ -1291,6 +1291,7 @@ V_{spherical\:box} &=|(\vec{a}\times \vec{b})\cdot \vec{c} |\\
 
 <div style="float:left; width:100%">
 <ul style="list-style-type:none;">
+
 <li class="fragment">
 Set up the given integral in spherical coordinates (do not evaluate).
 \[ \iiint\limits_E e^{(x^2+y^2+z^2)^{\frac{3}{2}}}dV \]
@@ -1374,9 +1375,6 @@ Find the amount (total mass) of ice-cream in the ice-cream cone formed by a sphe
 \[ or \]
 \[ \frac{\sin\phi} {\cos\phi} = \tan\phi = 1\\\Leftrightarrow \phi = \frac{\pi}{4} \]
 </li>
-<li class="fragment"> Therefore
-\[ \quad \rho\in \left[ 0, 2\cos\phi \right], \quad\theta \in \left[0, 2\pi\right], \quad \phi\in \left[0, \frac{\pi}{4}\right] \]
-</li>
 </ul>
 </div>
 
@@ -1390,6 +1388,11 @@ Find the amount (total mass) of ice-cream in the ice-cream cone formed by a sphe
 
 <div style="float:left; width:100%">
 <ul style="list-style-type:none;">
+<li class="fragment">
+<li class="fragment"> Therefore
+\[ \quad \rho\in \left[ 0, 2\cos\phi \right], \quad\theta \in \left[0, 2\pi\right], \quad \phi\in \left[0, \frac{\pi}{4}\right] \]
+</li>
+</li>
 <li class="fragment"> <u>Integrand in spherical</u>
 \[ f(\rho,\theta, \phi)= \rho \]
 </li>
@@ -1407,9 +1410,7 @@ Find the amount (total mass) of ice-cream in the ice-cream cone formed by a sphe
 </li>
 <li class="fragment">Integrating with respect to \( \phi \)
 \[ \begin{align}
-mass&= 8\pi\left[ -\frac{\cos^5\phi}{5}\right] \bigg \vert_0^{\frac{\pi}{4}}=\frac{8\pi}{5}\left[-\cos^5\left(\frac{\pi}{4}\right)+\cos^5(0)\right]\\
-&= \frac{8\pi}{5}\left[1-\left( \frac{\sqrt{2}}{2} \right)^5\right]
-\approx 4.13 \;\;[g]
+mass&= 8\pi\left[ -\frac{\cos^5\phi}{5}\right] \bigg \vert_0^{\frac{\pi}{4}}=\frac{8\pi}{5}\left[-\cos^5\left(\frac{\pi}{4}\right)+\cos^5(0)\right] \approx 4.13 \;\;[g]
 \end{align} \]
 </li>
 </ul>
