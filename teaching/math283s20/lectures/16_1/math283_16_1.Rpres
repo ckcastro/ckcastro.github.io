@@ -148,7 +148,7 @@ $$\begin{align}
 <div style="float:left; width:100%">
 <ul style="list-style-type:none;">
 <li> Sketch a vector plot for the vector field
-$$\mathbf{\hat{F}}(x,y)=\langle -1,\;1\rangle$$
+$$\mathbf{\hat{F}}(x,y)=\langle 1,\;-1\rangle$$
 </li>
 </ul>
 </div>
@@ -169,7 +169,7 @@ $$\mathbf{\hat{F}}(x,y)=\langle -1,\;1\rangle$$
   </tr>
   <tr>
     <td>$(0,0)$</td>
-    <td>$\langle -1,\;1\rangle$</td>
+    <td>$\langle 1,\;-1\rangle$</td>
   </tr>
 </table>
 </font>
@@ -185,7 +185,7 @@ $$\mathbf{\hat{F}}(x,y)=\langle -1,\;1\rangle$$
 <div style="float:left; width:100%">
 <ul style="list-style-type:none;">
 <li> Sketch a vector plot for the vector field
-$$\mathbf{\hat{F}}(x,y)=\langle -1,\;1\rangle$$
+$$\mathbf{\hat{F}}(x,y)=\langle 1,\;-1\rangle$$
 </li>
 </ul>
 </div>
@@ -206,27 +206,27 @@ $$\mathbf{\hat{F}}(x,y)=\langle -1,\;1\rangle$$
   </tr>
   <tr>
     <td>$(0,0)$</td>
-    <td>$\langle -1,\;1\rangle$</td>
+    <td>$\langle 1,\;-1\rangle$</td>
   </tr>
   <tr>
     <td>$(1,0)$</td>
-    <td>$\langle -1,\;1\rangle$</td>
+    <td>$\langle 1,\;-1\rangle$</td>
   </tr>
   <tr>
     <td>$(2,0)$</td>
-    <td>$\langle -1,\;1\rangle$</td>
+    <td>$\langle 1,\;-1\rangle$</td>
   </tr> 
   <tr>
     <td>$(0,1)$</td>
-    <td>$\langle -1,\;1\rangle$</td>
+    <td>$\langle 1,\;-1\rangle$</td>
   </tr>
   <tr>
     <td>$(1,1)$</td>
-    <td>$\langle -1,\;1\rangle$</td>
+    <td>$\langle 1,\;-1\rangle$</td>
   </tr> 
   <tr>
     <td>$(2,1)$</td>
-    <td>$\langle -1,\;1\rangle$</td>
+    <td>$\langle 1,\;-1\rangle$</td>
   </tr>
   <tr>
     <td>$\vdots$</td>
