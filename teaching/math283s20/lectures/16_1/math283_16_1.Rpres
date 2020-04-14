@@ -148,7 +148,7 @@ $$\begin{align}
 <div style="float:left; width:100%">
 <ul style="list-style-type:none;">
 <li> Sketch a vector plot for the vector field
-$$\mathbf{\hat{F}}(x,y)=\langle 1,\;-1\rangle$$
+$$\mathbf{\vec{F}}(x,y)=\langle 1,\;-1\rangle$$
 </li>
 </ul>
 </div>
@@ -185,7 +185,7 @@ $$\mathbf{\hat{F}}(x,y)=\langle 1,\;-1\rangle$$
 <div style="float:left; width:100%">
 <ul style="list-style-type:none;">
 <li> Sketch a vector plot for the vector field
-$$\mathbf{\hat{F}}(x,y)=\langle 1,\;-1\rangle$$
+$$\mathbf{\vec{F}}(x,y)=\langle 1,\;-1\rangle$$
 </li>
 </ul>
 </div>
@@ -246,7 +246,7 @@ $$\mathbf{\hat{F}}(x,y)=\langle 1,\;-1\rangle$$
 <div style="float:left; width:100%">
 <ul style="list-style-type:none;">
 <li> Sketch a vector plot for the vector field
-$$\mathbf{\hat{F}}(x,y)=\langle -y,\;x\rangle$$
+$$\mathbf{\vec{F}}(x,y)=\langle -y,\;x\rangle$$
 </li>
 </ul>
 </div>
@@ -279,7 +279,7 @@ $$\mathbf{\hat{F}}(x,y)=\langle -y,\;x\rangle$$
 <div style="float:left; width:100%">
 <ul style="list-style-type:none;">
 <li> Sketch a vector plot for the vector field
-$$\mathbf{\hat{F}}(x,y)=\langle -y,\;x\rangle$$
+$$\mathbf{\vec{F}}(x,y)=\langle -y,\;x\rangle$$
 </li>
 </ul>
 </div>
@@ -351,7 +351,7 @@ $$\mathbf{\hat{F}}(x,y)=\langle -y,\;x\rangle$$
 <div style="float:left; width:100%">
 <ul style="list-style-type:none;">
 <li> Vector plot for the vector field
-$$\mathbf{\hat{F}}(x,y)=\langle -y,\;x\rangle$$
+$$\mathbf{\vec{F}}(x,y)=\langle -y,\;x\rangle$$
 </li>
 </ul>
 </div>
@@ -364,7 +364,7 @@ Computer generated vector plot
 
 </p>
 <p style="text-align:center">
-<a href="https://www.wolframcloud.com/obj/8a2088b9-0e79-4dab-bef0-a86162db05be">Wolfram Cloud Notebook</a> 
+<a href="https://www.wolframcloud.com/obj/75878fa1-240d-4093-ab64-9326b23c1388">Wolfram Cloud Notebook</a> 
 </p>
 </div>
 
@@ -376,7 +376,7 @@ Computer generated vector plot
 <div style="float:left; width:100%">
 <ul style="list-style-type:none;">
 <li>
-<a href="https://www.wolframcloud.com/obj/8a2088b9-0e79-4dab-bef0-a86162db05be">See Wolfram Cloud Notebook</a> 
+<a href="https://www.wolframcloud.com/obj/75878fa1-240d-4093-ab64-9326b23c1388">See Wolfram Cloud Notebook</a> 
 </li>
 </ul>
 </div>
@@ -385,7 +385,7 @@ Computer generated vector plot
 <img src="16_1_image6.png" style="width:100%" alt="Source vector field"><div style="float:left; width:100%">
 </div>
 <p style="text-align:center">
-$$\mathbf{\hat{F}}(x,y)=\langle x,\;y\rangle$$
+$$\mathbf{\vec{F}}(x,y)=\langle x,\;y\rangle$$
 </p>
 </div>
 
@@ -393,7 +393,7 @@ $$\mathbf{\hat{F}}(x,y)=\langle x,\;y\rangle$$
 <img src="16_1_image7.png" style="width:100%" alt="2-d vector field plot"><div style="float:left; width:100%">
 </div>
 <p style="text-align:center">
-$$\mathbf{\hat{F}}(x,y)=\langle y,\;\sin{x}\rangle$$
+$$\mathbf{\vec{F}}(x,y)=\langle y,\;\sin{x}\rangle$$
 </p>
 </div>
 
@@ -401,7 +401,7 @@ $$\mathbf{\hat{F}}(x,y)=\langle y,\;\sin{x}\rangle$$
 <img src="16_1_image8.png" style="width:100%" alt="2-d magnetic field"><div style="float:left; width:100%">
 </div>
 <p style="text-align:center">
-$$\mathbf{\hat{F}}(x,y)=\langle x^2-y^2,\;2xy\rangle$$
+$$\mathbf{\vec{F}}(x,y)=\langle x^2-y^2,\;2xy\rangle$$
 </p>
 </div>
 
@@ -409,7 +409,7 @@ $$\mathbf{\hat{F}}(x,y)=\langle x^2-y^2,\;2xy\rangle$$
 <img src="16_1_image9.png" style="width:100%" alt="2-d gravitational field"><div style="float:left; width:100%">
 </div>
 <p style="text-align:center">
-$$\mathbf{\hat{F}}(x,y)=mMG\frac{\langle -x,-y\rangle}{(x^2+y^2)^{\frac{3}{2}}} $$
+$$\mathbf{\vec{F}}(x,y)=mMG\frac{\langle -x,-y\rangle}{(x^2+y^2)^{\frac{3}{2}}} $$
 </p>
 </div>
 
@@ -483,7 +483,7 @@ Constant vector field
 <img src="16_1_image10.png" style="width:100%" alt="Constant 3-d vector field"><div style="float:left; width:100%">
 </div>
 <p style="text-align:center">
-$$\mathbf{\hat{F}}(x,y,z)=\langle 1,\;1,-1\rangle$$
+$$\mathbf{\vec{F}}(x,y,z)=\langle 1,\;1,-1\rangle$$
 </p>
 </div>
 
@@ -492,7 +492,7 @@ Gravitational field
 <img src="16_1_image12.png" style="width:100%" alt="Constant 3-d vector field"><div style="float:left; width:100%">
 </div>
 <p style="text-align:center">
-$$\mathbf{\hat{F}}(x,y,z)=mMG\frac{\langle -x,\;-y,-z\rangle}{(x^2+y^2+z^2)^{\frac{3}{2}}}$$
+$$\mathbf{\vec{F}}(x,y,z)=mMG\frac{\langle -x,\;-y,-z\rangle}{(x^2+y^2+z^2)^{\frac{3}{2}}}$$
 </p>
 </div>
 
@@ -523,13 +523,18 @@ Previous examples now with streamlines
 </ul>
 </div>
 
-<div style="float:left; width:30%;padding-left:20%" class="fragment">
+<div style="float:left; width:33%" class="fragment">
 <img src="16_1_image5b.png" style="width:100%" alt="Rotational field with streamlines"><div style="float:left; width:100%">
 </div>
 </div>
 
-<div style="float:left; width:30%" class="fragment">
+<div style="float:left; width:33%" class="fragment">
 <img src="16_1_image7b.png" style="width:100%" alt="2-d field with streamlines"><div style="float:left; width:100%">
+</div>
+</div>
+
+<div style="float:left; width:33%" class="fragment">
+<img src="16_1_image8b.png" style="width:100%" alt="2-d magnetic field with streamlines"><div style="float:left; width:100%">
 </div>
 </div>
 
