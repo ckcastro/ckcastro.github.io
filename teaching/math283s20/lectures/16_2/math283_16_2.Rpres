@@ -1,0 +1,566 @@
+<style>
+.section .reveal .state-background {
+   background: #ffffff;
+}
+
+.section .reveal h1,
+.section .reveal h2,
+.section .reveal p {
+   color: black;
+   margin-top: 50px;
+   text-align: center;
+}
+
+.footer {
+    color: black;
+    background: #E8E8E8;
+    position: fixed;
+    top: 90%;
+    text-align:center;
+    width:100%;
+} 
+
+
+table, th, td {
+  border: 1px solid black;
+}
+
+</style>
+
+<!-- foo 
+Highlighting
+bold
+strong
+orange <b style="color:#d95f02"> text </b>
+green  <b style="color:#1b9e77"> text </b>
+purple <b style="color:#d24693"> text </b>
+red    <b style="color:#FF0000"> text </b>
+blue   <b style="color:#0000FF"> text </b>
+-->
+
+16.2 Line Integrals
+========================================================
+title: "Math 283 Calculus 3"
+date: Math 283 Spring 2020
+author: Claudia Castro-Castro
+autosize: true
+incremental: true
+width: 1920
+height: 1080
+
+<h2 style="text-align:left"> Instructions:</h2>
+<p style='text-align:left'>Use the left and right arrow keys to navigate the presentation forward and backward respectively.  You can also use the arrows at the bottom right of the screen to navigate with a mouse.<br></p>
+
+<div class='footer'>
+    Copyright Disclaimer: material is for educational purposes only under fair use.
+</div>
+
+========================================================
+
+## Outline
+
+<div style="float:left; width:100%">
+<ul>
+<li>
+The following topics will be covered in this section:
+    <ul>
+      <li>Scalar line integrals</li>
+      <li>Vector line integrals </li>
+    </ul>
+</li>
+</ul>
+</div>
+
+
+========================================================
+
+## Line integrals 
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li>
+In this section we define an integral that is similar to a single integral except that instead of integrating over an interval [a, b], we integrate <b>over a curve</b>
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:35%" class="fragment">
+<img src="16_2_image1.png" style="width:100%" alt="2-D Vector Field"><div style="float:left; width:100%">
+</div>
+<p style="text-align:center"><small>
+Courtesy of James Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
+</small></p>
+</div>
+
+<div style="float:left; width:50%">
+<ul style="list-style-type:none;">
+<li>
+<li> 
+Let $C$ be a plane oriented curve given by 
+$$\vec{r}(t)=\langle  x(t), y(t) \rangle$$
+</li> 
+<li>
+or by the parametric equations
+$$\begin{align}
+x&=x(t)\\
+y&=y(t)\end{align}$$
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li>In this section we will discuss two types of lines integrals
+    <ul>
+      <li>Scalar line integrals
+      $$\int\limits_{C} f\; ds$$</li>
+      <li>Vector line integrals
+      $$\int\limits_{C} \mathbf{\vec{F}}\; d\vec{r}$$
+    </ul>
+</li> 
+</ul>
+</div>
+
+
+========================================================
+
+## Scalar line integrals
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li>Let $z=f(x,y)$ be a scalar fuction of two variables and $C$ a plane curve $\vec{r}(t)=\langle  x(t), y(t) \rangle$, with $t \in [a,b]$
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:35%" class="fragment">
+<img src="16_2_image1.png" style="width:100%" alt="Two dimensional Space curve"><div style="float:left; width:100%">
+</div>
+<p style="text-align:center"><small>
+Courtesy of James Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
+</small></p>
+</div>
+
+<div style="float:left; width:50%">
+<ul style="list-style-type:none;">
+<li>
+<li>Divide $C$ into $n$ <b>subarcs with lengths</b> $\Delta s_1,\Delta s_2,\dots, \Delta s_n$
+</li>
+<li>where
+$$\Delta s_i=||\vec{P_iP_{i+1}}||,\quad i=1,2,\dots,n$$
+</li> 
+<li>and 
+$$P_i = \left(x(t_i),y(t_i) \right)$$
+</li>
+<li>Evaluate $f$ at a point $P(x^*_i,y^*_i)$ in the $i$-th subarc, multiply by the length $\Delta s_i$ of the subarc, and form the sum
+$$\sum_{i=1}^n f(x^*_i,y^*_i) \Delta s_i$$
+</li>
+<li>
+Take the limit of these sums $\Delta s_i \rightarrow 0$
+$$\int\limits_{C} f(x,y)\; ds$$
+</li> 
+<li>where $ds$ is the <b>arclength differential</b>
+$$ds= ||\vec{r}\;'(t)||dt$$
+</li>
+<li> or 
+$$ds= ||\langle x\:'(t),y\:'(t)\rangle||dt= \sqrt{\left( \frac{dx}{dt}\right)^2 + \left(\frac{dy}{dt}\right)^2}dt\$$
+</li>
+</ul>
+</div>
+
+
+========================================================
+
+## Scalar line integral over a curve
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li>
+</li>
+<li>
+<p style="border:3px; border-style:solid; border-color:#287EC7; padding: 1em;" class="fragment"> 
+If $f$ is defined on a smooth curve $C: \vec{r}(t)=\langle x(t), y(t)\rangle$ $t \in [a,b]$, then the scalar line integral along $C$ is 
+$$\int\limits_{C} f\; ds = \int\limits_{a}^b f(x(t),y(t)) \;||\vec{r}\;'(t)||dt$$
+</p>
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:30%" class="fragment">
+<img src="16_2_image2.png" style="width:100%" alt="Geometrical meaning of line integral: area of the curtan under the surface above the curve"><div style="float:left; width:100%">
+</div>
+<p style="text-align:center"><small>
+Courtesy of James Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
+</small></p>
+</div>
+
+
+<div style="float:left; width:50%">
+<ul>
+<li> <b>Geometrically</b> this line integral represents the <b>area</b> of the “fence” or “curtain” in  the figure, whose base is $C$ and whose height above the point $(x,y)$ is $f(x,y)$  
+</li>
+<li> <b>Physically</b> this line integral represents the <b>total mass</b> of a wire with density function $f(x,y)$
+</li>
+</ul>
+</div>
+
+========================================================
+
+## Example 1
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li> Evaluate the scalar line integral $\int\limits_{C} 2\; ds$, where $C$ is the upper half of the unit circle.
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:30%" class="fragment">
+<img src="16_2_image3.png" style="width:100%" alt="upper half of the unit circle"><div style="float:left; width:100%">
+</div>
+</div>
+
+<div style="float:left; width:70%">
+<ul style="list-style-type:none;">
+<li> <u>Parameterization</u>
+$$\vec{r}(t)=\langle \cos t, \;\sin t \rangle,\quad t\in [0,\pi]$$
+</li>
+<li> <u>Arclength differential</u><br>
+$\vec{r}\:'(t)=\langle -\sin t, \;\cos t \rangle$
+</li>
+<li> $||\vec{r}\:'(t)||=||\langle -\sin t, \;\cos t \rangle||$
+</li>
+<li> $$||\vec{r}\:'(t)||dt=\sqrt{(-\sin t)^2+ (\cos t)^2}dt = 1dt$$
+</li>
+<li> <u>Integrand</u><br>
+$f(x,y)=f(x(t),y(t)= 2$
+</li>
+<li> <u>Set up and evaluate</u><br>
+$$\int\limits_{C} 2\; ds=\int_0^\pi (2)||\vec{r}\:'(t)||dt$$
+</li>
+<li> $$\int_0^\pi (2) 1dt =2 t \bigg\vert_{t=0}^{t=\pi}= 2\pi$$
+</li>
+</ul>
+</div>
+
+========================================================
+
+## Example 2
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li> Evaluate the scalar line integral $\int\limits_{C} \left (x^2+y^2+z \right)\; ds$, where $C$ is helix parameterized by 
+$$\vec{r}(t)=\langle \cos t, \sin t, t \rangle, \quad t\in [0,2\pi]$$
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li> <u>Parameterization</u>
+$$\vec{r}(t)=\langle \cos t, \;\sin t \rangle,\quad t\in [0,\pi]$$
+</li>
+<li> <u>Arclength differential</u><br>
+$\vec{r}\:'(t)=\langle -\sin t, \;\cos t,\; 1\rangle$
+</li>
+<li> $||\vec{r}\:'(t)||=||\langle -\sin t, \;\cos t,1 \rangle||$
+</li>
+<li> $$||\vec{r}\:'(t)||=\sqrt{(-\sin t)^2+ (\cos t)^2+1} = \sqrt{1+1}=\sqrt{2}$$
+</li>
+<li> <u>Integrand</u><br>
+$x^2+y^2+z=(x(t))^2+(y(t))^2+(z(t))^2$
+</li>
+<li>$x^2+y^2+z=(\cos t)^2+(\sin t)^2+t$
+</li>
+<li>$x^2+y^2+z=1+t^2$
+</li>
+<li> <u>Set up and evaluate</u><br>
+$$\int\limits_C f(x(t),y(t),z(t)) \;||\vec{r}\;'(t)||dt=\int_0^{2\pi} (1+t)\sqrt{2}dt$$
+</li>
+<li>
+$$ = \sqrt{2}\int_0^\pi (1+t)dt =\sqrt{2} \left(t+\frac{t^2}{2} \right) \bigg\vert_{t=0}^{t=2\pi}= \sqrt{2}\left( 2\pi + \frac{4\pi^2}{2}\right)$$
+</li>
+</ul>
+</div>
+
+========================================================
+
+## Types of Scalar line integrals
+
+<h3 style="text-align:left"; class = "fragment">With respect to arclength</h3>
+<div style="float:left; width:100%">
+<ul  style="list-style-type:none;">
+<li>
+$$\int\limits_C f\;ds = \int_a^b f(x(t),y(t)) \;||\vec{r}\;'(t)||dt$$
+</li>
+</ul>
+</div>
+
+<h3 style="text-align:left"; class = "fragment">With respect to x</h3>
+<div style="float:left; width:100%">
+<ul  style="list-style-type:none;">
+<li>
+$$\int\limits_C P(x,y)\;dx = \int_a^b P(x,y) \;x\:'(t)dt$$
+</li>
+</ul>
+</div>
+
+<h3 style="text-align:left"; class = "fragment">With respect to y</h3>
+<div style="float:left; width:100%">
+<ul  style="list-style-type:none;">
+<li>
+$$\int\limits_C Q(x,y)\;dy = \int_a^b Q(x,y)\;y\:'(t)dt$$
+</li>
+</ul>
+</div>
+
+<h3 style="text-align:left"; class = "fragment">Combos</h3>
+<div style="float:left; width:100%">
+<ul  style="list-style-type:none;">
+<li>
+$$\int\limits_C P(x,y)\;dx + \int\limits_C Q(x,y)\;dy = \int\limits_C P(x,y)\;dx + Q(x,y)\;dy $$
+</li>
+</ul>
+</div>
+
+
+========================================================
+
+## Properties of line integrals
+
+<div style="float:left; width:100%">
+<ul  style="list-style-type:none;">
+<li>Suppose now that $C$ is a <b>piecewise-smooth</b> curve; that is, $C$ is a union of a finite number of smooth curves $C_1, C_2, \dots, C_n$
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:30%; padding-left:20%" class="fragment">
+<img src="16_2_image4.png" style="width:100%" alt="Diagram of a piecewise-smooth"><div style="float:left; width:100%">
+</div>
+<p style="text-align:center"><small>
+Courtesy of James Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
+</small></p>
+</div>
+
+<div style="float:left; width:100%">
+<ul  style="list-style-type:none;">
+<li>The integral of $f$ along $C$ as the sum of the integrals of $f$ along each of the smooth pieces of $C$:
+$$\int\limits_C f ds =\int\limits_{C_1} f ds + \int\limits_{C_2} f ds+\dots+ \int\limits_{C_n} f ds $$
+</li>
+</ul>
+</div>
+
+
+========================================================
+
+## Example 3
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li> Set up (do not evaluate) the scalar line integrals $\int\limits_{C} xy^2\:dx+x\sin y\;dy$, where $C=C_1 \cup C_2$ and $C_1$ is the line segment from $(-5,-3)$ to $(0,2)$ and $C_2$ the line segment from $(0,2)$ to $(4,0)$
+</li>
+<li>$$\begin{align}
+\int\limits_{C_1 \cup C_2} P\:dx+Q\;dy &= \int\limits_{C_1} P\:dx+Q\;dy +\int\limits_{C_2} P\:dx+Q\;dy\\
+& = I_1 + I_2
+\end{align}$$
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:35%">
+<ul style="list-style-type:none;">
+<li><strong>$I_1$</strong>
+    <ul style="list-style-type:none;">
+      <li><u>Parameterization</u><br>
+      $\vec{r}(t)=(1-t)\vec{P_0}+t\vec{P_1},\quad t\in [0,1]$</li>
+      <li>$\vec{r}(t)=(1-t)\langle -5,-3 \rangle+t \langle 0,2 \rangle$</li>
+      <li>$\vec{r}(t)=\langle 5t-5, 5t-3 \rangle$ </li>
+      <li>$x(t)=5t-5\quad y(t)=5t-3$</li>
+      <li><u>Differentials</u><br>
+      $dx= x'(t)dt\quad dy= y'(t)dt$</li> 
+      <li>
+      $x'(t)=5\quad y'(t)=5$</li>
+      <li>$dx=  5dt\quad dy=5dt$</li>
+     </ul>     
+</li>
+</ul>
+</div>      
+      
+      
+<div style="float:left; width:65%">
+<ul style="list-style-type:none;">
+<li>
+    <ul style="list-style-type:none;">
+       <li><br> <u>Integrands</u><br>
+$P(x,y)=xy^2\rightarrow P(x(t),y(t))=x(t) \left[y(t) \right]^2$
+      </li>
+      <li>$\qquad\qquad\qquad\qquad\qquad\qquad\quad=(5t-5) \left(5t-3\right)^2$
+      </li> 
+      <li>
+      $Q(x,y)=x\sin y \rightarrow P(x(t),y(t))=x(t)\sin{y(t)}$
+      </li>
+      <li>$\qquad\qquad\qquad\qquad\qquad\qquad\qquad=(5t-5) \sin{\left(5t-3\right)}$
+      </li> 
+       <li> <u>Set up</u><br>
+       $$\int\limits_{C_1} P\:dx+Q\;dy=\int_0^1 (5t-5) \left(5t-3\right)^2\;5dt + (5t-5) \sin{\left(5t-3\right)}\:5dt $$
+      </li>
+    </ul>
+</li>
+</ul>
+</div>
+
+
+========================================================
+
+## Example 3 cont'd
+
+
+<div style="float:left; width:35%">
+<ul style="list-style-type:none;">
+<li><strong>$I_2$</strong>
+    <ul style="list-style-type:none;">
+      <li><u>Parameterization</u><br>
+      $\vec{r}(t)=(1-t)\vec{P_0}+t\vec{P_1},\quad t\in [0,1]$</li>
+      <li>$\vec{r}(t)=(1-t)\langle 0,2 \rangle+t \langle 4,0 \rangle$</li>
+      <li>$\vec{r}(t)=\langle 4t, 2-2t \rangle$ </li>
+      <li>$x(t)=4t\quad y(t)=2-2t$</li>
+      <li><u>Differentials</u><br>
+      $dx= x'(t)dt\quad dy= y'(t)dt$</li> 
+      <li>
+      $x'(t)=4\quad y'(t)=-2$</li>
+      <li>$dx=  4dt\quad dy=-2 dt$</li>
+     </ul>     
+</li>
+</ul>
+</div>      
+      
+      
+<div style="float:left; width:65%">
+<ul style="list-style-type:none;">
+<li>
+    <ul style="list-style-type:none;">
+       <li><br> <u>Integrands</u><br>
+$P(x,y)=xy^2\rightarrow P(x(t),y(t))=x(t) \left[y(t) \right]^2$
+      </li>
+      <li>$\qquad\qquad\qquad\qquad\qquad\qquad\quad=(4t) \left(2-2t\right)^2$
+      </li> 
+      <li>
+      $Q(x,y)=x\sin y \rightarrow P(x(t),y(t))=x(t)\sin{y(t)}$
+      </li>
+      <li>$\qquad\qquad\qquad\qquad\qquad\qquad\qquad=(4t) \sin{\left(2-2t\right)}$
+      </li> 
+       <li> <u>Set up</u><br>
+       $$\int\limits_{C_2} P\:dx+Q\;dy=\int_0^1 (4t) \left(2-2t\right)^2\;4dt + (4t) \sin{\left(2-2t\right)}\:(-2)dt $$
+      </li>
+    </ul>
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li> Therefore
+$$I = I_1 + I_2 =\int\limits_{C_1} P\:dx+Q\;dy+ \int\limits_{C_2} P\:dx+Q\;dy \\
+=\int_0^1 (5t-5) \left(5t-3\right)^2\;5dt + (5t-5) \sin{\left(5t-3\right)}\:5dt+ \int_0^1 (4t) \left(2-2t\right)^2\;4dt + (4t) \sin{\left(2-2t\right)}\:(-2)dt $$
+</li>
+</ul>
+</div>
+
+
+
+========================================================
+
+## Vector line integrals
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li>Consider a particle moving through a (force) field $\mathbf{\vec{F}}(x,y)$ and following a trajectory $C:\vec{r}(t)=\langle  x(t), y(t) \rangle$, with $t \in [a,b]$
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:40%" class="fragment">
+<img src="16_2_image1.png" style="width:100%" alt="Two dimensional Space curve"><div style="float:left; width:100%">
+</div>
+</div>
+
+<div style="float:left; width:50%">
+<ul style="list-style-type:none;">
+<li>$$work  = \vec{force} \cdot \vec{displacement}$$
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li><u> Slice </u> <br>Break the curve into segments with length $\Delta s$
+
+</li>
+<li><u>Approximate </u><br> The $i$-th contribution to work is then 
+$$w_i \approx \mathbf{\vec{F}}(\vec{r}(t_i)) \cdot \hat{T} \Delta s $$
+
+</li>
+<li><u>Integrate</u><br>
+Adding up and taking the limit
+$$w=\int\limits_C \mathbf{\vec{F}}\cdot \hat{T}\;ds$$
+</li>
+
+
+========================================================
+
+## Vector line integrals
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+$$w=\int\limits_C \mathbf{\vec{F}}\cdot \hat{T}\;ds$$
+<li>Use definition of <b>unit tangent</b> and <b>arclength differential</b> 
+$$w=\int\limits_C \mathbf{\vec{F}}\cdot \frac{\vec{r}\:'}{||\vec{r}\:'||}\;||\vec{r}\:'||dt$$
+</li>
+<li>Simplify $$w=\int\limits_C \mathbf{\vec{F}}\cdot \vec{r}\:'dt$$</li>
+<li>Let $d\vec{r}= \vec{r}\;'dt$
+$$w=\int\limits_C \mathbf{\vec{F}}\cdot d\vec{r}$$</li>
+<li> If $\mathbf{\vec{F}}$ is a continuous vector field on a smooth curve $C$ given by a vector function $\vec{r}(t)$, $a\leq t \leq b$. Then the line integral of $\mathbf{\vec{F}}$ <C>along $C$</b> is 
+<p style="border:3px; border-style:solid; border-color:#287EC7; padding: 1em;" class="fragment"> 
+$$\int\limits_C \mathbf{\vec{F}}\cdot d\vec{r} = \int_a^b \mathbf{\vec{F}}(\vec{r}(t)) \cdot \vec{r}\;'(t)\;dt$$
+</p>
+</li>
+</ul>
+</div>
+
+
+
+========================================================
+
+## Example
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li>
+Find the work done by the force field $\mathbf{\vec{F}}(x,y)=\langle 0, -mg \rangle$ in a moving particle along the parabola $y= x(10-x)$, $x\in [0,5]$, $m$ is the mass of the particle and $g=9.8$ m/$s^2$
+</li>
+<li>
+</li>
+</ul>
+</div>
+
+
+========================================================
+
+## Final remarks
+
+<div style="float:left; width:100%">
+<ul>
+<li> 
+</li>
+<li>
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:50%; padding-left:25%"> 
+<ul style="list-style-type:none;">
+<li> Questions </li>
+</ul>
+</div>
+  
