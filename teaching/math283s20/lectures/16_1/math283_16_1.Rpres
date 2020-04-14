@@ -461,7 +461,7 @@ Courtesy of James Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
 <li>In terms of its <b>component functions</b> $P$, $Q$, and $R$
 $$\begin{align}
 \mathbf{\vec{F}}(x,y,z)&=P(x,y,z)\mathbf{\hat{i}}+Q(x,y,z)\mathbf{\hat{j}}+R(x,y,z)\mathbf{\hat{k}}\\
-&= \langle P(x,y),\;Q(x,y)\rangle
+&= \langle P(x,y,z),\;Q(x,y,z),\;R(x,y,z)\rangle
 \end{align}$$
 </li>
 <li>or 
@@ -547,7 +547,7 @@ Previous examples now with streamlines
 <div style="float:left; width:100%">
 <ul  style="list-style-type:none;">
 <li><b>Recall</b>: If $f$ is a scalar function of two variables, we know that its <b>gradient</b> $\nabla f$ is
-$$\nabla f = \frac{\partial}{\partial x} f(x,y) \mathbf{\hat{i}} + \frac{\partial}{\partial y} (x,y) \mathbf{\hat{j}}= \langle \frac{\partial}{\partial x} f(x,y),  \frac{\partial}{\partial y} (x,y)\rangle $$
+$$\nabla f = \frac{\partial}{\partial x} f(x,y) \mathbf{\hat{i}} + \frac{\partial}{\partial y} f(x,y) \mathbf{\hat{j}}= \langle \frac{\partial}{\partial x} f(x,y),  \frac{\partial}{\partial y} f(x,y)\rangle $$
 </li>
 <li>
 $\nabla f$ is really a vector field on $\mathbb{R}^2$  and is called a <b>gradient vector field</b>
