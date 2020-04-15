@@ -185,14 +185,14 @@ $$\vec{d}_i = \hat{T}\Delta s_i$$
 $$w_i \approx \mathbf{\vec{F}}(\vec{r}(t_i)) \cdot \hat{T} \Delta s_i $$
 </li>
 <li><u>Add up </u><br>
-$$w=\sum_{i=1}^n \mathbf{\vec{F}}(\vec{r}(t_i)) \cdot \hat{T} \Delta s_i$$
+$$w\approx\sum_{i=1}^n \mathbf{\vec{F}}(\vec{r}(t_i)) \cdot \hat{T} \Delta s_i$$
 </li>
-<li> <u>Take limit</u>
+<li> <u>Take limit</u>$\Delta s_i \rightarrow 0$
 $$w=\int\limits_C \mathbf{\vec{F}}\cdot \hat{T}\;ds$$
 where $ds$ is the <b>arclength</b> differential 
 </li>
-<li>
-Work is the line integral with respect to arclength of the tangential component of the force
+<li><br>
+<em>Work is the line integral with respect to arclength of the tangential component of the force</em>
 </li>
 </ul>
 </div>
@@ -218,11 +218,8 @@ If $\mathbf{\vec{F}}$ is a continuous vector field on a smooth curve $C$ given b
 $$\int\limits_C \mathbf{\vec{F}}\cdot d\vec{r} = \int_a^b \mathbf{\vec{F}}(\vec{r}(t)) \cdot \vec{r}\;'(t)\;dt$$
 </p>
 </li>
-
 </ul>
 </div>
-
-
 
 ========================================================
 
@@ -233,6 +230,18 @@ $$\int\limits_C \mathbf{\vec{F}}\cdot d\vec{r} = \int_a^b \mathbf{\vec{F}}(\vec{
 <li>
 Find the work done by the force field $\mathbf{\vec{F}}(x,y)=\langle 0, -mg \rangle$ in a moving particle along the parabola $y= 10x-x^2$, $x\in [0,5]$, $m$ is the mass of the particle and $g=9.8$ m/$s^2$
 </li>
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:25%" class="fragment">
+<img src="16_2_image8.png" style="width:100%" alt="Vector fields and parabolic trajectory"><div style="float:left; width:100%">
+</div>
+</div>
+
+<div style="float:left; width:72%">
+<ul style="list-style-type:none;">
+<li>
 <li>
 $$work=\int\limits_C \mathbf{\vec{F}}\cdot d\vec{r}=\int_a^b \mathbf{\vec{F}}(\vec{r}(t)) \cdot \vec{r}\;'(t)\;dt$$
 </li>
@@ -266,16 +275,26 @@ $w=mg (t^2-10t)\bigg\vert_{t=0}^{t=5} = mg (25-50)=-25mg$
 <li>
 Find the work done by the force field $\mathbf{\vec{F}}(x,y)=\langle x^2,-xy \rangle$ in a moving particle along the quarter-unit circle $\vec{r}(t) = \langle \cos t, \sin t \rangle$, $t\in \left [0,\frac{\pi}{2}\right]$
 </li>
+</ul>
+</div>
+
+<div style="float:left; width:25%" class="fragment">
+<img src="16_2_image9.png" style="width:100%" alt="Vector fields and circular trajectory"><div style="float:left; width:100%">
+</div>
+</div>
+
+<div style="float:left; width:75%">
+<ul style="list-style-type:none;">
 <li>
 $$work=\int\limits_C \mathbf{\vec{F}}\cdot d\vec{r}=\int_a^b \mathbf{\vec{F}}(\vec{r}(t)) \cdot \vec{r}\;'(t)\;dt$$
 </li>
 <li> <u>Parameterization</u>
-$$\vec{r}(t)=\langle \cos t, \sin t \rangle,\quad t\in \left [0,\frac{\pi}{2}\right]$$
+$\quad\vec{r}(t)=\langle \cos t, \sin t \rangle$
 </li>
 <li> $$\vec{r}\:'(t)=\langle -\sin t , \cos t \rangle$$
 </li>
 <li> <u>Integrand</u><br>
-$$\mathbf{\vec{F}}(\vec{r}(t)) = \langle x(t)^2, x(t)y(t)\rangle = \langle \cos^2 t , -\cos t \sin t \rangle$$
+$$\mathbf{\vec{F}}(\vec{r}(t)) = \langle x(t)^2, -x(t)y(t)\rangle = \langle \cos^2 t , -\cos t \sin t \rangle$$
 </li>
 <li>
 $$\mathbf{\vec{F}}(\vec{r}(t)) \cdot \vec{r}\:'(t)=\langle \cos^2 t , -\cos t \sin t\rangle \cdot \langle -\sin t , \cos t  \rangle$$
@@ -332,29 +351,25 @@ $$-\int\limits_C \mathbf{\vec{F}}\cdot d\vec{r}=\int\limits_{-C} \mathbf{\vec{F}
 </div>
 
 <div style="float:left; width:35%" class="fragment">
-<img src="16_2_image1.png" style="width:100%" alt="Two dimensional Space curve"><div style="float:left; width:100%">
+<img src="16_2_image1c.png" style="width:100%" alt="Two dimensional Space curve"><div style="float:left; width:100%">
 </div>
-<p style="text-align:center"><small>
-Courtesy of James Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
-</small></p>
 </div>
 
 <div style="float:left; width:50%">
 <ul style="list-style-type:none;">
 <li>
-<li>Divide $C$ into $n$ <b>subarcs with lengths</b> $\Delta s_1,\Delta s_2,\dots, \Delta s_n$
+<li><u>Slice</u><br> Break the curve into segments with length $\Delta s_i$
 </li>
-<li>where
-$$\Delta s_i=||\vec{P_{i-1}P_{i}}||,\quad i=1,2,\dots,n$$
+<li>where $\Delta s_i=||\vec{P_{i-1}P_{i}}||,\quad i=1,2,\dots,n$
 </li> 
 <li>and 
 $$P_i = \left(x(t_i),y(t_i) \right)$$
 </li>
-<li>Evaluate $f$ at a point $P(x^*_i,y^*_i)$ in the $i$-th subarc, multiply by the length $\Delta s_i$ of the subarc, and form the sum
+<li>Evaluate $f$ at a point $P(x^*_i,y^*_i)$ in the $i$-th subarc, multiply by the length $\Delta s_i$ of the subarc, and form the <u>sum</u>
 $$\sum_{i=1}^n f(x^*_i,y^*_i) \Delta s_i$$
 </li>
 <li>
-Take the limit of these sums $\Delta s_i \rightarrow 0$
+<u>Take the limit</u> $\Delta s_i \rightarrow 0$
 $$\int\limits_{C} f(x,y)\; ds$$
 </li> 
 <li>where $ds$ is the <b>arclength differential</b>
@@ -369,7 +384,7 @@ $$ds= ||\langle x\:'(t),y\:'(t)\rangle||dt= \sqrt{\left( \frac{dx}{dt}\right)^2 
 
 ========================================================
 
-## Scalar line integral over a curve
+## Scalar line integral 
 
 <div style="float:left; width:100%">
 <ul style="list-style-type:none;">
@@ -414,7 +429,7 @@ Courtesy of James Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
 </div>
 
 <div style="float:left; width:30%" class="fragment">
-<img src="16_2_image3.png" style="width:100%" alt="upper half of the unit circle"><div style="float:left; width:100%">
+<img src="16_2_image6.png" style="width:100%" alt="upper half of the unit circle"><div style="float:left; width:100%">
 </div>
 </div>
 
@@ -534,7 +549,7 @@ $$\int\limits_C P(x,y)\;dx + \int\limits_C Q(x,y)\;dy = \int\limits_C P(x,y)\;dx
 </div>
 
 <div style="float:left; width:30%; padding-left:20%" class="fragment">
-<img src="16_2_image4.png" style="width:100%" alt="Diagram of a piecewise-smooth"><div style="float:left; width:100%">
+<img src="16_2_image7.png" style="width:100%" alt="Diagram of a piecewise-smooth"><div style="float:left; width:100%">
 </div>
 <p style="text-align:center"><small>
 Courtesy of James Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
@@ -671,9 +686,13 @@ $$I = I_1 + I_2 =\int\limits_{C_1} P\:dx+Q\;dy+ \int\limits_{C_2} P\:dx+Q\;dy \\
 
 <div style="float:left; width:100%">
 <ul>
-<li> 
+<li> A line integral is an integral over a curve.
 </li>
-<li>
+<li>There sre to main types of line integrals: vector and scalar.
+</li>
+<li>Vector line integrals can be used to compute work.
+</li>
+<li>Scalar line integrals can be used to areas and masses of wires.
 </li>
 </ul>
 </div>
