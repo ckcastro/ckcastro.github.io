@@ -272,42 +272,39 @@ $w=mg (t^2-10t)\bigg\vert_{t=0}^{t=5} = mg (25-50)=-25mg$
 
 <div style="float:left; width:100%">
 <ul style="list-style-type:none;">
-<li>
-Find the work done by the force field $\mathbf{\vec{F}}(x,y)=\langle x^2,-xy \rangle$ in a moving particle along the quarter-unit circle $\vec{r}(t) = \langle \cos t, \sin t \rangle$, $t\in \left [0,\frac{\pi}{2}\right]$
+<li>A charge $q$ located at $(0,0)$ creates an electric field at $(x,y)$ given by the vector field $$\mathbf{\vec{F}}(x,y)=\frac{K \langle x,\;y \rangle}{\left(x^{2}+y^{2}\right)^{3/2}}$$
+Calculate the work required to move a charge along the path $C$ the top half of the circle $x^{2}+y^{2}=4$ counterclockwise.
 </li>
 </ul>
 </div>
 
 <div style="float:left; width:25%" class="fragment">
-<img src="16_2_image9.png" style="width:100%" alt="Vector fields and circular trajectory"><div style="float:left; width:100%">
+<img src="16_2_image11.jpg" style="width:100%" alt="Vector field and circular trajectory"><div style="float:left; width:100%">
 </div>
 </div>
 
 <div style="float:left; width:75%">
 <ul style="list-style-type:none;">
-<li>
-$$work=\int\limits_C \mathbf{\vec{F}}\cdot d\vec{r}=\int_a^b \mathbf{\vec{F}}(\vec{r}(t)) \cdot \vec{r}\;'(t)\;dt$$
-</li>
 <li> <u>Parameterization</u>
-$\quad\vec{r}(t)=\langle \cos t, \sin t \rangle$
+$\quad\vec{r}(t)=\langle 2\cos t, 2\sin t \rangle,\quad t\in \left[0,\pi\right]$
 </li>
-<li> $$\vec{r}\:'(t)=\langle -\sin t , \cos t \rangle$$
+<li> $$\vec{r}\:'(t)=\langle -2\sin t , 2\cos t \rangle$$
 </li>
 <li> <u>Integrand</u><br>
-$$\mathbf{\vec{F}}(\vec{r}(t)) = \langle x(t)^2, -x(t)y(t)\rangle = \langle \cos^2 t , -\cos t \sin t \rangle$$
+$$\mathbf{\vec{F}}(\vec{r}(t)) =\frac{K \langle x(t), y(t)\rangle}{\left( x(t)^2+y(t)^2\right)^{\frac{3}{2}}} = \frac{ K\langle 2\cos t, 2\sin t \rangle}{\left( 4\cos^2 t+4\sin^2 t \right)^{\frac{3}{2}}} $$
+</li>
+<li>$$\mathbf{\vec{F}}(\vec{r}(t)) = \frac{K \langle 2 \cos t, 2\sin t \rangle}{\left(4 \right)^{\frac{3}{2}}}$$
 </li>
 <li>
-$$\mathbf{\vec{F}}(\vec{r}(t)) \cdot \vec{r}\:'(t)=\langle \cos^2 t , -\cos t \sin t\rangle \cdot \langle -\sin t , \cos t  \rangle$$
+$$\mathbf{\vec{F}}(\vec{r}(t)) \cdot \vec{r}\:'(t)= \frac{K}{4^{3/2}}\langle 2\cos t , 2\sin t\rangle \cdot \langle -2\sin t , 2\cos t  \rangle$$
 </li>
-<li>$$\qquad\qquad\qquad=-\cos^2 t\sin t - \cos^2 t \sin t$$
-</li>
-<li>$$\qquad\qquad=- 2\cos^2 t \sin t$$
+<li>$$\qquad\qquad\qquad=\frac{K}{4^{3/2}}\left( - 4\cos t \sin t + 4 \sin t \cos t \right) $$
 </li>
 <li> <u>Set up and evaluate</u><br>
-$$w=\int_0^\frac{\pi}{2} (- 2\cos^2 t \sin t)dt$$
+$$w=\int_0^\pi 0 dt$$
 </li>
 <li> 
-$$w=\frac{2}{3}\cos^3t\bigg\vert_{t=0}^{t=\frac{\pi}{2}} = -\frac{2}{3}$$
+$$w=0$$
 </li>
 </ul>
 </div>
