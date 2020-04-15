@@ -64,8 +64,8 @@ height: 1080
 <li>
 The following topics will be covered in this section:
     <ul>
-      <li>Scalar line integrals</li>
       <li>Vector line integrals </li>
+      <li>Scalar line integrals</li>
     </ul>
 </li>
 </ul>
@@ -110,12 +110,12 @@ y&=y(t)\end{align}$$
 
 <div style="float:left; width:100%">
 <ul style="list-style-type:none;">
-<li>In this section we will discuss two types of lines integrals
-    <ul>
-      <li>Scalar line integrals
+<li>In this section we will discuss two types of line integrals
+    <ul style="list-style-type:none;">
+      <li>I: Vector line integrals
+      $$\int\limits_{C} \mathbf{\vec{F}}\cdot\; d\vec{r}$$</li>
+      <li>II: Scalar line integrals
       $$\int\limits_{C} f\; ds$$</li>
-      <li>Vector line integrals
-      $$\int\limits_{C} \mathbf{\vec{F}}\; d\vec{r}$$
     </ul>
 </li> 
 </ul>
@@ -124,7 +124,205 @@ y&=y(t)\end{align}$$
 
 ========================================================
 
-## Scalar line integrals
+## I: Vector line integrals
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li>Consider a particle moving through a (force) field $\mathbf{\vec{F}}(x,y)$ and following a trajectory $C:\vec{r}(t)=\langle  x(t), y(t) \rangle$, with $t \in [a,b]$
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:40%;padding-left:30%" class="fragment">
+<img src="16_2_image1b.png" style="width:100%" alt="Two dimensional Space curve with vector field"><div style="float:left; width:100%">
+</div>
+</div>
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li>work  = (force) (displacement)
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:30%" class="fragment">
+<img src="16_2_image1d.png" style="width:100%" alt="Force vector projected onto displacement vector"><div style="float:left; width:100%">
+</div>
+</div>
+
+<div style="float:left; width:70%">
+<ul style="list-style-type:none;">
+<li>work  = (component of force onto $\vec{d}$) (displacement)
+</li>
+<li>
+<li>work  = $||\mathbf{\vec{F}}||\cos\theta ||\vec{d}||$ 
+</li>
+<li>work  = $||\mathbf{\vec{F}}||||\vec{d}||\cos\theta$ 
+</li>
+<li>work  = $\mathbf{\vec{F}}\cdot \vec{d}$ 
+</li>
+<li>Note: $\vec{d}$ has the same direction as $\hat{T}$ (the unit tangent vector)
+</li>
+</ul>
+</div>
+
+
+========================================================
+
+## Vector line integrals
+
+<div style="float:left; width:40%" class="fragment">
+<img src="16_2_image1c.png" style="width:100%" alt="Two dimensional Space"><div style="float:left; width:100%">
+</div>
+</div>
+
+<div style="float:left; width:60%">
+<ul style="list-style-type:none;">
+<li><u> Slice </u> <br>Break the curve into segments with length $\Delta s_i$. Then
+$$\vec{d}_i = \hat{T}\Delta s_i$$
+</li>
+<li><u>Approximate </u><br> The $i$-th contribution to work is then 
+$$w_i \approx \mathbf{\vec{F}}(\vec{r}(t_i)) \cdot \hat{T} \Delta s_i $$
+</li>
+<li><u>Add up </u><br>
+$$w=\sum_{i=1}^n \mathbf{\vec{F}}(\vec{r}(t_i)) \cdot \hat{T} \Delta s_i$$
+</li>
+<li> <u>Take limit</u>
+$$w=\int\limits_C \mathbf{\vec{F}}\cdot \hat{T}\;ds$$
+where $ds$ is the <b>arclength</b> differential 
+</li>
+<li>
+Work is the line integral with respect to arclength of the tangential component of the force
+</li>
+</ul>
+</div>
+
+
+
+========================================================
+
+## Vector line integrals
+
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li>Use definition of <b>unit tangent</b> and <b>arclength differential</b> 
+$$w=\int\limits_C \mathbf{\vec{F}}\cdot \frac{\vec{r}\:'}{||\vec{r}\:'||}\;||\vec{r}\:'||dt$$
+</li>
+<li>Simplify $$w=\int\limits_C \mathbf{\vec{F}}\cdot \vec{r}\:'dt$$</li>
+<li>Let $d\vec{r}= \vec{r}\;'dt$
+$$w=\int\limits_C \mathbf{\vec{F}}\cdot d\vec{r}$$</li>
+<li> 
+<p style="border:3px; border-style:solid; border-color:#287EC7; padding: 1em;" class="fragment"> 
+If $\mathbf{\vec{F}}$ is a continuous vector field on a smooth curve $C$ given by a vector function $\vec{r}(t)$, $a\leq t \leq b$. Then the line integral of $\mathbf{\vec{F}}$ <C>along $C$</b> is 
+$$\int\limits_C \mathbf{\vec{F}}\cdot d\vec{r} = \int_a^b \mathbf{\vec{F}}(\vec{r}(t)) \cdot \vec{r}\;'(t)\;dt$$
+</p>
+</li>
+
+</ul>
+</div>
+
+
+
+========================================================
+
+## Example 1
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li>
+Find the work done by the force field $\mathbf{\vec{F}}(x,y)=\langle 0, -mg \rangle$ in a moving particle along the parabola $y= 10x-x^2$, $x\in [0,5]$, $m$ is the mass of the particle and $g=9.8$ m/$s^2$
+</li>
+<li>
+$$work=\int\limits_C \mathbf{\vec{F}}\cdot d\vec{r}=\int_a^b \mathbf{\vec{F}}(\vec{r}(t)) \cdot \vec{r}\;'(t)\;dt$$
+</li>
+<li> <u>Parameterization</u>
+$$\vec{r}(t)=\langle t, \;10t-t^2 \rangle,\quad t\in [0,5]$$
+</li>
+<li> and $$\vec{r}\:'(t)=\langle 1 , 10-2t \;\cos t \rangle$$
+</li>
+<li> <u>Integrand</u><br>
+$$\mathbf{\vec{F}}(\vec{r}(t)) \cdot \vec{r}\:'(t)=\langle 0,-mg\rangle \cdot \langle 1 , 10-2t \rangle$$
+</li>
+<li>$$\qquad\qquad\qquad=(0)(1)+(-mg)(10-2t)$$
+</li>
+<li>$$\qquad\qquad=mg(2-10t)$$
+</li>
+<li> <u>Set up and evaluate</u><br>
+$w=\int_0^5 mg(2t-10)dt$
+</li>
+<li> 
+$w=mg (t^2-10t)\bigg\vert_{t=0}^{t=5} = mg (25-50)=-25mg$
+</li>
+</ul>
+</div>
+
+========================================================
+
+## Example 2
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li>
+Find the work done by the force field $\mathbf{\vec{F}}(x,y)=\langle x^2,-xy \rangle$ in a moving particle along the quarter-unit circle $\vec{r}(t) = \langle \cos t, \sin t \rangle$, $t\in \left [0,\frac{\pi}{2}\right]$
+</li>
+<li>
+$$work=\int\limits_C \mathbf{\vec{F}}\cdot d\vec{r}=\int_a^b \mathbf{\vec{F}}(\vec{r}(t)) \cdot \vec{r}\;'(t)\;dt$$
+</li>
+<li> <u>Parameterization</u>
+$$\vec{r}(t)=\langle \cos t, \sin t \rangle,\quad t\in \left [0,\frac{\pi}{2}\right]$$
+</li>
+<li> $$\vec{r}\:'(t)=\langle -\sin t , \cos t \rangle$$
+</li>
+<li> <u>Integrand</u><br>
+$$\mathbf{\vec{F}}(\vec{r}(t)) = \langle x(t)^2, x(t)y(t)\rangle = \langle \cos^2 t , -\cos t \sin t \rangle$$
+</li>
+<li>
+$$\mathbf{\vec{F}}(\vec{r}(t)) \cdot \vec{r}\:'(t)=\langle \cos^2 t , -\cos t \sin t\rangle \cdot \langle -\sin t , \cos t  \rangle$$
+</li>
+<li>$$\qquad\qquad\qquad=-\cos^2 t\sin t - \cos^2 t \sin t$$
+</li>
+<li>$$\qquad\qquad=- 2\cos^2 t \sin t$$
+</li>
+<li> <u>Set up and evaluate</u><br>
+$$w=\int_0^\frac{\pi}{2} (- 2\cos^2 t \sin t)dt$$
+</li>
+<li> 
+$$w=\frac{2}{3}\cos^3t\bigg\vert_{t=0}^{t=\frac{\pi}{2}} = -\frac{2}{3}$$
+</li>
+</ul>
+</div>
+
+
+========================================================
+
+## Reversing orientation
+
+<div style="float:left; width:35%" class="fragment">
+<img src="16_2_image0.png" style="width:100%" alt="Two space curves with opposite orientations"><div style="float:left; width:100%">
+</div>
+<p style="text-align:center"><small>
+Courtesy of James Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
+</small></p>
+</div>
+
+<div style="float:left; width:65%">
+<ul style="list-style-type:none;">
+<li> When orientation is reversed $$\vec{C}\rightarrow -\vec{C}$$
+</li>
+<li> tangent has opposite direction $$\vec{r}\rightarrow -\vec{r}$$</li>
+<li>So
+$$d\vec{r}\rightarrow -d\vec{r}$$
+</li>
+<li> and 
+$$-\int\limits_C \mathbf{\vec{F}}\cdot d\vec{r}=\int\limits_{-C} \mathbf{\vec{F}}\cdot d\vec{r}$$
+</li>
+</ul>
+</div>
+
+========================================================
+
+## II: Scalar line integrals
 
 <div style="float:left; width:100%">
 <ul style="list-style-type:none;">
@@ -147,7 +345,7 @@ Courtesy of James Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
 <li>Divide $C$ into $n$ <b>subarcs with lengths</b> $\Delta s_1,\Delta s_2,\dots, \Delta s_n$
 </li>
 <li>where
-$$\Delta s_i=||\vec{P_iP_{i+1}}||,\quad i=1,2,\dots,n$$
+$$\Delta s_i=||\vec{P_{i-1}P_{i}}||,\quad i=1,2,\dots,n$$
 </li> 
 <li>and 
 $$P_i = \left(x(t_i),y(t_i) \right)$$
@@ -206,7 +404,7 @@ Courtesy of James Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
 
 ========================================================
 
-## Example 1
+## Example 3
 
 <div style="float:left; width:100%">
 <ul style="list-style-type:none;">
@@ -245,7 +443,7 @@ $$\int\limits_{C} 2\; ds=\int_0^\pi (2)||\vec{r}\:'(t)||dt$$
 
 ========================================================
 
-## Example 2
+## Example 4
 
 <div style="float:left; width:100%">
 <ul style="list-style-type:none;">
@@ -354,7 +552,7 @@ $$\int\limits_C f ds =\int\limits_{C_1} f ds + \int\limits_{C_2} f ds+\dots+ \in
 
 ========================================================
 
-## Example 3
+## Example 5
 
 <div style="float:left; width:100%">
 <ul style="list-style-type:none;">
@@ -413,7 +611,7 @@ $P(x,y)=xy^2\rightarrow P(x(t),y(t))=x(t) \left[y(t) \right]^2$
 
 ========================================================
 
-## Example 3 cont'd
+## Example 5 cont'd
 
 
 <div style="float:left; width:35%">
@@ -466,84 +664,6 @@ $$I = I_1 + I_2 =\int\limits_{C_1} P\:dx+Q\;dy+ \int\limits_{C_2} P\:dx+Q\;dy \\
 </li>
 </ul>
 </div>
-
-
-
-========================================================
-
-## Vector line integrals
-
-<div style="float:left; width:100%">
-<ul style="list-style-type:none;">
-<li>Consider a particle moving through a (force) field $\mathbf{\vec{F}}(x,y)$ and following a trajectory $C:\vec{r}(t)=\langle  x(t), y(t) \rangle$, with $t \in [a,b]$
-</li>
-</ul>
-</div>
-
-<div style="float:left; width:40%" class="fragment">
-<img src="16_2_image1.png" style="width:100%" alt="Two dimensional Space curve"><div style="float:left; width:100%">
-</div>
-</div>
-
-<div style="float:left; width:50%">
-<ul style="list-style-type:none;">
-<li>$$work  = \vec{force} \cdot \vec{displacement}$$
-</li>
-</ul>
-</div>
-
-<div style="float:left; width:100%">
-<ul style="list-style-type:none;">
-<li><u> Slice </u> <br>Break the curve into segments with length $\Delta s$
-
-</li>
-<li><u>Approximate </u><br> The $i$-th contribution to work is then 
-$$w_i \approx \mathbf{\vec{F}}(\vec{r}(t_i)) \cdot \hat{T} \Delta s $$
-
-</li>
-<li><u>Integrate</u><br>
-Adding up and taking the limit
-$$w=\int\limits_C \mathbf{\vec{F}}\cdot \hat{T}\;ds$$
-</li>
-
-
-========================================================
-
-## Vector line integrals
-
-<div style="float:left; width:100%">
-<ul style="list-style-type:none;">
-$$w=\int\limits_C \mathbf{\vec{F}}\cdot \hat{T}\;ds$$
-<li>Use definition of <b>unit tangent</b> and <b>arclength differential</b> 
-$$w=\int\limits_C \mathbf{\vec{F}}\cdot \frac{\vec{r}\:'}{||\vec{r}\:'||}\;||\vec{r}\:'||dt$$
-</li>
-<li>Simplify $$w=\int\limits_C \mathbf{\vec{F}}\cdot \vec{r}\:'dt$$</li>
-<li>Let $d\vec{r}= \vec{r}\;'dt$
-$$w=\int\limits_C \mathbf{\vec{F}}\cdot d\vec{r}$$</li>
-<li> If $\mathbf{\vec{F}}$ is a continuous vector field on a smooth curve $C$ given by a vector function $\vec{r}(t)$, $a\leq t \leq b$. Then the line integral of $\mathbf{\vec{F}}$ <C>along $C$</b> is 
-<p style="border:3px; border-style:solid; border-color:#287EC7; padding: 1em;" class="fragment"> 
-$$\int\limits_C \mathbf{\vec{F}}\cdot d\vec{r} = \int_a^b \mathbf{\vec{F}}(\vec{r}(t)) \cdot \vec{r}\;'(t)\;dt$$
-</p>
-</li>
-</ul>
-</div>
-
-
-
-========================================================
-
-## Example
-
-<div style="float:left; width:100%">
-<ul style="list-style-type:none;">
-<li>
-Find the work done by the force field $\mathbf{\vec{F}}(x,y)=\langle 0, -mg \rangle$ in a moving particle along the parabola $y= x(10-x)$, $x\in [0,5]$, $m$ is the mass of the particle and $g=9.8$ m/$s^2$
-</li>
-<li>
-</li>
-</ul>
-</div>
-
 
 ========================================================
 
