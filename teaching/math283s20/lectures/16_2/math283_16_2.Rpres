@@ -248,7 +248,7 @@ $$work=\int\limits_C \mathbf{\vec{F}}\cdot d\vec{r}=\int_a^b \mathbf{\vec{F}}(\v
 <li> <u>Parameterization</u>
 $$\vec{r}(t)=\langle t, \;10t-t^2 \rangle,\quad t\in [0,5]$$
 </li>
-<li> and $$\vec{r}\:'(t)=\langle 1 , 10-2t \;\cos t \rangle$$
+<li> and $$\vec{r}\:'(t)=\langle 1 , 10-2t \rangle$$
 </li>
 <li> <u>Integrand</u><br>
 $$\mathbf{\vec{F}}(\vec{r}(t)) \cdot \vec{r}\:'(t)=\langle 0,-mg\rangle \cdot \langle 1 , 10-2t \rangle$$
@@ -389,8 +389,8 @@ $$ds= ||\langle x\:'(t),y\:'(t)\rangle||dt= \sqrt{\left( \frac{dx}{dt}\right)^2 
 </li>
 <li>
 <p style="border:3px; border-style:solid; border-color:#287EC7; padding: 1em;" class="fragment"> 
-If $f$ is defined on a smooth curve $C: \vec{r}(t)=\langle x(t), y(t)\rangle$ $t \in [a,b]$, then the scalar line integral along $C$ is 
-$$\int\limits_{C} f\; ds = \int\limits_{a}^b f(x(t),y(t)) \;||\vec{r}\;'(t)||dt$$
+If $f$ is defined on a smooth curve $C: \vec{r}(t), t \in [a,b]$, then the scalar line integral along $C$ is 
+$$\int\limits_{C} f\; ds = \int\limits_{a}^b f(\vec{r}(t)) \;||\vec{r}\;'(t)||dt$$
 </p>
 </li>
 </ul>
@@ -443,7 +443,7 @@ $\vec{r}\:'(t)=\langle -\sin t, \;\cos t \rangle$
 <li> $$||\vec{r}\:'(t)||dt=\sqrt{(-\sin t)^2+ (\cos t)^2}dt = 1dt$$
 </li>
 <li> <u>Integrand</u><br>
-$f(x,y)=f(x(t),y(t)= 2$
+$f(x,y)=f(\vec{r}(t))= 2$
 </li>
 <li> <u>Set up and evaluate</u><br>
 $$\int\limits_{C} 2\; ds=\int_0^\pi (2)||\vec{r}\:'(t)||dt$$
@@ -568,7 +568,7 @@ $$\int\limits_C f ds =\int\limits_{C_1} f ds + \int\limits_{C_2} f ds+\dots+ \in
 
 <div style="float:left; width:100%">
 <ul style="list-style-type:none;">
-<li> Set up (do not evaluate) the scalar line integrals $\int\limits_{C} xy^2\:dx+x\sin y\;dy$, where $C=C_1 \cup C_2$ and $C_1$ is the line segment from $(-5,-3)$ to $(0,2)$ and $C_2$ the line segment from $(0,2)$ to $(4,0)$
+<li> Set up (<b>do not evaluate</b>) the scalar line integrals $\int\limits_{C} xy^2\:dx+x\sin y\;dy$, where $C=C_1 \cup C_2$ and $C_1$ is the line segment from $(-5,-3)$ to $(0,2)$ and $C_2$ the line segment from $(0,2)$ to $(4,0)$
 </li>
 <li>$$\begin{align}
 \int\limits_{C_1 \cup C_2} P\:dx+Q\;dy &= \int\limits_{C_1} P\:dx+Q\;dy +\int\limits_{C_2} P\:dx+Q\;dy\\
@@ -578,92 +578,121 @@ $$\int\limits_C f ds =\int\limits_{C_1} f ds + \int\limits_{C_2} f ds+\dots+ \in
 </ul>
 </div>
 
+<div style="float:left; width:30%" class="fragment">
+<img src="16_2_image12.jpg" style="width:100%" alt="Two adjacent line segments"><div style="float:left; width:100%">
+</div>
+</div>
+
+
 <div style="float:left; width:35%">
 <ul style="list-style-type:none;">
-<li><strong>$I_1$</strong>
+<li><strong> First integral $I_1$</strong>
     <ul style="list-style-type:none;">
       <li><u>Parameterization</u><br>
       $\vec{r}(t)=(1-t)\vec{P_0}+t\vec{P_1},\quad t\in [0,1]$</li>
       <li>$\vec{r}(t)=(1-t)\langle -5,-3 \rangle+t \langle 0,2 \rangle$</li>
       <li>$\vec{r}(t)=\langle 5t-5, 5t-3 \rangle$ </li>
       <li>$x(t)=5t-5\quad y(t)=5t-3$</li>
-      <li><u>Differentials</u><br>
-      $dx= x'(t)dt\quad dy= y'(t)dt$</li> 
-      <li>
-      $x'(t)=5\quad y'(t)=5$</li>
-      <li>$dx=  5dt\quad dy=5dt$</li>
      </ul>     
 </li>
 </ul>
 </div>      
       
       
-<div style="float:left; width:65%">
+<div style="float:left; width:35%">
 <ul style="list-style-type:none;">
 <li>
     <ul style="list-style-type:none;">
-       <li><br> <u>Integrands</u><br>
-$P(x,y)=xy^2\rightarrow P(x(t),y(t))=x(t) \left[y(t) \right]^2$
-      </li>
-      <li>$\qquad\qquad\qquad\qquad\qquad\qquad\quad=(5t-5) \left(5t-3\right)^2$
-      </li> 
+      <li><br><u>Differentials</u><br>
+      $dx= x'(t)dt\quad dy= y'(t)dt$</li> 
       <li>
-      $Q(x,y)=x\sin y \rightarrow P(x(t),y(t))=x(t)\sin{y(t)}$
-      </li>
-      <li>$\qquad\qquad\qquad\qquad\qquad\qquad\qquad=(5t-5) \sin{\left(5t-3\right)}$
-      </li> 
-       <li> <u>Set up</u><br>
-       $$\int\limits_{C_1} P\:dx+Q\;dy=\int_0^1 (5t-5) \left(5t-3\right)^2\;5dt + (5t-5) \sin{\left(5t-3\right)}\:5dt $$
-      </li>
+      $x'(t)=5\quad y'(t)=5$</li>
+      <li>$dx=  5dt\quad dy=5dt$</li>
     </ul>
 </li>
 </ul>
 </div>
 
 
+
 ========================================================
 
 ## Example 5 cont'd
 
+<div style="float:left; width:25%" class="fragment">
+<img src="16_2_image12.jpg" style="width:100%" alt="Two adjacent line segments"><div style="float:left; width:100%">
+</div>
+</div>
+
+<div style="float:left; width:70%">
+<ul style="list-style-type:none;">
+<li><strong> First integral $I_1$</strong><br>
+<u>Integrands</u><br>
+$P(x,y)=xy^2\rightarrow P(x(t),y(t))=x(t) \left[y(t) \right]^2$
+</li>
+<li>$$\qquad\qquad\quad=(5t-5) \left(5t-3\right)^2$$
+</li> 
+<li>
+$Q(x,y)=x\sin y \rightarrow P(x(t),y(t))=x(t)\sin{y(t)}$
+</li>
+<li>$$\qquad\qquad\quad=(5t-5) \sin{\left(5t-3\right)}$$
+</li>
+<li><u>Set up</u><br>
+$$\int\limits_{C_1} P\:dx+Q\;dy=\int_0^1 (5t-5) \left(5t-3\right)^2\;5dt + (5t-5) \sin{\left(5t-3\right)}\:5dt $$
+</li>
+</ul>
+</div>
 
 <div style="float:left; width:35%">
 <ul style="list-style-type:none;">
-<li><strong>$I_2$</strong>
+<li><strong>Second integral $I_2$</strong>
     <ul style="list-style-type:none;">
       <li><u>Parameterization</u><br>
       $\vec{r}(t)=(1-t)\vec{P_0}+t\vec{P_1},\quad t\in [0,1]$</li>
       <li>$\vec{r}(t)=(1-t)\langle 0,2 \rangle+t \langle 4,0 \rangle$</li>
       <li>$\vec{r}(t)=\langle 4t, 2-2t \rangle$ </li>
       <li>$x(t)=4t\quad y(t)=2-2t$</li>
-      <li><u>Differentials</u><br>
-      $dx= x'(t)dt\quad dy= y'(t)dt$</li> 
-      <li>
-      $x'(t)=4\quad y'(t)=-2$</li>
-      <li>$dx=  4dt\quad dy=-2 dt$</li>
-     </ul>     
+    </ul>
+</li>     
+</ul>
+</div>
+
+<div style="float:left; width:35%">
+<ul style="list-style-type:none;">
+<li><br><br><u>Differentials</u><br>
+$dx= x'(t)dt\quad dy= y'(t)dt$</li> 
+<li>
+$x'(t)=4\quad y'(t)=-2$</li>
+<li>$dx=  4dt\quad dy=-2 dt$</li>
+<li>     
 </li>
 </ul>
 </div>      
       
+  
+========================================================
+
+## Example 5 cont'd
+
+<div style="float:left; width:25%" class="fragment">
+<img src="16_2_image12.jpg" style="width:100%" alt="Two adjacent line segments"><div style="float:left; width:100%">
+</div>
+</div>  
       
 <div style="float:left; width:65%">
 <ul style="list-style-type:none;">
-<li>
-    <ul style="list-style-type:none;">
-       <li><br> <u>Integrands</u><br>
+<li><strong>Second integral $I_2$</strong><br><u>Integrands</u><br>
 $P(x,y)=xy^2\rightarrow P(x(t),y(t))=x(t) \left[y(t) \right]^2$
-      </li>
-      <li>$\qquad\qquad\qquad\qquad\qquad\qquad\quad=(4t) \left(2-2t\right)^2$
-      </li> 
-      <li>
-      $Q(x,y)=x\sin y \rightarrow P(x(t),y(t))=x(t)\sin{y(t)}$
-      </li>
-      <li>$\qquad\qquad\qquad\qquad\qquad\qquad\qquad=(4t) \sin{\left(2-2t\right)}$
-      </li> 
-       <li> <u>Set up</u><br>
+</li>
+<li>$\qquad\qquad\qquad\qquad\qquad\qquad\quad=(4t) \left(2-2t\right)^2$
+</li> 
+<li>
+$Q(x,y)=x\sin y \rightarrow P(x(t),y(t))=x(t)\sin{y(t)}$
+</li>
+<li>$\qquad\qquad\qquad\qquad\qquad\qquad\qquad=(4t) \sin{\left(2-2t\right)}$
+</li> 
+<li><u>Set up</u><br>
        $$\int\limits_{C_2} P\:dx+Q\;dy=\int_0^1 (4t) \left(2-2t\right)^2\;4dt + (4t) \sin{\left(2-2t\right)}\:(-2)dt $$
-      </li>
-    </ul>
 </li>
 </ul>
 </div>
@@ -671,8 +700,9 @@ $P(x,y)=xy^2\rightarrow P(x(t),y(t))=x(t) \left[y(t) \right]^2$
 <div style="float:left; width:100%">
 <ul style="list-style-type:none;">
 <li> Therefore
-$$I = I_1 + I_2 =\int\limits_{C_1} P\:dx+Q\;dy+ \int\limits_{C_2} P\:dx+Q\;dy \\
-=\int_0^1 (5t-5) \left(5t-3\right)^2\;5dt + (5t-5) \sin{\left(5t-3\right)}\:5dt+ \int_0^1 (4t) \left(2-2t\right)^2\;4dt + (4t) \sin{\left(2-2t\right)}\:(-2)dt $$
+$$I = I_1 + I_2 =\int\limits_{C_1} P\:dx+Q\;dy+ \int\limits_{C_2} P\:dx+Q\;dy $$
+</li>
+<li>$$I=\int_0^1 (5t-5) \left(5t-3\right)^2\;5dt + (5t-5) \sin{\left(5t-3\right)}\:5dt+ \int_0^1 (4t) \left(2-2t\right)^2\;4dt + (4t) \sin{\left(2-2t\right)}\:(-2)dt $$
 </li>
 </ul>
 </div>
