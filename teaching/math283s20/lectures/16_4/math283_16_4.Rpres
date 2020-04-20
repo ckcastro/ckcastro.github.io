@@ -1,0 +1,202 @@
+<style>
+.section .reveal .state-background {
+   background: #ffffff;
+}
+
+.section .reveal h1,
+.section .reveal h2,
+.section .reveal p {
+   color: black;
+   margin-top: 50px;
+   text-align: center;
+}
+
+.footer {
+    color: black;
+    background: #E8E8E8;
+    position: fixed;
+    top: 90%;
+    text-align:center;
+    width:100%;
+} 
+
+
+table, th, td {
+  border: 1px solid black;
+}
+
+</style>
+
+<!-- foo 
+Highlighting
+bold
+strong
+orange <b style="color:#d95f02"> text </b>
+green  <b style="color:#1b9e77"> text </b>
+purple <b style="color:#d24693"> text </b>
+red    <b style="color:#FF0000"> text </b>
+blue   <b style="color:#0000FF"> text </b>
+-->
+
+16.4 Green's theorem
+========================================================
+title: "Math 283 Calculus 3"
+date: Math 283 Spring 2020
+author: Claudia Castro-Castro
+autosize: true
+incremental: true
+width: 1920
+height: 1080
+
+<h2 style="text-align:left"> Instructions:</h2>
+<p style='text-align:left'>Use the left and right arrow keys to navigate the presentation forward and backward respectively.  You can also use the arrows at the bottom right of the screen to navigate with a mouse.<br></p>
+
+<div class='footer'>
+    Copyright Disclaimer: material is for educational purposes only under fair use.
+</div>
+
+========================================================
+
+## Outline
+
+<div style="float:left; width:100%">
+<ul>
+<li>
+The following topics will be covered in this section:
+    <ul>
+      <li>Preliminaries</li>
+      <li>Green's Theorem</li>
+      <li>Examples</li>
+    </ul>
+</li>
+</ul>
+</div>
+
+========================================================
+
+## Preliminaries: Closed and Positively oriented curves
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li><strong>Closed:</strong> starts and ends at the same point $$\vec{r}(a)=\vec{r}(b)$$
+</li>
+<li><strong>Positively oriented:</strong> <em>counterclockwise</em> traversal of $C$
+</li>
+<ul style="list-style-type:none;">
+<li>Region $D$ is always on the left as the point $\vec{r}(t)$ traverses $C$
+</li>
+</ul>
+</ul>
+</div>
+
+<div style="float:left; width:60%; padding-left:20%" class="fragment">
+<img src="16_4_image1.png" style="width:100%" alt="Two closed curves: left: positively oriented : right: negatively oriented"><div style="float:left; width:100%">
+</div>
+<p style="text-align:center"><small>
+Courtesy of James Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
+</small></p>
+</div>
+
+========================================================
+
+## Preliminaries: Piecewise-smooth curves
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li><strong>Piecewise-smooth</strong>
+</li>
+<li>
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:50%; padding-left:25%" class="fragment">
+<img src="16_4_image2.jpg" style="width:100%" alt="A diagram of a piecewise smooth closed curve"><div style="float:left; width:100%">
+</div>
+<p style="text-align:center"><small>
+Courtesy of James Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
+</small></p>
+</div>
+
+
+========================================================
+
+## Preliminaries: Simple curve
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li><strong>Simple</strong>: a curve that doesn’t intersect itself anywhere between its endpoints
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:40%; padding-left:30%" class="fragment">
+<img src="16_4_image3.png" style="width:100%" alt="A diagram of a piecewise smooth closed curve"><div style="float:left; width:100%">
+</div>
+<p style="text-align:center"><small>
+Courtesy of James Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
+</small></p>
+</div>
+
+
+========================================================
+
+## Preliminaries: notation
+
+<div style="float:left; width:40%" class="fragment">
+<img src="16_4_image4.png" style="width:100%" alt="A diagram of a piecewise smooth closed curve"><div style="float:left; width:100%">
+</div>
+<p style="text-align:center"><small>
+Courtesy of James Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
+</small></p>
+</div>
+
+<div style="float:left; width:60%">
+<ul>
+<li> Positively oriented boundary curve of $D$
+$$\partial D$$
+</li> 
+<li>
+For line integrals over  closed curves 
+$$\oint\limits_{C}$$
+</li>
+</ul>
+</div>
+
+
+========================================================
+
+## Green's Theorem
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li> 
+<p style="border:3px; border-style:solid; border-color:#287EC7; padding: 1em;" class="fragment"> 
+Let $C$ be a positively oriented, piecewise-smooth, simple
+closed curve in the plane and let $D$ be the region bounded by $C$. If $P$ and $Q$
+have continuous partial derivatives on an open region that contains $D$.  Then
+$$\oint\limits_C Pdx+Qdy = \iint\limits_D \left(\frac{\partial Q}{\partial x}-\frac{\partial P}{\partial y} \right)\:dA$$
+</p>
+</li>
+</ul>
+</div>
+
+
+
+========================================================
+
+## Example
+
+<div style="float:left; width:100%">
+<ul  style="list-style-type:none;">
+<li>
+</li>
+<li>
+</li>
+</ul>
+</div>
+
+
+
+
+
