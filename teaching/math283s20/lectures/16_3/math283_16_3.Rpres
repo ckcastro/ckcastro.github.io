@@ -1,0 +1,395 @@
+<style>
+.section .reveal .state-background {
+   background: #ffffff;
+}
+
+.section .reveal h1,
+.section .reveal h2,
+.section .reveal p {
+   color: black;
+   margin-top: 50px;
+   text-align: center;
+}
+
+.footer {
+    color: black;
+    background: #E8E8E8;
+    position: fixed;
+    top: 90%;
+    text-align:center;
+    width:100%;
+} 
+
+
+table, th, td {
+  border: 1px solid black;
+}
+
+</style>
+
+<!-- foo 
+Highlighting
+bold
+strong
+orange <b style="color:#d95f02"> text </b>
+green  <b style="color:#1b9e77"> text </b>
+purple <b style="color:#d24693"> text </b>
+red    <b style="color:#FF0000"> text </b>
+blue   <b style="color:#0000FF"> text </b>
+-->
+
+16.3 Fundamental Theorem for Line Integrals
+========================================================
+title: "Math 283 Calculus 3"
+date: Math 283 Spring 2020
+author: Claudia Castro-Castro
+autosize: true
+incremental: true
+width: 1920
+height: 1080
+
+<h2 style="text-align:left"> Instructions:</h2>
+<p style='text-align:left'>Use the left and right arrow keys to navigate the presentation forward and backward respectively.  You can also use the arrows at the bottom right of the screen to navigate with a mouse.<br></p>
+
+<div class='footer'>
+    Copyright Disclaimer: material is for educational purposes only under fair use.
+</div>
+
+========================================================
+
+## Outline
+
+<div style="float:left; width:100%">
+<ul>
+<li>
+The following topics will be covered in this section:
+    <ul>
+      <li>Fundamental Theorem for Line Integrals and its proof </li>
+      <li>Test for conservative fields</li>
+      <li>Finding potential functions</li>
+      <li>Use the Fundamental Theorem for Line Integrals to evaluate a vector line integral</li>
+      <li>Conservation of energy</li>
+    </ul>
+</li>
+</ul>
+</div>
+
+========================================================
+
+## Fundamental Theorem for Line integrals
+
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li> 
+<p style="border:3px; border-style:solid; border-color:#287EC7; padding: 1em;" class="fragment"> 
+If $C$ is a piecewise smooth curve $C$ given by a vector function $\vec{r}(t)$, $a\leq t \leq b$. If $f$ a differentiable scalar function whose gradient $\nabla f$ is continuous on $C$. Then
+$$\int\limits_C \mathbf{\nabla} f \cdot d\vec{r} = f(\vec{r}(b))-f(\vec{r}(a))$$
+</p>
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:60%">
+<ul style="list-style-type:none;">
+<li><u>Proof</u>
+</li>
+<li>
+$$\int\limits_C \mathbf{\nabla} f \cdot d\vec{r} = \int_a^b \nabla f \cdot  \vec{r}\;'(t)dt$$
+</li>
+<li>
+$$\hspace{15cm} = \int_a^b \langle \frac{\partial f}{\partial x},\frac{\partial f}{\partial y} ,\frac{\partial f}{\partial z}\rangle \cdot   \langle \frac{dx}{dt},\frac{d y}{ dt},\frac{d z}{dt}   \rangle dt$$
+</li>
+<li>
+$$\hspace{15cm} = \int_a^b \left( \frac{\partial f}{\partial x}\frac{dx}{dt}+\frac{\partial f}{\partial y}\frac{dy}{dt} +\frac{\partial f}{\partial z}\frac{dz}{dt}\right) dt$$
+</li>
+<li>
+$$\hphantom{\int\limits_C \mathbf{\nabla} f \cdot d\vec{r}} = \int_a^b \frac{d}{dt} \left[f\left(\vec{r}(t)\right)\right]dt$$
+</li>
+<li>
+$$\hphantom{\int\limits_C \mathbf{\nabla} f \cdot d\vec{r}}= f(\vec{r}(b))-f(\vec{r}(a))$$
+</li>
+</ul>
+</div>
+
+
+========================================================
+
+## Remarks
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li> So if you want to compute $\int\limits_C \mathbf{\vec{F}}\cdot d\vec{r}$ and you know that $\mathbf{\vec{F}}$ is <strong>conservative</strong>
+  <ul >
+    <li> don't have to parameterize $C$
+    </li>
+    <li> don't have to compose $\mathbf{\vec{F}}(\vec{r}(t))$
+    </li>
+    <li> don't have to calculate $\mathbf{\vec{F}}(\vec{r}(t))\cdot \vec{r}\:'(t)$ 
+    </li>
+    <li> don't have to evaluate integrals
+    </li>
+  </ul>
+</li>
+<li><br>Just need to know
+  <ul >
+    <li> end points
+    </li>
+    <li> $f$ the potential function  ("antiderivative") such that $\mathbf{\vec{F}}=\nabla f$
+    </li>
+  </ul>
+</li>
+</ul>
+</div>
+
+
+<div style="float:left; width:100%">
+<ol>
+<li>How do we know that $\mathbf{\vec{F}}$ is conservative?
+</li>
+<li>How do we find the potential function?
+</li>
+</ol>
+</div>
+
+
+========================================================
+
+## Test for conservative field
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li> Let $\mathbf{\vec{F}} = \langle P,Q\rangle$ be a 2D vector field , $P$ and $Q$ have continuous partial derivatives on an open simply-connected region $D$
+</li>
+<li>If $\mathbf{\vec{F}}$ is conservative
+$$\mathbf{\vec{F}} =\nabla f $$
+</li>
+<li>$$\langle P,Q\rangle  = \langle \frac{\partial f}{\partial x} , \frac{\partial f}{\partial y}\rangle $$
+</li>
+<li>Then
+$$P  = \frac{\partial f}{\partial x} \qquad\qquad Q  = \frac{\partial f}{\partial y}$$
+</li>
+<li>Derive
+$$\frac{\partial P}{\partial y }  = \frac{\partial^2 f}{\partial y \partial x}\qquad \qquad
+\frac{\partial Q}{\partial x }  = \frac{\partial^2 f}{\partial x \partial y}$$
+</li>
+<li> By Clairaut's Theorem
+<p style="border:3px; border-style:solid; border-color:#287EC7; padding: 1em;" class="fragment"> 
+$$\frac{\partial P}{\partial y } = \frac{\partial Q}{\partial x }$$
+</p>
+</li>
+</ul>
+</div>
+
+
+========================================================
+
+## Example
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li> Is $\mathbf{\vec{F}}(x,y) = \langle (1+xy)e^{xy},\:x^2e^{xy} \rangle$ a conservative field?
+</li>
+<li> $$P = (1+xy)e^{xy}\qquad\qquad Q=x^2e^{xy}$$
+</li>
+<li><u>Derive</u>$$ \frac{\partial P}{\partial y} =  \frac{\partial }{\partial y }\left((1+xy)e^{xy}\right) \qquad\qquad \frac{\partial Q}{\partial x}=\frac{\partial }{\partial x} \left( x^2e^{xy}\right)$$
+</li>
+<li>$$ \frac{\partial P}{\partial y} = xe^{xy} + (1+xy)xe^{xy}\qquad\frac{\partial Q}{\partial x}=2xe^{xy} + x^2ye^{xy}$$
+</li>
+<li>$$ \frac{\partial P}{\partial y} = 2xe^{xy}+x^2ye^{xy}\qquad\qquad \frac{\partial Q}{\partial x}=2xe^{xy} + x^2ye^{xy}$$
+</li>
+<li>$$\Rightarrow \frac{\partial P}{\partial y} =  \frac{\partial Q}{\partial x}$$
+</li>
+<li>$$\Rightarrow \mathbf{\vec{F}} \text{ is conservative}$$
+</li>
+</ul>
+</div>
+
+
+========================================================
+
+## How do we find the potential function?
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li> What is the potential function of $\mathbf{\vec{F}} = \langle (1+xy)e^{xy},\:x^2e^{xy} \rangle$?
+</li>
+<li> Since $$\mathbf{\vec{F}} = \nabla f \Leftrightarrow \langle P,Q \rangle =  \langle \frac{\partial f}{\partial x} , \frac{\partial f}{\partial y}\rangle$$
+</li>
+<li> Set system of equations
+$$\begin{eqnarray} 
+P = \frac{\partial f}{\partial x}=&(1+xy)e^{xy}&(1)\\ 
+Q = \frac{\partial f}{\partial y}=&x^2e^{xy}   &(2)
+\end{eqnarray}$$
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:50%">
+<ul style="list-style-type:none;">
+<li>Use (2)
+$$\frac{\partial f}{\partial y}{\color{blue} {dy}}=x^2e^{xy}{\color{blue} {dy}} $$
+</li>
+<li>Integrate with respect to  ${\color{blue} {y}}$
+$${\color{blue} {\int}}  \frac{\partial f}{\partial y}{\color{blue} {dy}}={\color{blue} {\int}}  x^2e^{xy}{\color{blue} {dy}}$$
+</li>
+<li>$$\begin{align}f(x,y)&=x^2 \left(\frac{1}{x} \right)e^{xy} + A(x)\\
+&=xe^{xy} + A(x)\end{align}$$
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:50%">
+<ul style="list-style-type:none;">
+<li>Use (1)
+$$\frac{\partial f}{\partial x}=(1+xy)e^{xy} $$
+</li>
+<li>Use the partially constructed potential function $f$
+$$\frac{\partial }{\partial x}\left[ xe^{xy} + A(x) \right]=(1+xy)e^{xy} $$
+</li>
+<li>
+$$e^{xy}+xye^{xy}+A\;'(x)=(1+xy)e^{xy} $$
+</li>
+<li>$$(1+xy)e^{xy} +A\;'(x)=(1+xy)e^{xy}$$
+</li>
+<li>
+$$A'(x)=0$$
+</li>
+<li>
+$$A(x)= c$$
+</li>
+<li>Therefore $f(x,y)=xe^{xy}+c$
+</li>
+</ul>
+</div>
+
+========================================================
+
+## Example
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li> Evaluate $\int\limits_C \mathbf{\vec{F}}\cdot d\vec{r}$, where $\mathbf{\vec{F}} = \langle (1+xy)e^{xy},\:x^2e^{xy} \rangle$ and $C$ is the top half of the circle $x^{2}+y^{2}=4$ counterclockwise.
+</li>
+<li> We know that $\mathbf{\vec{F}}$ is <strong>conservative</strong>, so <strong>Fundamental Theorem for Line Integrals (F.T.L.I)</strong> says
+$$\begin{align}
+\int\limits_C \mathbf{\vec{F}}\cdot d\vec{r}&= \int_C \nabla f \cdot d\vec{r}\\
+&=f(\vec{r}(b))-f(\vec{r}(a))
+\end{align}$$
+</li>
+<li>
+where $$f(x,y)=xe^{xy}+c$$
+</li>
+<li><br>Semi-circle starts at $(2,0)$ and ends $(-2,0)$, 
+$$\begin{align}
+\vec{r}(a)&= \langle 2,0 \rangle\\
+\vec{r}(b)&= \langle -2,0\rangle\\
+\end{align}$$
+</li>
+<li>Using F.T.L.I
+$$\begin{align}
+\int\limits_C \mathbf{\vec{F}}\cdot d\vec{r}&=f(-2,0)-f(2,0)\\
+&=(-2e^{0}+c)-(2e^{0}+c)\\
+&=-4
+\end{align}$$
+</li>
+</ul>
+</div>
+
+
+
+========================================================
+
+## Conservation of Energy
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li><u>Newton’s 2nd Law of Motion</u>
+$$\mathbf{\vec{F}}(\mathbf{\vec{r}}(t))=m\mathbf{\vec{a}}(t)$$
+</li>
+<li>where 
+$\mathbf{\vec{a}}(t) =\mathbf{\vec{r}}\:''(t)$
+</li>
+<li>The work done by the force on the object is
+</li>
+</ul>
+</div>
+
+
+<div style="float:left; width:50%">
+<ul style="list-style-type:none;">
+<li>
+$$work=\int_a^b\mathbf{\vec{F}}(\mathbf{\vec{r}}(t))\cdot \mathbf{\vec{r}}\;'(t)d$$</li>
+<li>
+$$\hphantom{work} =\int_a^b m\mathbf{\vec{r}}\;''(t)\cdot \mathbf{\vec{r}}\;'(t)dt$$
+</li>
+<li>
+$$\hspace{5cm}= m\int_a^b \frac{1}{2}\frac{d}{dt}\left[ \mathbf{\vec{r}}\;'(t)\cdot \mathbf{\vec{r}}\;'(t) \right]dt$$
+</li>
+<li>
+$$\hspace{4cm}= \frac{m}{2}\int_a^b \frac{d}{dt}\left[||\mathbf{\vec{r}}\;'(t)||^2 \right]dt\\= \frac{m}{2} ||\mathbf{\vec{r}}\;'(t)||^2 \bigg\vert_{t=a}^{t=b}$$
+</li>
+<li>
+$$\hphantom{work}= \frac{m}{2} \left(||\mathbf{\vec{r}}\;'(b)||^2 - ||\mathbf{\vec{r}}\;'(a)||^2\right)$$
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:50%">
+<ul style="list-style-type:none;">
+<li>Since $\mathbf{\vec{v}}=\mathbf{\vec{r}}\;'$, we can rewrite the work in terms of <strong>kinetic energy</strong>  $K(P)=\frac{m}{2}||\mathbf{\vec{v}}(t)||^2$<br><br>
+$$\begin{align}
+work &= \frac{m}{2} \left(||\mathbf{\vec{v}}(b)||^2 - ||\mathbf{\vec{v}}(a)||^2\right)\\
+     &= K(B)-K(A)
+\end{align}$$
+<br>Work done by the force field along $C$ is equal to the <b>change</b> in kinetic energy at the <b>endpoints</b> of $C$
+</li>
+</ul>
+</div>
+
+========================================================
+
+## Conservation of Energy cont'd
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li>Furthermore, assume that  $\mathbf{\vec{F}}$ is <b>conservative</b>
+$$\mathbf{\vec{F}} =\nabla f$$
+</li>
+<li>In physics, the <strong>potential energy</strong> of an object at the point  is defined
+as $P=-f$</li>
+<li>
+$$work = \int\limits_C \mathbf{\vec{F}} \cdot d\vec{r}= \int\limits_C \left( -\nabla P \right)\cdot d\vec{r}$$
+</li>
+<li> Using <strong>F.T.L.I.</strong>
+$$work = - \left[P(\vec{r}(b)) -P(\vec{r}(a))\right]=P(A)-P(B)$$
+</li>
+<li>
+But we also have $$work = K(B)-K(A)$$
+</li>
+<li>Then
+$$P(A)-P(B) = K(B)-K(A)$$
+</li>
+<li><b>Law of Conservation of Energy</b>
+$$P(A)+ K(A) = P(B) + K(B)$$
+<em>Object moves from one point A to another point B under the influence of a conservative force field, then the sum of its potential energy and its kinetic energy remains constant</em>
+</li>
+</ul>
+</div>
+
+========================================================
+
+## Path Independence
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li> Let $\mathbf{\vec{F}}$ be a <strong>conservative</strong> field and $C_1$ and $C_2$ two curves with the <b>same</b> initial and terminal points.
+</li>
+<li>Then according to F.T.L.I.
+$$\int\limits_{C_1} \mathbf{\vec{F}}\cdot d\vec{r}=\int\limits_{C_2} \mathbf{\vec{F}}\cdot d\vec{r}$$
+</li>
+<li>If this happens we say that  $\mathbf{\vec{F}}$ is <em>independent of path </em>
+</li>
+<li>
+</ul>
+</div>
