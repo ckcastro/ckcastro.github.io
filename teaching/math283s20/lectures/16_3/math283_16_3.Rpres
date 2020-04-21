@@ -379,16 +379,16 @@ $$P(A)+ K(A) = P(B) + K(B)$$
 
 ========================================================
 
-## Path Independence
+## Property of conservative fields
 
 <div style="float:left; width:100%">
 <ul style="list-style-type:none;">
 <li> Let $\mathbf{\vec{F}}$ be a <strong>conservative</strong> field and $C_1$ and $C_2$ two curves with the <b>same</b> initial and terminal points.
 </li>
-<li>Then according to F.T.L.I.
+<li>Then according to <strong>F.T.L.I.</strong>
 $$\int\limits_{C_1} \mathbf{\vec{F}}\cdot d\vec{r}=\int\limits_{C_2} \mathbf{\vec{F}}\cdot d\vec{r}$$
 </li>
-<li>If this happens we say that  $\mathbf{\vec{F}}$ is <em>independent of path </em>
+<li>If this happens we say that  $\mathbf{\vec{F}}$ is <strong>independent of path </strong>
 </li>
 <li>
 </ul>
