@@ -289,6 +289,31 @@ $$\qquad=-2 \iint\limits_D dA=-2\int_0^{2\pi}\int_0^3 rdrd\theta$$
 </ul>
 </div>
 
+========================================================
+
+## Circulation of a velocity field
+
+<div style="float:left; width:30%" class="fragment">
+<img src="16_4_image5b.png" style="width:100%" alt="Circle of radius 3 with vector field"><div style="float:left; width:100%">
+</div>
+</div>
+
+<div style="float:left; width:70%">
+<ul  style="list-style-type:none;">
+<li>Suppose that $\mathbf{\vec{v}}$ represents the velocity field in fluid flow
+</li>
+<li>and the line integral $$\int\limits_C \mathbf{\vec{v}}\cdot d\mathbf{\vec{r}} = \int\limits_C \mathbf{\vec{v}}\cdot \mathbf{\hat{T}} ds $$
+</li>
+<li>$\mathbf{\vec{v}}\cdot \mathbf{\hat{T}}$ is the component of $\mathbf{\vec{v}}$ in the direction of  $\mathbf{\hat{T}}$
+</li>
+<li><br><strong>Circulation:</strong> line integral $$\int\limits_C \mathbf{\vec{v}}\cdot d\mathbf{\vec{r}}$$
+measures the tendency of the fluid to move around $C$, called circulation  of $\mathbf{\vec{v}}$ around $C$
+</li>
+</ul>
+</div>
+
+
+
 
 ========================================================
 
@@ -296,8 +321,8 @@ $$\qquad=-2 \iint\limits_D dA=-2\int_0^{2\pi}\int_0^3 rdrd\theta$$
 
 <div style="float:left; width:100%">
 <ul  style="list-style-type:none;">
-<li> Find the work done by the force field
-$$\mathbf{\vec{F}}(x,y)=\langle e^{-x}+y^2,\;e^{-y}+x^2\rangle$$
+<li> Find the ciculation of the velocity field
+$$\mathbf{\vec{v}}(x,y)=\langle e^{-x}+y^2,\;e^{-y}+x^2\rangle$$
 on a particle that moves along the arc of $y = \cos x$ from $\left(-\frac{\pi}{2},0\right)$ to $\left(\frac{\pi}{2},0\right)$ and next along the line segment from $\left(\frac{\pi}{2},0\right)$ to $\left(-\frac{\pi}{2},0\right)$.
 </li>
 </ul>
@@ -310,7 +335,7 @@ on a particle that moves along the arc of $y = \cos x$ from $\left(-\frac{\pi}{2
 
 <div style="float:left; width:70%">
 <ul  style="list-style-type:none;">
-<li>$$work=\int\limits_{{\color{red} {C_1}}} \mathbf{\vec{F}}\cdot d\vec{r}$$
+<li>$$circulation=\int\limits_{{\color{red} {C_1}}} \mathbf{\vec{v}}\cdot d\mathbf{\vec{r}}$$
 </li>
 <li> ${\color{red} {C_1}}$ is closed $\checkmark$</li>
 <li> ${\color{red} {C_1}}$ is positively oriented $\times$</li>
@@ -327,9 +352,9 @@ $${\color{red} {C_1}}\rightarrow {\color{blue} {-C_1}}$$<br><br>
 
 <div style="float:left; width:30%">
 <ul  style="list-style-type:none;">
-<li>$$\int\limits_{{\color{red} {C_1}}} \mathbf{\vec{F}}\cdot d\vec{r}=-\int\limits_{{\color{blue} {-C_1}}} \mathbf{\vec{F}}\cdot d\vec{r}$$
+<li>$$\int\limits_{{\color{red} {C_1}}} \mathbf{\vec{v}}\cdot d\mathbf{\vec{r}}=-\int\limits_{{\color{blue} {-C_1}}} \mathbf{\vec{v}}\cdot d\mathbf{\vec{r}}$$
 </li>
-<li>$$\hphantom{\int\limits_{{\color{red} {C_1}}} \mathbf{\vec{F}}\cdot d\vec{r}}=-\int\limits_{{\color{blue} {C_2}}} \mathbf{\vec{F}}\cdot d\vec{r}$$
+<li>$$\hphantom{\int\limits_{{\color{red} {C_1}}} \mathbf{\vec{v}} \cdot d\mathbf{\vec{r}}}=-\int\limits_{{\color{blue} {C_2}}} \mathbf{\vec{v}} \cdot d\mathbf{\vec{r}}$$
 where $C_2=-C_1$
 </li>
 </ul>
@@ -348,20 +373,18 @@ where $C_2=-C_1$
 </ul>
 </div>
 
-
-
 ========================================================
 
-## Example 2 cont'd
+## Example 2 con't
 
-<div style="float:left; width:30%" class="fragment">
-<img src="16_4_image6b.png" style="width:100%" alt="Bounded region in 2D"><div style="float:left; width:100%">
+<div style="float:left; width:40%" class="fragment">
+<img src="16_4_image6c.png" style="width:100%" alt="Bounded region in 2D"><div style="float:left; width:100%">
 </div>
 </div>
 
-<div style="float:left; width:70%">
+<div style="float:left; width:60%">
 <ul  style="list-style-type:none;">
-<li>We can use <strong>Green's theorem</strong> now$$-\int\limits_{C_2} \mathbf{\vec{F}}\cdot d\vec{r}=-\iint\limits_D \left(\frac{\partial Q}{\partial x}-\frac{\partial P}{\partial y} \right)\:dA$$
+<li>We can use <strong>Green's theorem</strong> now$$-\int\limits_{C_2} \mathbf{\vec{v}}\cdot d\vec{r}=-\iint\limits_D \left(\frac{\partial Q}{\partial x}-\frac{\partial P}{\partial y} \right)\:dA$$
 </li>
 <li><u>Derive</u>
 $$\frac{\partial Q}{\partial x}=\frac{\partial }{\partial x} \left ( e^{-y}+x^2  \right)\qquad \frac{\partial P}{\partial y}=\frac{\partial }{\partial y} \left (   e^{-x}+y^2 \right)$$
@@ -370,7 +393,7 @@ $$\frac{\partial Q}{\partial x}=\frac{\partial }{\partial x} \left ( e^{-y}+x^2 
 $$\frac{\partial Q}{\partial x}=2x\qquad \frac{\partial P}{\partial y}=2y$$
 </li>
 <li><u>Set up and evaluate</u>
-$$work= - \iint\limits_D \left(2x-2y\right)dA\qquad\qquad$$
+$$circulation= - \iint\limits_D \left(2x-2y\right)dA\qquad\qquad$$
 </li>
 <li>
 $$=- \int_{-\frac{\pi}{2}}^{\frac{\pi}{2}} \int_0^{\cos x} (2x-2y)dydx$$
@@ -383,47 +406,3 @@ $$=- \int_{-\frac{\pi}{2}}^{\frac{\pi}{2}}  \left(2x\cos x-\cos^2 x \right)dx=\d
 </li>
 </ul>
 </div>
-
-========================================================
-
-## Property of conservative fields
-
-<div style="float:left; width:100%">
-<ul  style="list-style-type:none;">
-<li>$C$ is any piecewise smooth, simple closed path  and $\mathbf{\vec{F}}=\langle P,Q\rangle$ is conservative 
-$$\frac{\partial P}{\partial y}=\frac{\partial Q}{\partial x}$$
-</li>
-</ul>
-</div>
-
-<div style="float:left; width:50%">
-<ul  style="list-style-type:none;">
-<li><strong>Green's theorem</strong>
-$$work = \int\limits_C \mathbf{\vec{F}} \cdot d\vec{r} = \iint\limits_D \left(\frac{\partial Q}{\partial x}-\frac{\partial P}{\partial y} \right)\:dA$$
-</li>
-<li>becomes
-$$\begin{align}
-&= \int\limits_C \mathbf{\vec{F}} \cdot d\vec{r} = \iint\limits_D \left(0 \right)\:dA\\
-& = 0
-\end{align}$$
-</li>
-</ul>
-</div>
-
-<div style="float:left; width:50%">
-<ul  style="list-style-type:none;">
-<li><strong>Fundamental Theorem for Line Integrals (F.T.L.I.)</strong>
-$$work = \int\limits_C \mathbf{\vec{F}} \cdot d\vec{r} = f\left (\vec{r}(b)\right)-f\left (\vec{r}(a)\right)$$
-</li>
-<li>becomes
-$$\begin{align}
-&= \int\limits_C \mathbf{\vec{F}} \cdot d\vec{r} = f\left (\vec{r}(b)\right)-f\left (\vec{r}(b)\right)\\
-& = 0
-\end{align}$$
-</li>
-</ul>
-</div>
-
-
-
-
