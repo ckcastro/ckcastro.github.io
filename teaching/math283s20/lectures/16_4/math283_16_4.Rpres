@@ -66,7 +66,9 @@ The following topics will be covered in this section:
     <ul>
       <li>Preliminaries</li>
       <li>Green's Theorem</li>
-      <li>Examples</li>
+      <li>Example</li>
+      <li>Circulation of a velocity field</li>
+      <li>Circulation form of Green’s theorem</li>
     </ul>
 </li>
 </ul>
@@ -384,7 +386,7 @@ where $C_2=-C_1$
 
 <div style="float:left; width:60%">
 <ul  style="list-style-type:none;">
-<li>We can use <strong>Green's theorem</strong> now$$-\int\limits_{C_2} \mathbf{\vec{v}}\cdot d\vec{r}=-\iint\limits_D \left(\frac{\partial Q}{\partial x}-\frac{\partial P}{\partial y} \right)\:dA$$
+<li>We can use <strong>Green's theorem</strong> now$$circulation=-\int\limits_{C_2} \mathbf{\vec{v}}\cdot d\vec{r}=-\iint\limits_D \left(\frac{\partial Q}{\partial x}-\frac{\partial P}{\partial y} \right)\:dA$$
 </li>
 <li><u>Derive</u>
 $$\frac{\partial Q}{\partial x}=\frac{\partial }{\partial x} \left ( e^{-y}+x^2  \right)\qquad \frac{\partial P}{\partial y}=\frac{\partial }{\partial y} \left (   e^{-x}+y^2 \right)$$
