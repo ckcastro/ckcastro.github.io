@@ -172,8 +172,8 @@ $$\oint\limits_{C}$$
 <ul style="list-style-type:none;">
 <li> 
 <p style="border:3px; border-style:solid; border-color:#287EC7; padding: 1em;" class="fragment"> 
-Let $C$ be a positively oriented, piecewise-smooth, simple
-closed curve in the plane and let $D$ be the region bounded by $C$. If $P$ and $Q$
+Let $C$ be a <b>positively oriented, piecewise-smooth, simple
+closed</b> curve in the plane and let $D$ be the region bounded by $C$. If $P$ and $Q$
 have continuous partial derivatives on an open region that contains $D$.  Then
 $$\oint\limits_C Pdx+Qdy = \iint\limits_D \left(\frac{\partial Q}{\partial x}-\frac{\partial P}{\partial y} \right)\:dA$$
 </p>
@@ -181,21 +181,181 @@ $$\oint\limits_C Pdx+Qdy = \iint\limits_D \left(\frac{\partial Q}{\partial x}-\f
 </ul>
 </div>
 
-
+<div style="float:left; width:40%; padding-left:30%" class="fragment">
+<img src="16_4_image4.png" style="width:100%" alt="A diagram of a piecewise smooth closed curve"><div style="float:left; width:100%">
+</div>
+<p style="text-align:center"><small>
+Courtesy of James Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
+</small></p>
+</div>
 
 ========================================================
 
-## Example
+## Green's Theorem cont'd
 
 <div style="float:left; width:100%">
-<ul  style="list-style-type:none;">
+<ul style="list-style-type:none;">
 <li>
+$$\begin{align}
+\oint\limits_C Pdx+Qdy&= \oint\limits_C \langle P ,Q \rangle \cdot \langle dx,dy \rangle
+\end{align}$$
 </li>
 <li>
+$$\begin{align}
+\oint\limits_C Pdx+Qdy&= \oint\limits_C \langle P ,Q \rangle \cdot \langle dx,dy \rangle\\
+& = \oint\limits_C \langle P ,Q \rangle \cdot \langle x\;'(t)dt,\;y\;'(t)dt\rangle
+\end{align}$$
+</li>
+<li>
+$$\begin{align}
+ & =   \oint\limits_C \langle P ,Q \rangle \cdot \langle x\;'(t),\;y\;'(t)\rangle dt \\
+\end{align}$$
+</li>
+<li>
+$$\begin{align}
+ & =   \oint\limits_C \mathbf{\vec{F}} \cdot \vec{r}\;'(t) dt \\
+ & =    \oint\limits_C \mathbf{\vec{F}} \cdot d\vec{r}
+\end{align}$$
+</li>
+<li> 
+<p style="border:3px; border-style:solid; border-color:#287EC7; padding: 1em;" class="fragment"> 
+<strong>Green's theorem</strong>
+$$\oint\limits_C \mathbf{\vec{F}} \cdot d\vec{r} = \iint\limits_D \left(\frac{\partial Q}{\partial x}-\frac{\partial P}{\partial y} \right)\:dA$$
+</p>
 </li>
 </ul>
 </div>
 
+========================================================
+
+## Example 1
+
+<div style="float:left; width:100%">
+<ul  style="list-style-type:none;">
+<li> Calculate the work done by a particle by the force field
+$$\mathbf{\vec{F}}(x,y)=\langle y+\sin x, \; e^y-x\rangle$$
+as the particle traverses circle $x^2+y^2=9$ once in the counterclockwise direction, starting and ending at $(3,0)$.
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:30%" class="fragment">
+<img src="16_4_image5.png" style="width:100%" alt="Circle of radius 3"><div style="float:left; width:100%">
+</div>
+</div>
+
+<div style="float:left; width:30%">
+<ul  style="list-style-type:none;">
+<li>$$work = \int\limits_C \mathbf{\vec{F}}\cdot d\vec{r} $$
+</li>
+<li>
+  <ul  style="list-style-type:none;">
+  <li> $C$ is closed $\checkmark$</li>
+  <li> $C$ is positively oriented $\checkmark$</li>
+  <li> $C$ is piecewise-smooth $\checkmark$</li>
+  <li> $C$ is simple $\checkmark$</li>
+  </ul>
+</li>
+<li><br><strong>Green's theorem</strong>
+$$work = \int\limits_C \mathbf{\vec{F}} \cdot d\vec{r} = \iint\limits_D \left(\frac{\partial Q}{\partial x}-\frac{\partial P}{\partial y} \right)\:dA$$
+</li>
+<li> Compute work as a double integral
+</li>
+<li><u>Derive</u>
+$$\frac{\partial Q}{\partial x}=\frac{\partial }{\partial x} \left (  e^y-x \right)\qquad \frac{\partial P}{\partial y}=\frac{\partial }{\partial y} \left ( y+\sin x \right)$$
+</li>
+<li>
+$$\frac{\partial Q}{\partial x}=-1\qquad \frac{\partial P}{\partial y}=1$$
+</li>
+<li><u>Set up and evaluate</u>
+$$work= \iint\limits_D \left(-1-1 \right)dA$$
+</li>
+<li>
+$$\qquad=-2 \iint\limits_D dA=-2A(D)\\ = -2(9\pi)= -18\pi$$
+</li>
+</ul>
+</div>
+
+
+========================================================
+
+## Example 2
+
+<div style="float:left; width:100%">
+<ul  style="list-style-type:none;">
+<li> Calculate $\int\limits_C \mathbf{\vec{F}}\cdot d\vec{r}$ where 
+$$\mathbf{\vec{F}}(x,y)=\langle e^{-x}+y^2,\;e^{-y}+x^2\rangle$$
+and $C$ is the arc of $y = \cos x$ from $\left(-\frac{\pi}{2},0\right)$ to $\left(\frac{\pi}{2},0\right)$ and the line segment from $\left(\frac{\pi}{2},0\right)$ to $\left(-\frac{\pi}{2},0\right)$.
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:30%" class="fragment">
+<img src="16_4_image6b.jpg" style="width:100%" alt="Bounded region in 2D"><div style="float:left; width:100%">
+</div>
+</div>
+
+<div style="float:left; width:70%">
+<ul  style="list-style-type:none;">
+<li>
+  <ul  style="list-style-type:none;">
+  <li> $C$ is closed $\checkmark$</li>
+  <li> $C$ is positively oriented $\times$</li>
+  </ul>
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:100%">
+<ul  style="list-style-type:none;">
+<li> <u>Need to reverse orientation</u>
+</li>
+</li>
+</li>
+</ul>
+</div>
+
+========================================================
+
+## Property of conservative fields
+
+<div style="float:left; width:100%">
+<ul  style="list-style-type:none;">
+<li>$C$ is any simple closed path
+</li>
+<li> and $\mathbf{\vec{F}}$ is conservative 
+$$\frac{\partial P}{\partial y}=\frac{\partial Q}{\partial x}$$
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:50%">
+<ul  style="list-style-type:none;">
+<li><strong>Green's theorem</strong>
+$$work = \int\limits_C \mathbf{\vec{F}} \cdot d\vec{r} = \iint\limits_D \left(\frac{\partial Q}{\partial x}-\frac{\partial P}{\partial y} \right)\:dA$$
+</li>
+<li>becomes
+$$\begin{align}
+&= \int\limits_C \mathbf{\vec{F}} \cdot d\vec{r} = \iint\limits_D \left(0 \right)\:dA\\
+& = 0
+\end{align}$$
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:50%">
+<ul  style="list-style-type:none;">
+<li><strong>Fundamental Theorem for Line Integrals (F.T.L.I.)</strong>
+$$work = \int\limits_C \mathbf{\vec{F}} \cdot d\vec{r} = f\left (\vec{r}(b)\right)-f\left (\vec{r}(a)\right)$$
+</li>
+<li>becomes
+$$\begin{align}
+&= \int\limits_C \mathbf{\vec{F}} \cdot d\vec{r} = f\left (\vec{r}(b)\right)-f\left (\vec{r}(b)\right)\\
+& = 0
+\end{align}$$
+</li>
+</ul>
+</div>
 
 
 
