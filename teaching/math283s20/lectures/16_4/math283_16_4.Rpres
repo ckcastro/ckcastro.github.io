@@ -212,10 +212,7 @@ $$\begin{align}
 \end{align}$$
 </li>
 <li>
-$$\begin{align}
- & =   \oint\limits_C \mathbf{\vec{F}} \cdot \vec{r}\;'(t) dt \\
- & =    \oint\limits_C \mathbf{\vec{F}} \cdot d\vec{r}
-\end{align}$$
+$$=\oint\limits_C \mathbf{\vec{F}} \cdot \vec{r}\;'(t) dt=    \oint\limits_C \mathbf{\vec{F}} \cdot d\vec{r}$$
 </li>
 <li> 
 <p style="border:3px; border-style:solid; border-color:#287EC7; padding: 1em;" class="fragment"> 
@@ -261,6 +258,20 @@ $$work = \int\limits_C \mathbf{\vec{F}} \cdot d\vec{r} = \iint\limits_D \left(\f
 </li>
 <li> Compute work as a double integral
 </li>
+</ul>
+</div>
+
+========================================================
+
+## Example 1 cont'd
+
+<div style="float:left; width:30%" class="fragment">
+<img src="16_4_image5.png" style="width:100%" alt="Circle of radius 3"><div style="float:left; width:100%">
+</div>
+</div>
+
+<div style="float:left; width:70%">
+<ul  style="list-style-type:none;">
 <li><u>Derive</u>
 $$\frac{\partial Q}{\partial x}=\frac{\partial }{\partial x} \left (  e^y-x \right)\qquad \frac{\partial P}{\partial y}=\frac{\partial }{\partial y} \left ( y+\sin x \right)$$
 </li>
@@ -283,9 +294,9 @@ $$\qquad=-2 \iint\limits_D dA=-2A(D)\\ = -2(9\pi)= -18\pi$$
 
 <div style="float:left; width:100%">
 <ul  style="list-style-type:none;">
-<li> Calculate $\int\limits_C \mathbf{\vec{F}}\cdot d\vec{r}$ where 
+<li> Calculate the work done by a particle by the force field
 $$\mathbf{\vec{F}}(x,y)=\langle e^{-x}+y^2,\;e^{-y}+x^2\rangle$$
-and $C$ is the arc of $y = \cos x$ from $\left(-\frac{\pi}{2},0\right)$ to $\left(\frac{\pi}{2},0\right)$ and the line segment from $\left(\frac{\pi}{2},0\right)$ to $\left(-\frac{\pi}{2},0\right)$.
+and $C_1$ is the arc of $y = \cos x$ from $\left(-\frac{\pi}{2},0\right)$ to $\left(\frac{\pi}{2},0\right)$ and the line segment from $\left(\frac{\pi}{2},0\right)$ to $\left(-\frac{\pi}{2},0\right)$.
 </li>
 </ul>
 </div>
@@ -297,20 +308,69 @@ and $C$ is the arc of $y = \cos x$ from $\left(-\frac{\pi}{2},0\right)$ to $\lef
 
 <div style="float:left; width:70%">
 <ul  style="list-style-type:none;">
+<li>$$work=\int\limits_{C_1} \mathbf{\vec{F}}\cdot d\vec{r}$$
+</li>
+<li> $C_1$ is closed $\checkmark$</li>
+<li> $C_1$ is positively oriented $\times$</li>
+<li> <u>Need to reverse orientation</u>
+$$C_1\rightarrow -C_1$$
+</li>
+<li>
+Let $C_2=-C_1$
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:30%" class="fragment">
+<img src="16_4_image6b.jpg" style="width:100%" alt="Bounded region in 2D"><div style="float:left; width:100%">
+</div>
+</div>
+
+<div style="float:left; width:30%">
+<ul  style="list-style-type:none;">
+<li>$$\int\limits_{C_1} \mathbf{\vec{F}}\cdot d\vec{r}=-\int\limits_{-C_1} \mathbf{\vec{F}}\cdot d\vec{r}$$
+</li>
+<li>$$\hphantom{\int\limits_{C_1} \mathbf{\vec{F}}\cdot d\vec{r}}=-\int\limits_{C_2} \mathbf{\vec{F}}\cdot d\vec{r}$$
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:40%">
+<ul  style="list-style-type:none;">
 <li>
   <ul  style="list-style-type:none;">
-  <li> $C$ is closed $\checkmark$</li>
-  <li> $C$ is positively oriented $\times$</li>
+  <li> $C_2$ is closed $\checkmark$</li>
+  <li> $C_2$ is positively oriented $\checkmark$</li>
+  <li> $C_2$ is piecewise-smooth $\checkmark$</li>
+  <li> $C_2$ is simple $\checkmark$</li>
   </ul>
 </li>
 </ul>
 </div>
 
+
+
+========================================================
+
+## Example 2 cont'd
+
 <div style="float:left; width:100%">
 <ul  style="list-style-type:none;">
-<li> <u>Need to reverse orientation</u>
+<li>We can use <strong>Green's theorem</strong> now$$-\int\limits_{C_2} \mathbf{\vec{F}}\cdot d\vec{r}=-\iint\limits_D \left(\frac{\partial Q}{\partial x}-\frac{\partial P}{\partial y} \right)\:dA$$
 </li>
+<li><u>Derive</u>
+$$\frac{\partial Q}{\partial x}=\frac{\partial }{\partial x} \left ( e^{-y}+x^2  \right)\qquad \frac{\partial P}{\partial y}=\frac{\partial }{\partial y} \left (   e^{-x}+y^2 \right)$$
 </li>
+<li>
+$$\frac{\partial Q}{\partial x}=2x\qquad \frac{\partial P}{\partial y}=2y$$
+</li>
+<li><u>Set up and evaluate</u>
+$$work= - \iint\limits_D \left(2x-2y\right)dA\qquad\qquad$$
+</li>
+<li>
+$$=- \int_{-\frac{\pi}{2}}^{\frac{\pi}{2}} \int_0^{\sin x} (2x-2y)dydx$$
+</li>
+<li>
 </li>
 </ul>
 </div>
