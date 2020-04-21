@@ -324,7 +324,7 @@ measures the tendency of the fluid to move around $C$, called circulation  of $\
 
 <div style="float:left; width:100%">
 <ul  style="list-style-type:none;">
-<li> Find the ciculation of the velocity field
+<li> Find the circulation of the velocity field
 $$\mathbf{\vec{v}}(x,y)=\langle e^{-x}+y^2,\;e^{-y}+x^2\rangle$$
 on a particle that moves along the arc of $y = \cos x$ from $\left(-\frac{\pi}{2},0\right)$ to $\left(\frac{\pi}{2},0\right)$ and next along the line segment from $\left(\frac{\pi}{2},0\right)$ to $\left(-\frac{\pi}{2},0\right)$.
 </li>
@@ -332,7 +332,7 @@ on a particle that moves along the arc of $y = \cos x$ from $\left(-\frac{\pi}{2
 </div>
 
 <div style="float:left; width:30%" class="fragment">
-<img src="16_4_image6a.png" style="width:100%" alt="Bounded region in 2D"><div style="float:left; width:100%">
+<img src="16_4_image6a.png" style="width:100%" alt="Bounded region in 2D with negatively oriented boundary"><div style="float:left; width:100%">
 </div>
 </div>
 
@@ -349,7 +349,7 @@ $${\color{red} {C_1}}\rightarrow {\color{blue} {-C_1}}$$<br><br>
 </div>
 
 <div style="float:left; width:30%" class="fragment">
-<img src="16_4_image6b.png" style="width:100%" alt="Bounded region in 2D"><div style="float:left; width:100%">
+<img src="16_4_image6b.png" style="width:100%" alt="Bounded region in 2D with positevely oriented boundary"><div style="float:left; width:100%">
 </div>
 </div>
 
