@@ -1,0 +1,424 @@
+<style>
+.section .reveal .state-background {
+   background: #ffffff;
+}
+
+.section .reveal h1,
+.section .reveal h2,
+.section .reveal p {
+   color: black;
+   margin-top: 50px;
+   text-align: center;
+}
+
+.footer {
+    color: black;
+    background: #E8E8E8;
+    position: fixed;
+    top: 90%;
+    text-align:center;
+    width:100%;
+} 
+
+
+table, th, td {
+  border: 1px solid black;
+}
+
+</style>
+
+<!-- foo 
+Highlighting
+bold
+strong
+orange <b style="color:#d95f02"> text </b>
+green  <b style="color:#1b9e77"> text </b>
+purple <b style="color:#d24693"> text </b>
+red    <b style="color:#FF0000"> text </b>
+blue   <b style="color:#0000FF"> text </b>
+-->
+
+16.5 Curl and Divergence
+========================================================
+title: "Math 283 Calculus 3"
+date: Math 283 Spring 2020
+author: Claudia Castro-Castro
+autosize: true
+incremental: true
+width: 1920
+height: 1080
+
+<h2 style="text-align:left"> Instructions:</h2>
+<p style='text-align:left'>Use the left and right arrow keys to navigate the presentation forward and backward respectively.  You can also use the arrows at the bottom right of the screen to navigate with a mouse.<br></p>
+
+<div class='footer'>
+    Copyright Disclaimer: material is for educational purposes only under fair use.
+</div>
+
+========================================================
+
+## Outline
+
+<div style="float:left; width:100%">
+<ul>
+<li>
+The following topics will be covered in this section:
+    <ul>
+      <li>Curl</li>
+      <li>Physical interpretation</li>
+      </li>Irrotational fields</li>
+      <li>Divergence</li>
+      <li>Physical interpretation</li>
+      </li>Incompressible fields</li>
+    </ul>
+</li>
+</ul>
+</div>
+
+========================================================
+
+## Preliminaries: $\nabla$
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li><strong>$\nabla$</strong> is a differential <em>operator</em> 
+$$\nabla = \langle \frac{\partial}{\partial x},\frac{\partial}{\partial y},\frac{\partial}{\partial z} \rangle$$
+</li>
+<li><br>Recall: gradient
+$$\begin{align}
+\nabla f &= \langle \frac{\partial}{\partial x},\frac{\partial}{\partial y},\frac{\partial}{\partial z} \rangle f \\
+         &= \langle \frac{\partial f}{\partial x},\frac{\partial f}{\partial y},\frac{\partial f}{\partial z} \rangle 
+\end{align}$$
+</li>
+</ul>
+</div>
+
+========================================================
+
+## Curl
+
+<div style="float:left; width:60%">
+<ul style="list-style-type:none;">
+<li>If $\mathbf{\vec{F}}=\langle P,Q,R\rangle$ is a vector field in $\mathbb{R}^3$<br><br>
+<p style="border:3px; border-style:solid; border-color:#287EC7; padding: 1em;" class="fragment"> 
+<strong>DEFINITION</strong>
+$$\text{curl}\mathbf{\vec{F}}= \nabla \times \mathbf{\vec{F}} $$
+</p>
+</li>
+<li>
+$$\text{curl}\mathbf{\vec{F}}= \langle \frac{\partial}{\partial x},\frac{\partial}{\partial y},\frac{\partial}{\partial z} \rangle \times \langle P,Q,R\rangle $$
+</li> 
+<li>
+$$=\left|\left(\begin{array}{ccc}
+\mathbf{\hat{{i}}} & \hat{{\mathbf{j}}} & \hat{{\mathbf{k}}}\\
+\frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z}\\
+P & Q & R
+\end{array}\right)\right|$$
+</li>
+<li>
+$$\hspace{16cm}=
+\left(\frac{\partial R}{\partial y} -\frac{\partial Q}{\partial z}\right) \mathbf{\hat{{i}}} -
+\left(\frac{\partial R}{\partial x} -\frac{\partial P}{\partial z}\right) \mathbf{\hat{{j}}} +
+\left(\frac{\partial Q}{\partial x} -\frac{\partial P}{\partial y}\right) \mathbf{\hat{{k}}} 
+$$
+</li>
+<li>
+$$\hspace{16cm}=
+\left(\frac{\partial R}{\partial y} -\frac{\partial Q}{\partial z}\right) \mathbf{\hat{{i}}} +
+\left(\frac{\partial P}{\partial z} -\frac{\partial R}{\partial x}\right) \mathbf{\hat{{j}}} +
+\left(\frac{\partial Q}{\partial x} -\frac{\partial P}{\partial y}\right) \mathbf{\hat{{k}}} 
+$$
+</li>
+<li>
+<li>
+$$or\\
+\hspace{6cm}=
+\langle R_y-Q_z,\;P_z-R_x,\;Q_x-P_y \rangle
+$$
+</li>
+</li>
+</ul>
+</div>
+
+
+========================================================
+
+## Example 1
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li> Find the curl of the field $\mathbf{\vec{F}}(x,y)=\langle -y,x\rangle$
+</li>
+</ul>
+</div>
+
+
+<div style="float:left; width:30%" class="fragment">
+<img src="16_5_image1.png" style="width:100%" alt="Vector plot of rotating field"><div style="float:left; width:100%">
+</div>
+</div>
+
+<div style="float:left; width:70%">
+<ul style="list-style-type:none;">
+<li>$\mathbf{\vec{F}}=\langle -y,x,0\rangle$
+</li>
+<li>$\text{curl}\mathbf{\vec{F}}= \nabla \times \mathbf{\vec{F}}$
+</li>
+<li>
+$$\hspace{-15cm}=\left|\left(\begin{array}{ccc}
+\mathbf{\hat{{i}}} & \hat{{\mathbf{j}}} & \hat{{\mathbf{k}}}\\
+\frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z}\\
+-y & x & 0
+\end{array}\right)\right|$$
+</li>
+<li>
+$$\hspace{5cm}=
+\left(\frac{\partial }{\partial y}(0) -\frac{\partial}{\partial z}(x)\right) \mathbf{\hat{{i}}} +
+\left(\frac{\partial}{\partial z}(-y) -\frac{\partial}{\partial x}(0)\right) \mathbf{\hat{{j}}} +
+\left(\frac{\partial}{\partial x}(x) -\frac{\partial}{\partial y}(-y)\right) \mathbf{\hat{{k}}} 
+$$
+</li>
+<li>
+$$\hspace{-12cm}=
+\left(0-0\right) \mathbf{\hat{{i}}} +
+\left(0-0\right) \mathbf{\hat{{j}}} +
+\left(1-(-1)\right) \mathbf{\hat{{k}}} 
+$$
+</li>
+<li>
+$$\hspace{-15cm}=\langle 0,0,2 \rangle$$
+</li>
+</ul>
+</div>
+
+
+========================================================
+
+## Example 2
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li> Find the curl of the field $\mathbf{\vec{F}}(x,y)=\langle x^2-y^2,\;2xy \rangle$
+</li>
+</ul>
+</div>
+
+
+<div style="float:left; width:30%" class="fragment">
+<img src="16_5_image2.png" style="width:100%" alt="Vector plot of rotating field"><div style="float:left; width:100%">
+</div>
+</div>
+
+
+<div style="float:left; width:70%">
+<ul style="list-style-type:none;">
+<li>$\text{curl}\mathbf{\vec{F}}= \nabla \times \mathbf{\vec{F}}$
+</li>
+<li>
+$$=\left|\left(\begin{array}{ccc}
+\mathbf{\hat{{i}}} & \hat{{\mathbf{j}}} & \hat{{\mathbf{k}}}\\
+\frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z}\\
+x^2-y^2 & 2xy & 0
+\end{array}\right)\right|$$
+</li>
+
+========================================================
+
+## Curl: physical interpretation
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li> <u>Recall</u>: $$\vec{v}\times\vec{w}=\vec{0}$$
+</li>
+<li>implies that $\vec{v}$  and $\vec{w}$ are <strong>parallel</strong>
+</li>
+<li> $$\nabla \times \mathbf{\vec{F}}=\vec{0}$$
+"measures how parallel vectors are"
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:30%" class="fragment">
+<img src="16_5_image3.png" style="width:100%" alt="Diagram of curl"><div style="float:left; width:100%">
+</div>
+</div>
+
+<div style="float:left; width:70%">
+<ul>
+<li>Curl measures the tendency of field to rotate<br><br>
+<li>If the vector field is free from rotations<br><br>
+$$\text{curl}\mathbf{\vec{F}}=\vec{0}$$ 
+<br>we say the field is <strong>irrotational</strong>
+</li>
+</ul>
+</div>
+
+========================================================
+
+## Curl of a gradient field
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li> Let $\mathbf{\vec{F}}$ be a conservative field in $\mathbb{R}^3$
+$$\text{curl}\mathbf{\vec{F}}=\nabla \times \left( \nabla f\right)\\
+=\langle \frac{\partial}{\partial x},\frac{\partial}{\partial y},\frac{\partial}{\partial z} \rangle \times \langle \frac{\partial f}{\partial x},\frac{\partial f}{\partial y},\frac{\partial f}{\partial z}\rangle $$
+</li> 
+<li>
+$$=\left|\left(\begin{array}{ccc}
+\mathbf{\hat{{i}}} & \hat{{\mathbf{j}}} & \hat{{\mathbf{k}}}\\
+\frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z}\\
+\frac{\partial f}{\partial x} & \frac{\partial f}{\partial y} & \frac{\partial f}{\partial z}
+\end{array}\right)\right|$$
+</li>
+<li>
+$$=
+\left(\frac{\partial^2 f}{\partial y \partial z} -\frac{\partial^2 f}{\partial z \partial y}\right) \mathbf{\hat{{i}}} -
+\left(\frac{\partial^2 f}{\partial x \partial z} -\frac{\partial^2 f}{\partial z \partial x}\right) \mathbf{\hat{{j}}} +
+\left(\frac{\partial^2 f}{\partial x \partial y} -\frac{\partial^2 f}{\partial y \partial x}\right) \mathbf{\hat{{k}}} 
+$$
+</li>
+<li>
+$$=0\mathbf{\hat{{i}}} +0 \mathbf{\hat{{j}}} +0 \mathbf{\hat{{k}}} =\langle 0,0,0\rangle$$
+</li>
+<li><br><b>Remarks:</b>
+  <ul>
+    <li> Conservative fields are <strong>irrotatinal</strong>
+    </li>
+    <li>Test for conservative vector fields
+    $$\text{curl}\mathbf{\vec{F}}=\vec{0}$$
+    </li>
+  </ul>
+</li>
+</ul>
+</div>
+
+========================================================
+
+## Divergence
+
+<div style="float:left; width:60%">
+<ul style="list-style-type:none;">
+<li> 
+</li> 
+<p style="border:3px; border-style:solid; border-color:#287EC7; padding: 1em;" class="fragment"> 
+<strong>DEFINITION</strong>
+$$\text{div}\mathbf{\vec{F}}= \nabla \cdot \mathbf{\vec{F}} $$
+</p>
+</li>
+<li>
+$$\text{div}\mathbf{\vec{F}}= \langle \frac{\partial}{\partial x},\frac{\partial}{\partial y},\frac{\partial}{\partial z} \rangle \cdot \langle P,Q,R\rangle $$
+</li> 
+<li>
+$$\text{div}\mathbf{\vec{F}}= \frac{\partial P}{\partial x}+\frac{\partial Q}{\partial y}+\frac{\partial R}{\partial z} $$
+</li> 
+</ul>
+</div>
+
+
+========================================================
+
+## Example 3
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li> Find the divergence of the field $\mathbf{\vec{F}}(x,y)=\langle -y,x\rangle$
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:30%" class="fragment">
+<img src="16_5_image1.png" style="width:100%" alt="A diagram of a piecewise smooth closed curve"><div style="float:left; width:100%">
+</div>
+</div>
+
+========================================================
+
+## Example 4
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li> Find the divergence of the field $\mathbf{\vec{F}}(x,y)=\langle x,y\rangle$
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:30%" class="fragment">
+<img src="16_5_image4.png" style="width:100%" alt="A diagram of a piecewise smooth closed curve"><div style="float:left; width:100%">
+</div>
+</div>
+
+========================================================
+
+## Example 5
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li> Find the divergence of the field $\mathbf{\vec{F}}(x,y)=\langle -x,-y\rangle$
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:30%" class="fragment">
+<img src="16_5_image5.png" style="width:100%" alt="A diagram of a piecewise smooth closed curve"><div style="float:left; width:100%">
+</div>
+</div>
+
+========================================================
+
+## Divergence:  physical interpretation
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li> <u>Recall</u>: $$\vec{v} \cdot\vec{w}=0$$
+</li>
+<li>implies that $\vec{v}$  and $\vec{w}$ are <strong>orthogonal</strong>
+</li>
+<li> $$\nabla \cdot \mathbf{\vec{F}}=0$$
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:30%" class="fragment">
+<img src="16_5_image6.png" style="width:100%" alt="Diagram of divergent field"><div style="float:left; width:100%">
+</div>
+</div>
+
+<div style="float:left; width:70%">
+<ul>
+<li>Divergence measures the tendency of field to diverge<br><br>
+<li>If the vector field satisfies<br><br>
+$$\text{div}\mathbf{\vec{F}}=0$$ 
+<br>we say the field is <strong>incompressible</strong>
+</li>
+</ul>
+</div>
+
+
+========================================================
+
+## Divergence of a gradient field
+
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li>Compute the divergence of a gradient vector field
+$$\nabla \cdot \mathbf{\vec{F}}=\nabla \cdot \nabla f$$
+</li>
+<li>
+$$=\langle \frac{\partial}{\partial x},\frac{\partial}{\partial y},\frac{\partial}{\partial z} \rangle \cdot \langle \frac{\partial f}{\partial x},\frac{\partial f}{\partial y},\frac{\partial f}{\partial z} \rangle $$
+</li>
+<li>
+$$=\frac{\partial^2 f}{\partial x^2}+ \frac{\partial^2 f}{\partial y^2} + \frac{\partial^2 f}{\partial z^2}$$
+</li>
+<li>this expression occurs so often and it is called the <b>Laplace operator</b> 
+$$\nabla \cdot \nabla = \nabla^2 = \Delta$$
+</li>
+<li><br>because of its relation to Laplace’s equation
+$$\nabla \cdot \nabla f = \nabla^2 f = \Delta f = 0 $$
+</li>
+<li><br>
+$$\frac{\partial^2 f}{\partial x^2}+ \frac{\partial^2 f}{\partial y^2} + \frac{\partial^2 f}{\partial z^2}=0$$
+</li>
+</ul>
+</div>
+
