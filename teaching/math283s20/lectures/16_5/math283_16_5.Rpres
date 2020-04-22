@@ -77,14 +77,14 @@ The following topics will be covered in this section:
 
 ========================================================
 
-## Preliminaries: $\nabla$
+## Recall: $\nabla$ "del" or "nabla"
 
 <div style="float:left; width:100%">
 <ul style="list-style-type:none;">
 <li><strong>$\nabla$</strong> is a differential <em>operator</em> 
 $$\nabla = \langle \frac{\partial}{\partial x},\frac{\partial}{\partial y},\frac{\partial}{\partial z} \rangle$$
 </li>
-<li><br>Recall: gradient
+<li><br>Recall: gradient of a scalar function
 $$\begin{align}
 \nabla f &= \langle \frac{\partial}{\partial x},\frac{\partial}{\partial y},\frac{\partial}{\partial z} \rangle f \\
          &= \langle \frac{\partial f}{\partial x},\frac{\partial f}{\partial y},\frac{\partial f}{\partial z} \rangle 
@@ -291,17 +291,28 @@ $$
 <li>
 $$\hspace{-10cm}=0\mathbf{\hat{{i}}} +0 \mathbf{\hat{{j}}} +0\mathbf{\hat{{k}}} =\langle 0,0,0\rangle$$
 </li>
-<li><br><b>Property of conservative fields</b>
-  <ul  style="list-style-type:none;">
-    <li> $\star$ Conservative fields are <strong>irrotatinal</strong>
-    </li>
-    <li> $\star$ Test for conservative vector fields
-    $$\text{curl}\mathbf{\vec{F}}=\vec{0}$$
-    </li>
-  </ul>
+
+
+========================================================
+
+## Property of conservative fields
+
+<div style="float:left; width:100%">
+<ul  style="list-style-type:none;">
+<li> $\star$ Conservative fields are <strong>irrotatinal</strong>
+</li>
+<li> $\star$ Test for conservative vector fields
+$$\text{curl}\mathbf{\vec{F}}=\vec{0}$$
 </li>
 </ul>
 </div>
+
+<div style="float:left; width:40%; padding-left:30%" class="fragment">
+<img src="16_5_image7.png" style="width:100%" alt="Diagram of divergent field"><div style="float:left; width:100%">
+</div>
+<p style="text-align:center">Gravitational field is conservative/ irrotational</p>
+</div>
+
 
 ========================================================
 
@@ -482,3 +493,24 @@ $$\frac{\partial^2 f}{\partial x^2}+ \frac{\partial^2 f}{\partial y^2} + \frac{\
 </ul>
 </div>
 
+
+========================================================
+
+## Final remarks
+
+<div style="float:left; width:100%">
+<ul>
+<li> The curl of a vector field is a vector field
+$$\text{curl} \mathbf{\vec{F}}=\nabla \times \mathbf{\vec{F}}$$
+</li>
+<li>Curl measures the tendency of the field to rotate
+</li>
+<li>Curl  determines whether a vector field is conservative
+</li>
+<li> The divergence of a vector field is a scalar fuction
+$$\text{div} \mathbf{\vec{F}}=\nabla \cdot \mathbf{\vec{F}}$$
+</li>
+<li>Divergence measures the tendecy of the field to diverge
+</li>
+</ul>
+</div>
