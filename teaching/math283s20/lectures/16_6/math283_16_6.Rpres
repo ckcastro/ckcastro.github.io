@@ -1,0 +1,404 @@
+<style>
+.section .reveal .state-background {
+   background: #ffffff;
+}
+
+.section .reveal h1,
+.section .reveal h2,
+.section .reveal p {
+   color: black;
+   margin-top: 50px;
+   text-align: center;
+}
+
+.footer {
+    color: black;
+    background: #E8E8E8;
+    position: fixed;
+    top: 90%;
+    text-align:center;
+    width:100%;
+} 
+
+
+table, th, td {
+  border: 1px solid black;
+}
+
+</style>
+
+<!-- foo 
+Highlighting
+bold
+strong
+orange <b style="color:#d95f02"> text </b>
+green  <b style="color:#1b9e77"> text </b>
+purple <b style="color:#d24693"> text </b>
+red    <b style="color:#FF0000"> text </b>
+blue   <b style="color:#0000FF"> text </b>
+-->
+
+16.6 Parametric Surfaces and Their Areas
+========================================================
+title: "Math 283 Calculus 3"
+date: Math 283 Spring 2020
+author: Claudia Castro-Castro
+autosize: true
+incremental: true
+width: 1920
+height: 1080
+
+<h2 style="text-align:left"> Instructions:</h2>
+<p style='text-align:left'>Use the left and right arrow keys to navigate the presentation forward and backward respectively.  You can also use the arrows at the bottom right of the screen to navigate with a mouse.<br></p>
+
+<div class='footer'>
+    Copyright Disclaimer: material is for educational purposes only under fair use.
+</div>
+
+========================================================
+
+## Outline
+
+<div style="float:left; width:100%">
+<ul>
+<li>
+The following topics will be covered in this section:
+    <ul>
+      <li>Parametric representation for a surface</li>
+      <li>Tangent plane to a surface</li>
+      <li>Surface area</li>
+    </ul>
+</li>
+</ul>
+</div>
+
+========================================================
+
+## Parametric representation for a surface
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li><u>Recall:<br></u>A space <b>curve</b> is described by a <em>vector function</em> $$\mathbf{\vec{r}}(t)=x(t)\mathbf{\hat{i}}+y(t)\mathbf{\hat{j}}+z(t)\mathbf{\hat{k}}$$
+of a <b>single</b> parameter $t$
+</li>
+<li><br>
+A <b>surface</b> is described by a <em>vector function</em> 
+$$\mathbf{\vec{r}}(u, v) = x(u,v)\mathbf{\hat{i}}+y(u,v)\mathbf{\hat{j}}+z(u,v)\mathbf{\hat{k}}$$
+of <b>two</b> parameters $u$ and $v$
+</li>
+<li>
+$$\begin{align}
+x&=x(u,v)\\
+y&=y(u,v)\\
+z&=z(u,v)
+\end{align}$$
+</li>
+<li>
+<br>
+<p style="border:3px; border-style:solid; border-color:#287EC7; padding: 1em;" class="fragment">
+<strong>DEFINITION</strong> Given a parameterization of the surface
+$$\mathbf{\vec{r}}(u, v) = x(u,v)\mathbf{\hat{i}}+y(u,v)\mathbf{\hat{j}}+z(u,v)\mathbf{\hat{k}}$$
+the <b>parameter domain</b> is the set of points in the $uv$-plane that can be substituted into $\mathbf{\vec{r}}$
+</p>
+</li>
+</ul>
+</div>
+
+========================================================
+
+## Example: Graphs of functions $z=f(x,y)$
+
+<div style="float:left; width:1000%">
+<ul style="list-style-type:none;">
+<li> Let 
+$$x(u,v)  =u, \qquad y(u,v)  =v,\qquad z(u,v)=f(u,v)$$
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:70%">
+<ul style="list-style-type:none;">
+<li> <b>Example</b>: $z=x^2+y^2$
+</li>
+<li>$$x(u,v)  =u, \qquad y(u,v)  =v,\qquad z(u,v)=u^2+v^2$$
+</li>
+<li>
+$$\begin{align}
+\mathbf{\vec{r}}(u, v) &= u\mathbf{\hat{i}}+v\mathbf{\hat{j}}+(u^2+v^2)\mathbf{\hat{k}}\\
+&or\\
+&= \langle u,v,u^2+v^2\rangle
+\end{align}$$
+</li>
+<li><u>Parameter domain</u>
+$$D=[-1,1]\times[-1,1]$$
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:30%" class="fragment">
+<img src="16_6_image2.png" style="width:100%" alt="Paraboloid defined on a rectangle"><div style="loat:left; width:100%">
+</div>
+</div>
+
+<div style="float:left; width:70%">
+<ul style="list-style-type:none;">
+<li><u>Parameter domain</u>
+$$D=\{(u,u)| \;u^2+v^2 \leq 1\}$$
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:30%" class="fragment">
+<img src="16_6_image1.png" style="width:100%" alt="Paraboloid defined on a disk"><div style="loat:left; width:100%">
+</div>
+</div>
+
+
+========================================================
+
+## Example: Cones
+
+<div style="float:left; width:25%" class="fragment">
+<img src="16_6_image9.png" style="width:100%" alt="Circular cylinder"><div style="float:left; width:100%">
+</div>
+</div>
+
+<div style="float:left; width:60%">
+<ul style="list-style-type:none;">
+<li> $$\mathbf{\vec{r}_1}(u, v)= \langle  u, v, \sqrt{u^2+v^2}\rangle\\
+D=\{(u,v)|\; u^2+v^2\leq 1 \}$$
+</li>
+<li> <br><br>$$\mathbf{\vec{r}_2}(u, v)= \langle  v\cos u, v\sin u, v\rangle\\
+D=[0,2\pi]\times[0,1]$$
+</li>
+</ul>
+</div> 
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li> $\star$ Parameterizations are not unique $\star$
+</li>
+</ul>
+</div> 
+
+========================================================
+
+## Example: plane
+
+<div style="float:left; width:60%">
+<ul style="list-style-type:none;">
+<li> 
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:30%" class="fragment">
+<img src="16_6_image3.png" style="width:100%" alt="Plane that passes through a point contains two non-parallel vectors"><div style="loat:left; width:100%">
+</div>
+</div>
+
+<div style="float:left; width:60%">
+<ul style="list-style-type:none;">
+<li>
+</li>
+<li>
+</li>
+<li>
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:40%" class="fragment">
+<img src="16_6_image4.png" style="width:100%" alt="Plane that passes through a point contains two non-parallel vectors"><div style="loat:left; width:100%">
+</div>
+</div>
+
+
+
+========================================================
+
+## Example: Sphere
+
+<div style="float:left; width:30%" class="fragment">
+<img src="16_6_image5.png" style="width:100%" alt="Sphere center at origin"><div style="float:left; width:100%">
+</div>
+</div>
+
+<div style="float:left; width:70%">
+<ul style="list-style-type:none;">
+<li>Representation in <em>spherical coordinates </em>
+$$\begin{align}
+\rho&=\text{constant}\\
+u&=\theta\\
+v&=\phi
+\end{align}$$
+</li>
+<li>Then
+$$\mathbf{\vec{r}}(u, v)= \rho\cos u \sin v\mathbf{\hat{i}}+\rho\sin u \sin v\mathbf{\hat{j}}+\rho \cos v\mathbf{\hat{k}}$$
+</li>
+<li><br><u>Parameter domain</u>
+$$\begin{align}
+D&=\{(u, v)| \;0\leq u \leq 2\pi,\; 0\leq v \leq \pi\}\\
+&=[0,2\pi]\times[0,\pi]
+\end{align}$$
+</li>
+<li>
+</li>
+</ul>
+</div>
+
+========================================================
+
+## Example: Cylinders
+
+<div style="float:left; width:25%" class="fragment">
+<img src="16_6_image8.png" style="width:100%" alt="Circular cylinder"><div style="float:left; width:100%">
+</div>
+$$\mathbf{\vec{r}}(u, v)= \langle 2 \cos u,2 \sin u, v\rangle\\
+D=[0,2\pi]\times[-3,3]$$
+</div>
+
+<div style="float:left; width:33%;padding-left:10%" class="fragment">
+<img src="16_6_image6.png" style="width:100%" alt="Elliptic cylinder"><div style="float:left; width:100%">
+</div>
+$$\mathbf{\vec{r}}(u, v)= \langle 2 \cos u,5 \sin u, v\rangle\\
+D=[0,2\pi]\times[-3,3]$$
+</div>
+
+<div style="float:left; width:31%" class="fragment">
+<img src="16_6_image7.png" style="width:100%" alt="Parabolic cylinder"><div style="float:left; width:100%">
+</div>
+$$\mathbf{\vec{r}}(u, v)= \langle u, v, v^2\rangle\\
+D=[-1,1]\times[-2,2]$$
+</div>
+
+
+========================================================
+
+## Example: Other surfaces
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li>
+<a href="https://www.wolframcloud.com/obj/75878fa1-240d-4093-ab64-9326b23c1388">See Wolfram Cloud Notebook for parameteriations and more visuals</a> 
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:20%" class="fragment">
+Spiral
+<img src="16_6_image12.png" style="width:100%" alt="Spiral"><div style="float:left; width:100%">
+</div>
+</div>
+
+<div style="float:left; width:30%" class="fragment">
+Molusc shell
+<img src="16_6_image11.png" style="width:100%" alt="Molusc shell"><div style="float:left; width:100%">
+</div>
+</div>
+
+<div style="float:left; width:40%" class="fragment">
+Torus/Donut
+<img src="16_6_image10.png" style="width:100%" alt="Donut"><div style="float:left; width:100%">
+</div>
+</div>
+
+<div style="float:left; width:30%" class="fragment">
+Möbius strip
+<img src="16_6_image14.png" style="width:100%" alt="Möbius"><div style="float:left; width:100%">
+</div>
+</div>
+
+
+========================================================
+
+## Tangent planes
+
+<div style="float:left; width:40%" class="fragment">
+<img src="16_6_image15.png" style="width:100%" alt="Diagram of a surface and its parameter domain"><div style="float:left; width:100%">
+</div>
+</div>
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li> 
+</li>
+</ul>
+</div>
+
+========================================================
+
+## Example: tangent planes
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li> 
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:30%" class="fragment">
+<img src="16_6_image15.png" style="width:100%" alt="Diagram of a surface and its parameter domain"><div style="float:left; width:100%">
+</div>
+</div>
+
+========================================================
+
+## Surface area
+
+
+<div style="float:left; width:40%" class="fragment">
+<img src="16_6_image16.png" style="width:100%" alt="Surface and its parameter domain"><div style="float:left; width:100%">
+</div>
+</div>
+
+<div style="float:left; width:60%">
+<ul style="list-style-type:none;">
+<li> 
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:30%" class="fragment">
+<img src="16_6_image17.png" style="width:100%" alt="Approximating the area of the patch with area of parallelogram"><div style="float:left; width:100%">
+</div>
+</div>
+
+<div style="float:left; width:70%">
+<ul style="list-style-type:none;">
+<li> 
+</li>
+</ul>
+</div>
+
+
+========================================================
+
+## Example: surface area
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li> 
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:30%" class="fragment">
+<img src="16_5_image1.png" style="width:100%" alt="Vector plot of rotating field"><div style="float:left; width:100%">
+</div>
+</div>
+
+========================================================
+
+## Final remarks
+
+<div style="float:left; width:100%">
+<ul>
+<li>
+<p style="border:3px; border-style:solid; border-color:#287EC7; padding: 1em;" class="fragment"> 
+</p>
+</li>
+<li>
+</li>
+<li>
+</li>
+</ul>
+</div>
