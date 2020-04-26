@@ -65,8 +65,8 @@ height: 1080
 The following topics will be covered in this section:
     <ul>
       <li>Parametric representation for a surface</li>
-      <li>Tangent plane to a surface</li>
       <li>Surface area</li>
+      <li>Tangent plane to a surface</li>
     </ul>
 </li>
 </ul>
@@ -334,46 +334,171 @@ Möbius strip
 
 ## Surface area
 
-
-<div style="float:left; width:40%" class="fragment">
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li> Suppose that a surface $S$ has a vector equation
+$$\mathbf{\vec{r}}(u, v) = x(u,v)\mathbf{\hat{i}}+y(u,v)\mathbf{\hat{j}}+z(u,v)\mathbf{\hat{k}}\\ (u,v)\in D$$
+</li>
+</ul>
+<div style="float:left; width:40%">
 <img src="16_6_image16.png" style="width:100%" alt="Surface and its parameter domain"><div style="float:left; width:100%">
 </div>
 </div>
 
 <div style="float:left; width:60%">
 <ul style="list-style-type:none;">
-<li> 
+<li><u>Slice</u>:<br> 
+Divide $D$ into rectangles $R_{ij}$<br>
+the <em>patch</em> $S_{ij}$ corresponds to $R_{ij}$<br><br>
 </li>
 </ul>
 </div>
 
-<div style="float:left; width:30%" class="fragment">
+<div style="float:left; width:20%;padding-left:10%" class="fragment">
 <img src="16_6_image17.png" style="width:100%" alt="Approximating the area of the patch with area of parallelogram"><div style="float:left; width:100%">
 </div>
 </div>
 
-<div style="float:left; width:70%">
-<ul style="list-style-type:none;">
-<li> 
-</li>
+<div style="float:left; width:65%">
+  <ul style="list-style-type:none;">
+    <li><u>Approximate</u> <br>
+    <ul>
+        <li> The patch $S_{ij}$ by the parallelogram determined by vectors
+        </li>
+       <li> The edges of the patch that meet at $P_{ij}$ by the vectors
+        $$\mathbf{\vec{r}}^*_u\; \Delta u_i\\
+         \mathbf{\vec{r}}^*_v\; \Delta v_j$$
+       </li>
+        <li>Area of patch with cross product
+        $$A(S_{ij})\approx || \left(\mathbf{\vec{r}}^*_u\; \Delta u_i \right) \times \left(\mathbf{\vec{r}}^*_v\; \Delta v_j \right) ||$$
+       </li>
+    </ul>
 </ul>
 </div>
 
 
 ========================================================
 
-## Tangent planes
+## Surface area cont'd
 
-<div style="float:left; width:40%" class="fragment">
-<img src="16_6_image15.png" style="width:100%" alt="Diagram of a surface and its parameter domain"><div style="float:left; width:100%">
+<div style="float:left; width:20%;padding-left:10%" class="fragment">
+<img src="16_6_image17.png" style="width:100%" alt="Approximating the area of the patch with area of parallelogram"><div style="float:left; width:100%">
 </div>
 </div>
+
+<div style="float:left; width:65%">
+  <ul style="list-style-type:none;">
+    <li><u>Approximate</u> <br>
+    <ul>
+        <li>Area of patch with cross product
+        $$A(S_{ij})\approx ||\mathbf{\vec{r}}^*_u \times\mathbf{\vec{r}}^*_v || \Delta u_i \Delta v_j $$
+       </li>
+    </ul>
+<li><u>Sum and take limit</u> 
+</li>
+<li> $$A(S)\approx \sum_{i}\sum_j ||\mathbf{\vec{r}}^*_u \times\mathbf{\vec{r}}^*_v || \Delta u_i \Delta v_j  $$
+</li> 
+<li> $\Delta u_i \rightarrow 0$ and $\Delta v_j \rightarrow 0$
+<p style="border:3px; border-style:solid; border-color:#287EC7; padding: 1em;" class="fragment"> <strong>Surface area</strong>
+$$A(S)=\iint\limits_D ||\mathbf{\vec{r}}_u \times \mathbf{\vec{r}}_v||dA$$
+$D$ is the parameter domain
+</p>
+
+</li>
+</ul>
+</div>
+
+========================================================
+
+## Example: surface area
 
 <div style="float:left; width:100%">
 <ul style="list-style-type:none;">
 <li> 
 </li>
+<li> Find the surface area of the part of the paraboloid $z = f(x,y)=  x^2 +y^2$ that lies under the plane $z=1$
 </ul>
+</div>
+
+<div style="float:left; width:30%" class="fragment">
+<img src="16_6_image2.png" style="width:100%" alt="Vector plot of rotating field"><div style="float:left; width:100%">
+</div>
+</div>
+
+<div style="float:left; width:70%">
+<ul style="list-style-type:none;">
+<li>$$A(S)=\iint\limits_D ||\mathbf{\vec{r}}_u \times \mathbf{\vec{r}}_v||dA$$
+</li>
+<li><u>Parameterization</u> $$\mathbf{\vec{r}}(u, v)= \langle u,v,f(u,v)\rangle\quad D=\{(u,v)|\; u^2+v^2\leq 1 \}$$
+</li>
+<li><u>Derive</u>
+$$\mathbf{\vec{r}}_u = \langle 1,0,\frac{\partial f}{\partial u} \rangle$$
+</li>
+<li>
+$$\mathbf{\vec{r}}_v = \langle 0,1,\frac{\partial f}{\partial v} \rangle$$
+</li>
+<li><li>
+$$\mathbf{\vec{r}}_u \times \mathbf{\vec{r}}_v=\left|\left(\begin{array}{ccc}
+\mathbf{\hat{{i}}} & \hat{{\mathbf{j}}} & \hat{{\mathbf{k}}}\\
+1 & 0 & \frac{\partial f}{\partial u}\\
+0 & 1 & \frac{\partial f}{\partial v}\\
+\end{array}\right)\right|=- \frac{\partial f}{\partial u} \mathbf{\hat{{i}}} + \frac{\partial f}{\partial v} \mathbf{\hat{{j}}}+1\mathbf{\hat{k}}$$
+</li>
+<li>$$||\mathbf{\vec{r}}_u \times \mathbf{\vec{r}}_v||=\sqrt{\left(\frac{\partial f}{\partial u} \right)^2+\left(\frac{\partial f}{\partial v} \right)^2 +1}$$
+</li>
+</ul>
+</div>
+
+========================================================
+
+## Example: surface area
+
+<div style="float:left; width:30%" class="fragment">
+<img src="16_6_image2.png" style="width:100%" alt="Vector plot of rotating field"><div style="float:left; width:100%">
+</div>
+</div>
+
+<div style="float:left; width:70%">
+<ul style="list-style-type:none;">
+<li>$$||\mathbf{\vec{r}}_u \times \mathbf{\vec{r}}_v||=\sqrt{\left(\frac{\partial f}{\partial u} \right)^2+\left(\frac{\partial f}{\partial v} \right)^2 +1}$$
+</li>
+<li>Since $f(u,v)=u^2+v^2$
+$$\frac{\partial f}{\partial u} = 2u\qquad \frac{\partial f}{\partial v}=2v$$
+</li>
+<li><u>Set up and evaluate</u>
+$$\begin{align}
+A(S) &= \iint\limits_D \sqrt{(2u)^2+(2v)^2+1}= \iint\limits_D \sqrt{4(u^2+v^2)+1}dA\end{align}$$
+</li>
+<li>Using polar coordinates
+$$\begin{align}
+A(S) & = \int_0^{2\pi} \int_0^1 \sqrt{4r^2+1}\;rdrd\theta\end{align}$$
+</li>
+<li>
+$$\begin{align}
+A(S)&= 2\pi \left( \frac{1}{8}\right)\left(\frac{2}{3}\right) \left(4r^2+1\right)^{3/2}\bigg\vert_0^1\\
+&= \frac{\pi}{6}\left(5^{3/2} -1 \right)\end{align}$$
+</li>
+</ul>
+</div>
+
+========================================================
+
+## Tangent planes
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li> $\mathbf{\vec{r}}_u \times \mathbf{\vec{r}}_v$ is perpendicular to $\mathbf{\vec{r}}_u$ at $P$
+</li>
+<li> $\mathbf{\vec{r}}_u \times \mathbf{\vec{r}}_v$ is perpendicular to $\mathbf{\vec{r}}_v$ at $P$ 
+</li>
+<li> $\Leftrightarrow \mathbf{\vec{r}}_u \times \mathbf{\vec{r}}_v$ works as the normal for a tangent plane to the surface at $P$
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:60%" class="fragment">
+<img src="16_6_image15.png" style="width:100%" alt="Diagram of a surface and its parameter domain"><div style="float:left; width:100%">
+</div>
 </div>
 
 ========================================================
@@ -392,20 +517,6 @@ Möbius strip
 </div>
 
 
-========================================================
-
-## Example: surface area
-<div style="float:left; width:100%">
-<ul style="list-style-type:none;">
-<li> 
-</li>
-</ul>
-</div>
-
-<div style="float:left; width:30%" class="fragment">
-<img src="16_5_image1.png" style="width:100%" alt="Vector plot of rotating field"><div style="float:left; width:100%">
-</div>
-</div>
 
 ========================================================
 
@@ -414,12 +525,8 @@ Möbius strip
 <div style="float:left; width:100%">
 <ul>
 <li>
-<p style="border:3px; border-style:solid; border-color:#287EC7; padding: 1em;" class="fragment"> 
+<p style="border:3px; border-style:solid; border-color:#287EC7; padding: 1em;" class="fragment">
 </p>
-</li>
-<li>
-</li>
-<li>
 </li>
 </ul>
 </div>
