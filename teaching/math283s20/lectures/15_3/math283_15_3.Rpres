@@ -709,7 +709,7 @@ $$A(R)=\iint_R 1 dA$$
 <li> Then to find the area of a polar region described by the polar curve $r=f(\theta)$, $\alpha\leq\theta\leq\beta$ we can use the following formula
 $$A(R)=\int_{\alpha}^{\beta} \int_{g_1(\theta) }^{g_2(\theta)} 1 \,r\,dr\,d\theta=
 \int_{\alpha}^{\beta} \frac{r^2}{2} \bigg\vert_{r=g_1(\theta) }^{r=g_2(\theta)} \,d\theta=
-\int_0^{\pi}\left\{ \frac{1}{2}[g_2(\theta)]^2 - \frac{1}{2}[g_1(\theta)]^2 \right\}d\theta$$
+\int_{\alpha}^{\beta} \left\{ \frac{1}{2}[g_2(\theta)]^2 - \frac{1}{2}[g_1(\theta)]^2 \right\}d\theta$$
 </li>
 </ul>
 </div>

@@ -20,7 +20,7 @@ James Stewart, Essential Calculus: Early Transcendentals, Brooks Cole, 8th editi
 
 ## Wolfram Demonstrations
 
-* [Mathematica notebook on Wolfram Cloud](https://www.wolframcloud.com/obj/121f90d5-adeb-4ea1-86bf-4e4bfd854c1b)
+* [Mathematica notebook on Wolfram Cloud](https://www.wolframcloud.com/obj/233548ab-df18-439b-bd33-94f621bfac88)
 
 
 

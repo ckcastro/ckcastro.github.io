@@ -78,11 +78,7 @@ The following topics will be covered in this section:
 
 <div style="float:left; width:100%">
 <ul style="list-style-type:none;">
-<li><u>Recall:<br></u>A space <b>curve</b> is described by a <em>vector function</em> $$\mathbf{\vec{r}}(t)=x(t)\mathbf{\hat{i}}+y(t)\mathbf{\hat{j}}+z(t)\mathbf{\hat{k}}$$
-of a <b>single</b> parameter $t$
-</li>
-<li><br>
-A <b>surface</b> is described by a <em>vector function</em> 
+<li>A <b>surface</b> is described by a <em>vector function</em> 
 $$\mathbf{\vec{r}}(u, v) = x(u,v)\mathbf{\hat{i}}+y(u,v)\mathbf{\hat{j}}+z(u,v)\mathbf{\hat{k}}$$
 of <b>two</b> parameters $u$ and $v$
 </li>
@@ -108,16 +104,11 @@ the <b>parameter domain</b> is the set of points in the $uv$-plane that can be s
 
 ## Example: Graphs of functions $z=f(x,y)$
 
-<div style="float:left; width:1000%">
+<div style="float:left; width:60%">
 <ul style="list-style-type:none;">
 <li> Let 
 $$x(u,v)  =u, \qquad y(u,v)  =v,\qquad z(u,v)=f(u,v)$$
 </li>
-</ul>
-</div>
-
-<div style="float:left; width:70%">
-<ul style="list-style-type:none;">
 <li> <b>Example</b>: $z=x^2+y^2$
 </li>
 <li>$$x(u,v)  =u, \qquad y(u,v)  =v,\qquad z(u,v)=u^2+v^2$$
@@ -136,11 +127,11 @@ $$D=[-1,1]\times[-1,1]$$
 </div>
 
 <div style="float:left; width:30%" class="fragment">
-<img src="16_6_image2.png" style="width:100%" alt="Paraboloid defined on a rectangle"><div style="loat:left; width:100%">
+<img src="16_6_image1.png" style="width:100%" alt="Paraboloid defined on a rectangle"><div style="loat:left; width:100%">
 </div>
 </div>
 
-<div style="float:left; width:70%">
+<div style="float:left; width:60%">
 <ul style="list-style-type:none;">
 <li><u>Parameter domain</u>
 $$D=\{(u,u)| \;u^2+v^2 \leq 1\}$$
@@ -148,8 +139,8 @@ $$D=\{(u,u)| \;u^2+v^2 \leq 1\}$$
 </ul>
 </div>
 
-<div style="float:left; width:30%" class="fragment">
-<img src="16_6_image1.png" style="width:100%" alt="Paraboloid defined on a disk"><div style="loat:left; width:100%">
+<div style="float:left; width:35%" class="fragment">
+<img src="16_6_image2.png" style="width:100%" alt="Paraboloid defined on a disk"><div style="loat:left; width:100%">
 </div>
 </div>
 
@@ -158,32 +149,49 @@ $$D=\{(u,u)| \;u^2+v^2 \leq 1\}$$
 
 ## Example: Cones
 
-<div style="float:left; width:25%" class="fragment">
-<img src="16_6_image9.png" style="width:100%" alt="Circular cylinder"><div style="float:left; width:100%">
+<div style="float:left; width:50%">
+<ul style="list-style-type:none;">
+<li> $$\mathbf{\vec{r}_1}(u, v)= \langle  v, u, \sqrt{u^2+v^2}\rangle$$
+</li>
+<li><br><u>Parameter domain</u>
+$$D=\{(u,v)|\; u^2+v^2\leq 1 \}$$
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:40%" class="fragment">
+<img src="16_6_image4.png" style="width:100%" alt="Circular cylinder"><div style="float:left; width:100%">
 </div>
 </div>
 
-<div style="float:left; width:60%">
+<div style="float:left; width:50%">
 <ul style="list-style-type:none;">
-<li> $$\mathbf{\vec{r}_1}(u, v)= \langle  u, v, \sqrt{u^2+v^2}\rangle\\
-D=\{(u,v)|\; u^2+v^2\leq 1 \}$$
+<li> <br><br>$$\mathbf{\vec{r}_2}(u, v)= \langle  v\cos u, v\sin u, v\rangle$$
 </li>
-<li> <br><br>$$\mathbf{\vec{r}_2}(u, v)= \langle  v\cos u, v\sin u, v\rangle\\
-D=[0,2\pi]\times[0,1]$$
+<li><br><u>Parameter domain</u>
+$$\begin{align}
+D&= \{(u,v)|\; 0 \leq u \leq 2\pi,\; 0\leq v\leq 1 \}\\
+&=[0,2\pi]\times[0,1]
+\end{align}$$
+</li>
+<li><br> <strong>$\star$ Parameterizations are not unique $\star$</strong>
 </li>
 </ul>
 </div> 
 
-<div style="float:left; width:100%">
-<ul style="list-style-type:none;">
-<li> $\star$ Parameterizations are not unique $\star$
-</li>
-</ul>
-</div> 
+<div style="float:left; width:40%" class="fragment">
+<img src="16_6_image5.png" style="width:100%" alt="Circular cylinder"><div style="float:left; width:100%">
+</div>
+</div>
 
 ========================================================
 
-## Example: plane
+## Example: Plane
+
+<div style="float:left; width:30%" class="fragment">
+<img src="16_6_image6.png" style="width:100%" alt="Plane that passes through a point contains two non-parallel vectors"><div style="loat:left; width:100%">
+</div>
+</div>
 
 <div style="float:left; width:60%">
 <ul style="list-style-type:none;">
@@ -192,24 +200,19 @@ D=[0,2\pi]\times[0,1]$$
 </ul>
 </div>
 
-<div style="float:left; width:30%" class="fragment">
-<img src="16_6_image3.png" style="width:100%" alt="Plane that passes through a point contains two non-parallel vectors"><div style="loat:left; width:100%">
-</div>
-</div>
-
 <div style="float:left; width:60%">
 <ul style="list-style-type:none;">
 <li>
 </li>
 <li>
 </li>
-<li>
+<li>$P(1,1,1), v_1=(-2,1,0), v_2=(2,-3,1)$
 </li>
 </ul>
 </div>
 
 <div style="float:left; width:40%" class="fragment">
-<img src="16_6_image4.png" style="width:100%" alt="Plane that passes through a point contains two non-parallel vectors"><div style="loat:left; width:100%">
+<img src="16_6_image7.png" style="width:100%" alt="Plane that passes through a point contains two non-parallel vectors"><div style="loat:left; width:100%">
 </div>
 </div>
 
@@ -219,12 +222,12 @@ D=[0,2\pi]\times[0,1]$$
 
 ## Example: Sphere
 
-<div style="float:left; width:30%" class="fragment">
-<img src="16_6_image5.png" style="width:100%" alt="Sphere center at origin"><div style="float:left; width:100%">
+<div style="float:left; width:40%" class="fragment">
+<img src="16_6_image8.png" style="width:100%" alt="Sphere center at origin"><div style="float:left; width:100%">
 </div>
 </div>
 
-<div style="float:left; width:70%">
+<div style="float:left; width:60%">
 <ul style="list-style-type:none;">
 <li>Representation in <em>spherical coordinates </em>
 $$\begin{align}
@@ -251,25 +254,25 @@ D&=\{(u, v)| \;0\leq u \leq 2\pi,\; 0\leq v \leq \pi\}\\
 
 ## Example: Cylinders
 
-<div style="float:left; width:25%" class="fragment">
-<img src="16_6_image8.png" style="width:100%" alt="Circular cylinder"><div style="float:left; width:100%">
+<div style="float:left; width:30%" class="fragment">
+<img src="16_6_image9b.png" style="width:100%" alt="Circular cylinder"><div style="float:left; width:100%">
 </div>
 $$\mathbf{\vec{r}}(u, v)= \langle 2 \cos u,2 \sin u, v\rangle\\
 D=[0,2\pi]\times[-3,3]$$
 </div>
 
-<div style="float:left; width:33%;padding-left:10%" class="fragment">
-<img src="16_6_image6.png" style="width:100%" alt="Elliptic cylinder"><div style="float:left; width:100%">
-</div>
+<div style="float:left; width:35%" class="fragment">
+<img src="16_6_image10.png" style="width:100%" alt="Elliptic cylinder"><div style="float:left; width:100%">
+</div><br><br>
 $$\mathbf{\vec{r}}(u, v)= \langle 2 \cos u,5 \sin u, v\rangle\\
-D=[0,2\pi]\times[-3,3]$$
+D=[0,2\pi]\times[-4,4]$$
 </div>
 
-<div style="float:left; width:31%" class="fragment">
-<img src="16_6_image7.png" style="width:100%" alt="Parabolic cylinder"><div style="float:left; width:100%">
+<div style="float:left; width:35%" class="fragment">
+<img src="16_6_image11.png" style="width:100%" alt="Parabolic cylinder"><div style="float:left; width:100%">
 </div>
 $$\mathbf{\vec{r}}(u, v)= \langle u, v, v^2\rangle\\
-D=[-1,1]\times[-2,2]$$
+D=[-2,2]\times[-2,2]$$
 </div>
 
 
@@ -280,7 +283,7 @@ D=[-1,1]\times[-2,2]$$
 <div style="float:left; width:100%">
 <ul style="list-style-type:none;">
 <li>
-<a href="https://www.wolframcloud.com/obj/75878fa1-240d-4093-ab64-9326b23c1388">See Wolfram Cloud Notebook for parameteriations and more visuals</a> 
+<a href="https://www.wolframcloud.com/obj/233548ab-df18-439b-bd33-94f621bfac88">See Wolfram Cloud Notebook for parameterizations and more surfaces</a> 
 </li>
 </ul>
 </div>
@@ -293,20 +296,67 @@ Spiral
 
 <div style="float:left; width:30%" class="fragment">
 Molusc shell
-<img src="16_6_image11.png" style="width:100%" alt="Molusc shell"><div style="float:left; width:100%">
+<img src="16_6_image13.png" style="width:100%" alt="Molusc shell"><div style="float:left; width:100%">
 </div>
 </div>
 
 <div style="float:left; width:40%" class="fragment">
 Torus/Donut
-<img src="16_6_image10.png" style="width:100%" alt="Donut"><div style="float:left; width:100%">
+<img src="16_6_image14.png" style="width:100%" alt="Donut"><div style="float:left; width:100%">
 </div>
 </div>
 
 <div style="float:left; width:30%" class="fragment">
 Möbius strip
-<img src="16_6_image14.png" style="width:100%" alt="Möbius"><div style="float:left; width:100%">
+<img src="16_6_image14b.png" style="width:100%" alt="Möbius"><div style="float:left; width:100%">
 </div>
+</div>
+
+
+========================================================
+
+## Points on surface
+
+
+<div style="float:left; width:40%" class="fragment">
+<img src="16_6_image18.png" style="width:100%" alt="Surface and its parameter domain"><div style="float:left; width:100%">
+</div>
+</div>
+
+<div style="float:left; width:60%">
+<ul style="list-style-type:none;">
+<li> 
+</li>
+</ul>
+</div>
+
+========================================================
+
+## Surface area
+
+
+<div style="float:left; width:40%" class="fragment">
+<img src="16_6_image16.png" style="width:100%" alt="Surface and its parameter domain"><div style="float:left; width:100%">
+</div>
+</div>
+
+<div style="float:left; width:60%">
+<ul style="list-style-type:none;">
+<li> 
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:30%" class="fragment">
+<img src="16_6_image17.png" style="width:100%" alt="Approximating the area of the patch with area of parallelogram"><div style="float:left; width:100%">
+</div>
+</div>
+
+<div style="float:left; width:70%">
+<ul style="list-style-type:none;">
+<li> 
+</li>
+</ul>
 </div>
 
 
@@ -339,35 +389,6 @@ Möbius strip
 <div style="float:left; width:30%" class="fragment">
 <img src="16_6_image15.png" style="width:100%" alt="Diagram of a surface and its parameter domain"><div style="float:left; width:100%">
 </div>
-</div>
-
-========================================================
-
-## Surface area
-
-
-<div style="float:left; width:40%" class="fragment">
-<img src="16_6_image16.png" style="width:100%" alt="Surface and its parameter domain"><div style="float:left; width:100%">
-</div>
-</div>
-
-<div style="float:left; width:60%">
-<ul style="list-style-type:none;">
-<li> 
-</li>
-</ul>
-</div>
-
-<div style="float:left; width:30%" class="fragment">
-<img src="16_6_image17.png" style="width:100%" alt="Approximating the area of the patch with area of parallelogram"><div style="float:left; width:100%">
-</div>
-</div>
-
-<div style="float:left; width:70%">
-<ul style="list-style-type:none;">
-<li> 
-</li>
-</ul>
 </div>
 
 
