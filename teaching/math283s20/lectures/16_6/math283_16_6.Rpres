@@ -107,12 +107,7 @@ $$\mathbf{\vec{r}}(u,v)=\vec{P}$$
 
 ## Example: Plane
 
-<div style="float:left; width:30%" class="fragment">
-<img src="16_6_image6.png" style="width:100%" alt="Plane that passes through a point contains two non-parallel vectors"><div style="loat:left; width:100%">
-</div>
-</div>
-
-<div style="float:left; width:60%">
+<div style="float:left; width:100%">
 <ul style="list-style-type:none;">
 <li> Any vector $\vec{P_0P}$ can be generated as 
 $$\vec{P_0P}=u\mathbf{\vec{a}}+v\mathbf{\vec{b}}$$
@@ -125,9 +120,15 @@ $$\mathbf{\vec{r}}=\vec{OP_0}+\vec{P_0P} $$
 $$\mathbf{\vec{r}}=\mathbf{\vec{r}}_0+u\mathbf{\vec{a}}+v\mathbf{\vec{b}} $$
 </li>
 </ul>
+<div style="float:left; width:40%">
+<img src="16_6_image6.png" style="width:100%" alt="Plane that passes through a point contains two non-parallel vectors">
+<p style="text-align:center"><small>
+Courtesy of J. Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
+</small></p>
+</div>
 </div>
 
-<div style="float:left; width:40%">
+<div style="float:left; width:50%">
 <ul style="list-style-type:none;">
 <li> <b>Example</b>: 
 </li>
@@ -139,7 +140,7 @@ $$\mathbf{\vec{r}}(u,v)=\langle 1,1,1\rangle +u\langle -2,1,0\rangle +v\langle 2
 </ul>
 </div>
 
-<div style="float:left; width:60%" class="fragment">
+<div style="float:left; width:50%" class="fragment">
 <img src="16_6_image7.png" style="width:100%" alt="Plane that passes through a point contains two non-parallel vectors"><div style="loat:left; width:100%">
 </div>
 </div>
@@ -338,6 +339,9 @@ $$\mathbf{\vec{r}}(u, v) = x(u,v)\mathbf{\hat{i}}+y(u,v)\mathbf{\hat{j}}+z(u,v)\
 </ul>
 <div style="float:left; width:40%">
 <img src="16_6_image16.png" style="width:100%" alt="Surface and its parameter domain"><div style="float:left; width:100%">
+<p style="text-align:center"><small>
+Courtesy of James Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
+</small></p>
 </div>
 </div>
 
@@ -352,6 +356,9 @@ the <em>patch</em> $S_{ij}$ corresponds to $R_{ij}$<br><br>
 
 <div style="float:left; width:20%;padding-left:10%" class="fragment">
 <img src="16_6_image17.png" style="width:100%" alt="Approximating the area of the patch with area of parallelogram"><div style="float:left; width:100%">
+<p style="text-align:center"><small>
+Courtesy of James Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
+</small></p>
 </div>
 </div>
 
@@ -499,9 +506,11 @@ A(S)&= 2\pi \left( \frac{1}{8}\right)\left(\frac{2}{3}\right) \left(4r^2+1\right
 
 <div style="float:left; width:60%">
 <ul style="list-style-type:none;">
-<li><u>Equation of tangent plane to the surface at $P_0$</u>
+<li>
+<p style="border:3px; border-style:solid; border-color:#287EC7; padding: 1em;" class="fragment">
+<u>Equation of tangent plane to the surface at $P_0$</u><br><br>
 $$\left(\langle x,y,z\rangle - \langle x_0,y_0,z_0\rangle \right) \cdot \mathbf{\vec{n}}=0$$
-<li> 
+</p>
 </li>
 </ul>
 </div>
