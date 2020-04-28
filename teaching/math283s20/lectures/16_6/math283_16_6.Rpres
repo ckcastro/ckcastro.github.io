@@ -445,7 +445,7 @@ $$\mathbf{\vec{r}}_u \times \mathbf{\vec{r}}_v=\left|\left(\begin{array}{ccc}
 \mathbf{\hat{{i}}} & \hat{{\mathbf{j}}} & \hat{{\mathbf{k}}}\\
 1 & 0 & \frac{\partial f}{\partial u}\\
 0 & 1 & \frac{\partial f}{\partial v}\\
-\end{array}\right)\right|=- \frac{\partial f}{\partial u} \mathbf{\hat{{i}}} + \frac{\partial f}{\partial v} \mathbf{\hat{{j}}}+1\mathbf{\hat{k}}$$
+\end{array}\right)\right|=- \frac{\partial f}{\partial u} \mathbf{\hat{{i}}} - \frac{\partial f}{\partial v} \mathbf{\hat{{j}}}+1\mathbf{\hat{k}}$$
 </li>
 <li>$$||\mathbf{\vec{r}}_u \times \mathbf{\vec{r}}_v||=\sqrt{\left(\frac{\partial f}{\partial u} \right)^2+\left(\frac{\partial f}{\partial v} \right)^2 +1}$$
 </li>
@@ -470,7 +470,7 @@ $$\frac{\partial f}{\partial u} = 2u\qquad \frac{\partial f}{\partial v}=2v$$
 </li>
 <li><u>Set up and evaluate</u>
 $$\begin{align}
-A(S) &= \iint\limits_D \sqrt{(2u)^2+(2v)^2+1}= \iint\limits_D \sqrt{4(u^2+v^2)+1}dA\end{align}$$
+A(S) &= \iint\limits_D \sqrt{(2u)^2+(2v)^2+1}dA= \iint\limits_D \sqrt{4(u^2+v^2)+1}dA\end{align}$$
 </li>
 <li>Using polar coordinates
 $$\begin{align}
