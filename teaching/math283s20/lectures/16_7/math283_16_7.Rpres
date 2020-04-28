@@ -1,0 +1,355 @@
+<style>
+.section .reveal .state-background {
+   background: #ffffff;
+}
+
+.section .reveal h1,
+.section .reveal h2,
+.section .reveal p {
+   color: black;
+   margin-top: 50px;
+   text-align: center;
+}
+
+.footer {
+    color: black;
+    background: #E8E8E8;
+    position: fixed;
+    top: 90%;
+    text-align:center;
+    width:100%;
+} 
+
+
+table, th, td {
+  border: 1px solid black;
+}
+
+</style>
+
+<!-- foo 
+Highlighting
+bold
+strong
+orange <b style="color:#d95f02"> text </b>
+green  <b style="color:#1b9e77"> text </b>
+purple <b style="color:#d24693"> text </b>
+red    <b style="color:#FF0000"> text </b>
+blue   <b style="color:#0000FF"> text </b>
+-->
+
+16.7 Surface Integrals
+========================================================
+title: "Math 283 Calculus 3"
+date: Math 283 Spring 2020
+author: Claudia Castro-Castro
+autosize: true
+incremental: true
+width: 1920
+height: 1080
+
+<h2 style="text-align:left"> Instructions:</h2>
+<p style='text-align:left'>Use the left and right arrow keys to navigate the presentation forward and backward respectively.  You can also use the arrows at the bottom right of the screen to navigate with a mouse.<br></p>
+
+<div class='footer'>
+    Copyright Disclaimer: material is for educational purposes only under fair use.
+</div>
+
+========================================================
+
+## Outline
+
+<div style="float:left; width:100%">
+<ul>
+<li>
+The following topics will be covered in this section:
+    <ul>
+      <li>Surface integrals</li>
+      <li>Surface orientation</li>
+      <li>Scalar surface integral</li>
+      <li>Physical interpretation</li>
+      <li>Vector surface integral</li>
+      <li>Physical interpretation</li>
+    </ul>
+</li>
+</ul>
+</div>
+
+========================================================
+
+## Surface Integrals
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li>
+In this section we define an integral that is similar to a curve integral except that instead of integrating over a curve, we integrate <b>over a surface</b>
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li>In this section we will discuss two types of surface integrals
+    <ul style="list-style-type:none;">
+      <li>I: Scalar surface integrals
+      $$\iint\limits_{S} f\;dS$$</li>
+      <li>II: Vector surface integrals
+      $$\iint\limits_{S} \mathbf{\vec{F}}\cdot \;d\mathbf{\vec{S}}$$</li>
+    </ul>
+</li> 
+<li>where $S$ is an <em>oriented</em> surface given by 
+$$\mathbf{\vec{r}}(u,v)=\langle  x(u,v), y(u,v), z(u,v) \rangle \qquad (u,v)\in D$$
+</li> 
+</li>
+</ul>
+</div>
+
+========================================================
+
+## Surface orientation
+
+<div style="float:left; width:30%" class="fragment">
+<img src="16_7_image4a.png" style="width:100%" alt="Diagram of surface with two normals"><div style="float:left; width:100%">
+<p style="text-align:center"><small>
+Courtesy of James Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
+</small></p>
+</div>
+</div>
+
+<div style="float:left; width:70%">
+<ul style="list-style-type:none;">
+<li> 
+</li>
+<li>$S$ has a tangent plane at every point $(x,y,z)$ on $S$ (except the boundary points)
+</li>
+<li><br>There are two unit normal vectors $\mathbf{\vec{n}}_1$ and $\mathbf{\vec{n}}_2$ 
+</li> 
+<li><br><strong>Oriented surface:</strong> if it is possible to choose a unit normal vector $\mathbf{\vec{n}}$ at every point  $(x, y, z)$ so that $\mathbf{\vec{n}}$ varies <em>continuously</em> over $S$
+</li>
+<li> <br><b>Example:</b>
+The Möbius strip is not orientable 
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:50%;padding-left:10%" class="fragment">
+<img src="16_7_image5.png" style="width:100%" alt="The Möbius strip is not orientable"><div style="float:left; width:100%">
+</div>
+</div>
+
+========================================================
+
+## Surface orientation cont'd
+
+<div style="float:left; width:50%">
+<ul style="list-style-type:none;">
+<li>For a <b>closed surface</b>
+  <ul>
+    <li><strong>Positive orientation</strong>: normal vectors  point <em>outward</em> from $E$ 
+    </li>
+    <li><strong>Negative orientation</strong>: normal vectors  point <em>inward</em> from $E$ 
+    </li>
+  </ul>
+</li> 
+</ul>
+</div>
+
+<div style="float:left; width:50%" class="fragment">
+Two orientations of an orientable surface
+<img src="16_7_image4.png" style="width:100%" alt="alt text"><div style="float:left; width:100%">
+<p style="text-align:center"><small>
+Courtesy of James Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
+</small></p>
+</div>
+</div>
+
+<div style="float:left; width:50%">
+<ul style="list-style-type:none;">
+<li><b>Example:</b> sphere with positive orientation
+</li> 
+</ul>
+</div>
+
+<div style="float:left; width:30%" class="fragment">
+<img src="16_7_image8.png" style="width:100%" alt="Sphere with positive orientation"><div style="float:left; width:100%">
+<p style="text-align:center"><small>
+Courtesy of James Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
+</small></p>
+</div>
+
+========================================================
+
+## Scalar Surface Integrals
+
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li><strong>Goal:</strong> find the total mass distributed over an oriented surface if density function is $f(x,y,z)$
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:60%" class="fragment">
+<img src="16_7_image1c.png" style="width:100%" alt="Approximating the mass of the patch with density function and area of parallelogram">
+</div>
+
+<div style="float:left; width:30%">
+<ul style="list-style-type:none;">
+<li><u>Slice</u>:<br> 
+Divide $D$ into rectangles $R_{ij}$<br>
+the <em>patch</em> $S_{ij}$ corresponds to $R_{ij}$<br><br>
+</li>
+<li><u>Approximate</u> <br>
+The patch $S_{ij}$  is our surface element
+$$\Delta S_{ij}\approx ||\mathbf{\vec{r}}_u \times\mathbf{\vec{r}}_v ||\;\Delta A_{ij}$$
+<li> the mass per patch  
+$$m_{ij}\approx f\left( \mathbf{\vec{r}}u_i,v_j \right) \Delta S_{ij}$$
+</li>
+</li>
+<li><u>Sum and take limit</u> 
+$$ m\approx \sum_i\sum_j f(\mathbf{\vec{r}}(u_i,v_j))\Delta S_{ij} $$
+</li>
+</ul>
+</div>
+
+
+<div style="float:left; width:80%;padding-left:20%">
+<ul style="list-style-type:none;">
+<li>
+<p style="border:3px; border-style:solid; border-color:#287EC7; padding: 1em;" class="fragment"> <strong>Scalar surface integral</strong>
+$$\iint\limits_S f\;dS= \iint\limits_D f\left(\mathbf{\vec{r}}(u,v) \right) ||\mathbf{\vec{r}}_u \times \mathbf{\vec{r}}_v||dA$$
+</p>
+</li>
+</ul>
+</div>
+
+========================================================
+
+## Example
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li> Compute the surface integral $\iint\limits_S xy \;dS$, where $S$ is the graph of $z=x+y^2$, above the rectangle $x\in[0,1]$, $y\in[0,2]$
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:50%">
+<ul style="list-style-type:none;">
+<li><u>Parameterization</u>
+$$\mathbf{\vec{r}}(u,v) = \langle u,v,\; u+v^2\rangle$$
+$$D=[0,1]\times[0,2]$$
+</li>
+<li>
+$$\begin{align}
+f\left( \mathbf{\vec{r}}(u,v) \right)&=f\left(x(u,v),y(u,v),z(u,v) \right) \\
+&= (x(u,v))(y(u,v))\\
+& = uv
+\end{align}$$
+</li>
+<li><u>Surface element</u>
+$$\mathbf{\vec{r}}_u = \langle 1,0,1\rangle\qquad\mathbf{\vec{r}}_v = \langle 0,1,2v \rangle$$
+</li>
+<li><li>
+$$\mathbf{\vec{r}}_u \times \mathbf{\vec{r}}_v=\left|\left(\begin{array}{ccc}
+\mathbf{\hat{{i}}} & \hat{{\mathbf{j}}} & \hat{{\mathbf{k}}}\\
+1 & 0 & 1\\
+0 & 1 & 2v\\
+\end{array}\right)\right|= 1 \mathbf{\hat{{i}}} -2u \mathbf{\hat{{j}}}+1\mathbf{\hat{k}}$$
+</li>
+<li>$$||\mathbf{\vec{r}}_u \times \mathbf{\vec{r}}_v||=\sqrt{4u^2 +2}$$
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:50%">
+<ul style="list-style-type:none;">
+<li><u>Set up and evaluate</u>
+<li>$$\iint\limits_S f\;dS= \iint\limits_D f\left(\mathbf{\vec{r}}(u,v) \right) ||\mathbf{\vec{r}}_u \times \mathbf{\vec{r}}_v||dA$$
+</li>
+<li>
+$$\iint\limits_S xy\;dS= \int_0^2 \int_0^1 uv\sqrt{ 4u^2 +2} dudv$$
+</li>
+<li>
+$$\hphantom{\iint\limits_S xy\;dS}= \int_0^1 udu \int_0^2 v\sqrt{ 4u^2 +2}dv$$
+</li>
+<li>
+$$\hphantom{\iint\limits_S xy\;dS}= \left(\frac{u^2}{2} \right)\bigg\vert_{u=0}^{u=1} \left(\frac{2}{24}(4v^2+2)^{3/2} \right)\bigg\vert_{v=0}^{v=2}$$
+</li>
+<li>
+$$\hphantom{\iint\limits_S xy\;dS}= \frac{1}{24} \left(18^{3/2}-2^{3/2} \right)$$
+</li>
+</ul>
+</div>
+
+========================================================
+
+## Vector Surface Integrals
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li> Suppose a vector field $\mathbf{\vec{v}}$ represents a flow field, and let $S$ be a surface
+</li>
+</ul>
+<div style="float:left; width:70%;padding-left:15%" class="fragment">
+<img src="16_7_image6.png" style="width:100%" alt="Flow field through surface">
+</div>
+</div>
+
+<div style="float:left; width:30%" class="fragment">
+<img src="16_7_image7.png" style="width:100%" alt="Components of velocity normal and tangential">
+</div>
+
+<div style="float:left; width:70%">
+<ul style="list-style-type:none;">
+<li>The component of $\mathbf{\vec{v}}$ <b>normal</b> to $S$ <br> represents the flow <b>through</b> the surface 
+</li>
+<li><br>The component of $\mathbf{\vec{v}}$ <b>tangential</b> to $S$ <br> represents the flow <b>along</b> the surface,
+</li>
+</ul>
+</div>
+
+========================================================
+
+## Vector Surface Integrals cont'd
+
+<div style="float:left; width:30%" class="fragment">
+<img src="16_7_image7.png" style="width:100%" alt="Components of velocity normal and tangential">
+</div>
+
+<div style="float:left; width:70%">
+<ul style="list-style-type:none;">
+<li><strong>Goal</strong>: find the total flow (flux) <b>through</b> the surface is the integral
+$$flux=\iint\limits_S \mathbf{\vec{v}} \cdot {\color{#1b9e77} {\mathbf{\hat{N}}}}{\color{#d24693} {dS}}$$
+</li> 
+<li>$$=\iint\limits_S \mathbf{\vec{v}}\cdot {\color{#1b9e77} {\frac{\mathbf{\vec{r}}_u \times \mathbf{\vec{r}}_v}{||\mathbf{\vec{r}}_u \times \mathbf{\vec{r}}_v||}}} {\color{#d24693} { ||\mathbf{\vec{r}}_u \times \mathbf{\vec{r}}_v|| dA}}$$
+</li>
+<li>$$=\iint\limits_S \mathbf{\vec{v}}\cdot \left ( \mathbf{\vec{r}}_u \times \mathbf{\vec{r}}_v\right) dA$$
+</li>
+<li>Let $d\mathbf{\vec{S}} =\mathbf{\vec{r}}_u \times \mathbf{\vec{r}}_v$
+</li>
+<li><p style="border:3px; border-style:solid; border-color:#287EC7; padding: 1em;" class="fragment"> <strong>Vector surface integral</strong>
+$$\iint\limits_S  \mathbf{\vec{v}} \cdot d \mathbf{\vec{S}}= \iint\limits_D  \mathbf{\vec{v}}\left(\mathbf{\vec{r}}(u,v) \right)\cdot \left( \mathbf{\vec{r}}_u \times \mathbf{\vec{r}}_v\right) dA$$
+</p>
+</li>
+</li>
+</ul>
+</div>
+
+========================================================
+
+## Example
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li> Find the flux of $\mathbf{\vec{v}}(x,y,z)=\langle 2x,2y,z\rangle$ through $S$ the hemisphere of $x^2+y^2+z^2=9$, $z\geq 0$, $S$ is oriented outward.
+</li>
+<li>
+</li>
+<li>
+</li>
+</ul>
+</div>
+
+
+
