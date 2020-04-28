@@ -225,7 +225,7 @@ $$\iint\limits_S f\;dS= \iint\limits_D f\left(\mathbf{\vec{r}}(u,v) \right) ||\m
 
 ========================================================
 
-## Example
+## Example 1
 
 <div style="float:left; width:100%">
 <ul style="list-style-type:none;">
@@ -247,15 +247,15 @@ f\left( \mathbf{\vec{r}}(u,v) \right)&=f\left(x(u,v),y(u,v),z(u,v) \right) \\
 & = uv
 \end{align}$$
 </li>
-<li><u>Surface element</u>
-$$\mathbf{\vec{r}}_u = \langle 1,0,1\rangle\qquad\mathbf{\vec{r}}_v = \langle 0,1,2v \rangle$$
+<li><u>Surface element dS</u>
+$$\mathbf{\vec{r}}_u = \langle 1,0,1\rangle\\ \mathbf{\vec{r}}_v = \langle 0,1,2v \rangle$$
 </li>
 <li><li>
 $$\mathbf{\vec{r}}_u \times \mathbf{\vec{r}}_v=\left|\left(\begin{array}{ccc}
 \mathbf{\hat{{i}}} & \hat{{\mathbf{j}}} & \hat{{\mathbf{k}}}\\
 1 & 0 & 1\\
 0 & 1 & 2v\\
-\end{array}\right)\right|= 1 \mathbf{\hat{{i}}} -2u \mathbf{\hat{{j}}}+1\mathbf{\hat{k}}$$
+\end{array}\right)\right|= - 1 \mathbf{\hat{{i}}} -2u \mathbf{\hat{{j}}}+1\mathbf{\hat{k}}$$
 </li>
 <li>$$||\mathbf{\vec{r}}_u \times \mathbf{\vec{r}}_v||=\sqrt{4u^2 +2}$$
 </li>
@@ -278,6 +278,42 @@ $$\hphantom{\iint\limits_S xy\;dS}= \left(\frac{u^2}{2} \right)\bigg\vert_{u=0}^
 </li>
 <li>
 $$\hphantom{\iint\limits_S xy\;dS}= \frac{1}{24} \left(18^{3/2}-2^{3/2} \right)$$
+</li>
+</ul>
+</div>
+
+========================================================
+
+## Example 2: solar capacity of Colorado
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li> Compute the solar energy capacity of Colorado if the solar <strong>density</strong> [Watts/km$^2$] is given by $$f(\theta,\phi)=10^9 \sin\phi$$  
+$\theta$ is the longitude $\theta \in  [102^{\circ},109^{\circ}]$ West<br>
+$\phi$ is the latitude $\phi\in  [37^{\circ},40^{\circ}]$ North<br>
+radius of earth is 6400 Km
+</li>
+<li><u>Parameterization of Colorado</u>
+$$\mathbf{\vec{r}}(\theta,\phi) = \langle 6400 \cos \theta \sin \phi ,6400\sin \theta \sin \phi,\; 6400\cos \phi \rangle$$
+$$D=[102,109]\times[37,41]$$
+</li>
+<li><u>Surface element dS</u>
+$$\hspace{-2cm}\mathbf{\vec{r}}_\theta = 6400 \langle -\sin \theta \sin \phi ,\cos \theta \sin \phi,\; 0 \rangle$$
+</li>
+<li>
+$$\mathbf{\vec{r}}_\phi = 6400 \langle \;\;\cos \theta \cos \phi ,\sin \theta \cos \phi,\; -\sin \phi \rangle$$
+</li>
+<li>
+$$\mathbf{\vec{r}}_\theta \times \mathbf{\vec{r}}_\phi= 6400^2 \langle\;\cos \theta \sin^2 \phi,\;\sin \theta \sin^2 \phi,\; \cos \phi \sin \phi \rangle$$
+</li>
+<li>
+$$dS=||\mathbf{\vec{r}}_\theta \times \mathbf{\vec{r}}_\phi||dA= 6400^2 \sin\phi \;d\theta\;d\phi$$
+</li>
+<li><u>Set up and evaluate</u>
+$$\iint\limits_S f dS =  \int_{37}^{41}\int_{102}^{109} \left(10^9 \sin \phi \right)\:6400^2 \sin\phi\; d\theta\; d\phi$$
+</li>
+<li>
+$$ =(10^9)(6400^2)  \int_{102}^{109}  d\theta  \int_{37}^{41}\sin^2\phi\;\; d\phi \approx 138\times10^{12} \text{[Watts]}$$
 </li>
 </ul>
 </div>
@@ -344,9 +380,40 @@ $$\iint\limits_S  \mathbf{\vec{v}} \cdot d \mathbf{\vec{S}}= \iint\limits_D  \ma
 <ul style="list-style-type:none;">
 <li> Find the flux of $\mathbf{\vec{v}}(x,y,z)=\langle 2x,2y,z\rangle$ through $S$ the hemisphere of $x^2+y^2+z^2=9$, $z\geq 0$, $S$ is oriented outward.
 </li>
-<li>
+</ul>
+</div>
+
+<div style="float:left; width:30%" class="fragment">
+<img src="16_7_image9.png" style="width:100%" alt="Flux of vector field through sphere">
+</div>
+
+<div style="float:left; width:50%">
+<ul style="list-style-type:none;">
+<li><u>Parameterization</u>
+$$\mathbf{\vec{r}}(u,v) = \langle 3\cos v \sin u ,3\sin v \sin u,\; 3\cos u \rangle$$
+$$D=\left[0,\frac{\pi}{2}\right]\times[0,2\pi]$$
 </li>
 <li>
+$$\begin{align}
+\mathbf{\vec{v}}\left( \mathbf{\vec{r}}(u,v) \right)&=\mathbf{\vec{v}}\left(x(u,v),y(u,v),z(u,v) \right) \\
+&= \langle 2x(u,v), 2y(u,v), z(u,v) \rangle\\
+& =  \langle 6\cos v \sin u ,6\cos v \sin u,\; 3\cos u \rangle
+\end{align}$$
+</li>
+<li><u>Surface element</u>
+$$\mathbf{\vec{r}}_u = \langle  3\cos v \cos u ,3\cos v \cos u,\; -3\sin u\rangle$$
+</li>
+<li>
+$$\mathbf{\vec{r}}_v = \langle -3\sin v \sin u ,3\cos v \sin u,\; 0\rangle$$
+</li>
+<li><li>
+$$\mathbf{\vec{r}}_u \times \mathbf{\vec{r}}_v= \langle 9\cos v \sin^2 u ,9\sin v \sin^2 u,9\sin u \cos u\rangle$$
+</li>
+<li><br>$z$-component of $\mathbf{\vec{r}}_u \times \mathbf{\vec{r}}_v$ is positive on $D$
+</li>
+<li>Positive (outwards) orientation on $D$ $\checkmark$
+</li>
+<li>TBC
 </li>
 </ul>
 </div>
