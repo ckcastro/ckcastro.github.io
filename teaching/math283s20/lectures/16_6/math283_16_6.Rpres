@@ -434,7 +434,7 @@ $D$ is the parameter domain
 </li>
 <li><u>Parameterization</u> $$\mathbf{\vec{r}}(u, v)= \langle u,v,f(u,v)\rangle\quad D=\{(u,v)|\; u^2+v^2\leq 1 \}$$
 </li>
-<li><u>Derive</u>
+<li><u>Surface element</u>
 $$\mathbf{\vec{r}}_u = \langle 1,0,\frac{\partial f}{\partial u} \rangle$$
 </li>
 <li>
