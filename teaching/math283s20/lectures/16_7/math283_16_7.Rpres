@@ -189,7 +189,7 @@ Courtesy of James Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
 </ul>
 </div>
 
-<div style="float:left; width:60%" class="fragment">
+<div style="float:left; width:70%" class="fragment">
 <img src="16_7_image1c.png" style="width:100%" alt="Approximating the mass of the patch with density function and area of parallelogram">
 </div>
 
@@ -203,18 +203,12 @@ the <em>patch</em> $S_{ij}$ corresponds to $R_{ij}$<br><br>
 The patch $S_{ij}$  is our surface element
 $$\Delta S_{ij}\approx ||\mathbf{\vec{r}}_u \times\mathbf{\vec{r}}_v ||\;\Delta A_{ij}$$
 <li> the mass per patch  
-$$m_{ij}\approx f\left( \mathbf{\vec{r}}u_i,v_j \right) \Delta S_{ij}$$
+$$m_{ij}\approx f\left( \mathbf{\vec{r}}(u_i,v_j) \right) \Delta S_{ij}$$
 </li>
 </li>
 <li><u>Sum and take limit</u> 
 $$ m\approx \sum_i\sum_j f(\mathbf{\vec{r}}(u_i,v_j))\Delta S_{ij} $$
 </li>
-</ul>
-</div>
-
-
-<div style="float:left; width:80%;padding-left:20%">
-<ul style="list-style-type:none;">
 <li>
 <p style="border:3px; border-style:solid; border-color:#287EC7; padding: 1em;" class="fragment"> <strong>Scalar surface integral</strong>
 $$\iint\limits_S f\;dS= \iint\limits_D f\left(\mathbf{\vec{r}}(u,v) \right) ||\mathbf{\vec{r}}_u \times \mathbf{\vec{r}}_v||dA$$
