@@ -1,0 +1,197 @@
+<style>
+.section .reveal .state-background {
+   background: #ffffff;
+}
+
+.section .reveal h1,
+.section .reveal h2,
+.section .reveal p {
+   color: black;
+   margin-top: 50px;
+   text-align: center;
+}
+
+.footer {
+    color: black;
+    background: #E8E8E8;
+    position: fixed;
+    top: 90%;
+    text-align:center;
+    width:100%;
+} 
+
+
+table, th, td {
+  border: 1px solid black;
+}
+
+</style>
+
+<!-- foo 
+Highlighting
+bold
+strong
+orange <b style="color:#d95f02"> text </b>
+green  <b style="color:#1b9e77"> text </b>
+purple <b style="color:#d24693"> text </b>
+red    <b style="color:#FF0000"> text </b>
+blue   <b style="color:#0000FF"> text </b>
+-->
+
+16.8 Stoke's theorem
+========================================================
+title: "Math 283 Calculus 3"
+date: Math 283 Spring 2020
+author: Claudia Castro-Castro
+autosize: true
+incremental: true
+width: 1920
+height: 1080
+
+<h2 style="text-align:left"> Instructions:</h2>
+<p style='text-align:left'>Use the left and right arrow keys to navigate the presentation forward and backward respectively.  You can also use the arrows at the bottom right of the screen to navigate with a mouse.<br></p>
+
+<div class='footer'>
+    Copyright Disclaimer: material is for educational purposes only under fair use.
+</div>
+
+========================================================
+
+## Outline
+
+<div style="float:left; width:100%">
+<ul>
+<li>
+The following topics will be covered in this section:
+    <ul>
+      <li>Preliminaries</li>
+      <li>Stoke's Theorem</li>
+      <li>Examples</li>
+      <li>Application: Maxwell Laws of Electromagnetism</li>
+    </ul>
+</li>
+</ul>
+</div>
+
+========================================================
+
+## Recall: Green's theorem
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li>
+$$\oint\limits_C \mathbf{\vec{F}}\cdot\;d\mathbf{\vec{r}} = \iint\limits_D \left(\frac{\partial Q}{\partial x}-\frac{\partial P}{\partial y} \right)dA$$
+</li> 
+</ul>
+</div>
+
+<div style="float:left; width:40%" class="fragment">
+<img src="16_8_image2.png" style="width:100%" alt="Left: Dia"><div style="float:left; width:100%">
+</div>
+<p style="text-align:center"><small>
+Courtesy of James Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
+</small></p>
+</div>
+
+<div style="float:left; width:60%">
+<ul style="list-style-type:none;">
+<li> $C$ is closed
+</li>
+<li> $C$ is positively oriented 
+</li>
+<li> $C$ is piecewise-smooth
+</li>
+<li> $C$ is simple
+</li>
+</ul>
+</div>
+
+========================================================
+
+## Preliminaries: Orientation 
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li>Consider an oriented surface with unit normal vector $\mathbf{\hat{N}}$
+</li> 
+</ul>
+</div>
+
+<div style="float:left; width:40%;padding-left:30%" class="fragment">
+<img src="16_8_image3.png" style="width:100%" alt="Surface with positive orientation"><div style="float:left; width:100%">
+</div>
+<p style="text-align:center"><small>
+Courtesy of J. Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
+</small></p>
+</div>
+
+<div style="float:left; width:100%">
+<ul>
+<li>Orientation of $S$ induces a <b>positive orientation of the boundary curve</b> $C$
+</li> 
+<li>Walking around $C$ with our head pointing in the direction of $\mathbf{\hat{N}}$, the surface is always to our left
+</li>
+<li>$\mathbf{\hat{T}}\mathbf{\hat{N}}\mathbf{\hat{B}}$ and <b>right-hand rule</b>
+</li>
+</ul>
+</div>
+
+========================================================
+
+## Stoke's Theorem
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li> 
+<p style="border:3px; border-style:solid; border-color:#287EC7; padding: 1em;" class="fragment"> 
+Let $S$ be an oriented, piecewise-smooth surface that is bounded by a closed, positively oriented, piecewise-smooth and simple curve $C$. Let $\mathbf{\vec{F}}$ be a vector field with 
+ continuous partial derivatives on an open region in $\mathbb{R}^2$ that contains $S$.  Then
+$$\oint\limits_C\mathbf{\vec{F}}\cdot\;d\mathbf{\vec{r}} = \iint\limits_S (\nabla \times \mathbf{\vec{F}}) \cdot d\mathbf{\vec{S}}$$
+</p>
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:40%; padding-left:30%" class="fragment">
+<img src="16_8_image4.png" style="width:100%" alt="A diagram of a piecewise smooth closed curve"><div style="float:left; width:100%">
+</div>
+<p style="text-align:center"><small>
+Courtesy of James Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
+</small></p>
+</div>
+
+========================================================
+
+## Vector Surface Integrals 
+
+<div style="float:left; width:30%" class="fragment">
+<img src="16_7_image7.png" style="width:100%" alt="Components of velocity normal and tangential">
+</div>
+
+<div style="float:left; width:70%">
+<ul style="list-style-type:none;">
+<li>
+</li> 
+<li><p style="border:3px; border-style:solid; border-color:#287EC7; padding: 1em;" class="fragment"> <strong>Vector surface integral</strong>
+</p>
+</li>
+</ul>
+</div>
+
+========================================================
+
+## Example
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li> 
+</li>
+<li>
+</li>
+<li>
+</li>
+</ul>
+</div>
+
+
+
