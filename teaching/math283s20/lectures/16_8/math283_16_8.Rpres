@@ -418,13 +418,13 @@ Courtesy of J. Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
 $$current= \oint\limits_C \mathbf{\vec{H}}\cdot d\mathbf{\vec{r}} = \iint\limits_S (\nabla \times \mathbf{\vec{H}})\cdot d\mathbf{\vec{S}}$$
 </li>
 <li>But also 
-$$current=\iint\limits_S \mathbf{\vec{J}} \cdot \mathbf{\hat{N}}dS$$
+$$current=\iint\limits_S \mathbf{\vec{J}} \cdot d\mathbf{\vec{S}}$$
 </li>
 <li>Equate 
-$$ \iint\limits_S (\nabla \times \mathbf{\vec{H}})\cdot \mathbf{\hat{N}}dS =\iint\limits_S \mathbf{\vec{J}} \cdot \mathbf{\hat{N}}dS$$
+$$ \iint\limits_S (\nabla \times \mathbf{\vec{H}})\cdot d\mathbf{\vec{S}} =\iint\limits_S \mathbf{\vec{J}} \cdot d\mathbf{\vec{S}}$$
 </li>
 <li>
-$$\iint\limits_S \left( \nabla \times \mathbf{\vec{H}} - \mathbf{\vec{J}}\right) \cdot \mathbf{\hat{N}}dS = 0$$
+$$\iint\limits_S \left( \nabla \times \mathbf{\vec{H}} - \mathbf{\vec{J}}\right) \cdot d\mathbf{\vec{S}} = 0$$
 </li>
 <li>Must be true  when
 $$\nabla \times \mathbf{\vec{H}} = \mathbf{\vec{J}}$$
