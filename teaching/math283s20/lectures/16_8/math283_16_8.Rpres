@@ -164,6 +164,8 @@ $$\nabla \times \mathbf{\vec{F}} = \langle
 \frac{\partial P}{\partial z} -\frac{\partial R}{\partial x},
 \frac{\partial Q}{\partial x} -\frac{\partial P}{\partial y}\rangle$$
 </li>
+<li><br>$d\mathbf{\vec{S}} =\mathbf{\hat{N}}dS$
+</li>
 </ul>
 </div>
 
@@ -223,20 +225,20 @@ $\mathbf{\vec{F}}(x,y,z) = \langle 1, x+yz,xy-\sqrt{z} \rangle$ and $C$ is the t
 <li>The sides of the triangle are traces of $z=1-3x-y$
 $$C=C_1\cup C_2 \cup C_2$$
 </li>
-<li> $C_1$: trace $x=0$
+<li> ${\color {blue} {C_1}}$: trace $x=0$
 $$z=1-y$$
 </li>
-<li> $C_2$: trace $y=0$
+<li> ${\color {blue} {C_2}}$: trace $y=0$
 $$z=1-3x$$
 </li>
-<li> $C_3$: trace $z=0$
+<li> ${\color {blue} {C_3}}$: trace $z=0$
 $$y=1-3x$$
 </li>
 <li>
 3 line integrals vs 1 surface integral
 $$\oint\limits_C\mathbf{\vec{F}}\cdot\;d\mathbf{\vec{r}} = \iint\limits_S (\nabla \times \mathbf{\vec{F}}) \cdot d\mathbf{\vec{S}}$$
 </li>
-<li>Need to check the orientation of the boundary curve
+<li>Check <strong>orientation</strong> 
 </li>
 </ul>
 </div>
@@ -376,15 +378,15 @@ circulation &= \iint\limits_S (\nabla \times \mathbf{\vec{F}}) \cdot d\mathbf{\v
 </ul>
 </div>
 
-<div style="float:left; width:40%" class="fragment">
-<img src="control.jpg" style="width:100%" alt="Surface with positive orientation"><div style="float:left; width:100%">
+<div style="float:left; width:50%" class="fragment">
+<img src="16_8_image6.png" style="width:100%" alt="Surface with positive orientation"><div style="float:left; width:100%">
 </div>
 <p style="text-align:center"><small>
 Courtesy of J. Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
 </small></p>
 </div>
 
-<div style="float:left; width:60%">
+<div style="float:left; width:50%">
 <ul style="list-style-type:none;">
 <li><br>If our <b>current field</b> is 
 $$\mathbf{\vec{J}} = \sigma \mathbf{\vec{v}}$$
@@ -392,7 +394,7 @@ $$\mathbf{\vec{J}} = \sigma \mathbf{\vec{v}}$$
 <li>$\sigma$ is a scalar charge density
 </li>
 <li>$\mathbf{\vec{v}}$ is a velocity field
-<li><br><em>current</em> as the flux of current field through $S$
+<li><br><em>current</em> as the <b style="color:#d24693"> flux </b> of current field through $S$
 $$I=\iint\limits_S \mathbf{\vec{J}} \cdot \mathbf{\hat{N}}dS$$
 </li>
 </ul>
