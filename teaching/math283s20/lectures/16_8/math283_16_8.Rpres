@@ -298,7 +298,7 @@ $$\nabla  \times \mathbf{\vec{F}} = \left|\left(\begin{array}{ccc}
 $$(\nabla  \times \mathbf{\vec{F}}) (\mathbf{\vec{r}}(u,v)) = \langle u-v,-v,1\rangle $$
 </li>
 <li>$$\begin{align}
-(\nabla  \times \mathbf{\vec{F}}) (\mathbf{\vec{r}}(u,v))\cdot (\mathbf{\vec{r}}_u\times\mathbf{\vec{r}}_v) &=  \langle u-v,-v,1\rangle \cdot   \langle 3,3,1\rangle\\
+(\nabla  \times \mathbf{\vec{F}}) (\mathbf{\vec{r}}(u,v))\cdot (\mathbf{\vec{r}}_u\times\mathbf{\vec{r}}_v) &=  \langle u-v,-v,1\rangle \cdot   \langle 3,1,1\rangle\\
 &= 3u-4v+1
 \end{align}$$
 </li>
