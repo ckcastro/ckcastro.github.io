@@ -38,7 +38,7 @@ red    <b style="color:#FF0000"> text </b>
 blue   <b style="color:#0000FF"> text </b>
 -->
 
-16.8 Stoke's theorem
+16.8 Stokes' theorem
 ========================================================
 title: "Math 283 Calculus 3"
 date: Math 283 Spring 2020
@@ -65,7 +65,7 @@ height: 1080
 The following topics will be covered in this section:
     <ul>
       <li>Preliminaries</li>
-      <li>Stoke's Theorem</li>
+      <li>Stokes' Theorem</li>
       <li>Example</li>
       <li>Ampere's Law</li>
     </ul>
@@ -131,7 +131,7 @@ Courtesy of J. Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
 
 ========================================================
 
-## Stoke's Theorem
+## Stokes' Theorem
 
 <div style="float:left; width:100%">
 <ul style="list-style-type:none;">
@@ -188,7 +188,7 @@ $$\mathbf{\vec{F}}(x,y) = \langle P,Q,0 \rangle$$
 <li><br>
 $$\nabla \times \mathbf{\vec{F}} = \langle 0, 0,\frac{\partial Q}{\partial x} -\frac{\partial P}{\partial y}\rangle$$
 </li>
-<li>then Stoke's theorem
+<li>then Stokes' theorem
 $$\begin{align}\oint\limits_C\mathbf{\vec{F}}\cdot\;d\mathbf{\vec{r}} &= \iint\limits_S (\nabla \times \mathbf{\vec{F}}) \cdot d\mathbf{\vec{S}} \\
 &= \iint\limits_S \langle 0, 0,\frac{\partial Q}{\partial x} -\frac{\partial P}{\partial y}\rangle \cdot \langle 0, 0,1\rangle\;dS 
 \end{align}$$
@@ -355,7 +355,7 @@ measure of the tendency of the fluid to move around $C$
     <li> simple </li>
   </ul>
 </li>
-<li><br><strong>Stoke's theorem</strong>
+<li><br><strong>Stokes' theorem</strong>
 $$\begin{align}
 circulation &= \iint\limits_S (\nabla \times \mathbf{\vec{F}}) \cdot d\mathbf{\vec{S}}\\
 &= \iint\limits_S (\nabla \times \mathbf{\vec{F}}) \cdot \mathbf{\hat{N}}dS
@@ -405,7 +405,7 @@ $$I=\iint\limits_S \mathbf{\vec{J}} \cdot \mathbf{\hat{N}}dS$$
 ## Ampere's Law cont'd
 
 <div style="float:left; width:40%" class="fragment">
-<img src="control.jpg" style="width:100%" alt="Surface with positive orientation"><div style="float:left; width:100%">
+<img src="control.jpg" style="width:100%" alt="Diagram of closed surface in 3D"><div style="float:left; width:100%">
 </div>
 <p style="text-align:center"><small>
 Courtesy of J. Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
@@ -414,7 +414,7 @@ Courtesy of J. Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
 
 <div style="float:left; width:60%">
 <ul style="list-style-type:none;">
-<li> <strong>Stoke's theorem:</strong><br>
+<li> <strong>Stokes' theorem:</strong><br>
 $$current= \oint\limits_C \mathbf{\vec{H}}\cdot d\mathbf{\vec{r}} = \iint\limits_S (\nabla \times \mathbf{\vec{H}})\cdot d\mathbf{\vec{S}}$$
 </li>
 <li>But also 
