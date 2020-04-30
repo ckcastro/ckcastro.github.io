@@ -66,8 +66,8 @@ The following topics will be covered in this section:
     <ul>
       <li>Preliminaries</li>
       <li>Stoke's Theorem</li>
-      <li>Examples</li>
-      <li>Application: Maxwell Laws of Electromagnetism</li>
+      <li>Example</li>
+      <li>Amperes's Law</li>
     </ul>
 </li>
 </ul>
@@ -76,14 +76,6 @@ The following topics will be covered in this section:
 ========================================================
 
 ## Recall: Green's theorem
-
-<div style="float:left; width:100%">
-<ul style="list-style-type:none;">
-<li>
-$$\oint\limits_C \mathbf{\vec{F}}\cdot\;d\mathbf{\vec{r}} = \iint\limits_D \left(\frac{\partial Q}{\partial x}-\frac{\partial P}{\partial y} \right)dA$$
-</li> 
-</ul>
-</div>
 
 <div style="float:left; width:40%" class="fragment">
 <img src="16_8_image2.png" style="width:100%" alt="Left: Dia"><div style="float:left; width:100%">
@@ -102,6 +94,9 @@ Courtesy of James Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
 <li> $C$ is piecewise-smooth
 </li>
 <li> $C$ is simple
+</li>
+<li>Green's theorem
+$$\oint\limits_C \mathbf{\vec{F}}\cdot\;d\mathbf{\vec{r}} = \iint\limits_D \left(\frac{\partial Q}{\partial x}-\frac{\partial P}{\partial y} \right)dA$$
 </li>
 </ul>
 </div>
@@ -131,8 +126,6 @@ Courtesy of J. Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
 </li> 
 <li>Walking around $C$ with our head pointing in the direction of $\mathbf{\hat{N}}$, the surface is always to our left
 </li>
-<li>$\mathbf{\hat{T}}\mathbf{\hat{N}}\mathbf{\hat{B}}$ and <b>right-hand rule</b>
-</li>
 </ul>
 </div>
 
@@ -145,15 +138,67 @@ Courtesy of J. Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
 <li> 
 <p style="border:3px; border-style:solid; border-color:#287EC7; padding: 1em;" class="fragment"> 
 Let $S$ be an oriented, piecewise-smooth surface that is bounded by a closed, positively oriented, piecewise-smooth and simple curve $C$. Let $\mathbf{\vec{F}}$ be a vector field with 
- continuous partial derivatives on an open region in $\mathbb{R}^2$ that contains $S$.  Then
+ continuous partial derivatives on an open region in $\mathbb{R}^3$ that contains $S$.  Then
 $$\oint\limits_C\mathbf{\vec{F}}\cdot\;d\mathbf{\vec{r}} = \iint\limits_S (\nabla \times \mathbf{\vec{F}}) \cdot d\mathbf{\vec{S}}$$
 </p>
 </li>
 </ul>
 </div>
 
-<div style="float:left; width:40%; padding-left:30%" class="fragment">
+<div style="float:left; width:30%" class="fragment">
 <img src="16_8_image4.png" style="width:100%" alt="A diagram of a piecewise smooth closed curve"><div style="float:left; width:100%">
+</div>
+<p style="text-align:center"><small>
+Courtesy of James Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
+</small></p>
+</div>
+
+
+<div style="float:left; width:70%">
+<ul style="list-style-type:none;">
+<li>where $\mathbf{\vec{F}}(x,y,z) = \langle P,Q,R \rangle$
+</li>
+<li><br>
+$$\nabla \times \mathbf{\vec{F}} = \langle 
+\frac{\partial R}{\partial y} -\frac{\partial Q}{\partial z}, 
+\frac{\partial P}{\partial z} -\frac{\partial R}{\partial x},
+\frac{\partial Q}{\partial x} -\frac{\partial P}{\partial y}\rangle$$
+</li>
+</ul>
+</div>
+
+
+========================================================
+
+## (2D) Stoke's Theorem
+
+<div style="float:left; width:60%">
+<ul style="list-style-type:none;">
+<li>If $S$ is a 2D surface (flat and lies in the $xy$-plane)
+$$\mathbf{\hat{N}} =\mathbf{\hat{k}}$$
+</li>
+<li>
+$$d\mathbf{\vec{S}} =\mathbf{\hat{N}}dS=\mathbf{\hat{k}}dS$$
+</li>
+<li>If $\mathbf{\vec{F}}$ is 2D vector field and 
+$$\mathbf{\vec{F}}(x,y) = \langle P,Q,0 \rangle$$
+</li>
+<li><br>
+$$\nabla \times \mathbf{\vec{F}} = \langle 0, 0,\frac{\partial Q}{\partial x} -\frac{\partial P}{\partial y}\rangle$$
+</li>
+<li>then Stoke's theorem
+$$\begin{align}\oint\limits_C\mathbf{\vec{F}}\cdot\;d\mathbf{\vec{r}} &= \iint\limits_S (\nabla \times \mathbf{\vec{F}}) \cdot d\mathbf{\vec{S}} \\
+&= \iint\limits_S \langle 0, 0,\frac{\partial Q}{\partial x} -\frac{\partial P}{\partial y}\rangle \cdot \langle 0, 0,1\rangle\;dS 
+\end{align}$$
+</li>
+<li>
+$$=\iint\limits_S \left(\frac{\partial Q}{\partial x} -\frac{\partial P}{\partial y}\right) \;dS $$
+becomes  <b style="color:#1b9e77"> Green's theorem</b>
+</li>
+</div>
+
+<div style="float:left; width:35%" class="fragment">
+<img src="16_8_image2.png" style="width:100%" alt="Left: Dia"><div style="float:left; width:100%">
 </div>
 <p style="text-align:center"><small>
 Courtesy of James Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
@@ -162,34 +207,227 @@ Courtesy of James Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
 
 ========================================================
 
-## Vector Surface Integrals 
+## Example
 
-<div style="float:left; width:30%" class="fragment">
-<img src="16_7_image7.png" style="width:100%" alt="Components of velocity normal and tangential">
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li> Compure $\oint\limits_C \mathbf{\vec{F}}\cdot d\mathbf{\vec{r}}$ where
+$\mathbf{\vec{F}}(x,y,z) = \langle 1, x+yz,xy-\sqrt{z} \rangle$ and $C$ is the triangle with sides where the plane $3x+y+z=1$ intersects the coordinate planes, $C$ is oriented clockwise when viewed from above.
+</li>
+</ul>
 </div>
 
 <div style="float:left; width:70%">
 <ul style="list-style-type:none;">
+<li><u>Parameterization</u></li>
+<li>The sides of the triangle are traces of $z=1-3x-y$
+$$C=C_1\cup C_2 \cup C_2$$
+</li>
+<li> $C_1$: trace $x=0$
+$$z=1-y$$
+</li>
+<li> $C_2$: trace $y=0$
+$$z=1-3x$$
+</li>
+<li> $C_3$: trace $z=0$
+$$y=1-3x$$
+</li>
 <li>
-</li> 
-<li><p style="border:3px; border-style:solid; border-color:#287EC7; padding: 1em;" class="fragment"> <strong>Vector surface integral</strong>
-</p>
+3 line integrals vs 1 surface integral
+$$\oint\limits_C\mathbf{\vec{F}}\cdot\;d\mathbf{\vec{r}} = \iint\limits_S (\nabla \times \mathbf{\vec{F}}) \cdot d\mathbf{\vec{S}}$$
+</li>
+<li>Need to check the orientation of the boundary curve
 </li>
 </ul>
 </div>
 
 ========================================================
 
-## Example
+## Example cont'd
+
+<div style="float:left; width:30%" class="fragment">
+<img src="16_8_image5.png" style="width:100%" alt="Surface of the triangle">
+</div>
+
+<div style="float:left; width:70%">
+<ul style="list-style-type:none;">
+<li>Need to reverse the orientation of the boundary curve
+$$\oint\limits_C\mathbf{\vec{F}}\cdot\;d\mathbf{\vec{r}} = -\oint\limits_{-C}\mathbf{\vec{F}}\cdot\;d\mathbf{\vec{r}}$$
+</li>
+<li>Compute the surface integral instead
+$$-\oint\limits_{-C}\mathbf{\vec{F}}\cdot\;d\mathbf{\vec{r}} = - \iint\limits_S (\nabla \times \mathbf{\vec{F}}) \cdot d\mathbf{\vec{S}} $$
+</li>
+<li> <u>Parameterization</u>
+$$\mathbf{\vec{r}}(u,v)=\langle u,v,1-3u-v\rangle $$
+$$D=\{(u,v)|\; 0\leq u\leq \frac{1}{3},\;0\leq v \leq 1-3u\}$$
+</li>
+<li><u>Compute d$\mathbf{\vec{S}}$</u>
+$$\mathbf{\vec{r}}_u = \langle 1,0,-3\rangle$$
+</li>
+<li>$$\mathbf{\vec{r}}_v = \langle 0,1,-1\rangle$$
+</li>
+<li>$$\mathbf{\vec{r}}_u\times\mathbf{\vec{r}}_v = \langle 3,1,1 \rangle$$
+</li>
+</ul>
+</div>
+
+========================================================
+
+## Example cont'd
+
+<div style="float:left; width:30%" class="fragment">
+<img src="16_8_image5.png" style="width:100%" alt="Surface of the triangle">
+</div>
+
+<div style="float:left; width:70%">
+<ul style="list-style-type:none;">
+<li> $$- \iint\limits_S (\nabla \times \mathbf{\vec{F}}) \cdot d\mathbf{\vec{S}} = -\iint\limits_D (\nabla \times \mathbf{\vec{F}})(\mathbf{\vec{r}}(u,v)) \cdot (\mathbf{\vec{r}}_u\times\mathbf{\vec{r}}_v ) dA $$
+</li>
+<li> <u>Integrand</u>
+$$\nabla  \times \mathbf{\vec{F}} = \left|\left(\begin{array}{ccc}
+\mathbf{\hat{{i}}} & \hat{{\mathbf{j}}} & \hat{{\mathbf{k}}}\\
+\frac{\partial}{\partial x}& \frac{\partial}{\partial y} & \frac{\partial}{\partial z}\\
+1 & x+yz & xy-\sqrt{z}\\
+\end{array}\right)\right|= \langle x-y, -y,\;1 \rangle$$
+</li>
+<li><br>Compose with $\mathbf{\vec{r}}(u,v)=\langle u,v,1-3u-v\rangle$
+</li>
+<li><u></u>
+$$(\nabla  \times \mathbf{\vec{F}}) (\mathbf{\vec{r}}(u,v)) = \langle u-v,-v,1\rangle $$
+</li>
+<li>$$\begin{align}
+(\nabla  \times \mathbf{\vec{F}}) (\mathbf{\vec{r}}(u,v))\cdot (\mathbf{\vec{r}}_u\times\mathbf{\vec{r}}_v) &=  \langle u-v,-v,1\rangle \cdot   \langle 3,3,1\rangle\\
+&= 3u-4v+1
+\end{align}$$
+</li>
+<li><u>Set up and evaluate</u>
+$$- \iint\limits_S (\nabla \times \mathbf{\vec{F}}) \cdot d\mathbf{\vec{S}} = -\int_0^{\frac{1}{3}} \int_0^{1-3u} (3u-4v+1) dvdu$$
+</li>
+
+</ul>
+</div>
+
+========================================================
+
+## Example cont'd
+
+<div style="float:left; width:30%" class="fragment">
+<img src="16_8_image5.png" style="width:100%" alt="Surface of the triangle">
+</div>
+
+<div style="float:left; width:70%">
+<ul style="list-style-type:none;">
+<li>
+$$= -\int_0^{\frac{1}{3}} (3uv-2v^2+v) \bigg\vert_{v=0}^{v=1-3u} du$$
+</li>
+<li>
+$$ = -\int_0^{\frac{1}{3}} (-27u^2+12u-1) du$$
+</li>
+<li>$$=-\int_0^{\frac{1}{3}} (-27u^2+12u-1) du\\ = - (-9u^3+6u^2-u)\bigg\vert_0^{\frac{1}{3}}$$
+</li>
+<li>$$= - \left(-9\left(\frac{1}{3}\right)^3+6\left(\frac{1}{3}\right)^2-\frac{1}{3} \right)$$
+</li>
+<li>$$\begin{align}
+&= - \left(-\frac{1}{3} +\frac{2}{3} -\frac{1}{3} \right)\\
+&=0\end{align}$$
+</li>
+</ul>
+</div>
+
+
+========================================================
+
+## Circulation Surface Integral 
 
 <div style="float:left; width:100%">
 <ul style="list-style-type:none;">
-<li> 
+<li>Suppose $\mathbf{\vec{v}}$ represents a velocity field in fluid flow
+$$circulation = \int\limits_C \mathbf{\vec{v}}\cdot \mathbf{\hat{T}}ds $$
+measure of the tendency of the fluid to move around $C$
+</li>
+<li><br>If  $C$ is the boundary of a Surface $S$ and $C$ is
+  <ul>
+    <li> closed </li>
+    <li> positively oriented </li>
+    <li> piecewise smooth</li>
+    <li> simple </li>
+  </ul>
+</li>
+<li><br><strong>Stoke's theorem</strong>
+$$\begin{align}
+circulation &= \iint\limits_S (\nabla \times \mathbf{\vec{F}}) \cdot d\mathbf{\vec{S}}\\
+&= \iint\limits_S (\nabla \times \mathbf{\vec{F}}) \cdot \mathbf{\hat{N}}dS
+\end{align}$$
+</li>
+</ul>
+</div>
+
+
+========================================================
+
+## Ampere's Law
+
+<div style="float:left; width:80%">
+<ul style="list-style-type:none;">
+<li>"The current $I$ passing through a control surface $S$ equal the line integral of the <b>magnetic field</b> intensity $\mathbf{\vec{H}}$ around the boundary of $S$"
+</li>
+<li>$$current=I=\oint\limits_C \mathbf{\vec{H}}\cdot d\mathbf{\vec{r}}  $$
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:40%" class="fragment">
+<img src="control.jpg" style="width:100%" alt="Surface with positive orientation"><div style="float:left; width:100%">
+</div>
+<p style="text-align:center"><small>
+Courtesy of J. Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
+</small></p>
+</div>
+
+<div style="float:left; width:60%">
+<ul style="list-style-type:none;">
+<li><br>If our <b>current field</b> is 
+$$\mathbf{\vec{J}} = \sigma \mathbf{\vec{v}}$$
+</li>
+<li>$\sigma$ is a scalar charge density
+</li>
+<li>$\mathbf{\vec{v}}$ is a velocity field
+<li><br><em>current</em> as the flux of current field through $S$
+$$I=\iint\limits_S \mathbf{\vec{J}} \cdot \mathbf{\hat{N}}dS$$
+</li>
+</ul>
+</div>
+
+========================================================
+
+## Ampere's Law cont'd
+
+<div style="float:left; width:40%" class="fragment">
+<img src="control.jpg" style="width:100%" alt="Surface with positive orientation"><div style="float:left; width:100%">
+</div>
+<p style="text-align:center"><small>
+Courtesy of J. Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
+</small></p>
+</div>
+
+<div style="float:left; width:60%">
+<ul style="list-style-type:none;">
+<li> <strong>Stoke's theorem:</strong><br>
+$$current= \oint\limits_C \mathbf{\vec{H}}\cdot d\mathbf{\vec{r}} = \iint\limits_S (\nabla \times \mathbf{\vec{H}})\cdot d\mathbf{\vec{S}}$$
+</li>
+<li>But also 
+$$current=\iint\limits_S \mathbf{\vec{J}} \cdot \mathbf{\hat{N}}dS$$
+</li>
+<li>Equate 
+$$ \iint\limits_S (\nabla \times \mathbf{\vec{H}})\cdot \mathbf{\hat{N}}dS =\iint\limits_S \mathbf{\vec{J}} \cdot \mathbf{\hat{N}}dS$$
 </li>
 <li>
+$$\iint\limits_S \left( \nabla \times \mathbf{\vec{H}} - \mathbf{\vec{J}}\right) \cdot \mathbf{\hat{N}}dS = 0$$
 </li>
-<li>
+<li>Must be true  when
+$$\nabla \times \mathbf{\vec{H}} = \mathbf{\vec{J}}$$
 </li>
+<li>$\hspace{2cm}$<b style="color:#d95f02"> curl of magnetic field = current field </b> </li>
 </ul>
 </div>
 
