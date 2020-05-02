@@ -68,6 +68,7 @@ The following topics will be covered in this section:
       <li>Stokes' Theorem</li>
       <li>Example</li>
       <li>Ampere's Law</li>
+      <li>Faraday's Law</li>
     </ul>
 </li>
 </ul>
@@ -384,22 +385,18 @@ circulation &= \iint\limits_S (\nabla \times \mathbf{\vec{F}}) \cdot d\mathbf{\v
 </ul>
 </div>
 
-<div style="float:left; width:50%" class="fragment">
-<img src="16_8_image6.png" style="width:100%" alt="Surface with positive orientation"><div style="float:left; width:100%">
+<div style="float:left; width:45%" class="fragment">
+<img src="16_8_image6.png" style="width:100%" alt="Control surface around a cylindrical cable"><div style="float:left; width:100%">
 </div>
 <p style="text-align:center"><small>
 Courtesy of J. Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
 </small></p>
 </div>
 
-<div style="float:left; width:50%">
+<div style="float:left; width:55%">
 <ul style="list-style-type:none;">
 <li><br>If our <b>current field</b> is 
-$$\mathbf{\vec{J}} = \sigma \mathbf{\vec{v}}$$
-</li>
-<li>$\sigma$ is a scalar charge density
-</li>
-<li>$\mathbf{\vec{v}}$ is a velocity field
+$$\mathbf{\vec{J}}$$
 <li><br><em>current</em> as the <b style="color:#d24693"> flux </b> of current field through $S$
 $$I=\iint\limits_S \mathbf{\vec{J}} \cdot \mathbf{\hat{N}}dS$$
 </li>
@@ -410,17 +407,17 @@ $$I=\iint\limits_S \mathbf{\vec{J}} \cdot \mathbf{\hat{N}}dS$$
 
 ## Ampere's Law cont'd
 
-<div style="float:left; width:40%" class="fragment">
-<img src="control.jpg" style="width:100%" alt="Diagram of closed surface in 3D"><div style="float:left; width:100%">
-</div>
+<div style="float:left; width:45%" class="fragment">
+<img src="16_8_image6.png" style="width:100%" alt="Control surface around a cylindrical cable"><div style="float:left; width:100%">
 <p style="text-align:center"><small>
 Courtesy of J. Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
 </small></p>
 </div>
+</div>
 
-<div style="float:left; width:60%">
+<div style="float:left; width:55%">
 <ul style="list-style-type:none;">
-<li> <strong>Stokes' theorem:</strong><br>
+<li><strong>Stokes' theorem:</strong><br>
 $$current= \oint\limits_C \mathbf{\vec{H}}\cdot d\mathbf{\vec{r}} = \iint\limits_S (\nabla \times \mathbf{\vec{H}})\cdot d\mathbf{\vec{S}}$$
 </li>
 <li>But also 
@@ -432,10 +429,85 @@ $$ \iint\limits_S (\nabla \times \mathbf{\vec{H}})\cdot d\mathbf{\vec{S}} =\iint
 <li>
 $$\iint\limits_S \left( \nabla \times \mathbf{\vec{H}} - \mathbf{\vec{J}}\right) \cdot d\mathbf{\vec{S}} = 0$$
 </li>
-<li>Must be true  when
+<li> 
+<p style="border:3px; border-style:solid; border-color:#287EC7; padding: 1em;" class="fragment"> 
 $$\nabla \times \mathbf{\vec{H}} = \mathbf{\vec{J}}$$
+<b style="color:#d95f02"> curl of magnetic field intensity = current field </b>
+</p>
 </li>
-<li>$\hspace{2cm}$<b style="color:#d95f02"> curl of magnetic field = current field </b> </li>
+</ul>
+</div>
+
+========================================================
+
+## Faraday's Law
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li>"The line integral of electromotor force around a closed curve equals the negative time rate of change of magnetic flux through a control surface spanning the curve"
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:40%">
+<ul style="list-style-type:none;">
+<li>
+$$\oint\limits_C \mathbf{\vec{E}}\cdot d\mathbf{\vec{r}}=-\frac{\partial}{\partial t}(magnetic flux) $$
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:60%">
+<ul style="list-style-type:none;">
+<li> $\mathbf{\vec{E}}$ electric field
+</li>
+<li> $\mathbf{\vec{B}}$ magnetic field
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:70%">
+<ul style="list-style-type:none;">
+<li>Magnetic flux
+$$\hphantom{\oint\limits_C \mathbf{\vec{E}}\cdot d\mathbf{\vec{r}}}=-\frac{\partial}{\partial t}\left(\iint\limits_S \mathbf{\vec{B}}\cdot \mathbf{\hat{N}}dS \right) $$
+</li>
+<li>
+$$\hphantom{\oint\limits_C \mathbf{\vec{E}} }= -\iint\limits_S  \frac{\partial}{\partial t} \mathbf{\vec{B}} \cdot \mathbf{\hat{N}}dS $$
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:70%">
+<ul style="list-style-type:none;">
+<li><strong>Stokes' theorem</strong>
+$$\oint\limits_C \mathbf{\vec{E}}\cdot d\mathbf{\vec{r}}= \iint\limits_S (\nabla \times  \mathbf{\vec{E}})\cdot\:\mathbf{\hat{N}}dS$$
+</li>
+</ul>
+</div>
+
+
+========================================================
+
+## Faraday's Law cont'd
+
+<div style="float:left; width:70%">
+<ul style="list-style-type:none;">
+<li>Equating
+$$\iint\limits_S (\nabla \times  \mathbf{\vec{E}})\cdot\:\mathbf{\hat{N}}dS =-\iint\limits_S  \frac{\partial}{\partial t} \mathbf{\vec{B}} \cdot \mathbf{\hat{N}}dS $$
+</li>
+<li>
+$$\hspace{-5cm}\Leftrightarrow \iint\limits_S \left(\nabla \times  \mathbf{\vec{E}}+\frac{\partial \mathbf{\vec{B}}}{\partial t}  \right) \cdot \mathbf{\hat{N}}dS =0$$
+</li>
+<li>
+$$\Leftrightarrow \nabla \times  \mathbf{\vec{E}}+\frac{\partial \mathbf{\vec{B}} }{\partial t}  = 0  $$
+</li>
+<li> 
+<p style="border:3px; border-style:solid; border-color:#287EC7; padding: 1em;" class="fragment"> 
+$$\nabla \times  \mathbf{\vec{E}}=-\frac{\partial \mathbf{\vec{B}} }{\partial t}$$
+<b style="color:#d95f02"> curl of electric field = - rate of change of magnetic field  </b> 
+</p>
+</li>
+<li> </li>
 </ul>
 </div>
 
