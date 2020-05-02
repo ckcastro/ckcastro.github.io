@@ -1,0 +1,153 @@
+<style>
+.section .reveal .state-background {
+   background: #ffffff;
+}
+
+.section .reveal h1,
+.section .reveal h2,
+.section .reveal p {
+   color: black;
+   margin-top: 50px;
+   text-align: center;
+}
+
+.footer {
+    color: black;
+    background: #E8E8E8;
+    position: fixed;
+    top: 90%;
+    text-align:center;
+    width:100%;
+} 
+
+
+table, th, td {
+  border: 1px solid black;
+}
+
+</style>
+
+<!-- foo 
+Highlighting
+bold
+strong
+orange <b style="color:#d95f02"> text </b>
+green  <b style="color:#1b9e77"> text </b>
+purple <b style="color:#d24693"> text </b>
+red    <b style="color:#FF0000"> text </b>
+blue   <b style="color:#0000FF"> text </b>
+-->
+
+Math 283 Calculus 3 
+========================================================
+title: "Math 283"
+date: Spring 2020
+autosize: true
+incremental: true
+width: 1920
+height: 1080
+
+
+<h2 style="text-align:center">Summary</h2>
+
+<p style='text-align:left'>Use the left and right arrow keys to navigate the presentation forward and backward respectively.  You can also use the arrows at the bottom right of the screen to navigate with a mouse.<br></p>
+
+
+<div class='footer'>
+    Copyright Disclaimer: material is for educational purposes only under fair use.
+</div>
+
+
+========================================================
+
+## Summary
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li> The main results of this chapter are all higher-dimensional versions of the
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:60%">
+<ul style="list-style-type:none;">
+<li><b style="color:#FF0000">Fundamental Theorem of Calculus </b>
+$$\int_a^b \frac{df}{dt} \;dt = f(b) - f(a) $$
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:30%" class="fragment">
+<img src="ftc.png" style="width:100%" alt="A diagram of 1D line segment"><div style="float:left; width:100%">
+</div>
+</div>
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li><br>An integral of a <strong>“derivative”</strong> over a region involves the values of the original function <em>only</em> on the orange <strong> boundary </strong>  of the domain<br><br>
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:60%">
+<ul style="list-style-type:none;">
+<li> 
+<li><b style="color:#FF0000">Fundamental Theorem for Line Integrals </b>
+$$\int_a^b \nabla f \cdot d\mathbf{\vec{r}}  = f(\mathbf{\vec{r}}(b)) - f(\mathbf{\vec{r}}(a)) $$
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:30%" class="fragment">
+<img src="ftli.png" style="width:100%" alt="A diagram of a 2D piecewise closed curve"><div style="float:left; width:100%">
+</div>
+</div>
+
+
+========================================================
+
+## Summary
+
+<div style="float:left; width:50%">
+<ul style="list-style-type:none;">
+<li> 
+<li><b style="color:#FF0000">Green's theorem</b>
+$$ \iint\limits_D \left(\frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y}\right) dA = \oint\limits_C \mathbf{\vec{F}} \cdot d\mathbf{\vec{r}}$$
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:20%" class="fragment">
+<img src="greens.png" style="width:100%" alt="A diagram of a piecewise smooth closed curve"><div style="float:left; width:100%">
+</div>
+</div>
+
+<div style="float:left; width:50%">
+<ul style="list-style-type:none;">
+<li> 
+<li><b style="color:#FF0000">Stokes' theorem</b>
+$$ \iint\limits_S (\nabla \times \mathbf{\vec{F}} )\cdot d\mathbf{\vec{S}}   = \oint\limits_C \mathbf{\vec{F}} \cdot d\mathbf{\vec{r}}$$
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:20%" class="fragment">
+<img src="stokes.png" style="width:100%" alt="A diagram of a piecewise smooth closed curve"><div style="float:left; width:100%">
+</div>
+</div>
+
+
+<div style="float:left; width:50%">
+<ul style="list-style-type:none;">
+<li> 
+<li><b style="color:#FF0000">Divergence theorem</b>
+$$ \iiint\limits_E (\nabla \cdot \mathbf{\vec{F}} ) dV  = \iint\limits_S \mathbf{\vec{F}} \cdot d\mathbf{\vec{S}}$$
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:20%" class="fragment">
+<img src="divergence.png" style="width:100%" alt="A diagram of a piecewise smooth closed curve"><div style="float:left; width:100%">
+</div>
+</div>
+
