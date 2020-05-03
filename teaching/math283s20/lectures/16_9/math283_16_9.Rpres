@@ -112,18 +112,18 @@ $$\nabla \cdot \mathbf{\vec{F}} = \frac{\partial P}{\partial x}+\frac{\partial Q
 
 ========================================================
 
-## Example 
+## Example 1 
 
 <div style="float:left; width:100%">
 <ul style="list-style-type:none;">
-<li>Compute the flux $\iint\limits_S \mathbf{\vec{F}}\cdot d\mathbf{\vec{S}}$ of the vector field $\mathbf{\vec{F}}=\langle 3xy^2,xe^z,z^3 \rangle$ through $S$. $S$ is the boundary of the solid bounded by the cylinder $y^2+z^2=1$ and the planes $x=2$ and $x=-1$
+<li>Compute the flux $\iint\limits_S \mathbf{\vec{F}}\cdot d\mathbf{\vec{S}}$ of the vector field $\mathbf{\vec{F}}=\langle 3xy^2,xe^z,z^3 \rangle$ through $S$. $S$ is the boundary of the solid bounded by the cylinder $y^2+z^2=1$ and the planes $x=3$ and $x=-1$
 </li>
 <li>
 </li>
 </div>
 
 <div style="float:left; width:35%" class="fragment">
-<img src="16_8_image2.png" style="width:100%" alt="Circular cylinder">
+<img src="16_9_image1.png" style="width:100%" alt="Circular cylinder">
 </div>
 
 <div style="float:left; width:65%">
@@ -143,10 +143,10 @@ where $E$ is the solid "barrel"
 
 ========================================================
 
-## Example cont'd
+## Example 1 cont'd
 
 <div style="float:left; width:35%" class="fragment">
-<img src="16_8_image2.png" style="width:100%" alt="Circular cylinder">
+<img src="16_9_image1.png" style="width:100%" alt="Circular cylinder">
 </div>
 
 <div style="float:left; width:65%">
@@ -155,14 +155,14 @@ where $E$ is the solid "barrel"
 $$\iiint\limits_E (\nabla \cdot \mathbf{\vec{F}})\; dV= \iiint\limits_E (3y^2+3z^2)\; dV$$
 </li>
 <li>Use cylindrical coordinates
-$$ 3\iiint\limits_E (y^2+z^2)\; dV = 3\int_{-1}^2 \int_0^{2\pi} \int_0^1 (r^2)\; r\;dr\: d\theta\:dx  $$
+$$ 3\iiint\limits_E (y^2+z^2)\; dV = 3\int_{-1}^3 \int_0^{2\pi} \int_0^1 (r^2)\; r\;dr\: d\theta\:dx  $$
 </li>
-<li>$$ = 3\int_{-1}^2 dx \int_0^{2\pi}d\theta \int_0^1 r^3 \;dr$$
+<li>$$ = 3\int_{-1}^3 dx \int_0^{2\pi}d\theta \int_0^1 r^3 \;dr$$
 </li>
 <li>$$\begin{align} 
-&= 3(2-(-1))(2\pi)\left(\frac{1}{4}\right)\\
-&= 3(3)(2\pi)\frac{1}{4}  \\
-&= \frac{18\pi}{4}
+&= 3(3-(-1))(2\pi)\left(\frac{1}{4}\right)\\
+&= 3(4)(2\pi)\frac{1}{4}  \\
+&= 6\pi
 \end{align}$$
 </li>
 </ul>
@@ -245,8 +245,8 @@ $$\iint\limits_S \mathbf{\vec{B}}\cdot d\mathbf{\vec{S}} =0 $$
 </ul>
 </div>
 
-<div style="float:left; width:40%" class="fragment">
-<img src="gauss.png" style="width:100%" alt="Circular cylinder">
+<div style="float:left; width:30%" class="fragment">
+<img src="16_9_image2.png" style="width:100%" alt="Circular cylinder">
 </div>
 
 <div style="float:left; width:60%">
