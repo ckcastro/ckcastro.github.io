@@ -1,0 +1,270 @@
+<style>
+.section .reveal .state-background {
+   background: #ffffff;
+}
+
+.section .reveal h1,
+.section .reveal h2,
+.section .reveal p {
+   color: black;
+   margin-top: 50px;
+   text-align: center;
+}
+
+.footer {
+    color: black;
+    background: #E8E8E8;
+    position: fixed;
+    top: 90%;
+    text-align:center;
+    width:100%;
+} 
+
+
+table, th, td {
+  border: 1px solid black;
+}
+
+</style>
+
+<!-- foo 
+Highlighting
+bold
+strong
+orange <b style="color:#d95f02"> text </b>
+green  <b style="color:#1b9e77"> text </b>
+purple <b style="color:#d24693"> text </b>
+red    <b style="color:#FF0000"> text </b>
+blue   <b style="color:#0000FF"> text </b>
+-->
+
+16.9 Divergence theorem
+========================================================
+title: "Math 283 Calculus 3"
+date: Math 283 Spring 2020
+author: Claudia Castro-Castro
+autosize: true
+incremental: true
+width: 1920
+height: 1080
+
+<h2 style="text-align:left"> Instructions:</h2>
+<p style='text-align:left'>Use the left and right arrow keys to navigate the presentation forward and backward respectively.  You can also use the arrows at the bottom right of the screen to navigate with a mouse.<br></p>
+
+<div class='footer'>
+    Copyright Disclaimer: material is for educational purposes only under fair use.
+</div>
+
+========================================================
+
+## Outline
+
+<div style="float:left; width:100%">
+<ul>
+<li>
+The following topics will be covered in this section:
+    <ul>
+      <li>Divergence Theorem</li>
+      <li>Example</li>
+      <li>Gauss' law </li>      
+      <li>Gauss' magnetism law </li>
+    </ul>
+</li>
+</ul>
+</div>
+
+========================================================
+
+## Divergence Theorem
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li> 
+<p style="border:3px; border-style:solid; border-color:#287EC7; padding: 1em;" class="fragment"> 
+Let $E$ be a simple solid region and let $S$ be the boundary surface of $E$, given with <b>positive (outward) orientation</b>. Let $\mathbf{\vec{F}}$ be a vector field whose component functions have continuous partial derivatives on an open region that contains $E$. Then
+$$\iint\limits_S \mathbf{\vec{F}}\cdot d\mathbf{\vec{S}} = \iiint\limits_E (\nabla \cdot \mathbf{\vec{F}})\; dV$$
+</p>
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:40%;padding-left:10%" class="fragment">
+<img src="divergence.png" style="width:100%" alt="A diagram of a piecewise smooth closed curve"><div style="float:left; width:100%">
+</div>
+<p style="text-align:center"><small>
+Courtesy of James Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
+</small></p>
+</div>
+
+
+<div style="float:left; width:50%">
+<ul style="list-style-type:none;">
+<li>where $$\mathbf{\vec{F}}(x,y,z) = \langle P,Q,R \rangle$$
+</li>
+<li><br>
+$$\nabla \cdot \mathbf{\vec{F}} = \frac{\partial P}{\partial x}+\frac{\partial Q}{\partial y} +\frac{\partial R}{\partial z}$$
+</li>
+<li>
+</li>
+</ul>
+</div>
+
+
+========================================================
+
+## Example 
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li>Compute the flux $\iint\limits_S \mathbf{\vec{F}}\cdot d\mathbf{\vec{S}}$ of the vector field $\mathbf{\vec{F}}=\langle 3xy^2,xe^z,z^3 \rangle$ through $S$. $S$ is the boundary of the solid bounded by the cylinder $y^2+z^2=1$ and the planes $x=2$ and $x=-1$
+</li>
+<li>
+</li>
+</div>
+
+<div style="float:left; width:35%" class="fragment">
+<img src="16_8_image2.png" style="width:100%" alt="Circular cylinder">
+</div>
+
+<div style="float:left; width:65%">
+<ul style="list-style-type:none;">
+<li>Surface integral $$\iint\limits_S = \iint\limits_{S_1} +\iint\limits_{S_2} +\iint\limits_{S_3}$$
+</li>
+<li>Instead compute de triple integral
+$$\iiint\limits_E (\nabla \cdot \mathbf{\vec{F}})dV$$
+where $E$ is the solid "barrel"
+</li>
+<li>$$\nabla \cdot \mathbf{\vec{F}}= \frac{\partial}{\partial x}\left( 3xy^2 \right)+\frac{\partial}{\partial y}\left(xe^z \right)+\frac{\partial}{\partial z}\left(z^3 \right)$$
+</li>
+<li>$$\hspace{-6cm}= 3y^2+0+3z^2$$
+</li>
+</ul>
+</div>
+
+========================================================
+
+## Example cont'd
+
+<div style="float:left; width:35%" class="fragment">
+<img src="16_8_image2.png" style="width:100%" alt="Circular cylinder">
+</div>
+
+<div style="float:left; width:65%">
+<ul style="list-style-type:none;">
+<li><u>Set up and evaluate</u>
+$$\iiint\limits_E (\nabla \cdot \mathbf{\vec{F}})\; dV= \iiint\limits_E (3y^2+3z^2)\; dV$$
+</li>
+<li>Use cylindrical coordinates
+$$ 3\iiint\limits_E (y^2+z^2)\; dV = 3\int_{-1}^2 \int_0^{2\pi} \int_0^1 (r^2)\; r\;dr\: d\theta\:dx  $$
+</li>
+<li>$$ = 3\int_{-1}^2 dx \int_0^{2\pi}d\theta \int_0^1 r^3 \;dr$$
+</li>
+<li>$$\begin{align} 
+&= 3(2-(-1))(2\pi)\left(\frac{1}{4}\right)\\
+&= 3(3)(2\pi)\frac{1}{4}  \\
+&= \frac{18\pi}{4}
+\end{align}$$
+</li>
+</ul>
+</div>
+
+========================================================
+
+## Gauss' Law 
+
+<div style="float:left; width:20%" class="fragment">
+<img src="sphereflux.png" style="width:100%" alt="vector field flux on sphere"><div style="float:left; width:100%">
+</div>
+<p style="text-align:center"><small>
+Courtesy of J. Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
+</small></p>
+</div>
+
+<div style="float:left; width:50%">
+<ul style="list-style-type:none;">
+<li>Relationship between electric field and electric charges
+$$\iint\limits_S \mathbf{\vec{D}}\cdot \mathbf{\hat{N}}dS = \iiint\limits_E \sigma\;dV$$
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:25%">
+<ul style="list-style-type:none;">
+<li>$\mathbf{\vec{D}}$ electric field density<br>
+$\sigma$ electric charge density
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:50%">
+<ul style="list-style-type:none;">
+<li><em>electric density flux around S = total electric charge over E</em>
+</li>
+<li><br><strong>Divergence Theorem</strong>
+$$\iint\limits_S \mathbf{\vec{D}}\cdot \mathbf{\hat{N}}dS = \iiint\limits_E (\nabla \cdot \mathbf{\vec{D}})\;dV $$
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:35%">
+<ul style="list-style-type:none;">
+<li>Equate
+ $$\iiint\limits_E (\nabla \cdot \mathbf{\vec{D}})\;dV =\iiint\limits_E \sigma\;dV $$
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:20%">
+<ul style="list-style-type:none;">
+<li><br>$$\Leftrightarrow \iiint\limits_E (\sigma- \nabla \cdot \mathbf{\vec{D}})\;dV=0$$
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:80%; padding-left:20%">
+<ul style="list-style-type:none;">
+<li>must be true when
+<p style="border:3px; border-style:solid; border-color:#287EC7; padding: 1em;" class="fragment"> 
+$$\nabla \cdot \mathbf{\vec{D}} =\sigma$$
+<b style="color:#d95f02">divergence of electric field density = electric charge density</b>
+</p>
+</li>
+</ul>
+</div>
+
+
+========================================================
+
+## Gauss' Magnetism Law 
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li>The magnetic flux of the magnetic field $\mathbf{\vec{B}}$ out of a <b>closed</b> surface is always zero 
+$$\iint\limits_S \mathbf{\vec{B}}\cdot d\mathbf{\vec{S}} =0 $$
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:40%" class="fragment">
+<img src="gauss.png" style="width:100%" alt="Circular cylinder">
+</div>
+
+<div style="float:left; width:60%">
+<ul style="list-style-type:none;">
+<li><strong>Divergence Theorem</strong>
+$$\iint\limits_S \mathbf{\vec{B}}\cdot d\mathbf{\vec{S}} = \iiint\limits_E (\nabla \cdot \mathbf{\vec{B}})\;dV $$
+</li>
+<li>then
+$$\iiint\limits_E (\nabla \cdot \mathbf{\vec{B}})\;dV=0$$
+</li>
+<li>must be true when
+<p style="border:3px; border-style:solid; border-color:#287EC7; padding: 1em;" class="fragment"> 
+$$\nabla \cdot \mathbf{\vec{B}} =0$$
+<b style="color:#d95f02">divergence of magnetic field is zero</b>
+</p>
+</li>
+</ul>
+</div>
+
+
+
