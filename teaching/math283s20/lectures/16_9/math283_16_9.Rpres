@@ -65,9 +65,9 @@ height: 1080
 The following topics will be covered in this section:
     <ul>
       <li>Divergence Theorem</li>
-      <li>Example</li>
-      <li>Gauss' law </li>      
-      <li>Gauss' magnetism law </li>
+      <li>Examples</li>
+      <li>Gauss's law </li>      
+      <li>Gauss's magnetism law </li>
     </ul>
 </li>
 </ul>
@@ -218,7 +218,7 @@ $$ 3\iiint\limits_E (y^2+z^2)\; dV = 3\int_{-1}^3 \int_0^{2\pi} \int_0^1 (r^2)\;
 
 ========================================================
 
-## Gauss' Law 
+## Gauss's Law 
 
 <div style="float:left; width:20%" class="fragment">
 <img src="sphereflux.png" style="width:100%" alt="vector field flux on sphere"><div style="float:left; width:100%">
@@ -283,7 +283,7 @@ $$\nabla \cdot \mathbf{\vec{D}} =\sigma$$
 
 ========================================================
 
-## Gauss' Magnetism Law 
+## Gauss's Magnetism Law 
 
 <div style="float:left; width:100%">
 <ul style="list-style-type:none;">
