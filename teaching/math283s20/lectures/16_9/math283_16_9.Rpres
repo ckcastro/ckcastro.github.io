@@ -137,7 +137,7 @@ $$\hspace{-12cm}\nabla \cdot \mathbf{\vec{F}}=  3x^2+3y^2+3z^2$$
 </ul>
 </div>
 
-<div style="float:left; width:50%;padding-left:10%">
+<div style="float:left; width:50%">
 <ul style="list-style-type:none;">
 <li>
 $$\iint\limits_S \mathbf{\vec{F}}\cdot d\mathbf{\vec{S}} = \iiint\limits_E 3(x^2+y^2+z^2)\; dV$$
