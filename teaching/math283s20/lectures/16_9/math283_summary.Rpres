@@ -151,3 +151,245 @@ $$ \iiint\limits_E (\nabla \cdot \mathbf{\vec{F}} ) dV  = \iint\limits_S \mathbf
 </div>
 </div>
 
+
+
+========================================================
+
+## Gauss's Law 
+
+<div style="float:left; width:20%" class="fragment">
+<img src="sphereflux.png" style="width:100%" alt="vector field flux on sphere"><div style="float:left; width:100%">
+</div>
+<p style="text-align:center"><small>
+Courtesy of J. Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
+</small></p>
+</div>
+
+<div style="float:left; width:50%">
+<ul style="list-style-type:none;">
+<li>Relationship between electric field and electric charges
+$$\iint\limits_S \mathbf{\vec{D}}\cdot \mathbf{\hat{N}}dS = \iiint\limits_E \sigma\;dV$$
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:25%">
+<ul style="list-style-type:none;">
+<li>$\mathbf{\vec{D}}$ electric field density<br>
+$\sigma$ electric charge density
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:50%">
+<ul style="list-style-type:none;">
+<li><em>electric density flux around S = total electric charge over E</em>
+</li>
+<li><br><strong>Divergence Theorem</strong>
+$$\iint\limits_S \mathbf{\vec{D}}\cdot \mathbf{\hat{N}}dS = \iiint\limits_E (\nabla \cdot \mathbf{\vec{D}})\;dV $$
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:35%">
+<ul style="list-style-type:none;">
+<li>Equate
+ $$\iiint\limits_E (\nabla \cdot \mathbf{\vec{D}})\;dV =\iiint\limits_E \sigma\;dV $$
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:20%">
+<ul style="list-style-type:none;">
+<li><br>$$\Leftrightarrow \iiint\limits_E (\sigma- \nabla \cdot \mathbf{\vec{D}})\;dV=0$$
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:80%; padding-left:20%">
+<ul style="list-style-type:none;">
+<li>must be true when
+<p style="border:3px; border-style:solid; border-color:#287EC7; padding: 1em;" class="fragment"> 
+$$\nabla \cdot \mathbf{\vec{D}} =\sigma$$
+<b style="color:#d95f02">divergence of electric field density = electric charge density</b>
+</p>
+</li>
+</ul>
+</div>
+
+
+========================================================
+
+## Gauss's Magnetism Law 
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li>The magnetic flux of the magnetic field $\mathbf{\vec{B}}$ out of a <b>closed</b> surface is always zero 
+$$\iint\limits_S \mathbf{\vec{B}}\cdot d\mathbf{\vec{S}} =0 $$
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:30%" class="fragment">
+<img src="16_9_image2.png" style="width:100%" alt="Circular cylinder">
+</div>
+
+<div style="float:left; width:60%">
+<ul style="list-style-type:none;">
+<li><strong>Divergence Theorem</strong>
+$$\iint\limits_S \mathbf{\vec{B}}\cdot d\mathbf{\vec{S}} = \iiint\limits_E (\nabla \cdot \mathbf{\vec{B}})\;dV $$
+</li>
+<li>then
+$$\iiint\limits_E (\nabla \cdot \mathbf{\vec{B}})\;dV=0$$
+</li>
+<li>must be true when
+<p style="border:3px; border-style:solid; border-color:#287EC7; padding: 1em;" class="fragment"> 
+$$\nabla \cdot \mathbf{\vec{B}} =0$$
+<b style="color:#d95f02">divergence of magnetic field is zero</b>
+</p>
+</li>
+</ul>
+</div>
+
+
+========================================================
+
+## Faraday's Law
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li>"The line integral of <b>electromotor force</b> around a closed curve equals the <em>negative</em> time rate of change of <b>magnetic flux</b> through a control surface spanning the curve"
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:40%">
+<ul style="list-style-type:none;">
+<li>
+$$\oint\limits_C \mathbf{\vec{E}}\cdot d\mathbf{\vec{r}}=-\frac{\partial}{\partial t}(magnetic flux) $$
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:60%">
+<ul style="list-style-type:none;">
+<li> $\mathbf{\vec{E}}$ electromotor force field
+</li>
+<li> $\mathbf{\vec{B}}$ magnetic field
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:60%; padding-left:40%">
+<ul style="list-style-type:none;">
+<li>Magnetic flux
+$$\hphantom{\oint\limits_C \mathbf{\vec{E}}\cdot d\mathbf{\vec{r}}}=-\frac{\partial}{\partial t}\left(\iint\limits_S \mathbf{\vec{B}}\cdot \mathbf{\hat{N}}dS \right) $$
+</li>
+<li>
+$$\hphantom{\oint\limits_C \mathbf{\vec{E}} }= -\iint\limits_S  \frac{\partial}{\partial t} \mathbf{\vec{B}} \cdot \mathbf{\hat{N}}dS $$
+</li>
+<li><strong>Stokes' theorem</strong>
+$$\oint\limits_C \mathbf{\vec{E}}\cdot d\mathbf{\vec{r}}= \iint\limits_S (\nabla \times  \mathbf{\vec{E}})\cdot\:\mathbf{\hat{N}}dS$$
+</li>
+</ul>
+</div>
+
+
+========================================================
+
+## Faraday's Law cont'd
+
+<div style="float:left; width:70%">
+<ul style="list-style-type:none;">
+<li>Equating
+$$\iint\limits_S (\nabla \times  \mathbf{\vec{E}})\cdot\:\mathbf{\hat{N}}dS =-\iint\limits_S  \frac{\partial}{\partial t} \mathbf{\vec{B}} \cdot \mathbf{\hat{N}}dS $$
+</li>
+<li>
+$$\hspace{-5cm}\Leftrightarrow \iint\limits_S \left(\nabla \times  \mathbf{\vec{E}}+\frac{\partial \mathbf{\vec{B}}}{\partial t}  \right) \cdot \mathbf{\hat{N}}dS =0$$
+</li>
+<li>
+$$\Leftrightarrow \nabla \times  \mathbf{\vec{E}}+\frac{\partial \mathbf{\vec{B}} }{\partial t}  = 0  $$
+</li>
+<li> 
+<p style="border:3px; border-style:solid; border-color:#287EC7; padding: 1em;" class="fragment"> 
+$$\nabla \times  \mathbf{\vec{E}}=-\frac{\partial \mathbf{\vec{B}} }{\partial t}$$
+<b style="color:#d95f02"> curl of electric field = - rate of change of magnetic field  </b> 
+</p>
+</li>
+<li> </li>
+</ul>
+</div>
+
+
+
+========================================================
+
+## Ampere's Law
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li>"The current $I$ passing through a control surface $S$ equal the line integral of the <b>magnetic field intensity</b> $\mathbf{\vec{H}}$ around the boundary of $S$"
+</li>
+<li>$$current=I=\oint\limits_C \mathbf{\vec{H}}\cdot d\mathbf{\vec{r}}  $$
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:45%" class="fragment">
+<img src="16_8_image6.png" style="width:100%" alt="Control surface around a cylindrical cable"><div style="float:left; width:100%">
+</div>
+<p style="text-align:center"><small>
+Courtesy of J. Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
+</small></p>
+</div>
+
+<div style="float:left; width:55%">
+<ul style="list-style-type:none;">
+<li><br>If our <b>current field</b> is 
+$$\mathbf{\vec{J}}$$
+<li><br><em>current</em> as the <b style="color:#d24693"> flux </b> of current field through $S$
+$$I=\iint\limits_S \mathbf{\vec{J}} \cdot \mathbf{\hat{N}}dS$$
+</li>
+</ul>
+</div>
+
+========================================================
+
+## Ampere's Law cont'd
+
+<div style="float:left; width:45%" class="fragment">
+<img src="16_8_image6.png" style="width:100%" alt="Control surface around a cylindrical cable"><div style="float:left; width:100%">
+<p style="text-align:center"><small>
+Courtesy of J. Stewart, <em>Calculus: Early transcendentals</em>, 2nd edition
+</small></p>
+</div>
+</div>
+
+<div style="float:left; width:55%">
+<ul style="list-style-type:none;">
+<li><strong>Stokes' theorem:</strong><br>
+$$current= \oint\limits_C \mathbf{\vec{H}}\cdot d\mathbf{\vec{r}} = \iint\limits_S (\nabla \times \mathbf{\vec{H}})\cdot d\mathbf{\vec{S}}$$
+</li>
+<li>But also 
+$$current=\iint\limits_S \mathbf{\vec{J}} \cdot d\mathbf{\vec{S}}$$
+</li>
+<li>Equate 
+$$ \iint\limits_S (\nabla \times \mathbf{\vec{H}})\cdot d\mathbf{\vec{S}} =\iint\limits_S \mathbf{\vec{J}} \cdot d\mathbf{\vec{S}}$$
+</li>
+<li>
+$$\iint\limits_S \left( \nabla \times \mathbf{\vec{H}} - \mathbf{\vec{J}}\right) \cdot d\mathbf{\vec{S}} = 0$$
+</li>
+<li> 
+<p style="border:3px; border-style:solid; border-color:#287EC7; padding: 1em;" class="fragment"> 
+$$\nabla \times \mathbf{\vec{H}} = \mathbf{\vec{J}}$$
+<b style="color:#d95f02"> curl of magnetic field intensity = current field </b>
+</p>
+</li>
+</ul>
+</div>
+
+
+
+
+
+
