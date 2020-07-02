@@ -13,7 +13,7 @@ Univeristy of Nevada, Reno <br />
 DMSC 326 <br />
 Reno, NV 89557 <br />
 <br />
-Email: ccastrocastro (at) unr (dot) edu
+Email: ccastrocastr (at)  gmail (dot) com
 
 
 
