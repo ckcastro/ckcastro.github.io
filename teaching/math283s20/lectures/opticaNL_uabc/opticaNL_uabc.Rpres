@@ -86,7 +86,7 @@ font-family: 'Lato'
 Índice
 ==========================================================
 
-<div style="float:left; width:100%; font-size: 40px">
+<div style="float:left; width:100%">
 <ul>
 <li>
 Introducción
@@ -101,10 +101,11 @@ Introducción
     </ul>
 </li>
 <li>Ecuación de Schrödinger </li>
-<li>Dinamica y estabilidad</li>
+<li>Dinámica y estabilidad</li>
 <li>Conclusiones</li>
 </ul>
 </div>
+
 
 Definición intuitiva de onda 
 ========================================================
@@ -124,7 +125,7 @@ Cualquier señal reconocible que se transfiere de una parte del medio a otra con
 Antecedentes
 ========================================================
 
-<div style="float:left; width:30%;font-size: 40px" class="fragment">
+<div style="float:left; width:30%" class="fragment">
 1790s: "Telégrafo óptico" inventado por Claude Chappe 
 <img src="figs/telegrafooptico.jpeg" alt="Telegrafo optico y sus simbolos"><div style="float:center; width:100%">
 </div>
@@ -133,13 +134,13 @@ Antecedentes
 </p>
 </div>
 
-<div style="float:left; width:30%;font-size: 40px" class="fragment">
+<div style="float:left; width:30%" class="fragment">
 <img src="figs/fountain.png" alt="Luz guida en chorros de agua"><div style="float:center; width:100%">
 </div>
 </div>
 
 
-<div style="float:left; width:40%;font-size: 40px">
+<div style="float:left; width:40%">
 <ul style="list-style-type:none;">
 <li> 1840s: Daniel Collodon y Jacques Babinet demostraron que la luz podía guiarse a través de chorros de agua para exhibiciones de fuentes.
 </li>
@@ -162,7 +163,7 @@ Oxford University Press, 1999</small>
 Reflexión interna total (TIR)
 ========================================================
 
-<div style="float:left; width:100%;font-size: 40px">
+<div style="float:left; width:100%">
 <ul style="list-style-type:none;">
 <li> 
 Es un efecto secundario de la <i>refracción</i>, la curvatura de la luz que pasa de un material transparente a otro.
@@ -170,7 +171,7 @@ Es un efecto secundario de la <i>refracción</i>, la curvatura de la luz que pas
 </ul>
 </div>
 
-<div style="float:left; width:50%;font-size: 40px" class="fragment">
+<div style="float:left; width:50%" class="fragment">
 <img src="figs/refraction_city_of_light.png" alt="Refraction de vidrio a aire"><div style="float:center; width:100%">
 </div>
 <p style="text-align:center">
@@ -178,7 +179,7 @@ Es un efecto secundario de la <i>refracción</i>, la curvatura de la luz que pas
 </p>
 </div>
 
-<div style="float:left; width:50%;font-size: 40px">
+<div style="float:left; width:50%">
 <ul style="list-style-type:none;">
 <li></br><strong>Índice de refracción</strong>
 $$n=\frac{\text{velocidad de la luz en el vacio}}{\text{velocidad en el material}}$$
@@ -191,17 +192,17 @@ $$n_1 \sin{\theta_1} = n_2 \sin{\theta_2} $$
 </ul>
 </div>
 
-<div style="float:left; width:10%;font-size: 40px" class="fragment">
+<div style="float:left; width:10%;padding-left:5%" class="fragment">
 <img src="figs/fresnel.JPG" alt="Lente de faro Fresnel"><div style="float:center; width:100%">
 </div>
 </div>
 
-<div style="float:left; width:15%;font-size: 40px" class="fragment">
+<div style="float:left; width:15%" class="fragment">
 <img src="figs/lotus.jpeg" alt="Flor de loto de cristal"><div style="float:center; width:100%">
 </div>
 </div>
 
-<div style="float:left; width:22%;font-size: 40px" class="fragment">
+<div style="float:left; width:20%" class="fragment">
 <img src="figs/diamond.jpg" alt="Total Internal Reflections in Diamond "><div style="float:center; width:100%">
 </div>
 <p style="text-align:center">
@@ -213,7 +214,7 @@ $$n_1 \sin{\theta_1} = n_2 \sin{\theta_2} $$
 Reflexión interna total (TIR)
 ========================================================
 
-<div style="float:left; width:100%;font-size: 40px">
+<div style="float:left; width:100%">
 <ul style="list-style-type:none;">
 <li> 
 </li>
@@ -229,7 +230,7 @@ Reflexión interna total (TIR)
 </div>
 
 
-<div style="float:left; width:60%;font-size: 40px">
+<div style="float:left; width:60%">
 <ul>
 <li> La luz que golpea la superficie casi directamente se refracta en el aire
 </li>
@@ -243,11 +244,10 @@ La luz fuera del ángulo crítico se refleja de nuevo en el cristal.
 </li>
 <li>ángulo crítico
 $\theta_c = \sin^{-1}\left(\frac{n_2}{n_1}\right)$ existe solo cuando $n_2 < n_1$, entonces
-TIR ocurre solo dentro del medio con índice más alto
+TIR ocurre solo dentro del <b>medio con índice más alto</b>
 </li>
 </ul>
 </div>
-
 
 <div style="float:left; width:20%; padding-left:20%" class="fragment">
 <img src="figs/tir_in_a_wine_glass.jpg" alt="Demonstration of Total-Internal-Reflection(TIR) in a wine glass"><div style="float:center; width:100%">
@@ -258,10 +258,10 @@ TIR ocurre solo dentro del medio con índice más alto
 </div>
 
 
-Inicios de las fibras opticas
+Inicios de las fibras ópticas
 ========================================================
 
-<div style="float:left; width:100%;font-size: 40px">
+<div style="float:left; width:100%">
 <ul>
 <li>Generaciones de artesanos, inventores, ingenieros y científicos
 desarrollaron la tecnología para hacer vidrio
@@ -272,7 +272,7 @@ desarrollaron la tecnología para hacer vidrio
   <li> El ingrediente más importante del vidrio común es el dióxido de silicio, un mineral duradero conocido como <strong>Sílice/Silica</strong>.
   </li>
   </ul>
-<li> 1930s: Heinrich Lamm (medico) primera persona conocida que ha demostrado la transmisión de imágenes a través de un arreglo de fibras ópticas
+<li> 1930s: Heinrich Lamm (médico) primera persona conocida que ha demostrado la transmisión de imágenes a través de un arreglo de fibras ópticas
 </li> 
   <ul>
   <li> Sin embargo, las fibras descubiertas transmitían imágenes de manera deficiente.
@@ -300,12 +300,12 @@ Características de las fibras ópticas
 <img src="figs/dielectric_fiber.png" alt="Esquema de fibra optica dielectric y el perfil de indices de refraccion"><div style="float:center; width:100%">
 </div>
 <p style="text-align:center">
-<small>Agrawal, Nonlinear fiber optics, Academic Press, 2013</small>
+<small>Agrawal G., Nonlinear fiber optics, Academic Press, 2013</small>
 </p>
 </div>
 
 
-<div style="float:left; width:100%;font-size: 40px">
+<div style="float:left; width:100%">
 <ul style="list-style-type:none;">
 <li> 
 </li>
@@ -317,22 +317,22 @@ Características de las fibras ópticas
 ========================================================
 
 
-<div style="float:left; width:100%;font-size: 40px">
+<div style="float:left; width:100">
 <ul style="list-style-type:none;">
 <li> 
 </li>
 </ul>
 </div>
 
-<div style="float:left; width:33%" class="fragment">
+<div style="float:left; width:35%" class="fragment">
 <img src="figs/opticalFiber.jpeg" alt="Esquema de fibra optica multi-nucleo"><div style="float:center; width:100%">
 </div>
-<p style="text-align:center">
+<p style="text-align:left">
 <small>Courtesía de ..</small>
 </p>
 </div>
 
-<div style="float:left; width:33%" class="fragment">
+<div style="float:left; width:30%" class="fragment">
 <img src="figs/hexagonalarray.png" alt="Esquema de un arreglo 2D"><div style="float:center; width:100%"></div>
 <p style="text-align:center">
 <small>Pertsch et al. Nonlinearity and
@@ -350,18 +350,13 @@ Review letters, 2004</small>
 </div>
 
 
-
-
-
 Ecuaciones de Maxwell
 ========================================================
 
-La luz es una onda electro-magnética que consiste de un campo eléctrico  y un campo magnético oscilando a una taza muy alta ($10^{14}$ Hz) viajando en el espacio con una dirección perpendicular a ambos campos vectoriales
+La luz es una <b>onda electro-magnética</b> que consiste de un campo eléctrico  y un campo magnético oscilando a una taza muy alta ($10^{14}$ Hz) viajando en el espacio con una dirección perpendicular a ambos campos vectoriales
 
 <div style="float:left; width:30%">
 <ul style="list-style-type:none;">
-<li>
-</li>
 <li>
 $$\begin{align}
 \nabla\times\mathbf{E}=&-\frac{\partial\mathbf{B}}{\partial t}\\
@@ -370,11 +365,10 @@ $$\begin{align}
 \nabla\cdot\mathbf{B}=&0
 \end{align}$$
 </li>
-</li>
 </ul>
 </div>
 
-<div style="float:left; width:50%">
+<div style="float:left; width:40%">
 <ul style="list-style-type:none;">
 <li> 
 </br>$\mathbf{E}$ campo eléctrico [$V/m$]
@@ -388,22 +382,28 @@ $$\begin{align}
 
 <div style="float:left; width:30%">
 <ul style="list-style-type:none;">
-<li> $\mathbf{D}=\varepsilon \mathbf{E}$
+<li></br> $\mathbf{D}=\varepsilon \mathbf{E}$
 </br>$\mathbf{B}=\mu \mathbf{H}$
 </br>$\mathbf{J}=\sigma \mathbf{E}$
 </li>
 </ul>
 </div>
 
-
-## Ecuación de onda
-<div style="float:left; width:100%;font-size: 40px">
+<div style="float:left; width:100%">
 <ul style="list-style-type:none;">
+</ul>
+</div>
+
+
+
+<div style="float:left; width:100%">
+<ul>
+<h2>Ecuación de onda</h2>
 <li>El campo vectorial eléctrico satisface la ecuación de onda
 $$\nabla^2 \mathbf{E}(\mathbf{r},t)-\frac{1}{c^2}\frac{\partial^2 \mathbf{E}(\mathbf{r},t)
 }{\partial t^2}=0$$
 </li>
-<li>Esta ecuación es invariante  w. r. t tiempo $t\rightarrow -t$
+<li>Esta ecuación es <strong>invariante</strong>  w. r. t. tiempo $t\rightarrow -t$
 </li>
 </ul>
 </div>
@@ -419,7 +419,7 @@ $$\nabla^2 \mathbf{E}(\mathbf{r},t)-\frac{1}{c^2}\frac{\partial^2 \mathbf{E}(\ma
 ========================================================
 
 
-<div style="float:left; width:100%;font-size: 40px">
+<div style="float:left; width:100%">
 <ul style="list-style-type:none;">
 <li><b style="color:#1b9e77"> Lineal </b>: las ondas electromagnéticas inducen una separación de las cargas en el material, es decir, una <i>polarización</i> $P_L$, la cual es <b style="color:#1b9e77">directamente proporcional</b> al campo eléctrico
 $$P = \varepsilon_0 \chi^{(1)} E$$
@@ -429,7 +429,7 @@ $\chi^{(1)}$ es la constante de <i>susceptibilidad</i>.
 </ul>
 </div>
 
-<div style="float:left; width:100%;font-size: 40px">
+<div style="float:left; width:100%">
 <ul>
 <li> Interacción de la luz con la materia <b style="color:#1b9e77">no modifica</b> las propiedades de onda
 </li>
@@ -466,7 +466,7 @@ Photocromia
 </div>
 
 
-<div style="float:left; width:42%;font-size: 40px">
+<div style="float:left; width:42%">
 <ul style="list-style-type:none">
 <li>$\diamond$ Linealidad es una suposición que solo es válida para <b style="color:#1b9e77">bajas intensidades</b>
 </li>
@@ -486,7 +486,7 @@ Photocromia
 Óptica no lineal
 ========================================================
 
-<div style="float:left; width:100%;font-size: 40px">
+<div style="float:left; width:100%">
 <ul style="list-style-type:none;">
 <li><b style="color:#d95f02">No lineal</b>: describe el comportamiento de la luz en medios  en   cual   el   componente   dieléctrico   de la <i>polarización</i> responde a la forma no lineal del campo eléctrico de la luz $E$
 $$P=\varepsilon_0  \chi^{(1)}E + \varepsilon_0 \chi^{(2)}E^2 +  \varepsilon_0 \chi^{(3)}E^3+\dots$$
@@ -494,13 +494,13 @@ $$P=\varepsilon_0  \chi^{(1)}E + \varepsilon_0 \chi^{(2)}E^2 +  \varepsilon_0 \c
 </ul>
 </div>
 
-<div style="float:left; width:100%;font-size: 40px">
+<div style="float:left; width:100%">
 <ul>
 <li> 2nd order susceptibility $$\chi^{(2)} \approx 1.94\times10^{-12}\;m/V$$
 </li>
 <li> 3rd order susceptibility$$\chi^{(3)} \approx 3.78\times10^{-24}\;m^2/V^2$$
 </li>
-<li> Para fibras de silica $SiO_2$ el effecto de segundo orden es despreciable
+<li> Para fibras de <strong>sílice</strong> $SiO_2$ el effecto de segundo orden es despreciable
 </li>
 <li> $\chi^{(3)}$ está asociada al <strong>effecto Kerr</strong>
 </li>
@@ -521,25 +521,37 @@ $$\bar{n} = 1+\chi^{(3)}=\bar{n}_0 +\bar{n}_2\;I$$
 ========================================================
  
 
-<div style="float:left; width:100%;font-size: 40px">
+<div style="float:left; width:100%">
 <ul style="list-style-type:none;">
 <li> Descubierta por John Kerr en 1875
 </li>
-<li> Describe situaciones donde el indice de refraccion depende de el campo electrico como 
+<li> Describe situaciones donde el índice de refracción depende de el campo eléctrico como 
 $$\bar{n}(\omega, |E|^2)=\bar{n}_0(\omega) + \bar{n}_2(\omega)|E|^2$$
 </li>
-<li>Para silica es $1.3\times10^{-22}\; m^2/V^2$
+<li>Para sílice es $1.3\times10^{-22}\; m^2/V^2$
+</li>
+</ul>
+</div>
+
+Dispersión
+========================================================
+ 
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li> 
+</li>
+<li> 
+</li>
+<li>
 </li>
 </ul>
 </div>
 
 
-
-
-Derivación de Schroedinger
+Derivación de la ecuación de Schrödinger
 ========================================================
 
-<div style="float:left; width:100%;font-size: 40px">
+<div style="float:left; width:100%">
 <ul style="list-style-type:none;">
 <li>En medio Kerr el índice de refracción depende de la intensidad del campo eléctrico $I(t)$
 $$\bar{n}(t)=\bar{n}_0 + \bar{n}_2 I(t), \;\;\;I(t)=2\bar{n}_0\varepsilon_0 c |A(z,t)|^2$$
@@ -573,7 +585,7 @@ E(z,t)=&e^{-i\beta_0 z}\int_{-\infty}^{\infty} \tilde{E}(z,\omega)e^{i\omega t -
 Parity-Time table
 ========================================================
 
-<div style="float:left; width:60%;font-size: 40px">
+<div style="float:left; width:60%">
 <ul style="list-style-type:none;">
 <li> 
 <li>
@@ -581,10 +593,61 @@ Parity-Time table
 </ul>
 </div>
 
-Fibras torcidas
+
+Parity-Time table
 ========================================================
 
-<div style="float:left; width:60%;font-size: 40px">
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li>
+<table style="font-size: 40px" class="w3-table">
+<tr>
+  <th>Quantum Mechanics</th>
+  <th>Optics</th>
+</tr>
+<tr>
+  <td>Schrödinger equation</td>
+  <td>Paraxial equation</td>
+</tr>
+<tr>
+  <td>$i\hslash\frac{\partial\Psi}{dt}+\frac{h^{2}}{2m}\frac{\partial^{2}\Psi}{\partial x^{2}}-V\left(x\right)\Psi=0$</td>
+  <td>$i\lambda\frac{\partial E}{\partial z}+\frac{\lambda^{2}}{2}\frac{\partial^{2}E}{\partial x^{2}}+n\left(x\right)E=0$</td>
+</tr>
+<tr>
+  <td>time </td> <td>propagation distance</td>
+</tr>
+<tr>
+  <td>$t$</td>  <td>$z$</td>
+</tr>
+<tr>
+  <td>Plank's constant </td> <td>Wavelength</td>
+</tr>
+<tr>
+  <td>$\hslash$</td>  <td>$\lambda=\frac{1}{k}$</td>
+</tr>
+<tr>
+  <td>Probability amplitude </td> <td>Electric field envelope</td>
+</tr>
+<tr>
+  <td>$\Psi\left(x,t\right)$</td>  <td>$E\left(x,z\right)$</td>
+</tr>
+<tr>
+  <td>Complex potential</td> <td>Complex refraction</td>
+</tr>
+<tr>
+  <td>$V\left(x\right)=V_{R}\left(x\right)+iV_{I}\left(x\right)$$\Psi\left(x,t\right)$</td>  <td>$n\left(x\right)=n_{R}\left(x\right)+in_{I}\left(x\right)$</td>
+</tr>
+</table>
+</li>
+</ul>
+</div>
+
+
+
+Fibras helicoidales de multi núcleo
+========================================================
+
+<div style="float:left; width:60%">
 <ul style="list-style-type:none;">
 <li> 
 <li>
@@ -613,19 +676,13 @@ Fibra óptica torcida
 Gauss's Magnetism Law 
 ========================================================
 
-<div style="float:left; width:100%;font-size: 40px">
+<div style="float:left; width:100%">
 <ul style="list-style-type:none;">
-<li><strong>Divergence Theorem</strong>
-$$\iint\limits_S \mathbf{\vec{B}}\cdot d\mathbf{\vec{S}} = \iiint\limits_E (\nabla \cdot \mathbf{\vec{B}})\;dV $$
+<li>
 </li>
-<li>then
-$$\iiint\limits_E (\nabla \cdot \mathbf{\vec{B}})\;dV=0$$
+<li>
 </li>
-<li>must be true when
-<p style="border:3px; border-style:solid; border-color:#287EC7; padding: 1em;" class="fragment"> 
-$$\nabla \cdot \mathbf{\vec{B}} =0$$
-<b style="color:#d95f02">divergence of magnetic field is zero</b>
-</p>
+<li>
 </li>
 </ul>
 </div>
