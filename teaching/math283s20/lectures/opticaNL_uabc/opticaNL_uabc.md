@@ -996,7 +996,7 @@ $$c_{n}=\begin{cases}
 A_{n}e^{-i\lambda z}, & n=\text{impar}\\
 B_{n}e^{-i\lambda z}, & n=\text{par}
 \end{cases}$$
-asumiendo $A_n=A$ y $B_n = B$
+</br>asumiendo $A_n=A$ y $B_n = B$
 </li>
 <li>Nos lleva a 
 $$\begin{align}
@@ -1045,7 +1045,7 @@ B=&B^{(0)}+\epsilon B^{(1)}+\epsilon^2 B^{(2)}.
 
 $$\mathcal{M}U^{(1)}=\Psi U^{(0)} \qquad(\mathcal{O}(\epsilon)) $$
 
-donde $U^{(j)}=\left(ReA^{(j)},ReB^{(j)},ImA^{(j)},ImB^{(j)}\right)^{T}$ con $j=0,1.$
+</br>donde $U^{(j)}=\left(ReA^{(j)},ReB^{(j)},ImA^{(j)},ImB^{(j)}\right)^{T}$ con $j=0,1.$
 </li>
 </ul>
 </div>
