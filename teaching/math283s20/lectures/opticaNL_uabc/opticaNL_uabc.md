@@ -1067,7 +1067,7 @@ La solución de norma mínima para un problema de <strong>mínimos cuadrados</st
 $$\mathrm{Null}\mathcal{M}^{(0)T}=\left\{ \left(-\frac{m_{13}}{m_{12}} \alpha, -\frac{m_{13}}{m_{12}}\beta, \beta, \alpha \right)^{T}\arrowvert \alpha,\beta \in \mathbb{R} \right\}  $$
 </li>
 <li>Explícitamente
-<p style="border:3px; border-style:solid; border-color:#287EC7; padding: 1em;" class="fragment"> $$\alpha\left[\left(\gamma^{(1)}-\lambda^{(1)}\right)\frac{{\sigma x_{1}^{(0)2}y_{1}^{(0)}}}{k\cos{\phi}}+\left(\gamma^{(1)}+\lambda^{(1)}\right)y_2^{(0)}\right]+
+<p style="border:3px; border-style:solid; border-color:#287EC7; padding: 1em;" class="fragment"> $$\alpha\left[\left(\gamma^{(1)}-\lambda^{(1)}\right)\frac{\sigma x_{1}^{(0)2}y_{1}^{(0)}}{k\cos{\phi}}+\left(\gamma^{(1)}+\lambda^{(1)}\right)y_2^{(0)}\right]+
 \beta\left[\left(-\gamma^{(1)}-\lambda^{(1)}\right)\frac{{\sigma x_{2}^{(0)2}y_{2}^{(0)}}}{k\cos{\phi}}+\left(-\gamma^{(1)}+\lambda^{(1)}\right)y_1^{(0)}\right]=0.$$
 </p>
 </li>
