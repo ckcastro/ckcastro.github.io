@@ -645,7 +645,7 @@ $$\begin{align}
 <li>Combinar
 $$\frac{ \partial A(z,t)}{\partial z} +  \beta_1 \frac{ \partial A(z,t)}{\partial t} -i\frac{1}{2}\beta_2 \frac{ \partial^2 A(z,t)}{\partial t^2} =  \int_{-\infty}^{\infty} \tilde{E}(z,\omega_0 +\Delta \omega) \left[  ... \right]e^{ig(z,t)} \;d(\Delta\omega)$$
 </li>
-<li> La expresion en $[...]$ es $-i\bar{n}_2k_0 I$
+<li> La expresión en $[...]$ es $-i\bar{n}_2k_0 I$
 </li>
 <li>Entonces
 $$\frac{ \partial A(z,t)}{\partial z} +  \beta_1 \frac{ \partial A(z,t)}{\partial t} -i\frac{1}{2}\beta_2 \frac{ \partial^2 A(z,t)}{\partial t^2} =  -i\bar{n}_2k_0I \int_{-\infty}^{\infty} \tilde{E}(z,\omega_0 +\Delta \omega) e^{ig(z,t)} \;d(\Delta\omega)$$
@@ -845,10 +845,10 @@ Fibras  multi-núcleo no lineal PT-simétricas
 <div style="float:left; width:100%">
 <ul style="list-style-type:none;">
 <li> Considere la dinámica de propagación del haz en una fibra discreta de múltiples núcleos de $N$ sitios dispuestos igualmente espaciados en un anillo de radio $R_0$ donde cada núcleo tiene un radio $r_0$, descrito por las ecuaciones de modos acoplados
-Dinámica de propagación en una matriz discreta de fibras ópticas descrita por la ecuación discreta de Schrodinger no lineal (DNLS)
+ecuación discreta de Schrödinger no lineal (DNLS)
 $$i\frac{{dc_{n}}}{dz}=k\left(c_{n+1}+c_{n-1}\right)+i\gamma_{n}c_{n}+\sigma|c_{n}|^{2}c_{n}$$
 </li>
-<li>$c_n$: representa amplitudes complejas,  en el sitio $n$, que dependen de la dirección de la variable de propagación $z\in\mathbb{R}$
+<li>$c_n$: representa amplitudes complejas,  en el sitio $n$, que dependen de la dirección de propagación $z\in\mathbb{R}$
 </br>$k$: fuerza uniforme del acoplamiento con el vecino más cercano
 </br>$\gamma_n$:tasa de <b style="color:blue">ganancia</b> óptica (${\color{blue} {\gamma_n>0}}$) o <b style="color:gray">pérdida</b> (${\color{gray} {\gamma_n<0}}$)
 
@@ -923,6 +923,28 @@ Observe the PT-symmetry breaking induced by the twist of the fiber.
 </ul>
 </div>
 
+Ruptura de PT-simetría: caso lineal
+========================================================
+
+<div style="float:left; width:100%">
+<ul>
+<li> Buscamos soluciones estacionarias de la forma $$\begin{align}
+-\lambda A	+	2k\cos{\phi}B+i\gamma A + \sigma|A|^2A=0, \label{eq:stationary_sol_reducida1}\\
+-\lambda B	+	2k\cos{\phi}A-i\gamma B + \sigma|B|^2B=0. \label{eq:stationary_sol_reducida2}
+\end{align}$$
+</li>
+<li> Suponemos que $A_n=A$ y $B_n = B$, en el caso linear la ruptura de la fase PT corresponde a todos los $\lambda$ reales, es decir
+$$\sqrt{4\cos^{2}\phi}<\gamma/k \quad\text{y} \quad \sqrt{4\sin^{2}\phi\pm\sqrt{3}\sin{2\phi}}<\gamma/k$$
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:45%;padding-left:25%" class="fragment">
+<img src="figs/PtregionLinearTwisted.png" alt="fase PT"><div style="float:center; width:100%">
+</div>
+<p style="text-align:center"><small>Displays these regions in the plane $(\gamma/k,\phi)$
+</small></p>
+</div>
 
 
 No lineal conservado (no PT)
@@ -1067,10 +1089,10 @@ Condición de solubilidad: existencia
 $$\Psi U^{(0)}\bot \mathrm{Null}\mathcal{M}^{T}.$$
 </li>
 <li>
-La solución de norma mínima para un problema de <strong>mínimos cuadrados</strong> con matriz de coeficientes  $\mathcal{M}$ será $$U^{(1)}=\mathcal{M}^{+}\Psi U^{(0)}$$
+La solución de norma mínima para un problema de <strong>mínimos cuadrados</strong> con matriz de coeficientes  $\mathcal{M}$ es $$U^{(1)}=\mathcal{M}^{+}\Psi U^{(0)}$$
 </li>
 
-<li>Entonces $\mathrm{Null}\mathcal{M}^{(0)T}$ esta descrita por
+<li>Entonces $\mathrm{Null}\mathcal{M}^{(0)T}$ está descrita por
 
 $$\mathrm{Null}\mathcal{M}^{(0)T}=\left\{ \left(-\frac{m_{13}}{m_{12}} \alpha, -\frac{m_{13}}{m_{12}}\beta, \beta, \alpha \right)^{T}\arrowvert \alpha,\beta \in \mathbb{R} \right\}  $$
 </li>
