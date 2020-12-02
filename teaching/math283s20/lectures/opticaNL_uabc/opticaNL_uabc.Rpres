@@ -885,6 +885,7 @@ $$i\frac{{dc_{n}}}{dz}=k\left({\color{orange} {e^{-i\phi}}}c_{n+1}+{\color{orang
 </small></p>
 </div>
 
+
 Ruptura de PT-simetría: caso lineal
 ========================================================
 
@@ -922,13 +923,223 @@ $$i\frac{{dc_{n}}}{dz}=k\left(e^{-i\phi}c_{n+1}+e^{i\phi}c_{n-1}\right)+{\color{
 con $\gamma_n =0$
 <div style="float:left; width:100%">
 <ul>
-<li>If we make the transformation $c_n = a_n(z)e^{i\varphi_ n}$, $\varphi_ {n+1} −\varphi_n= \phi$</li>
-<li>The equations for $a_n$ are
-those of the classical uniform array, but now the periodic boundary condition is modified to $a_{n+N} = a_n e^{ iN\varphi}$. 
+<li>Introduce la transformación $c_n = a_n(z)e^{i\varphi_ n}$, $\varphi_ {n+1} −\varphi_n= \phi$</li>
+<li>Las ecuaciones para $a_n$ son la forma clásica uniforme, pero ahora la condición de frontera es modificada a  $a_{n+N} = a_n e^{ iN\varphi}$. 
 </li>
-<li>This transformation also shows in the Hamiltonian
+<li>La transformación se refleja en el Hamiltoniano
 $$H=\sum_{n=1}^N k \left( c_{n + 1} c_n^*e^{-i \phi} + c_n c^*_{n+1} e^{i \phi}\right)+\frac{\sigma}{2}|c_n|^4 = 
   \sum_{n=1}^N k \left( a_{n + 1} a_n^* + a_n a^*_{n+1} \right)+\frac{\sigma}{2}|a_n|^4.$$
+</li>
+<li>Poder total $$P = \sum_n^N |c_n|^2$$ 
+</li>
+</ul>
+</div>
+
+
+
+No lineal, helicoidal, pero conservado
+========================================================
+
+<div style="float:left; width:100%">
+<ul>
+<li>Este comportamiento sugiere que la característica topológica del giro y su efecto sobre la dinámica es bastante <b>robusto</b> a las contribuciones no lineales que afectan principalmente a las fases individuales
+</li>
+</ul>
+</div>
+
+
+<div style="float:left; width:80;padding-left:10%" class="fragment">
+<img src="figs/stationary_nl.png" alt="Instabilty gain"><div style="float:center; width:100%">
+</div>
+<p style="text-align:center"><small>Evolution of field intensities for cores 1 (solid) and 4 (dashed) in the nonlinear, conservative, and defocusing case with $\gamma = 0$. Left and right panels correspond to non-twisted and twisted scenarios respectively.
+</small></p>
+</div>
+
+
+No lineal, helicoidal, casi PT-simétrico
+========================================================
+
+<div style="float:left; width:55%">
+<ul>
+<li>Buscamos soluciones estacionarias de la forma
+$$c_{n}=\begin{cases}
+A_{n}e^{-i\lambda z}, & n=\text{impar}\\
+B_{n}e^{-i\lambda z}, & n=\text{par}
+\end{cases}$$
+asumiendo $A_n=A$ y $B_n = B$
+</li>
+<li>Nos lleva a 
+$$\begin{align}
+-\lambda A	+	2k\cos{\phi}B+i\gamma A + \sigma|A|^2A=0, \label{eq:stationary_sol_reducida1}\\
+-\lambda B	+	2k\cos{\phi}A-i\gamma B + \sigma|B|^2B=0. \label{eq:stationary_sol_reducida2}
+\end{align}$$
+</li>
+<li>Por el momento $\gamma =0$</li>
+<li>Notamos que podemos intercambiar $A$ con  $B$
+$$A\left(-\lambda 	+	2k\cos{\phi}+ \sigma|A|^2\right)=0.
+\label{eq:stationary_sol_reducida_A_order0}$$
+</li>
+<li>Desde donde podemos notar que existirá una solución no trivial si $$\lambda> 2k \cos \phi$$ cuando $\sigma$ es positivo.
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:45%" class="fragment">
+<img src="figs/stationary_solutions_0.png" alt="Instabilty gain"><div style="float:center; width:100%">
+</div>
+<p style="text-align:center"><small>Soluciones numéricas  $k = 1$, $\sigma = 1$, $\gamma = 0$, varios valores de $\phi$. El código de color es azul para $\pi/8$, naranja para $\pi/6$, amarillo para $\pi/5$ y violeta para $\pi/4$
+</small></p>
+</div>
+
+
+No lineal, helicoidal, PT-simétrico
+========================================================
+<div style="float:left; width:100%">
+<ul>
+<li>
+Considere un caso donde la fuerza de ganancia/pérdida es cercana a cero y que puede expandirse en términos de un parámetro pequeño  $\epsilon<<1$
+</li>
+<li>Nos gustaría continuar esta solución en un vecindad de $((A^{(0)}, B^{(0)})^T, \gamma^{(0)})$, aquí $A^{(0)}$ denota la solución asociada
+al caso $\gamma = \gamma^{(0)} = 0$.
+</li>
+<li>
+Introducimos expansiones en términos de $\epsilon$
+$$\begin{array}{rl}
+\gamma =& \gamma^{(0)} + \epsilon \gamma^{(1)} + \epsilon^2 \gamma^{(2)},\\
+\lambda =& \lambda^{(0)} + \epsilon \lambda^{(1)} + \epsilon^2 \lambda^{(2)},\\
+A=&A^{(0)}+\epsilon A^{(1)}+\epsilon^2 A^{(2)}, \textrm{y}  \\
+B=&B^{(0)}+\epsilon B^{(1)}+\epsilon^2 B^{(2)}.
+\end{array}$$
+</li>
+<li>A medida que activamos $\gamma$, sustituimos estas expansiones en. Los términos proporcionales a $\epsilon$ nos dan ecuaciones para  $A^{(1)}$ y $B^{(1)}$
+
+$$\mathcal{M}U^{(1)}=\Psi U^{(0)} \qquad(\mathcal{O}(\epsilon)) $$
+
+donde $U^{(j)}=\left(ReA^{(j)},ReB^{(j)},ImA^{(j)},ImB^{(j)}\right)^{T}$ con $j=0,1.$
+</li>
+</ul>
+</div>
+
+No lineal, helicoidal, PT-simétrico: existencia
+========================================================
+<div style="float:left; width:60%">
+<ul style="list-style-type:none;">
+<li>
+For a given $\lambda^{(0)}$ and $\phi$ we want to find solutions of (Eq. $\mathcal{O}(\epsilon)$. We will consider three cases
+</li>
+<ul style="list-style-type:none;">
+<li> Caso 1: $\lambda^{(0)}<2k\cos\phi,$
+</br> Caso 2: $\lambda^{(0)}=2k\cos\phi,$
+</br> Caso 3: $\lambda^{(0)}>2k\cos\phi.$
+</li>
+</ul>
+<li></br>Now consider  $\lambda^{(0)}>2k\cos\phi$, and using that $A^{(0)}=B^{(0)},$ we can rewrite the determinant of $\mathcal{M}$
+as a function of $\sigma, k, \phi, \lambda^{(0)}, x_{1}^{(0)}$, and $y_{1}^{(0)}$.
+</li>
+<li></br>Let $\sigma=1, k=1,$ and $\phi=\pi/6$.  
+We have plotted the level sets on the $(x_ 1^{(0)},y_ 1^{(0)},\lambda^{(0)})$-plane where $\mathcal{M}$ is <strong>singular</strong>.
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:40%" class="fragment">
+<img src="figs/singular3D.png" alt="Singular contours"><div style="float:center; width:100%">
+</div>
+<p style="text-align:center"><small>
+Superficies de nivel $(x_ 1^{(0)},y_ 1^{(0)},\lambda^{(0)})$-plano donde $\mathrm{det}\mathcal{M}=0$
+</small></p>
+</div>
+
+
+Condición de solubilidad: existencia
+========================================================
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li>En tales casos, $\mathcal{M}$ no tendrá una inversa en el sentido ordinario, entonces podemos establecer una condición para la <strong>existencia</strong> de una solución como sigue
+$$\Psi U^{(0)}\bot \mathrm{Null}\mathcal{M}^{T}.$$
+</li>
+<li>
+La solución de norma mínima para un problema de <strong>mínimos cuadrados</strong> con matriz de coeficientes  $\mathcal{M}$ será $$U^{(1)}=\mathcal{M}^{+}\Psi U^{(0)}$$
+</li>
+
+<li>Entonces $\mathrm{Null}\mathcal{M}^{(0)T}$ esta descrita por
+
+$$\mathrm{Null}\mathcal{M}^{(0)T}=\left\{ \left(-\frac{m_{13}}{m_{12}} \alpha, -\frac{m_{13}}{m_{12}}\beta, \beta, \alpha \right)^{T}\arrowvert \alpha,\beta \in \mathbb{R} \right\}  $$
+</li>
+<li>Explícitamente
+<p style="border:3px; border-style:solid; border-color:#287EC7; padding: 1em;" class="fragment"> $$\alpha\left[\left(\gamma^{(1)}-\lambda^{(1)}\right)\frac{{\sigma x_{1}^{(0)2}y_{1}^{(0)}}}{k\cos{\phi}}+\left(\gamma^{(1)}+\lambda^{(1)}\right)y_2^{(0)}\right]+
+\beta\left[\left(-\gamma^{(1)}-\lambda^{(1)}\right)\frac{{\sigma x_{2}^{(0)2}y_{2}^{(0)}}}{k\cos{\phi}}+\left(-\gamma^{(1)}+\lambda^{(1)}\right)y_1^{(0)}\right]=0.$$
+</p>
+</li>
+</ul>
+</div>
+
+Condición de solubilidad: existencia
+========================================================
+<div style="float:left; width:50%">
+<ul>
+<li>
+A partir de esta ecuación, podemos resolver al orden $\gamma^{(1)}$ dado $\lambda^{(1)}$, $\alpha$ y $\beta$, para cada $\lambda^{(0)}$. 
+</li>
+<li></br>Bajo la premisa de que la <i>pseudoinversa</i> coincide con la matriz inversa para los casos no singulares, hemos obtenido $A^{(1)}$ y $B^{(1)}$ en términos de $\lambda^{(0)}$. 
+</li>
+<li></br>La figura a la derecha muestra que términos calculados de corrección de la amplitud 
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:50%" class="fragment">
+<img src="figs/stationary_solutions_1.png" alt="Stationary solutions de orden 1"><div style="float:center; width:100%">
+</div>
+<p style="text-align:center"><small>
+Soluciones estacionarias de orden $\epsilon$ para varios valores de $\phi$
+</small></p>
+</div>
+
+
+Análisis de estabilidad
+========================================================
+
+<div style="float:left; width:100%">
+<ul>
+<li>
+Comportamiento de las soluciones estacionarias ante pequeñas perturbaciones
+</li>
+<li>
+Introduzca pequeñas perturbaciones $\delta_a (z)$ y $\delta_b (z)$, y escriba las amplitudes en la forma
+$$A_n=\left(A^{s}+\delta_{a}\left(z\right)\right)e^{-i\lambda z}\qquad \text{and} \qquad B_n=\left(B^{s}+\delta_{b}\left(z\right)\right)e^{-i\lambda z}$$
+</li>
+<li>Se obtienen las ecuaciones de linearization 
+$$\begin{align}
+i\frac{d\delta_a}{dz}=& -\lambda \delta_a +2 k \cos{\phi}\delta_b+i\gamma\delta_a+2\sigma|A^s|^2\delta_a+ \sigma(A^s)^2\delta_a^*, \label{eq:perturbation_linear_a}\\
+i\frac{d\delta_b}{dz}=& -\lambda \delta_b +2 k \cos{\phi}\delta_a-i\gamma\delta_b+2\sigma|B^s|^2\delta_b+ \sigma(B^s)^2\delta_b^*, \label{eq:perturbation_linear_b}
+\end{align}$$
+</li>
+</ul>
+</div>
+
+
+Análisis de estabilidad
+========================================================
+
+<div style="float:left; width:100%">
+<ul>
+<li>Ganancia de inestabilidad $p$ como la parte real del valor propio con la mayor parte real positiva en términos de la constante de propagación y la no linealidad.
+</li>
+</li>
+</ul>
+</div>
+
+<div style="float:left; width:70;padding-left:15%" class="fragment">
+<img src="figs/instability.png" alt="Instabilty gain"><div style="float:center; width:100%">
+</div>
+<p style="text-align:center"><small>Ganancia de inestabilidad. Sin giro (left) Con giro(right).
+</small></p>
+</div>
+
+<div style="float:left; width:100%">
+<ul>
+<li>Los modos estacionarios no lineales que se propagan en guías de ondas multinúcleo radialmente simétricas con ganancia y pérdida equilibradas son altamente inestables.
 </li>
 </ul>
 </div>
