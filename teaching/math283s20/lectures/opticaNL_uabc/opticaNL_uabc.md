@@ -115,15 +115,14 @@ Introducción
     <ul>
       <li>Definición de onda</li>
       <li>Antecedentes</li>
-      <li>Fibras ópticas</li>
-      <li>Fenómenos ópticos lineales vs no lineales</li>   
-      <li>Ecuaciones de Maxwell</li>
-      <li>¿Qué significa PT-simétrico?</li>
-      <li>¿Qué significa torcido?</li>
+      <li>Características de fibras ópticas</li>
     </ul>
-</li>
-<li>Ecuación de Schrödinger </li>
-<li>Dinámica y estabilidad</li>
+<li>Fenómenos ópticos lineales vs no lineales</li>   
+<li>Ecuaciones de Maxwell</li>
+<li>Ecuacion discreta no lineal de Schrödinger </li>
+<li>PT-simetría</li>
+<li>Fibras helicoidales</li>
+<li>Existencia y estabilidad</li>
 <li>Conclusiones</li>
 </ul>
 </div>
@@ -316,9 +315,7 @@ Oxford University Press, 1999</small>
 
 
 
-
-
-Características de las fibras ópticas
+Fibras ópticas
 ========================================================
 
 <div style="float:left; width:35%" class="fragment">
@@ -338,7 +335,7 @@ Review letters, 2004</small>
 </p>
 </div>
 
-<div style="float:left; width:33%" class="fragment">
+<div style="float:left; width:35%" class="fragment">
 <img src="figs/array.png" alt="Esquema de un arreglo 2D"><div style="float:center; width:100%">
 </div>
 <p style="text-align:center">
@@ -359,9 +356,20 @@ Características de las fibras ópticas
 </div>
 
 
-<div style="float:left; width:100%">
-<ul style="list-style-type:none;">
-<li> 
+<div style="float:left; width:65%">
+<ul>
+<li> En su forma más simple, una fibra optica consiste de un nucle de cristal rodeado de una revestimiento con índice de refracción $n_c$
+<li> Índice de refracción del revestimiento es $n_1$</br>
+con $n_c < n_1$ 
+</li>
+<li>El material de elección para las fibras ópticas de <b>baja pérdida</b> es el cristal de <strong>sílice</strong> puro sintetizado mediante la fusión de moléculas de $SiO_2$.
+</li>
+<li>La diferencia del índice de refracción entre el núcleo y el
+el revestimiento se realiza mediante el uso selectivo de dopantes durante el proceso de fabricación. Los dopantes como $GeO_2$ y $P_2 O_5$ aumentan el índice de refracción de del sílice y son adecuados para el núcleo
+</li>
+<li>Poder transmitido
+$$P_T = P_0 exp(-\alpha L)$$
+$P_0$ poder inicial, $L$ longitud, $\alpha$ constante de atenuación
 </li>
 </ul>
 </div>
@@ -456,7 +464,7 @@ $$\begin{align}
 $$\nabla^2 \mathbf{E}(\mathbf{r},t)-\frac{1}{c^2}\frac{\partial^2 \mathbf{E}(\mathbf{r},t)
 }{\partial t^2}=0$$
 </li>
-<li>T-simetría: ecuación es <strong>invariante</strong>  w. r. t. tiempo $t\rightarrow -t$
+<li><strong>T-simetría</strong>: ecuación es <strong>invariante</strong>  w. r. t. tiempo $t\rightarrow -t$
 </li>
 </ul>
 </div>
@@ -1081,9 +1089,9 @@ Condición de solubilidad: existencia
 <li>
 A partir de esta ecuación, podemos resolver al orden $\gamma^{(1)}$ dado $\lambda^{(1)}$, $\alpha$ y $\beta$, para cada $\lambda^{(0)}$. 
 </li>
-<li></br>Bajo la premisa de que la <i>pseudoinversa</i> coincide con la matriz inversa para los casos no singulares, hemos obtenido $A^{(1)}$ y $B^{(1)}$ en términos de $\lambda^{(0)}$. 
+<li>Bajo la premisa de que la <i>pseudoinversa</i> coincide con la matriz inversa para los casos no singulares, hemos obtenido $A^{(1)}$ y $B^{(1)}$ en términos de $\lambda^{(0)}$. 
 </li>
-<li></br>La figura a la derecha muestra que términos calculados de corrección de la amplitud 
+<li>La figura a la derecha muestra que términos calculados de corrección de la amplitud
 </li>
 </ul>
 </div>
@@ -1133,7 +1141,7 @@ Análisis de estabilidad
 <div style="float:left; width:70;padding-left:15%" class="fragment">
 <img src="figs/instability.png" alt="Instabilty gain"><div style="float:center; width:100%">
 </div>
-<p style="text-align:center"><small>Ganancia de inestabilidad. Sin giro (left) Con giro(right).
+<p style="text-align:center"><small>Ganancia de inestabilidad. Sin giro (izquierda) Con giro (derecha).
 </small></p>
 </div>
 
