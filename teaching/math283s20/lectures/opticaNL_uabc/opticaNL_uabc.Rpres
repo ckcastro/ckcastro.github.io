@@ -917,7 +917,7 @@ Observe the PT-symmetry breaking induced by the twist of the fiber.
 
 
 
-No lineal pero conservado
+No lineal conservado (no PT)
 ========================================================
 $$i\frac{{dc_{n}}}{dz}=k\left(e^{-i\phi}c_{n+1}+e^{i\phi}c_{n-1}\right)+{\color{gray} {i\gamma_{n}c_{n}}}+\sigma|c_{n}|^{2}c_{n}$$
 con $\gamma_n =0$
@@ -1068,7 +1068,7 @@ $$\mathrm{Null}\mathcal{M}^{(0)T}=\left\{ \left(-\frac{m_{13}}{m_{12}} \alpha, -
 </li>
 <li>Explícitamente
 <p style="border:3px; border-style:solid; border-color:#287EC7; padding: 1em;" class="fragment"> $$\alpha\left[\left(\gamma^{(1)}-\lambda^{(1)}\right)\frac{\sigma x_{1}^{(0)2}y_{1}^{(0)}}{k\cos{\phi}}+\left(\gamma^{(1)}+\lambda^{(1)}\right)y_2^{(0)}\right]+
-\beta\left[\left(-\gamma^{(1)}-\lambda^{(1)}\right)\frac{{\sigma x_{2}^{(0)2}y_{2}^{(0)}}}{k\cos{\phi}}+\left(-\gamma^{(1)}+\lambda^{(1)}\right)y_1^{(0)}\right]=0.$$
+\beta\left[\left(-\gamma^{(1)}-\lambda^{(1)}\right)\frac{\sigma x_{2}^{(0)2}y_{2}^{(0)}}{k\cos{\phi}}+\left(-\gamma^{(1)}+\lambda^{(1)}\right)y_1^{(0)}\right]=0.$$
 </p>
 </li>
 </ul>
