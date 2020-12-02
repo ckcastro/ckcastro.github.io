@@ -939,7 +939,7 @@ $$\sqrt{4\cos^{2}\phi}<\gamma/k \quad\text{y} \quad \sqrt{4\sin^{2}\phi\pm\sqrt{
 </ul>
 </div>
 
-<div style="float:left; width:45%;padding-left:25%" class="fragment">
+<div style="float:left; width:45%;padding-left:30%" class="fragment">
 <img src="figs/PtregionLinearTwisted.png" alt="fase PT"><div style="float:center; width:100%">
 </div>
 <p style="text-align:center"><small>Displays these regions in the plane $(\gamma/k,\phi)$
@@ -1000,8 +1000,8 @@ asumiendo $A_n=A$ y $B_n = B$
 </li>
 <li>Nos lleva a 
 $$\begin{align}
--\lambda A	+	2k\cos{\phi}B+i\gamma A + \sigma|A|^2A=0, \label{eq:stationary_sol_reducida1}\\
--\lambda B	+	2k\cos{\phi}A-i\gamma B + \sigma|B|^2B=0. \label{eq:stationary_sol_reducida2}
+-\lambda A	+	2k\cos{\phi}B+i\gamma A + \sigma|A|^2A=&0,\\
+-\lambda B	+	2k\cos{\phi}A-i\gamma B + \sigma|B|^2B=&0.
 \end{align}$$
 </li>
 <li>Por el momento $\gamma =0$</li>
