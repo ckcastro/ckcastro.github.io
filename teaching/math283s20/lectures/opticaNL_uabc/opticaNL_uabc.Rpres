@@ -315,34 +315,17 @@ Oxford University Press, 1999</small>
 </div>
 
 
-Características de las fibras ópticas
-========================================================
 
-<div style="float:left; width:33%" class="fragment">
-<img src="figs/dielectric_fiber.png" alt="Esquema de fibra optica dielectric y el perfil de indices de refraccion"><div style="float:center; width:100%">
-</div>
-<p style="text-align:center">
-<small>Agrawal G., Nonlinear fiber optics, Academic Press, 2013</small>
-</p>
-</div>
-
-
-<div style="float:left; width:100%">
-<ul style="list-style-type:none;">
-<li> 
-</li>
-</ul>
-</div>
 
 
 Características de las fibras ópticas
 ========================================================
 
 <div style="float:left; width:35%" class="fragment">
-<img src="figs/opticalFiber.jpeg" alt="Esquema de fibra optica multi-nucleo"><div style="float:center; width:100%">
+<img src="figs/cable.jpg" alt="Esquema de fibra optica multi-nucleo"><div style="float:center; width:100%">
 </div>
 <p style="text-align:left">
-<small>Courtesía de ..</small>
+<small>Courtesía de depositphotos.com</small>
 </p>
 </div>
 
@@ -362,6 +345,27 @@ Review letters, 2004</small>
 <small>Joannopoulos et al. Photonic crystals: molding the flow of light. Princeton University Press, 2011.</small>
 </p>
 </div>
+
+
+Características de las fibras ópticas
+========================================================
+
+<div style="float:left; width:33%" class="fragment">
+<img src="figs/dielectric_fiber.png" alt="Esquema de fibra optica dielectric y el perfil de indices de refraccion"><div style="float:center; width:100%">
+</div>
+<p style="text-align:center">
+<small>Agrawal G., Nonlinear fiber optics, Academic Press, 2013</small>
+</p>
+</div>
+
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li> 
+</li>
+</ul>
+</div>
+
 
 Dispersión
 ========================================================
@@ -454,8 +458,6 @@ $$\nabla^2 \mathbf{E}(\mathbf{r},t)-\frac{1}{c^2}\frac{\partial^2 \mathbf{E}(\ma
 </li>
 <li>T-simetría: ecuación es <strong>invariante</strong>  w. r. t. tiempo $t\rightarrow -t$
 </li>
-<li>
-</li>
 </ul>
 </div>
 
@@ -527,7 +529,7 @@ Photocromia
 </div>
 
 <div class='footer'>
-   <small>Source</small>
+   <small>Agrawal G., Nonlinear fiber optics, Academic Press, 2013 </small>
 </div>
 
 
@@ -681,7 +683,7 @@ $$\frac{ \partial A(z,t)}{\partial z} +  \beta_1 \frac{ \partial A(z,t)}{\partia
 </div>
 
 
-Ecuación discreta no lineal de Schrödinger
+Ecuación discreta no lineal de Schrödinger (DNLS)
 ========================================================
 
 
@@ -695,7 +697,7 @@ i \frac{dc_n}{dz} =  \epsilon_n c_n  - k(c_{n+1}+c_{n-1}) + \sigma|c_n|^2c_n,
 </li>
 <li>$c_n$: amplitudes complejas,  en el sitio $n$, que dependen de la dirección de la variable de propagación $z\in\mathbb{R}$
 </br>$k$: fuerza uniforme de acoplamiento con el vecino más cercano
-</br>$\epsilon_n$ perfil de índice de refracción in-situ
+</br>$\epsilon_n$: perfil de índice de refracción in-situ
 </br>$\sigma$: fuerza de no linealidad
 </li>
 <li>$\diamond$ El hamiltoniano que da lugar a las ecuaciones de movimiento viene dado por la ecuación
@@ -812,7 +814,7 @@ Sistemas ópticos acoplados convencionales y PT-simétricos.
 </small></p>
 </div>
 
-<div style="float:left; width:35%" class="fragment">
+<div style="float:left; width:32%" class="fragment">
 Propagación del haz en dos guías de ondas PT-simétricas no lineales.
 <img src="figs/ramezani_img.jpg" alt="Metasuperficie"><div style="float:center; width:100%">
 </div>
@@ -820,7 +822,7 @@ Propagación del haz en dos guías de ondas PT-simétricas no lineales.
 </small></p>
 </div>
 
-<div style="float:left; width:60%;padding-left:20%" class="fragment">
+<div style="float:left; width:50%;padding-left:20%" class="fragment">
 Dispersor recubierto con una metasuperficie ultrafina con pérdida y ganancia equilibradas. 
 <img src="figs/invisibility.jpg" alt="Metasuperficie"><div style="float:center; width:100%">
 </div>
@@ -829,20 +831,48 @@ Dispersor recubierto con una metasuperficie ultrafina con pérdida y ganancia eq
 </div>
 
 
-Fibras  multi-núcleo helicoidales y PT-simétricas
+Fibras  multi-núcleo no lineal PT-simétricas
 ========================================================
 
 <div style="float:left; width:100%">
 <ul style="list-style-type:none;">
 <li> Considere la dinámica de propagación del haz en una fibra discreta de múltiples núcleos de $N$ sitios dispuestos igualmente espaciados en un anillo de radio $R_0$ donde cada núcleo tiene un radio $r_0$, descrito por las ecuaciones de modos acoplados
 Dinámica de propagación en una matriz discreta de fibras ópticas descrita por la ecuación discreta de Schrodinger no lineal (DNLS)
-$$i\frac{{dc_{n}}}{dz}=k\left(e^{-i\phi}c_{n+1}+e^{i\phi}c_{n-1}\right)+i\gamma_{n}c_{n}+\sigma|c_{n}|^{2}c_{n}$$
+$$i\frac{{dc_{n}}}{dz}=k\left(c_{n+1}+c_{n-1}\right)+i\gamma_{n}c_{n}+\sigma|c_{n}|^{2}c_{n}$$
 </li>
 <li>$c_n$: representa amplitudes complejas,  en el sitio $n$, que dependen de la dirección de la variable de propagación $z\in\mathbb{R}$
 </br>$k$: fuerza uniforme del acoplamiento con el vecino más cercano
-</br>$\phi$: Peierls phase 
-</br>$\gamma_n$:tasa de ganancia óptica ($\gamma_n> 0$) o pérdida ($\gamma_n <0$) 
+</br>$\gamma_n$:tasa de <b style="color:blue">ganancia</b> óptica (${\color{blue} {\gamma_n>0}}$) o <b style="color:gray">pérdida</b> (${\color{gray} {\gamma_n<0}}$)
 
+</li>
+</ul>
+</div>
+
+
+<div style="float:left; width:50%;padding-left:25%" class="fragment">
+<img src="figs/diagram.jpg" alt="Esquema de una fibra optica torcida"><div style="float:center; width:100%">
+</div>
+<p style="text-align:center"><small>Esquema de fibra óptica multi-core PT-simétrica
+</small></p>
+</div>
+
+
+
+
+Fibras  multi-núcleo no lineal helicoidal PT-simétricas
+========================================================
+
+<div style="float:left; width:100%">
+<ul style="list-style-type:none;">
+<li> Considere la dinámica de propagación del haz en una fibra discreta de múltiples núcleos de $N$ sitios dispuestos igualmente espaciados en un anillo de radio $R_0$ donde cada núcleo tiene un radio $r_0$, descrito por las ecuaciones de modos acoplados
+Dinámica de propagación en una matriz discreta de fibras ópticas descrita por la ecuación discreta de Schrodinger no lineal (DNLS)
+$$i\frac{{dc_{n}}}{dz}=k\left({\color{orange} {e^{-i\phi}}}c_{n+1}+{\color{orange} {e^{i\phi}}}c_{n-1}\right)+i\gamma_{n}c_{n}+\sigma|c_{n}|^{2}c_{n}$$
+</li>
+<li>$c_n$: representa amplitudes complejas,  en el sitio $n$, que dependen de la dirección de la variable de propagación $z\in\mathbb{R}$
+</br>$k$: fuerza uniforme del acoplamiento con el vecino más cercano
+
+</br>$\gamma_n$: tasa de <b style="color:blue">ganancia</b> óptica (${\color{blue} {\gamma_n>0}}$) o <b style="color:gray">pérdida</b> (${\color{gray} {\gamma_n<0}}$)
+</br> $\phi$: <b style="color:#d95f02">Peierls phase</b>
 </li>
 </ul>
 </div>
@@ -851,33 +881,83 @@ $$i\frac{{dc_{n}}}{dz}=k\left(e^{-i\phi}c_{n+1}+e^{i\phi}c_{n-1}\right)+i\gamma_
 <div style="float:left; width:50%;padding-left:25%" class="fragment">
 <img src="figs/twisted_multicore.png" alt="Esquema de una fibra optica torcida"><div style="float:center; width:100%">
 </div>
-<p style="text-align:center"><small>Esquema de fibra óptica helicoidal con PT-simétrica
+<p style="text-align:center"><small>Esquema de fibra óptica helicoidal PT-simétrica
 </small></p>
 </div>
 
-
-Title
+Ruptura de PT-simetría: caso lineal
 ========================================================
 
-
-<div style="float:left; width:40%" class="fragment">
-<img src="figs/pt_wave_guide_ring_array.png" alt="Esquema de una fibra óptica torcida"><div style="float:center; width:100%">
+<div style="float:left; width:100%">
+$$i\frac{{dc_{n}}}{dz}=k\left(^{-i\phi}c_{n+1}+^{i\phi}c_{n-1}\right)+i\gamma_{n}c_{n}$$
+<ul>
+<li>PT-simetría alternante $\gamma_n=(-1)^{n+1}\gamma$,  $\gamma=2.04$
+<ul><li>Cambio de signo $\Leftrightarrow$ ganancia/perdida</li></ul>
+</li>
+<li>Condiciones de frontera periódicas $c_{n + N} = c_n$</li>
+<li>Otros valores usados $\sigma=0$, $n_s=1.552$, $R_0=8\mu m$, $\lambda=980nm$, $r_0=0.91R_0$</li>
+</ul>
 </div>
+
+<div style="float:left; width:70;padding-left:15%" class="fragment">
+Observe the PT-symmetry breaking induced by the twist of the fiber.
+<img src="figs/linear6PTcase.png" alt="Esquema de una fibra óptica torcida"><div style="float:center; width:100%">
+</div>
+<p style="text-align:center"><small>Longhi S., PT phase control in circular multi-core fibers. Optics letters, 2016.
+</small></p>
 </div>
 
 <div style="float:left; width:100%">
 <ul style="list-style-type:none;">
-<li>
-</li>
-<li>
-</li>
-<li>
+<li>Cuando se tuerce por un ángulo de $\phi =\pi/6$ se volve inestable :(
 </li>
 </ul>
 </div>
 
 
 
+No lineal pero conservado
+========================================================
+$$i\frac{{dc_{n}}}{dz}=k\left(e^{-i\phi}c_{n+1}+e^{i\phi}c_{n-1}\right)+{\color{gray} {i\gamma_{n}c_{n}}}+\sigma|c_{n}|^{2}c_{n}$$
+con $\gamma_n =0$
+<div style="float:left; width:100%">
+<ul>
+<li>If we make the transformation $c_n = a_n(z)e^{i\varphi_ n}$, $\varphi_ {n+1} −\varphi_n= \phi$</li>
+<li>The equations for $a_n$ are
+those of the classical uniform array, but now the periodic boundary condition is modified to $a_{n+N} = a_n e^{ iN\varphi}$. 
+</li>
+<li>This transformation also shows in the Hamiltonian
+$$H=\sum_{n=1}^N k \left( c_{n + 1} c_n^*e^{-i \phi} + c_n c^*_{n+1} e^{i \phi}\right)+\frac{\sigma}{2}|c_n|^4 = 
+  \sum_{n=1}^N k \left( a_{n + 1} a_n^* + a_n a^*_{n+1} \right)+\frac{\sigma}{2}|a_n|^4.$$
+</li>
+</ul>
+</div>
+
+
+Conclusiones
+========================================================
+
+<div style="float:left; width:100%">
+<ul>
+<li>Exploramos cómo la dinámica de la fibra no lineal con seis núcleos se ve afectada por un giro inducido en el escenario cuando la ganancia/ pérdida no está presente en el modelo y cuando hay un perfil de ganancia/ pérdida alternante. 
+</li>
+<li>
+Los resultados numéricos destacan el potencial de inducir una torsión de fibra para controlar la dinámica de la luz en fibras de múltiples núcleos no lineales y sugieren un escenario rico para una mayor exploración del espacio de parámetros.
+</li>
+</ul>
+</div>
+
+
+<div style="float:left; width:100%">
+<ul  style="list-style-type:none;">
+<li></br>
+<p style="border:3px; border-style:solid; border-color:#287EC7; padding: 1em;" class="fragment">
+<b style="color:#d95f02"> ¡Gracias! </b>
+</p>
+
+</li>
+</ul>
+</div>
 
 
 
