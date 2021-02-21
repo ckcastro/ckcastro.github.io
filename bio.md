@@ -11,11 +11,13 @@ tags: [cv,bio]
 
 * Ph. D. 2017, Applied and Computational Mathematics, Southern Methodist University [SMU](http://www.smu.edu/Dedman/academics/departments/math)
 
+* M. S. 2013, Applied Mathematics, Centro de Investigacion en Mathematicas [CIMAT](https://www.cimat.mx/)
+
 * B. S. 2010, Applied Mathematics, Universidad Autonoma de Baja California [UABC](http://www.uabc.mx/)
 
 ## Positions
 
-* Jan 2019-present: Teaching Postdoctoral Scholar, University of Nevada, Reno
+* January 2019-June 2020: Teaching Postdoctoral Scholar, University of Nevada, Reno
 
 * August 2018-December 2018: Adjunct Lecturer, Southern Methodist University
 
