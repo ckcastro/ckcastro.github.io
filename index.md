@@ -1,6 +1,6 @@
 ---
 layout: home
-title: "Claudia Castro-Castro"
+title: "Claudia Castro"
 tags: [Jekyll, theme, responsive, blog, template]
 image:
   feature: typewriter.jpg
