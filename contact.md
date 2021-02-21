@@ -6,7 +6,7 @@ description:
 tags: [cv,bio]
 ---
 
-Claudia Castro-Castro
+Claudia Castro
 <br />
 Email: ccastrocastr (at)  gmail (dot) com
 
