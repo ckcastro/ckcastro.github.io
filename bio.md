@@ -11,7 +11,7 @@ tags: [cv,bio]
 
 * Ph. D. 2017, Applied and Computational Mathematics, Southern Methodist University [SMU](http://www.smu.edu/Dedman/academics/departments/math)
 
-* M. S. 2013, Applied Mathematics, Centro de Investigacion en Mathematicas [CIMAT](https://www.cimat.mx/)
+* M. S. 2013, Applied Mathematics, Centro de Investigacion en Matematicas [CIMAT](https://www.cimat.mx/)
 
 * B. S. 2010, Applied Mathematics, Universidad Autonoma de Baja California [UABC](http://www.uabc.mx/)
 
